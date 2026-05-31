@@ -213,3 +213,25 @@
   font-size: 28rpx;
   color: var(--text-tertiary);
 }
+/* ===== placeholder 样式 ===== */
+.filter-input-placeholder {
+  font-size: 28rpx;
+  color: var(--text-tertiary);
+}
+
+/* FIX: 平板横屏优化 */
+@media (min-width: 768px) {
+  .main-content {
+    max-width: 680rpx;
+    margin: 0 auto;
+  }
+  .form-row {
+    gap: 24rpx;
+  }
+  .list-item {
+    padding: 28rpx 32rpx;
+  }
+  .section-title {
+    font-size: 34rpx;
+  }
+}

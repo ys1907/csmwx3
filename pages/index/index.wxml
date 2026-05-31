@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container {{darkMode ? 'dark' : ''}}">
   <!-- 背景光斑 -->
   <view class="bg-orb bg-orb-1"></view>
   <view class="bg-orb bg-orb-2"></view>
@@ -37,36 +37,6 @@
 
   <!-- 筛选区 -->
   <view class="main-content">
-    <view class="filter-group">
-      <view class="filter-row" bindtap="openScenePicker">
-        <text class="filter-label">场景</text>
-        <view class="filter-value {{filters.sceneIdx > 0 ? 'active' : ''}}">
-          <text>{{sceneOptions[filters.sceneIdx]}}</text>
-          <text class="filter-chevron">›</text>
-        </view>
-      </view>
-      <view class="filter-row" bindtap="openBudgetPicker">
-        <text class="filter-label">预算</text>
-        <view class="filter-value {{filters.budgetIdx > 0 ? 'active' : ''}}">
-          <text>{{budgetOptions[filters.budgetIdx]}}</text>
-          <text class="filter-chevron">›</text>
-        </view>
-      </view>
-      <view class="filter-row" bindtap="openTimePicker">
-        <text class="filter-label">时间</text>
-        <view class="filter-value {{filters.timeIdx > 0 ? 'active' : ''}}">
-          <text>{{timeOptions[filters.timeIdx]}}</text>
-          <text class="filter-chevron">›</text>
-        </view>
-      </view>
-      <view class="filter-input-row">
-        <input type="text" placeholder="避免标签，如辣、海鲜、香菜" placeholder-class="filter-input-placeholder" value="{{filters.avoid}}" bindinput="onAvoidInput" class="filter-input"/>
-      </view>
-      <view class="toggle-row">
-        <text class="filter-label">排除最近 3 天</text>
-        <view class="toggle-ios {{excludeRecent ? 'on' : ''}}" bindtap="onToggleExclude"></view>
-      </view>
-    </view>
 
     <!-- ===== 推荐模式 ===== -->
     <view class="mode-content" wx:if="{{currentMode === 'week'}}">
@@ -80,7 +50,7 @@
         </view>
         <text class="hero-desc">{{weekFood ? '适合一起' + (weekFood.time === '快' ? '快速解决' : '慢慢吃') : '点「换一个」，让今天的一餐有点期待'}}</text>
         <view class="hero-actions">
-          <button class="btn-glass" bindtap="rollWeek">换一个</button>
+          <button class="btn-glass" bindtap="onRollWeekTap">换一个</button>
           <button class="btn-glass btn-glass-secondary" wx:if="{{weekFood}}" bindtap="showWeekResult">就决定是它了</button>
         </view>
       </view>
@@ -113,7 +83,7 @@
     <view class="mode-content" wx:if="{{currentMode === 'wheel'}}">
       <view class="wheel-section">
         <!-- 揭晓遮罩 -->
-        <view class="reveal-overlay" wx:if="{{showReveal}}">
+        <view class="reveal-overlay" wx:if="{{showReveal}}" catchtap="onModalContentTap">
           <view class="reveal-pulse">
             <text class="reveal-text">开奖中…</text>
           </view>
@@ -151,7 +121,8 @@
 
     <!-- ===== PK 模式 ===== -->
     <view class="mode-content" wx:if="{{currentMode === 'pk'}}">
-      <view class="pk-grid">
+      <!-- 你选阶段 -->
+      <view class="pk-grid" wx:if="{{pkPhase === 'selectA'}}">
         <view class="pk-card">
           <text class="pk-card-label">你</text>
           <view class="pk-options">
@@ -160,6 +131,9 @@
             </view>
           </view>
         </view>
+      </view>
+      <!-- TA 选阶段 -->
+      <view class="pk-grid" wx:if="{{pkPhase === 'selectB'}}">
         <view class="pk-card">
           <text class="pk-card-label">TA</text>
           <view class="pk-options">
@@ -178,26 +152,89 @@
           <text>总计 {{pkData.total}} 次</text>
         </view>
       </view>
-      <button class="btn-glass" wx:if="{{showPKReveal}}" bindtap="revealPK">揭晓结果</button>
-      <view class="pk-result-glass" wx:if="{{showPKReset}}">
-        <text class="pk-result-title">{{pkResultTitle}}</text>
-        <text class="pk-result-text">{{pkResultText}}</text>
-        <view class="pk-punishment" wx:if="{{pkPunishment}}">
-          <text class="pk-punishment-text">{{pkPunishment}}</text>
-        </view>
-        <button class="btn-glass btn-glass-secondary" bindtap="resetPK">再来一次</button>
+      <view class="pk-actions">
+        <button class="btn-glass" wx:if="{{pkPhase === 'selectA' && pkSelections.A !== null}}" bindtap="confirmPKA">选好了</button>
+        <button class="btn-glass" wx:if="{{pkPhase === 'selectB' && pkSelections.B !== null}}" bindtap="confirmPKB">选好了</button>
+        <button class="btn-glass" wx:if="{{pkPhase === 'ready'}}" bindtap="revealPK">揭晓结果</button>
       </view>
     </view>
 
     <!-- ===== 盲盒模式 ===== -->
     <view class="mode-content" wx:if="{{currentMode === 'blindbox'}}">
-      <view class="blindbox-glass {{blindboxShaking ? 'shaking' : ''}} {{blindboxOpened ? 'opened' : ''}}" bindtap="openBlindbox">
+      <view class="blindbox-glass {{blindboxShaking ? 'shaking' : ''}} {{blindboxOpened ? 'opened' : ''}} {{blindboxRarity ? 'rarity-' + blindboxRarity : ''}}" bindtap="openBlindbox">
+        <view class="blindbox-glow" wx:if="{{blindboxOpened && blindboxRarity === 'SSR'}}"></view>
+        <view class="blindbox-rarity" wx:if="{{blindboxOpened && blindboxRarity}}">{{blindboxRarity}}</view>
         <text class="blindbox-icon">{{blindboxOpened && blindboxFood ? blindboxFood.emoji : '✨'}}</text>
         <text class="blindbox-label">{{blindboxOpened && blindboxFood ? blindboxFood.name : '点我揭晓'}}</text>
       </view>
       <!-- 盲盒结果已统一使用 Bottom Sheet 弹窗 -->
     </view>
 
+    <!-- 筛选触发胶囊 -->
+    <view class="filter-trigger-bar" bindtap="openFilterSheet">
+      <view class="filter-trigger-left">
+        <text class="filter-trigger-label">筛选</text>
+        <view class="filter-trigger-dot" wx:if="{{hasActiveFilters}}"></view>
+      </view>
+      <text class="filter-trigger-summary">{{filterSummary}}</text>
+      <text class="filter-trigger-chevron">›</text>
+    </view>
+
+  </view>
+
+  <!-- ===== 筛选 Sheet ===== -->
+  <view class="filter-sheet-overlay" wx:if="{{showFilterSheet}}" bindtap="closeFilterSheet">
+    <view class="filter-sheet" catchtap="onModalContentTap">
+      <view class="sheet-solid-bg"></view>
+      <view class="sheet-handle"></view>
+      <view class="filter-sheet-header">
+        <text class="filter-sheet-action" bindtap="closeFilterSheet">取消</text>
+        <text class="filter-sheet-title">筛选</text>
+        <text class="filter-sheet-action filter-sheet-action-primary {{hasActiveFilters ? 'active' : ''}}" bindtap="onResetFromSheet">重置</text>
+      </view>
+      <view class="filter-group">
+        <view class="filter-row" bindtap="openScenePicker">
+          <text class="filter-label">场景</text>
+          <view class="filter-value {{filters.sceneIdx > 0 ? 'active' : ''}}">
+            <text>{{sceneOptions[filters.sceneIdx]}}</text>
+            <text class="filter-chevron">›</text>
+          </view>
+        </view>
+        <view class="filter-row" bindtap="openBudgetPicker">
+          <text class="filter-label">预算</text>
+          <view class="filter-value {{filters.budgetIdx > 0 ? 'active' : ''}}">
+            <text>{{budgetOptions[filters.budgetIdx]}}</text>
+            <text class="filter-chevron">›</text>
+          </view>
+        </view>
+        <view class="filter-row" bindtap="openTimePicker">
+          <text class="filter-label">时间</text>
+          <view class="filter-value {{filters.timeIdx > 0 ? 'active' : ''}}">
+            <text>{{timeOptions[filters.timeIdx]}}</text>
+            <text class="filter-chevron">›</text>
+          </view>
+        </view>
+        <view class="filter-row" bindtap="openTastePicker">
+          <text class="filter-label">口味</text>
+          <view class="filter-value {{filters.tasteIdx > 0 ? 'active' : ''}}">
+            <text>{{tasteOptions[filters.tasteIdx]}}</text>
+            <text class="filter-chevron">›</text>
+          </view>
+        </view>
+        <view class="filter-row" bindtap="openAvoidPicker">
+          <text class="filter-label">避免</text>
+          <view class="filter-value {{filters.avoid ? 'active' : ''}}">
+            <text>{{filters.avoid || '未选择'}}</text>
+            <text class="filter-chevron">›</text>
+          </view>
+        </view>
+        <view class="toggle-row">
+          <text class="filter-label">排除最近 3 天</text>
+          <view class="toggle-ios {{excludeRecent ? 'on' : ''}}" bindtap="onToggleExclude"></view>
+        </view>
+      </view>
+      <button class="btn-glass" style="width:100%;margin-top:32rpx;" bindtap="closeFilterSheet">完成</button>
+    </view>
   </view>
 
   <!-- ===== 自定义选择器弹窗 ===== -->
@@ -226,22 +263,38 @@
     <view class="sheet-content" catchtap="onModalContentTap">
       <view class="sheet-solid-bg"></view>
       <view class="sheet-handle"></view>
-      <text class="sheet-emoji">{{currentResult.emoji}}</text>
-      <text class="sheet-name">{{currentResult.name}}</text>
-      <view class="sheet-meta">
-        <text class="hero-tag">{{currentResult.category}}</text>
-        <text class="hero-tag">{{currentResult.scene}}</text>
-        <text class="hero-tag">{{currentResult.budget}}</text>
-      </view>
-      <text class="sheet-desc">{{currentResult.name}}，{{currentResult.scene}}，{{currentResult.time === '快' ? '适合快速解决' : '适合一起慢慢吃'}}</text>
+      <!-- PK 结果 -->
+      <block wx:if="{{currentResultSource === 'pk'}}">
+        <text class="sheet-emoji">{{currentResult.emoji}}</text>
+        <text class="sheet-name">{{currentResult.name}}</text>
+        <view class="sheet-meta">
+          <text class="hero-tag">{{currentResult.category}}</text>
+          <text class="hero-tag">{{currentResult.scene}}</text>
+          <text class="hero-tag">{{currentResult.budget}}</text>
+          <text class="hero-tag">{{pkMatch ? '默契成功' : '默契失败'}}</text>
+          <text class="hero-tag">默契度 {{pkData.matches}}/{{pkData.total}}</text>
+        </view>
+        <text class="sheet-desc">{{pkResultText}} {{pkPunishment}}</text>
+      </block>
+      <!-- 默认食物结果 -->
+      <block wx:else>
+        <text class="sheet-emoji">{{currentResult.emoji}}</text>
+        <text class="sheet-name">{{currentResult.name}}</text>
+        <view class="sheet-meta">
+          <text class="hero-tag">{{currentResult.category}}</text>
+          <text class="hero-tag">{{currentResult.scene}}</text>
+          <text class="hero-tag">{{currentResult.budget}}</text>
+        </view>
+        <text class="sheet-desc">{{currentResult.name}}，{{currentResult.scene}}，{{currentResult.time === '快' ? '适合快速解决' : '适合一起慢慢吃'}}</text>
+      </block>
       <view class="sheet-actions">
-        <button class="btn-glass" bindtap="onConfirmResult">这一餐可以确定了</button>
-        <button class="btn-glass btn-glass-secondary" bindtap="onRetryResult">{{currentMode === 'blindbox' ? '再开一个' : '换一个更想吃的'}}</button>
+        <button class="btn-glass" bindtap="onConfirmResult">{{currentResultSource === 'pk' ? '太棒了' : '这一餐可以确定了'}}</button>
+        <button class="btn-glass btn-glass-secondary" bindtap="onRetryResult">{{currentResultSource === 'pk' ? '再来一次' : (currentMode === 'blindbox' ? '再开一个' : '换一个更想吃的')}}</button>
       </view>
-      <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="onToggleFav">
+      <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="onToggleFav" wx:if="{{currentResultSource !== 'pk'}}">
         {{currentResultIsFav ? '已收藏' : '加入爱吃榜'}}
       </button>
-      <button class="btn-glass btn-glass-ghost" style="margin-top:12rpx;width:100%;" bindtap="onShareResult">
+      <button class="btn-glass btn-glass-ghost" style="margin-top:12rpx;width:100%;" bindtap="onShareResult" wx:if="{{currentResultSource !== 'pk'}}">
         📤 生成分享卡片
       </button>
     </view>

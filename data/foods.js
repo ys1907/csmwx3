@@ -20,7 +20,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "咸香"
+      "香"
     ],
     "_id": "d684f5680833224d"
   },
@@ -75,19 +75,6 @@ module.exports = [
     "_id": "19f5c1edd889b7bb"
   },
   {
-    "name": "烤鱼",
-    "emoji": "🐠",
-    "category": "火锅烧烤",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "社交"
-    ],
-    "_id": "ae333e45fd926787"
-  },
-  {
     "name": "盐烤青花鱼",
     "emoji": "🐟",
     "category": "日韩",
@@ -96,7 +83,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "咸"
+      "咸",
+      "海鲜"
     ],
     "_id": "f25ead59e337f22e"
   },
@@ -147,8 +135,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "香",
-      "焦"
+      "香"
     ],
     "_id": "028c86671515ad9b"
   },
@@ -160,7 +147,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "fdbab8c51b4139be"
   },
@@ -236,8 +224,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "香",
-      "酥"
+      "香"
     ],
     "_id": "86f8080549774dce"
   },
@@ -263,7 +250,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "滋补",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "66c87b3ad8ee9617"
   },
@@ -467,7 +455,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "脆",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "bc195a9a8dc6338a"
   },
@@ -491,9 +480,7 @@ module.exports = [
     "scene": "自己做",
     "budget": "💰💰",
     "time": "快",
-    "tags": [
-      "精致"
-    ],
+    "tags": [],
     "_id": "75c065dc1a3d14e5"
   },
   {
@@ -554,7 +541,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸甜",
-      "精致"
+      "海鲜"
     ],
     "_id": "d73ef8cda623ba47"
   },
@@ -635,7 +622,7 @@ module.exports = [
     "_id": "714c803fd663ffd2"
   },
   {
-    "name": "smoothie bowl",
+    "name": "莓果奶昔碗",
     "emoji": "🫐",
     "category": "轻食",
     "scene": "自己做",
@@ -656,7 +643,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "茶"
+      "茶",
+      "海鲜"
     ],
     "_id": "2ba84df3707f7e3d"
   },
@@ -681,8 +669,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "素",
-      "北欧"
+      "素"
     ],
     "_id": "78b175c9118285a3"
   },
@@ -705,9 +692,7 @@ module.exports = [
     "scene": "公司食堂",
     "budget": "💰💰💰",
     "time": "慢",
-    "tags": [
-      "热压"
-    ],
+    "tags": [],
     "_id": "3537800f07cf28cb"
   },
   {
@@ -793,7 +778,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "8902f98ecebcc4af"
   },
@@ -805,7 +791,6 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "粉",
       "鲜"
     ],
     "_id": "64fb0a77a1ea2a1a"
@@ -849,7 +834,7 @@ module.exports = [
     "_id": "2e806d310e3f3a2f"
   },
   {
-    "name": " pad thai",
+    "name": "泰式金边粉",
     "emoji": "🍝",
     "category": "中式快餐",
     "scene": "自己做",
@@ -882,8 +867,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "辣",
-      "麻"
+      "辣"
     ],
     "_id": "8160d03fe65134d4"
   },
@@ -913,15 +897,14 @@ module.exports = [
     "_id": "e14f4146ac4e2565"
   },
   {
-    "name": "poke bowl",
+    "name": "夏威夷波奇饭",
     "emoji": "🥗",
     "category": "轻食",
     "scene": "外卖",
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鱼",
-      "夏"
+      "鱼"
     ],
     "_id": "e11529b3b58328dd"
   },
@@ -997,7 +980,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "健康"
+      "健康",
+      "海鲜"
     ],
     "_id": "24eb9dbfdcdd9b2a"
   },
@@ -1189,8 +1173,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "鲜",
-      "白"
+      "鲜"
     ],
     "_id": "182ba5819bc34f0c"
   },
@@ -1216,7 +1199,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香"
+      "蒜香",
+      "海鲜"
     ],
     "_id": "1be4c572869c756a"
   },
@@ -1241,7 +1225,8 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "3739190b9071a05a"
   },
@@ -1382,7 +1367,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "984fcf3e8beb13c3"
   },
@@ -1510,7 +1496,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "3857bffec931ab4c"
   },
@@ -1562,7 +1549,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鱼",
-      "北欧"
+      "海鲜"
     ],
     "_id": "b1b48347c20d1c31"
   },
@@ -1675,8 +1662,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "有嚼劲"
+      "肉"
     ],
     "_id": "a18ac6e727a66aaf"
   },
@@ -1689,7 +1675,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鱼",
-      "健康"
+      "健康",
+      "海鲜"
     ],
     "_id": "fa05c9e461403acb"
   },
@@ -1838,8 +1825,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "酱香",
-      "面"
+      "酱香"
     ],
     "_id": "d4983b6795c51689"
   },
@@ -1863,9 +1849,7 @@ module.exports = [
     "scene": "自己做",
     "budget": "💰",
     "time": "快",
-    "tags": [
-      "劲道"
-    ],
+    "tags": [],
     "_id": "1b669e3d3378813d"
   },
   {
@@ -2066,8 +2050,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "素",
-      "清热"
+      "素"
     ],
     "_id": "b6928da05aa731cc"
   },
@@ -2132,7 +2115,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "臭"
+      "臭",
+      "海鲜"
     ],
     "_id": "5e0165cba395f2e4"
   },
@@ -2221,7 +2205,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "9c070ed9ea987165"
   },
@@ -2233,8 +2218,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "肉",
-      "分享"
+      "肉"
     ],
     "_id": "477fda2cefd6166c"
   },
@@ -2274,19 +2258,6 @@ module.exports = [
       "香"
     ],
     "_id": "dc40380212592d29"
-  },
-  {
-    "name": "烧烤",
-    "emoji": "🍢",
-    "category": "火锅烧烤",
-    "scene": "堂食",
-    "budget": "💰💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "香"
-    ],
-    "_id": "475ebd106370e681"
   },
   {
     "name": "手抓饼",
@@ -2490,7 +2461,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "清淡"
+      "清淡",
+      "海鲜"
     ],
     "_id": "7a4ebb8c329ee8b3"
   },
@@ -2540,9 +2512,7 @@ module.exports = [
     "scene": "堂食",
     "budget": "💰💰",
     "time": "慢",
-    "tags": [
-      "罗勒"
-    ],
+    "tags": [],
     "_id": "56e1b6e20a5e3dd1"
   },
   {
@@ -2566,7 +2536,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "51672ca738a5ca04"
   },
@@ -2579,7 +2550,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "脆"
+      "脆",
+      "海鲜"
     ],
     "_id": "a5d4c9924273c790"
   },
@@ -2629,7 +2601,6 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "宽",
       "辣"
     ],
     "_id": "bfba0ec3bf625e0a"
@@ -2717,9 +2688,7 @@ module.exports = [
     "scene": "外卖",
     "budget": "💰",
     "time": "快",
-    "tags": [
-      "便携"
-    ],
+    "tags": [],
     "_id": "ec28b86e3eb178b8"
   },
   {
@@ -2744,7 +2713,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "795e5c09d8c93a3d"
   },
@@ -2808,7 +2778,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "咸香"
+      "香"
     ],
     "_id": "735a7a5d667e4be2"
   },
@@ -2885,7 +2855,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "甜"
+      "甜",
+      "海鲜"
     ],
     "_id": "357376795b4e046c"
   },
@@ -2962,8 +2933,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "肉",
-      "表演"
+      "肉"
     ],
     "_id": "73ca52949353b7a2"
   },
@@ -2975,8 +2945,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "番茄",
-      "罗勒"
+      "番茄"
     ],
     "_id": "8b73d39f818918c8"
   },
@@ -3001,7 +2970,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "酱香"
+      "酱香",
+      "海鲜"
     ],
     "_id": "964459d65b9ea07a"
   },
@@ -3101,7 +3071,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "926e74c6124962d2"
   },
@@ -3178,8 +3149,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "英"
+      "肉"
     ],
     "_id": "5d8d68b562f5fb94"
   },
@@ -3268,8 +3238,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "姜"
+      "肉"
     ],
     "_id": "4e829c74726e3147"
   },
@@ -3294,8 +3263,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "英"
+      "肉"
     ],
     "_id": "ab5f56f206ae6063"
   },
@@ -3409,7 +3377,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "甜"
+      "甜",
+      "海鲜"
     ],
     "_id": "bc07ed9f7d88f0f2"
   },
@@ -3421,8 +3390,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "宴席"
+      "肉"
     ],
     "_id": "d173c37a9ce707b0"
   },
@@ -3435,7 +3403,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "热",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "0bbd2359efbd107a"
   },
@@ -3447,7 +3416,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "175f585c30ab6d98"
   },
@@ -3524,8 +3494,7 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "清香"
+      "肉"
     ],
     "_id": "bce603231967ce70"
   },
@@ -3567,19 +3536,6 @@ module.exports = [
       "咸"
     ],
     "_id": "7310501ac55108dc"
-  },
-  {
-    "name": "烤韩菜",
-    "emoji": "🥬",
-    "category": "火锅烧烤",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "快",
-    "tags": [
-      "素",
-      "香"
-    ],
-    "_id": "4b0207d91c9cd942"
   },
   {
     "name": "麻婆豆腐",
@@ -3680,7 +3636,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "苦"
+      "海鲜"
     ],
     "_id": "4421f200eae7b2ab"
   },
@@ -3704,9 +3660,7 @@ module.exports = [
     "scene": "堂食",
     "budget": "💰💰",
     "time": "快",
-    "tags": [
-      "淀粉"
-    ],
+    "tags": [],
     "_id": "c8603ebced2970f4"
   },
   {
@@ -3795,7 +3749,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "447aad30fce42b32"
   },
@@ -3819,8 +3774,7 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "素",
-      "祛湿"
+      "素"
     ],
     "_id": "016e5929c26f2058"
   },
@@ -3844,7 +3798,8 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "eb52c04842f54396"
   },
@@ -3856,8 +3811,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "辣",
-      "花生"
+      "辣"
     ],
     "_id": "f9d29bb655bb46f1"
   },
@@ -3882,7 +3836,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "肉",
-      "咸鲜"
+      "鲜"
     ],
     "_id": "2d607999f369b513"
   },
@@ -3973,7 +3927,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "香"
+      "香",
+      "海鲜"
     ],
     "_id": "0d15fe377ba897e3"
   },
@@ -4011,8 +3966,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "香",
-      "传统"
+      "香"
     ],
     "_id": "c6c40f58e065524b"
   },
@@ -4231,7 +4185,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "c352ae72251e6b7a"
   },
@@ -4256,7 +4211,6 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "麻",
       "凉"
     ],
     "_id": "aac5acdae38d53c7"
@@ -4283,7 +4237,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "酱香"
+      "酱香",
+      "海鲜"
     ],
     "_id": "755d48600513e6e8"
   },
@@ -4498,8 +4453,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "软"
+      "肉"
     ],
     "_id": "8b3d9f5b53d69a0a"
   },
@@ -4511,22 +4465,9 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "辣",
-      "花生"
+      "辣"
     ],
     "_id": "f8ab1fd93da328f7"
-  },
-  {
-    "name": "三明治",
-    "emoji": "🥪",
-    "category": "轻食",
-    "scene": "自己做",
-    "budget": "💰💰",
-    "time": "快",
-    "tags": [
-      "轻"
-    ],
-    "_id": "64c4b4ce51777d94"
   },
   {
     "name": "重庆火锅",
@@ -4575,7 +4516,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "咸香"
+      "香"
     ],
     "_id": "59df5749f29da710"
   },
@@ -4587,7 +4528,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "265341f3342cdd0b"
   },
@@ -4625,7 +4567,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "90dc96cbade183d6"
   },
@@ -4677,7 +4620,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "时令"
+      "海鲜"
     ],
     "_id": "4f3c4f8e520b327a"
   },
@@ -4767,8 +4710,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "奶香",
-      "蘑菇"
+      "奶香"
     ],
     "_id": "77195b035bd618fa"
   },
@@ -4780,8 +4722,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "辣",
-      "干"
+      "辣"
     ],
     "_id": "222f548fec561d17"
   },
@@ -4831,9 +4772,7 @@ module.exports = [
     "scene": "外卖",
     "budget": "💰💰💰",
     "time": "慢",
-    "tags": [
-      "清香"
-    ],
+    "tags": [],
     "_id": "e0a1af5d6aed1c4b"
   },
   {
@@ -4857,8 +4796,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "凉",
-      "劲"
+      "凉"
     ],
     "_id": "60df9444a4a9c5ba"
   },
@@ -4870,8 +4808,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "肉",
-      "苦"
+      "肉"
     ],
     "_id": "3022688a851a9c75"
   },
@@ -4883,8 +4820,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "肉",
-      "多汁"
+      "肉"
     ],
     "_id": "bc63b3342b97bbfd"
   },
@@ -4936,7 +4872,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "嫩"
+      "嫩",
+      "海鲜"
     ],
     "_id": "57fb509407f907b0"
   },
@@ -5063,8 +5000,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "霸气"
+      "肉"
     ],
     "_id": "b60512adf6744c96"
   },
@@ -5102,8 +5038,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "霸气"
+      "肉"
     ],
     "_id": "2e76e3de578f9989"
   },
@@ -5218,7 +5153,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "高级"
+      "海鲜"
     ],
     "_id": "18f74244e9f6b208"
   },
@@ -5301,7 +5236,7 @@ module.exports = [
     "_id": "d3a9df29d01d4542"
   },
   {
-    "name": " nachos",
+    "name": "墨西哥玉米片",
     "emoji": "🌽",
     "category": "西式",
     "scene": "外卖",
@@ -5321,8 +5256,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "肉",
-      "生"
+      "肉"
     ],
     "_id": "61fffdbcbad5226f"
   },
@@ -5335,7 +5269,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香"
+      "蒜香",
+      "海鲜"
     ],
     "_id": "151414b89811e751"
   },
@@ -5347,7 +5282,6 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "汤",
       "鲜"
     ],
     "_id": "78bb3026258e6e58"
@@ -5424,7 +5358,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "咸香"
+      "香"
     ],
     "_id": "d19f9a041402e1b1"
   },
@@ -5499,9 +5433,7 @@ module.exports = [
     "scene": "堂食",
     "budget": "💰💰",
     "time": "快",
-    "tags": [
-      "特色"
-    ],
+    "tags": [],
     "_id": "6c2297b49436d5ff"
   },
   {
@@ -5679,7 +5611,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "f2b229e3be291b7a"
   },
@@ -5730,7 +5663,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "酱香"
+      "酱香",
+      "海鲜"
     ],
     "_id": "487ca36e8850208d"
   },
@@ -5795,7 +5729,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "葱"
+      "海鲜"
     ],
     "_id": "88723c115b2d5770"
   },
@@ -5808,7 +5742,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "清淡"
+      "清淡",
+      "海鲜"
     ],
     "_id": "83833b2a29d5e3b0"
   },
@@ -5920,8 +5855,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "辣",
-      "锅巴"
+      "辣"
     ],
     "_id": "81f2866c2a01caa2"
   },
@@ -5957,9 +5891,7 @@ module.exports = [
     "scene": "自己做",
     "budget": "💰",
     "time": "快",
-    "tags": [
-      "烟熏"
-    ],
+    "tags": [],
     "_id": "91ece2db90757483"
   },
   {
@@ -5969,9 +5901,7 @@ module.exports = [
     "scene": "自己做",
     "budget": "💰💰💰",
     "time": "快",
-    "tags": [
-      "麻酱"
-    ],
+    "tags": [],
     "_id": "da969fe1c01336bf"
   },
   {
@@ -5988,15 +5918,14 @@ module.exports = [
     "_id": "aa473750330c830b"
   },
   {
-    "name": "牛排",
+    "name": "香煎牛排",
     "emoji": "🥩",
     "category": "西式",
     "scene": "自己做",
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "仪式"
+      "肉"
     ],
     "_id": "df9be12eab859eea"
   },
@@ -6008,8 +5937,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "肉",
-      "传统"
+      "肉"
     ],
     "_id": "eda97ea8ff7ab815"
   },
@@ -6046,7 +5974,9 @@ module.exports = [
     "scene": "堂食",
     "budget": "💰",
     "time": "慢",
-    "tags": [],
+    "tags": [
+      "海鲜"
+    ],
     "_id": "a6cf72e7beca3689"
   },
   {
@@ -6121,7 +6051,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "辣"
+      "辣",
+      "海鲜"
     ],
     "_id": "28d34ed6cf8bebcb"
   },
@@ -6146,7 +6077,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鱼",
-      "健康"
+      "健康",
+      "海鲜"
     ],
     "_id": "d07e2fc1dd842e4d"
   },
@@ -6184,8 +6116,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "快",
     "tags": [
-      "甜",
-      "浓"
+      "甜"
     ],
     "_id": "414dfcacaf036c92"
   },
@@ -6200,18 +6131,6 @@ module.exports = [
       "酸"
     ],
     "_id": "0cb20de7c1fac160"
-  },
-  {
-    "name": "炒饭",
-    "emoji": "🍛",
-    "category": "中式快餐",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "快"
-    ],
-    "_id": "285f371fbf4e37c5"
   },
   {
     "name": "鸡排饭",
@@ -6248,7 +6167,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香"
+      "蒜香",
+      "海鲜"
     ],
     "_id": "bff1feb8486f1c70"
   },
@@ -6273,7 +6193,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "e49535326d5a6fb9"
   },
@@ -6348,7 +6269,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "9ddb3f8ce01b004c"
   },
@@ -6374,7 +6296,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香"
+      "蒜香",
+      "海鲜"
     ],
     "_id": "1032091e0997d581"
   },
@@ -6386,7 +6309,8 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "8c1f9bcc1c955773"
   },
@@ -6462,8 +6386,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "快",
     "tags": [
-      "肉",
-      "高级"
+      "肉"
     ],
     "_id": "d852e95c011d8789"
   },
@@ -6528,7 +6451,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "健康"
+      "健康",
+      "海鲜"
     ],
     "_id": "c25bc63e097163e2"
   },
@@ -6565,8 +6489,7 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "蛋",
-      "西班牙"
+      "蛋"
     ],
     "_id": "720ae5bce6419b46"
   },
@@ -6615,9 +6538,7 @@ module.exports = [
     "scene": "公司食堂",
     "budget": "💰",
     "time": "慢",
-    "tags": [
-      "葱香"
-    ],
+    "tags": [],
     "_id": "a8126f1d40bd60f0"
   },
   {
@@ -6719,7 +6640,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "酒"
+      "海鲜"
     ],
     "_id": "ef6e5c490bd5050d"
   },
@@ -6731,7 +6652,8 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "12519f50553f9dde"
   },
@@ -6757,7 +6679,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鱼",
-      "健康"
+      "健康",
+      "海鲜"
     ],
     "_id": "8e6f8f667721db02"
   },
@@ -6782,7 +6705,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鱼",
-      "便捷"
+      "海鲜"
     ],
     "_id": "a0479c56ba775144"
   },
@@ -6846,7 +6769,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "白"
+      "海鲜"
     ],
     "_id": "cdb05166f24a91cd"
   },
@@ -6858,7 +6781,6 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "锅巴",
       "香"
     ],
     "_id": "d01a3bc789de5bc3"
@@ -6877,7 +6799,7 @@ module.exports = [
     "_id": "ce5942f06080ebe9"
   },
   {
-    "name": "chia pudding",
+    "name": "奇亚籽布丁",
     "emoji": "🍮",
     "category": "轻食",
     "scene": "公司食堂",
@@ -6911,7 +6833,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "脆"
+      "脆",
+      "海鲜"
     ],
     "_id": "309d0b6b1f5f9e3d"
   },
@@ -6948,7 +6871,6 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "宽",
       "香"
     ],
     "_id": "a481f449b203237e"
@@ -6962,7 +6884,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "嫩"
+      "嫩",
+      "海鲜"
     ],
     "_id": "2a7408e433a9f2d1"
   },
@@ -6975,12 +6898,13 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "鲜"
+      "鲜",
+      "海鲜"
     ],
     "_id": "b0fe0d8f3dea58bb"
   },
   {
-    "name": "acai bowl",
+    "name": "巴西莓果碗",
     "emoji": "🥗",
     "category": "轻食",
     "scene": "自己做",
@@ -7062,8 +6986,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "奶香",
-      "蘑菇"
+      "奶香"
     ],
     "_id": "ff47c3031bf65bd9"
   },
@@ -7076,7 +6999,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "藏红花"
+      "海鲜"
     ],
     "_id": "3234bc57adf84cf3"
   },
@@ -7102,7 +7025,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "肉",
-      "软糯"
+      "糯"
     ],
     "_id": "0ce9cc80e17daad4"
   },
@@ -7196,4 +7119,4 @@ module.exports = [
     ],
     "_id": "9da079aa605b3c1c"
   }
-];
+]

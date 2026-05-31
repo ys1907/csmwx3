@@ -2,14 +2,6 @@ function uid() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36)
 }
 
-function debounce(fn, ms) {
-  let t
-  return function(...args) {
-    clearTimeout(t)
-    t = setTimeout(() => fn.apply(this, args), ms)
-  }
-}
-
 function shuffleArray(arr) {
   const a = arr.slice()
   for (let i = a.length - 1; i > 0; i--) {
@@ -19,14 +11,12 @@ function shuffleArray(arr) {
   return a
 }
 
-function escapeHtml(text) {
-  if (text == null) return ''
-  return String(text)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
+const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
+
+// 手写日期格式化，替代在部分小程序运行时不稳定的 toLocaleDateString(locale, options)
+function formatDate(date, withWeekday) {
+  const base = `${date.getMonth() + 1}月${date.getDate()}日`
+  return withWeekday ? `${WEEKDAYS[date.getDay()]} ${base}` : base
 }
 
 function migrateFood(food) {
@@ -46,8 +36,7 @@ function migrateFood(food) {
 
 module.exports = {
   uid,
-  debounce,
   shuffleArray,
-  escapeHtml,
+  formatDate,
   migrateFood
 }

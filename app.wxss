@@ -33,6 +33,29 @@ page {
   --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Noto Sans SC", sans-serif;
 }
 
+/* FIX: 暗黑模式变量覆盖 */
+.dark {
+  --page-bg: linear-gradient(180deg, #1C1C1E 0%, #2C2C2E 45%, #3A3A3C 100%);
+  --glass-bg: rgba(60, 60, 65, 0.55);
+  --glass-bg-strong: rgba(70, 70, 75, 0.72);
+  --glass-bg-hover: rgba(65, 65, 70, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-stroke: rgba(255, 255, 255, 0.06);
+  --glass-stroke-strong: rgba(255, 255, 255, 0.10);
+  --glass-highlight: inset 0 1rpx 0 rgba(255, 255, 255, 0.12);
+  --primary: #FF9F8A;
+  --primary-soft: rgba(255, 159, 138, 0.18);
+  --primary-glow: rgba(255, 159, 138, 0.25);
+  --text-primary: #FFFFFF;
+  --text-secondary: #98989D;
+  --text-tertiary: #636366;
+  --text-inverse: #111111;
+  --shadow-glass: 0 20rpx 60rpx rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 8rpx 28rpx rgba(0, 0, 0, 0.25);
+  --shadow-float: 0 4rpx 16rpx rgba(0, 0, 0, 0.20);
+  --shadow-inner: inset 0 2rpx 8rpx rgba(0, 0, 0, 0.15);
+}
+
 .container {
   min-height: 100vh;
   background: var(--page-bg);

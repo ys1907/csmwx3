@@ -1,18 +1,15 @@
 const util = require('../../utils/util.js')
 const foodsData = require('../../data/foods.js')
-
-const APP_VERSION = 'v3'
-const STORAGE_KEYS = {
-  foods: 'wtec_foods_' + APP_VERSION,
-  history: 'wtec_history_' + APP_VERSION,
-  favorites: 'wtec_fav_' + APP_VERSION,
-  localVersion: 'wtec_foods_local_version'
-}
-
-const SCENE_OPTIONS = ['全部场景', '外卖', '堂食', '自己做', '公司食堂']
-const BUDGET_OPTIONS = ['全部预算', '💰', '💰💰', '💰💰💰']
-const TIME_OPTIONS = ['全部时间', '快', '慢']
-const CATEGORY_OPTIONS = ['中式快餐', '西式', '日韩', '轻食', '火锅烧烤', '街边小吃', '家常菜']
+const { safeGet, safeSet } = require('../../utils/storage.js')
+const foodLogic = require('../../utils/foodLogic.js')
+const {
+  APP_VERSION,
+  STORAGE_KEYS,
+  SCENE_OPTIONS,
+  BUDGET_OPTIONS,
+  TIME_OPTIONS,
+  CATEGORY_OPTIONS
+} = require('../../data/options.js')
 
 Page({
   data: {
@@ -29,9 +26,15 @@ Page({
   },
 
   onLoad() {
-    const sysInfo = wx.getSystemInfoSync()
-    this.setData({ statusBarHeight: sysInfo.statusBarHeight || 44 })
+    const win = (wx.getWindowInfo && wx.getWindowInfo()) || {}
+    this.setData({ statusBarHeight: win.statusBarHeight || 44 })
     this.loadData()
+    // FIX: 暗黑模式系统跟随
+    const sysInfo = wx.getSystemInfoSync()
+    this.setData({ darkMode: sysInfo.theme === 'dark' })
+    wx.onThemeChange && wx.onThemeChange((res) => {
+      this.setData({ darkMode: res.theme === 'dark' })
+    })
   },
 
   onShow() {
@@ -39,32 +42,45 @@ Page({
   },
 
   loadData() {
-    const localVersion = wx.getStorageSync(STORAGE_KEYS.localVersion)
-    const localFoods = wx.getStorageSync(STORAGE_KEYS.foods)
+    const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
+    const localFoods = safeGet(STORAGE_KEYS.foods, null)
     let foods = []
 
-    if (localVersion === APP_VERSION && Array.isArray(localFoods)) {
+    if (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0) {
       foods = localFoods.map(util.migrateFood)
     } else {
       foods = foodsData.map(util.migrateFood)
     }
 
-    const history = wx.getStorageSync(STORAGE_KEYS.history) || []
-    const favorites = wx.getStorageSync(STORAGE_KEYS.favorites) || []
+    const history = safeGet(STORAGE_KEYS.history, [])
+    const favorites = safeGet(STORAGE_KEYS.favorites, [])
 
-    const historyDisplay = history.slice(0, 30).map(h => {
-      const dateStr = h.date ? new Date(h.date).toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' }) : ''
-      return { ...h, dateStr }
-    })
-    this.setData({ foods, history, favorites, foodCount: foods.length, historyDisplay })
+    const historyDisplay = history.slice(0, 30).map(h => ({
+      ...h,
+      dateStr: h.date ? util.formatDate(new Date(h.date)) : ''
+    }))
+    // 进化③：口味画像（学自 Spotify Wrapped）—— 把历史决策沉淀成可读洞察
+    const tasteProfile = foodLogic.buildTasteProfile(history, favorites, foods)
+    this.setData({ foods, history, favorites, foodCount: foods.length, historyDisplay, tasteProfile })
   },
 
-  saveState() {
-    const { foods, history, favorites } = this.data
-    wx.setStorageSync(STORAGE_KEYS.foods, foods)
-    wx.setStorageSync(STORAGE_KEYS.localVersion, APP_VERSION)
-    wx.setStorageSync(STORAGE_KEYS.history, history)
-    wx.setStorageSync(STORAGE_KEYS.favorites, favorites)
+  // 历史/收藏变更后刷新画像（saveUserData 是它们唯一的落盘入口，挂在这里即可全覆盖）
+  refreshProfile() {
+    const { history, favorites, foods } = this.data
+    this.setData({ tasteProfile: foodLogic.buildTasteProfile(history, favorites, foods) })
+  },
+
+  // foods 的唯一持久化入口：增删后写回存储
+  persistFoods(foods) {
+    safeSet(STORAGE_KEYS.foods, foods)
+    safeSet(STORAGE_KEYS.localVersion, APP_VERSION)
+  },
+
+  saveUserData() {
+    const { history, favorites } = this.data
+    safeSet(STORAGE_KEYS.history, history)
+    safeSet(STORAGE_KEYS.favorites, favorites)
+    this.refreshProfile() // 画像随历史/收藏变更而更新
   },
 
   goBack() {
@@ -107,7 +123,7 @@ Page({
       foodCount: newFoods.length,
       newFood: { name: '', emoji: '', categoryIdx: 0, sceneIdx: 1, budgetIdx: 1, timeIdx: 1, tags: '' }
     }, () => {
-      this.saveState()
+      this.persistFoods(newFoods)
       wx.showToast({ title: '添加成功', icon: 'success' })
     })
   },
@@ -119,18 +135,35 @@ Page({
       const newFoods = this.data.foods.slice()
       newFoods.splice(idx, 1)
       this.setData({ foods: newFoods, foodCount: newFoods.length }, () => {
-        this.saveState()
+        this.persistFoods(newFoods)
       })
     }
   },
 
-  updateHistoryDisplay() {
+  deleteHistoryItem(e) {
+    const idx = parseInt(e.currentTarget.dataset.index)
     const { history } = this.data
-    const historyDisplay = history.slice(0, 30).map(h => {
-      const dateStr = h.date ? new Date(h.date).toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' }) : ''
-      return { ...h, dateStr }
+    if (idx >= 0 && idx < history.length) {
+      const newHistory = history.slice()
+      newHistory.splice(idx, 1)
+      const historyDisplay = newHistory.slice(0, 30).map(h => ({
+        ...h,
+        dateStr: h.date ? util.formatDate(new Date(h.date)) : ''
+      }))
+      this.setData({ history: newHistory, historyDisplay }, () => {
+        this.saveUserData()
+      })
+    }
+  },
+
+  removeFavorite(e) {
+    const name = e.currentTarget.dataset.name
+    const { favorites } = this.data
+    const newFavorites = favorites.filter(f => f.name !== name)
+    this.setData({ favorites: newFavorites }, () => {
+      this.saveUserData()
+      wx.showToast({ title: '已取消收藏', icon: 'success' })
     })
-    this.setData({ historyDisplay })
   },
 
   clearHistory() {
@@ -141,7 +174,7 @@ Page({
       success: (res) => {
         if (res.confirm) {
           this.setData({ history: [], historyDisplay: [] }, () => {
-            this.saveState()
+            this.saveUserData()
             wx.showToast({ title: '已清空', icon: 'success' })
           })
         }
@@ -157,9 +190,91 @@ Page({
       success: (res) => {
         if (res.confirm) {
           this.setData({ favorites: [] }, () => {
-            this.saveState()
+            this.saveUserData()
             wx.showToast({ title: '已清空', icon: 'success' })
           })
+        }
+      }
+    })
+  },
+
+  // FIX: 数据导出（JSON 到剪贴板）
+  exportData() {
+    const { foods, history, favorites } = this.data
+    const pkData = safeGet(STORAGE_KEYS.pkData, { matches: 0, total: 0 })
+    const payload = {
+      version: APP_VERSION,
+      exportAt: new Date().toISOString(),
+      foods: foods.filter(f => !foodsData.some(df => df.name === f.name && df._id)),
+      history,
+      favorites,
+      pkData
+    }
+    const json = JSON.stringify(payload, null, 2)
+    wx.setClipboardData({
+      data: json,
+      success: () => wx.showToast({ title: '数据已复制到剪贴板', icon: 'success' })
+    })
+  },
+
+  // FIX: 数据导入（从剪贴板 JSON）
+  importData() {
+    wx.getClipboardData({
+      success: (res) => {
+        try {
+          const payload = JSON.parse(res.data)
+          if (!payload || typeof payload !== 'object') throw new Error('格式错误')
+          const { foods: importFoods, history: importHistory, favorites: importFavorites, pkData: importPk } = payload
+          const { foods, history, favorites } = this.data
+          // 合并食物，按名称去重
+          const nameSet = new Set(foods.map(f => f.name))
+          const mergedFoods = foods.slice()
+          if (Array.isArray(importFoods)) {
+            importFoods.forEach(f => {
+              if (f && f.name && !nameSet.has(f.name)) {
+                mergedFoods.push(util.migrateFood(f))
+                nameSet.add(f.name)
+              }
+            })
+          }
+          // 合并历史，按名称+日期去重
+          const historyKeySet = new Set(history.map(h => h.name + '|' + h.date))
+          const mergedHistory = history.slice()
+          if (Array.isArray(importHistory)) {
+            importHistory.forEach(h => {
+              const key = h.name + '|' + h.date
+              if (!historyKeySet.has(key)) {
+                mergedHistory.push(h)
+                historyKeySet.add(key)
+              }
+            })
+          }
+          // 合并收藏，按名称去重
+          const favNameSet = new Set(favorites.map(f => f.name))
+          const mergedFavorites = favorites.slice()
+          if (Array.isArray(importFavorites)) {
+            importFavorites.forEach(f => {
+              if (f && f.name && !favNameSet.has(f.name)) {
+                mergedFavorites.push(f)
+                favNameSet.add(f.name)
+              }
+            })
+          }
+          this.setData({
+            foods: mergedFoods,
+            history: mergedHistory,
+            favorites: mergedFavorites,
+            foodCount: mergedFoods.length
+          }, () => {
+            this.persistFoods(mergedFoods)
+            this.saveUserData()
+            if (importPk && typeof importPk === 'object') {
+              safeSet(STORAGE_KEYS.pkData, importPk)
+            }
+            wx.showToast({ title: '导入成功', icon: 'success' })
+          })
+        } catch (e) {
+          wx.showToast({ title: '剪贴板数据格式错误', icon: 'none' })
         }
       }
     })
