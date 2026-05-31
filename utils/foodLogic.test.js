@@ -2,7 +2,8 @@ const test = require('node:test')
 const assert = require('node:assert')
 const {
   filterFoods, buildWheelPool, resolveWheelWinner, SECTOR_DEG, SECTOR_OFFSET,
-  foodWeight, weightedPick, weightedPickIndex, buildTasteProfile
+  foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
+  explainPick, computeStreak, buildMealCombo
 } = require('./foodLogic.js')
 
 const FOODS = [
@@ -126,4 +127,83 @@ test('buildTasteProfile: 统计品类/标签/辣度占比', () => {
   assert.strictEqual(p.spicyCount, 1)                  // 仅麻辣烫含「辣」
   assert.ok(Math.abs(p.spicyRatio - 0.25) < 1e-9)
   assert.ok(p.headline.includes('4 餐'))
+})
+
+// ===== 进化④：可解释推荐 =====
+
+test('explainPick: 收藏 > 口味 > 兜底 的优先级', () => {
+  assert.strictEqual(
+    explainPick({ name: '红烧肉', tags: ['肉'] }, { favoriteSet: new Set(['红烧肉']) }),
+    '你们的最爱之一 ❤️'
+  )
+  assert.strictEqual(
+    explainPick({ name: '麻辣烫', tags: ['辣'] }, { tasteCounts: { 辣: 3 } }),
+    '你们近来偏爱「辣」'
+  )
+  // 口味信号不足阈值 → 落到兜底文案
+  assert.ok(explainPick({ name: 'x', tags: ['辣'] }, { tasteCounts: { 辣: 1 } }).includes('碰碰运气'))
+  assert.ok(explainPick({ name: 'x', tags: [] }, {}).includes('碰碰运气'))
+})
+
+// ===== 进化⑤：决策连胜 =====
+
+test('computeStreak: 今天+昨天+前天 连续 3 天', () => {
+  const now = new Date(2026, 4, 31, 12, 0, 0).getTime()
+  const day = 24 * 60 * 60 * 1000
+  const history = [
+    { date: new Date(now).toISOString() },
+    { date: new Date(now - day).toISOString() },
+    { date: new Date(now - 2 * day).toISOString() },
+  ]
+  const s = computeStreak(history, now)
+  assert.strictEqual(s.current, 3)
+  assert.strictEqual(s.longest, 3)
+  assert.strictEqual(s.decidedToday, true)
+})
+
+test('computeStreak: 今天没决定但昨天有 → 连胜仍存活', () => {
+  const now = new Date(2026, 4, 31, 12, 0, 0).getTime()
+  const day = 24 * 60 * 60 * 1000
+  const s = computeStreak([{ date: new Date(now - day).toISOString() }], now)
+  assert.strictEqual(s.current, 1)
+  assert.strictEqual(s.decidedToday, false)
+})
+
+test('computeStreak: 断档后 current 归零、longest 保留', () => {
+  const now = new Date(2026, 4, 31, 12, 0, 0).getTime()
+  const day = 24 * 60 * 60 * 1000
+  const history = [
+    { date: new Date(now - 5 * day).toISOString() }, // 5 天前
+    { date: new Date(now - 6 * day).toISOString() }, // 6 天前（与上面连成 2）
+  ]
+  const s = computeStreak(history, now)
+  assert.strictEqual(s.current, 0)
+  assert.strictEqual(s.longest, 2)
+})
+
+test('computeStreak: 空历史', () => {
+  const s = computeStreak([], Date.now())
+  assert.deepStrictEqual(s, { current: 0, longest: 0, decidedToday: false })
+})
+
+// ===== 进化⑥：一键凑一桌 =====
+
+test('buildMealCombo: 优先不同品类、数量正确、无重复', () => {
+  const foods = [
+    { name: 'a', category: '家常菜' }, { name: 'b', category: '家常菜' },
+    { name: 'c', category: '西式' }, { name: 'd', category: '日韩' },
+  ]
+  const combo = buildMealCombo(foods, 3, () => 0) // 注入定长 rng，确定性
+  assert.strictEqual(combo.length, 3)
+  assert.strictEqual(new Set(combo.map(f => f.name)).size, 3) // 无重复菜
+  assert.strictEqual(new Set(combo.map(f => f.category)).size, 3) // 三种不同品类
+})
+
+test('buildMealCombo: 品类不足时用剩余菜补足数量', () => {
+  const foods = [
+    { name: 'a', category: '家常菜' }, { name: 'b', category: '家常菜' }, { name: 'c', category: '家常菜' },
+  ]
+  const combo = buildMealCombo(foods, 3, () => 0)
+  assert.strictEqual(combo.length, 3)
+  assert.strictEqual(new Set(combo.map(f => f.name)).size, 3)
 })

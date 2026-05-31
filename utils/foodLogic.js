@@ -157,6 +157,83 @@ function buildTasteProfile(history, favorites, foods) {
   }
 }
 
+// ========== 进化④：可解释推荐（学自网易云「每日推荐」的推荐理由） ==========
+// 根据偏好信号反推「为什么推它」，让加权推荐对用户可感知、可信任。
+function explainPick(food, prefs) {
+  const p = prefs || {}
+  if (p.favoriteSet && p.favoriteSet.has(food.name)) return '你们的最爱之一 ❤️'
+  if (p.tasteCounts && food.tags && food.tags.length) {
+    let bestTag = null, bestCount = 0
+    for (const t of food.tags) {
+      const c = p.tasteCounts[t] || 0
+      if (c > bestCount) { bestCount = c; bestTag = t }
+    }
+    if (bestTag && bestCount >= 2) return `你们近来偏爱「${bestTag}」`
+  }
+  return '换换口味，碰碰运气 🎲'
+}
+
+// ========== 进化⑤：决策连胜（学自微信运动 / Duolingo 的连续打卡） ==========
+function dayKey(d) {
+  return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`
+}
+
+// 从历史日期算出「当前连胜 / 最长连胜 / 今天是否已决定」。now 可注入便于测试。
+function computeStreak(history, now) {
+  const today = now ? new Date(now) : new Date()
+  const dayMs = 24 * 60 * 60 * 1000
+  const days = new Set()
+  ;(history || []).forEach(h => {
+    const d = new Date(h.date)
+    if (!Number.isNaN(d.getTime())) days.add(dayKey(d))
+  })
+
+  const decidedToday = days.has(dayKey(today))
+  // 当前连胜：从今天（或昨天，给「还没决定但昨天决定过」留活口）向前数连续天数
+  let current = 0
+  let cursor = decidedToday ? new Date(today) : new Date(today.getTime() - dayMs)
+  while (days.has(dayKey(cursor))) {
+    current++
+    cursor = new Date(cursor.getTime() - dayMs)
+  }
+
+  // 最长连胜：把所有去重日期排序，找最长连续段
+  const sorted = Array.from(days).map(k => {
+    const [y, m, d] = k.split('-').map(Number)
+    return new Date(y, m, d).getTime()
+  }).sort((a, b) => a - b)
+  let longest = 0, run = 0, prev = null
+  for (const t of sorted) {
+    run = (prev !== null && t - prev === dayMs) ? run + 1 : 1
+    if (run > longest) longest = run
+    prev = t
+  }
+
+  return { current, longest, decidedToday }
+}
+
+// ========== 进化⑥：一键凑一桌（学自美团凑单 / 盒马「一桌好菜」） ==========
+// 为「情侣一起点多道菜」场景，挑选品类尽量不重复的多样化组合。rng 可注入。
+function buildMealCombo(foods, count, rng) {
+  const n = count || 3
+  const shuffled = shuffle(foods, rng)
+  const picked = []
+  const usedCat = new Set()
+  // 第一轮：优先不同品类，保证一桌的多样性
+  for (const f of shuffled) {
+    if (picked.length >= n) break
+    if (!usedCat.has(f.category)) { picked.push(f); usedCat.add(f.category) }
+  }
+  // 第二轮：品类不够时，用剩余菜补足数量
+  if (picked.length < n) {
+    for (const f of shuffled) {
+      if (picked.length >= n) break
+      if (!picked.includes(f)) picked.push(f)
+    }
+  }
+  return picked
+}
+
 module.exports = {
   shuffle,
   filterFoods,
@@ -167,6 +244,9 @@ module.exports = {
   weightedPick,
   weightedPickIndex,
   buildTasteProfile,
+  explainPick,
+  computeStreak,
+  buildMealCombo,
   WHEEL_SECTORS,
   SECTOR_DEG,
   SECTOR_OFFSET

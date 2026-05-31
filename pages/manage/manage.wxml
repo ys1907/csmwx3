@@ -19,7 +19,12 @@
         <text class="section-title">口味画像</text>
         <text class="section-count">{{tasteProfile.total}} 餐</text>
       </view>
-      <text style="display:block;font-size:26rpx;color:#6E6E73;margin:8rpx 0 16rpx;">{{tasteProfile.headline}}</text>
+      <text style="display:block;font-size:26rpx;color:#6E6E73;margin:8rpx 0 12rpx;">{{tasteProfile.headline}}</text>
+      <!-- 进化⑤：决策连胜 -->
+      <view wx:if="{{streak && streak.current > 0}}" style="display:flex;align-items:center;gap:12rpx;margin-bottom:16rpx;">
+        <text style="font-size:28rpx;font-weight:700;color:#FF7A6B;">🔥 连续 {{streak.current}} 天一起决定</text>
+        <text wx:if="{{streak.longest > streak.current}}" style="font-size:22rpx;color:#A1A1AA;">最长 {{streak.longest}} 天</text>
+      </view>
       <view class="list-tags" wx:if="{{tasteProfile.topCategories.length}}">
         <text wx:for="{{tasteProfile.topCategories}}" wx:key="name" class="list-tag">{{item.name}} ×{{item.count}}</text>
       </view>

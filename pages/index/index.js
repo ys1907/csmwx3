@@ -79,6 +79,9 @@ Page({
     weekFood: null,
     headerDate: '',
     currentResultIsFav: false,
+    resultReason: '',   // 进化④：推荐理由
+    comboResult: [],    // 进化⑥：一桌好菜
+    showCombo: false,
     // 自定义选择器
     showPickerSheet: false,
     pickerTitle: '',
@@ -395,10 +398,13 @@ Page({
       return
     }
     const isFav = this.data.favorites.some(f => f.name === food.name)
+    // 进化④：非 PK 结果附「推荐理由」（基于当前偏好，在写入历史前计算）
+    const resultReason = source !== 'pk' ? foodLogic.explainPick(food, this.buildPrefs()) : ''
     this.setData({
       currentResult: food,
       currentResultSource: source,
       currentResultIsFav: isFav,
+      resultReason,
       showResult: true
     })
     if (source !== 'history') this.addToHistory(food)
@@ -407,6 +413,21 @@ Page({
   showWeekResult() {
     const { weekFood } = this.data
     if (weekFood) this.showResultModal(weekFood, 'week')
+  },
+
+  // 进化⑥：一键凑一桌（情侣一起点多道菜，品类尽量不重复）
+  buildCombo() {
+    const filtered = this.getFilteredFoods()
+    if (filtered.length === 0) {
+      wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
+      return
+    }
+    this.setData({ comboResult: foodLogic.buildMealCombo(filtered, 3), showCombo: true })
+    if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
+  },
+
+  closeCombo() {
+    this.setData({ showCombo: false })
   },
 
   closeResultModal() {

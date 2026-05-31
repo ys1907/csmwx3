@@ -59,15 +59,19 @@ Page({
       ...h,
       dateStr: h.date ? util.formatDate(new Date(h.date)) : ''
     }))
-    // 进化③：口味画像（学自 Spotify Wrapped）—— 把历史决策沉淀成可读洞察
+    // 进化③⑤：口味画像（Spotify Wrapped）+ 决策连胜（微信运动 / Duolingo）
     const tasteProfile = foodLogic.buildTasteProfile(history, favorites, foods)
-    this.setData({ foods, history, favorites, foodCount: foods.length, historyDisplay, tasteProfile })
+    const streak = foodLogic.computeStreak(history, Date.now())
+    this.setData({ foods, history, favorites, foodCount: foods.length, historyDisplay, tasteProfile, streak })
   },
 
-  // 历史/收藏变更后刷新画像（saveUserData 是它们唯一的落盘入口，挂在这里即可全覆盖）
+  // 历史/收藏变更后刷新画像与连胜（saveUserData 是它们唯一的落盘入口，挂在这里即可全覆盖）
   refreshProfile() {
     const { history, favorites, foods } = this.data
-    this.setData({ tasteProfile: foodLogic.buildTasteProfile(history, favorites, foods) })
+    this.setData({
+      tasteProfile: foodLogic.buildTasteProfile(history, favorites, foods),
+      streak: foodLogic.computeStreak(history, Date.now())
+    })
   },
 
   // foods 的唯一持久化入口：增删后写回存储
