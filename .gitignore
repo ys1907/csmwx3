@@ -1,0 +1,14 @@
+# 微信开发者工具私有配置（每台机器各异，不应提交）
+project.private.config.json
+
+# 依赖与构建产物
+node_modules/
+miniprogram_npm/
+dist/
+
+# 本地编辑器/工具配置
+.claude/settings.local.json
+
+# 系统文件
+.DS_Store
+Thumbs.db

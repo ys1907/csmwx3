@@ -1,0 +1,215 @@
+/** pages/manage/manage.wxss — iOS 26 Liquid Glass **/
+
+/* ===== 顶部导航 ===== */
+.manage-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32rpx 24rpx;
+}
+.back-btn {
+  position: fixed;
+  top: 100rpx;
+  left: 32rpx;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(40rpx);
+  -webkit-backdrop-filter: blur(40rpx);
+  border: 1rpx solid var(--glass-border);
+  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  z-index: 100;
+}
+.back-btn:active {
+  transform: scale(0.92);
+  background: var(--glass-bg-hover);
+}
+.back-icon {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-left: -4rpx;
+}
+.manage-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5rpx;
+}
+
+/* ===== 主内容区 ===== */
+.main-content {
+  position: relative;
+  z-index: 10;
+  padding: 0 40rpx 40rpx;
+}
+
+/* ===== 玻璃区块 ===== */
+.section-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(40rpx);
+  -webkit-backdrop-filter: blur(40rpx);
+  border-radius: var(--radius-lg);
+  border: 1rpx solid var(--glass-border);
+  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+.section-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28rpx 32rpx;
+  border-bottom: 1rpx solid var(--glass-stroke);
+}
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.section-count {
+  font-size: 24rpx;
+  color: var(--text-tertiary);
+}
+
+/* ===== 表单 ===== */
+.form-glass {
+  padding: 24rpx 32rpx;
+}
+.form-row {
+  display: flex;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+.form-input {
+  flex: 1;
+  font-size: 28rpx;
+  color: var(--text-primary);
+  background: rgba(0,0,0,0.03);
+  padding: 20rpx 24rpx;
+  border-radius: var(--radius-md);
+  border: 1rpx solid var(--glass-stroke);
+  transition: border-color var(--transition-fast);
+}
+.form-input:focus {
+  border-color: var(--primary);
+}
+.form-picker {
+  flex: 1;
+  font-size: 28rpx;
+  color: var(--text-primary);
+  background: rgba(0,0,0,0.03);
+  padding: 20rpx 24rpx;
+  border-radius: var(--radius-md);
+  border: 1rpx solid var(--glass-stroke);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-picker-label {
+  color: var(--text-tertiary);
+}
+.form-picker-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ===== 列表项 ===== */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 32rpx;
+  border-bottom: 1rpx solid var(--glass-stroke);
+}
+.list-item:last-child {
+  border-bottom: none;
+}
+.list-item-left {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+.list-emoji {
+  font-size: 36rpx;
+  width: 48rpx;
+  text-align: center;
+}
+.list-name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.list-tags {
+  display: flex;
+  gap: 8rpx;
+  margin-top: 4rpx;
+}
+.list-tag {
+  font-size: 20rpx;
+  color: var(--text-tertiary);
+  background: rgba(0,0,0,0.04);
+  padding: 4rpx 12rpx;
+  border-radius: var(--radius-pill);
+}
+.list-delete {
+  font-size: 24rpx;
+  color: #FF3B30;
+  padding: 8rpx 16rpx;
+  transition: opacity var(--transition-fast);
+}
+.list-delete:active {
+  opacity: 0.6;
+}
+
+/* ===== 空状态 ===== */
+.empty-state {
+  text-align: center;
+  padding: 60rpx 32rpx;
+}
+.empty-text {
+  font-size: 26rpx;
+  color: var(--text-tertiary);
+}
+
+/* ===== 按钮样式（从 app.wxss / index.wxss 复用） ===== */
+.btn-glass {
+  background: var(--primary);
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 24rpx 48rpx;
+  border-radius: var(--radius-pill);
+  border: none;
+  box-shadow: 0 8rpx 24rpx rgba(255, 122, 107, 0.3);
+  transition: all 0.2s ease;
+}
+.btn-glass::after {
+  border: none;
+}
+.btn-glass:active {
+  transform: scale(0.97);
+  box-shadow: 0 4rpx 12rpx rgba(255, 122, 107, 0.2);
+}
+.btn-glass-secondary {
+  background: var(--glass-bg-strong);
+  color: var(--text-primary);
+  box-shadow: var(--glass-highlight), var(--shadow-soft);
+}
+.btn-glass-secondary:active {
+  box-shadow: var(--glass-highlight), 0 2rpx 8rpx rgba(31,35,45,0.06);
+}
+
+/* ===== placeholder 样式 ===== */
+.filter-input-placeholder {
+  font-size: 28rpx;
+  color: var(--text-tertiary);
+}

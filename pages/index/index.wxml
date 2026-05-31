@@ -1,0 +1,249 @@
+<view class="container">
+  <!-- 背景光斑 -->
+  <view class="bg-orb bg-orb-1"></view>
+  <view class="bg-orb bg-orb-2"></view>
+
+  <!-- 启动页 -->
+  <view class="intro-glass {{introFading ? 'fading' : ''}}" wx:if="{{showIntro}}">
+    <view class="intro-orb">
+      <text class="intro-orb-inner">🍽️</text>
+    </view>
+    <text class="intro-title-glass">到底吃点啥</text>
+    <text class="intro-sub-glass">给你们的一餐建议</text>
+  </view>
+
+  <!-- 顶部 -->
+  <view class="page-header">
+    <view class="header-row">
+      <view class="header-text">
+        <text class="page-header-title">到底吃点啥</text>
+        <text class="page-header-sub">给你们的一餐建议</text>
+        <text class="page-header-date">{{headerDate}}</text>
+      </view>
+      <view class="manage-entry" bindtap="goToManage">
+        <text class="manage-entry-icon">⚙️</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- Segmented Control -->
+  <view class="segmented-control">
+    <view class="segment-item {{currentMode === 'week' ? 'active' : ''}}" bindtap="switchTab" data-mode="week">推荐</view>
+    <view class="segment-item {{currentMode === 'tarot' ? 'active' : ''}}" bindtap="switchTab" data-mode="tarot">塔罗</view>
+    <view class="segment-item {{currentMode === 'wheel' ? 'active' : ''}}" bindtap="switchTab" data-mode="wheel">转盘</view>
+    <view class="segment-item {{currentMode === 'pk' ? 'active' : ''}}" bindtap="switchTab" data-mode="pk">PK</view>
+    <view class="segment-item {{currentMode === 'blindbox' ? 'active' : ''}}" bindtap="switchTab" data-mode="blindbox">盲盒</view>
+  </view>
+
+  <!-- 筛选区 -->
+  <view class="main-content">
+    <view class="filter-group">
+      <view class="filter-row" bindtap="openScenePicker">
+        <text class="filter-label">场景</text>
+        <view class="filter-value {{filters.sceneIdx > 0 ? 'active' : ''}}">
+          <text>{{sceneOptions[filters.sceneIdx]}}</text>
+          <text class="filter-chevron">›</text>
+        </view>
+      </view>
+      <view class="filter-row" bindtap="openBudgetPicker">
+        <text class="filter-label">预算</text>
+        <view class="filter-value {{filters.budgetIdx > 0 ? 'active' : ''}}">
+          <text>{{budgetOptions[filters.budgetIdx]}}</text>
+          <text class="filter-chevron">›</text>
+        </view>
+      </view>
+      <view class="filter-row" bindtap="openTimePicker">
+        <text class="filter-label">时间</text>
+        <view class="filter-value {{filters.timeIdx > 0 ? 'active' : ''}}">
+          <text>{{timeOptions[filters.timeIdx]}}</text>
+          <text class="filter-chevron">›</text>
+        </view>
+      </view>
+      <view class="filter-input-row">
+        <input type="text" placeholder="避免标签，如辣、海鲜、香菜" placeholder-class="filter-input-placeholder" value="{{filters.avoid}}" bindinput="onAvoidInput" class="filter-input"/>
+      </view>
+      <view class="toggle-row">
+        <text class="filter-label">排除最近 3 天</text>
+        <view class="toggle-ios {{excludeRecent ? 'on' : ''}}" bindtap="onToggleExclude"></view>
+      </view>
+    </view>
+
+    <!-- ===== 推荐模式 ===== -->
+    <view class="mode-content" wx:if="{{currentMode === 'week'}}">
+      <view class="hero-card">
+        <text class="hero-emoji">{{weekFood ? weekFood.emoji : '🍽️'}}</text>
+        <text class="hero-name">{{weekFood ? weekFood.name : '今天这顿，交给一点运气'}}</text>
+        <view class="hero-meta" wx:if="{{weekFood}}">
+          <text class="hero-tag">{{weekFood.category}}</text>
+          <text class="hero-tag">{{weekFood.scene}}</text>
+          <text class="hero-tag">{{weekFood.budget}}</text>
+        </view>
+        <text class="hero-desc">{{weekFood ? '适合一起' + (weekFood.time === '快' ? '快速解决' : '慢慢吃') : '点「换一个」，让今天的一餐有点期待'}}</text>
+        <view class="hero-actions">
+          <button class="btn-glass" bindtap="rollWeek">换一个</button>
+          <button class="btn-glass btn-glass-secondary" wx:if="{{weekFood}}" bindtap="showWeekResult">就决定是它了</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- ===== 塔罗模式 ===== -->
+    <view class="mode-content" wx:if="{{currentMode === 'tarot'}}">
+      <view class="tarot-grid">
+        <view wx:for="{{tarotAssigned}}" wx:key="index" class="tarot-card-glass {{tarotFlipped[index] ? 'flipped' : ''}}" bindtap="onFlipTarot" data-index="{{index}}">
+          <view class="tarot-card-inner">
+            <block wx:if="{{!tarotFlipped[index]}}">
+              <text class="tarot-card-icon">🔮</text>
+              <text class="tarot-card-label">点击翻开</text>
+            </block>
+            <block wx:if="{{tarotFlipped[index]}}">
+              <text class="tarot-card-icon">{{item.emoji}}</text>
+              <text class="tarot-card-name">{{item.name}}</text>
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class="tarot-fortune-glass" wx:if="{{tarotFortune}}">
+        <text class="tarot-fortune-title">{{tarotFortune.title}}</text>
+        <text class="tarot-fortune-text">{{tarotFortune.text}}</text>
+      </view>
+      <button class="btn-glass btn-glass-secondary" wx:if="{{showTarotReset}}" bindtap="onResetTarot" style="margin-top:32rpx;width:100%;">再抽一次</button>
+    </view>
+
+    <!-- ===== 转盘模式 ===== -->
+    <view class="mode-content" wx:if="{{currentMode === 'wheel'}}">
+      <view class="wheel-section">
+        <!-- 揭晓遮罩 -->
+        <view class="reveal-overlay" wx:if="{{showReveal}}">
+          <view class="reveal-pulse">
+            <text class="reveal-text">开奖中…</text>
+          </view>
+        </view>
+        <!-- 空状态 -->
+        <view class="wheel-empty" wx:if="{{showEmptyWheel}}">
+          <text class="wheel-empty-emoji">🤔</text>
+          <text class="wheel-empty-title">条件太苛刻啦</text>
+          <text class="wheel-empty-sub">试试放宽筛选，更多选择更快乐</text>
+          <button class="btn-glass btn-glass-secondary" bindtap="onRelaxedSpin" style="margin-top: 24rpx;">放宽条件再试</button>
+        </view>
+        <view class="wheel-wrap" wx:if="{{!showEmptyWheel}}">
+          <view class="wheel-container" style="transform: rotate({{wheelAngle}}deg); {{wheelTransition}};">
+            <!-- 36 条小刻度 -->
+            <view wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]}}" wx:key="*this" class="wheel-tick {{index % 5 === 0 ? 'wheel-tick-major' : ''}}" style="transform: rotate({{index * 10}}deg);"></view>
+            <!-- 8 条大分隔线 -->
+            <view wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key="*this" class="wheel-divider" style="transform: rotate({{index * 45}}deg);"></view>
+            <view wx:for="{{wheelPool}}" wx:key="index" class="wheel-emoji-wrap" style="transform: rotate({{index * 45 + 22.5}}deg) translateY(-170rpx) rotate(-{{index * 45 + 22.5}}deg);">
+              <text class="wheel-emoji">{{item.emoji}}</text>
+            </view>
+            <view class="wheel-center">
+              <text class="wheel-center-text">GO</text>
+            </view>
+          </view>
+          <view class="wheel-pointer"></view>
+        </view>
+        <view class="wheel-meta" wx:if="{{!showEmptyWheel}}">
+          <text class="wheel-hint">{{isSpinning ? (isStopping ? '正在减速…' : '点击停止') : '点击开始，交给运气'}}</text>
+        </view>
+        <button class="btn-glass" bindtap="onWheelBtnTap" wx:if="{{!showEmptyWheel}}">
+          {{isSpinning ? (isStopping ? '减速中…' : '停止') : '开始旋转'}}
+        </button>
+      </view>
+    </view>
+
+    <!-- ===== PK 模式 ===== -->
+    <view class="mode-content" wx:if="{{currentMode === 'pk'}}">
+      <view class="pk-grid">
+        <view class="pk-card">
+          <text class="pk-card-label">你</text>
+          <view class="pk-options">
+            <view wx:for="{{pkCats}}" wx:key="*this" class="pk-option {{pkSelections.A === item ? 'selected' : ''}}" bindtap="selectPK" data-side="A" data-cat="{{item}}">
+              {{item}}
+            </view>
+          </view>
+        </view>
+        <view class="pk-card">
+          <text class="pk-card-label">TA</text>
+          <view class="pk-options">
+            <view wx:for="{{pkCats}}" wx:key="*this" class="pk-option {{pkSelections.B === item ? 'selected' : ''}}" bindtap="selectPK" data-side="B" data-cat="{{item}}">
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="pk-meter" wx:if="{{pkData.total > 0}}">
+        <view class="pk-meter-track">
+          <view class="pk-meter-fill" style="width: {{pkData.total > 0 ? pkData.matches / pkData.total * 100 : 0}}%"></view>
+        </view>
+        <view class="pk-meter-labels">
+          <text>默契 {{pkData.matches}} 次</text>
+          <text>总计 {{pkData.total}} 次</text>
+        </view>
+      </view>
+      <button class="btn-glass" wx:if="{{showPKReveal}}" bindtap="revealPK">揭晓结果</button>
+      <view class="pk-result-glass" wx:if="{{showPKReset}}">
+        <text class="pk-result-title">{{pkResultTitle}}</text>
+        <text class="pk-result-text">{{pkResultText}}</text>
+        <view class="pk-punishment" wx:if="{{pkPunishment}}">
+          <text class="pk-punishment-text">{{pkPunishment}}</text>
+        </view>
+        <button class="btn-glass btn-glass-secondary" bindtap="resetPK">再来一次</button>
+      </view>
+    </view>
+
+    <!-- ===== 盲盒模式 ===== -->
+    <view class="mode-content" wx:if="{{currentMode === 'blindbox'}}">
+      <view class="blindbox-glass {{blindboxShaking ? 'shaking' : ''}} {{blindboxOpened ? 'opened' : ''}}" bindtap="openBlindbox">
+        <text class="blindbox-icon">{{blindboxOpened && blindboxFood ? blindboxFood.emoji : '✨'}}</text>
+        <text class="blindbox-label">{{blindboxOpened && blindboxFood ? blindboxFood.name : '点我揭晓'}}</text>
+      </view>
+      <!-- 盲盒结果已统一使用 Bottom Sheet 弹窗 -->
+    </view>
+
+  </view>
+
+  <!-- ===== 自定义选择器弹窗 ===== -->
+  <view class="picker-overlay" wx:if="{{showPickerSheet}}" bindtap="closePickerSheet">
+    <view class="picker-sheet" catchtap="onModalContentTap">
+      <view class="sheet-solid-bg"></view>
+      <view class="sheet-handle"></view>
+      <text class="picker-title">{{pickerTitle}}</text>
+      <view class="picker-list">
+        <view wx:for="{{pickerOptions}}" wx:key="*this" class="picker-item {{pickerActiveIdx === index ? 'active' : ''}}" bindtap="onPickerSelect" data-index="{{index}}">
+          <text class="picker-item-text">{{item}}</text>
+          <text class="picker-check" wx:if="{{pickerActiveIdx === index}}">✓</text>
+        </view>
+      </view>
+      <view class="picker-cancel-wrap">
+        <button class="btn-glass btn-glass-secondary" style="width:100%;margin-top:16rpx;" bindtap="closePickerSheet">取消</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 分享卡片 Canvas（隐藏） -->
+  <canvas type="2d" id="shareCanvas" style="position:fixed;left:-9999px;top:-9999px;width:600px;height:800px;"></canvas>
+
+  <!-- ===== Bottom Sheet 弹窗 ===== -->
+  <view class="sheet-overlay" wx:if="{{showResult}}" bindtap="closeResultModal">
+    <view class="sheet-content" catchtap="onModalContentTap">
+      <view class="sheet-solid-bg"></view>
+      <view class="sheet-handle"></view>
+      <text class="sheet-emoji">{{currentResult.emoji}}</text>
+      <text class="sheet-name">{{currentResult.name}}</text>
+      <view class="sheet-meta">
+        <text class="hero-tag">{{currentResult.category}}</text>
+        <text class="hero-tag">{{currentResult.scene}}</text>
+        <text class="hero-tag">{{currentResult.budget}}</text>
+      </view>
+      <text class="sheet-desc">{{currentResult.name}}，{{currentResult.scene}}，{{currentResult.time === '快' ? '适合快速解决' : '适合一起慢慢吃'}}</text>
+      <view class="sheet-actions">
+        <button class="btn-glass" bindtap="onConfirmResult">这一餐可以确定了</button>
+        <button class="btn-glass btn-glass-secondary" bindtap="onRetryResult">{{currentMode === 'blindbox' ? '再开一个' : '换一个更想吃的'}}</button>
+      </view>
+      <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="onToggleFav">
+        {{currentResultIsFav ? '已收藏' : '加入爱吃榜'}}
+      </button>
+      <button class="btn-glass btn-glass-ghost" style="margin-top:12rpx;width:100%;" bindtap="onShareResult">
+        📤 生成分享卡片
+      </button>
+    </view>
+  </view>
+</view>
