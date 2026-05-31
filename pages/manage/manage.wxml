@@ -1,111 +1,86 @@
 <view class="container {{darkMode ? 'dark' : ''}}">
-  <!-- 背景光斑 -->
-  <view class="bg-orb bg-orb-1"></view>
-  <view class="bg-orb bg-orb-2"></view>
-
   <!-- 顶部导航 -->
   <view class="manage-header" style="padding-top: {{statusBarHeight + 12}}px;">
-    <view class="back-btn" bindtap="goBack">
+    <view class="back-btn tap-target" bindtap="goBack">
       <text class="back-icon">‹</text>
     </view>
-    <text class="manage-title">管理</text>
+    <text class="manage-title">菜品管理</text>
     <view style="width: 72rpx;"></view>
   </view>
 
   <view class="main-content">
-    <!-- 口味画像（数据沉淀 · 学自 Spotify Wrapped） -->
+
+    <!-- 口味画像 + 连胜 -->
     <view class="section-glass" wx:if="{{tasteProfile}}">
       <view class="section-header-row">
         <text class="section-title">口味画像</text>
         <text class="section-count">{{tasteProfile.total}} 餐</text>
       </view>
-      <text style="display:block;font-size:26rpx;color:#6E6E73;margin:8rpx 0 12rpx;">{{tasteProfile.headline}}</text>
-      <!-- 进化⑤：决策连胜 -->
-      <view wx:if="{{streak && streak.current > 0}}" style="display:flex;align-items:center;gap:12rpx;margin-bottom:16rpx;">
-        <text style="font-size:28rpx;font-weight:700;color:#FF7A6B;">🔥 连续 {{streak.current}} 天一起决定</text>
-        <text wx:if="{{streak.longest > streak.current}}" style="font-size:22rpx;color:#A1A1AA;">最长 {{streak.longest}} 天</text>
-      </view>
-      <view class="list-tags" wx:if="{{tasteProfile.topCategories.length}}">
-        <text wx:for="{{tasteProfile.topCategories}}" wx:key="name" class="list-tag">{{item.name}} ×{{item.count}}</text>
-      </view>
-      <view class="list-tags" wx:if="{{tasteProfile.topTags.length}}" style="margin-top:8rpx;">
-        <text wx:for="{{tasteProfile.topTags}}" wx:key="name" class="list-tag">{{item.name}}</text>
-      </view>
-      <view style="display:flex;gap:24rpx;margin-top:16rpx;font-size:24rpx;color:#A1A1AA;">
-        <text>❤️ 收藏 {{tasteProfile.favoriteCount}}</text>
-        <text wx:if="{{tasteProfile.total > 0}}">🌶️ 辣度偏好 {{tasteProfile.spicyPercent}}%</text>
-      </view>
-    </view>
-
-    <!-- 添加食物 -->
-    <view class="section-glass">
-      <view class="section-header-row">
-        <text class="section-title">添加食物</text>
-      </view>
-      <view class="form-glass">
-        <view class="form-row">
-          <input type="text" placeholder="食物名称" placeholder-class="filter-input-placeholder" value="{{newFood.name}}" bindinput="onNewFoodName" class="form-input"/>
-          <input type="text" placeholder="Emoji" maxlength="2" placeholder-class="filter-input-placeholder" value="{{newFood.emoji}}" bindinput="onNewFoodEmoji" class="form-input" style="flex:0.5;"/>
+      <view style="padding: 24rpx 32rpx;">
+        <text style="display:block;font-size:26rpx;color:var(--text-secondary);margin-bottom:12rpx;">{{tasteProfile.headline}}</text>
+        <view wx:if="{{streak && streak.current > 0}}" style="display:flex;align-items:center;gap:12rpx;margin-bottom:16rpx;">
+          <text style="font-size:28rpx;font-weight:700;color:var(--food-accent);">🔥 连续 {{streak.current}} 天一起决定</text>
+          <text wx:if="{{streak.longest > streak.current}}" style="font-size:22rpx;color:var(--text-tertiary);">最长 {{streak.longest}} 天</text>
         </view>
-        <view class="form-row">
-          <picker bindchange="onNewFoodCategory" value="{{newFood.categoryIdx}}" range="{{categoryOptions}}" style="flex: 1;">
-            <view class="form-picker">
-              <text class="form-picker-label">分类</text>
-              <text class="form-picker-value">{{categoryOptions[newFood.categoryIdx]}}</text>
-            </view>
-          </picker>
-          <picker bindchange="onNewFoodScene" value="{{newFood.sceneIdx}}" range="{{sceneOptions}}" style="flex: 1;">
-            <view class="form-picker">
-              <text class="form-picker-label">场景</text>
-              <text class="form-picker-value">{{sceneOptions[newFood.sceneIdx]}}</text>
-            </view>
-          </picker>
+        <view class="list-tags" wx:if="{{tasteProfile.topCategories.length}}">
+          <text wx:for="{{tasteProfile.topCategories}}" wx:key="name" class="list-tag">{{item.name}} ×{{item.count}}</text>
         </view>
-        <view class="form-row">
-          <picker bindchange="onNewFoodBudget" value="{{newFood.budgetIdx}}" range="{{budgetOptions}}" style="flex: 1;">
-            <view class="form-picker">
-              <text class="form-picker-label">预算</text>
-              <text class="form-picker-value">{{budgetOptions[newFood.budgetIdx]}}</text>
-            </view>
-          </picker>
-          <picker bindchange="onNewFoodTime" value="{{newFood.timeIdx}}" range="{{timeOptions}}" style="flex: 1;">
-            <view class="form-picker">
-              <text class="form-picker-label">时间</text>
-              <text class="form-picker-value">{{timeOptions[newFood.timeIdx]}}</text>
-            </view>
-          </picker>
+        <view class="list-tags" wx:if="{{tasteProfile.topTags.length}}" style="margin-top:8rpx;">
+          <text wx:for="{{tasteProfile.topTags}}" wx:key="name" class="list-tag">{{item.name}}</text>
         </view>
-        <view class="form-row">
-          <input type="text" placeholder="标签，用逗号分隔" placeholder-class="filter-input-placeholder" value="{{newFood.tags}}" bindinput="onNewFoodTags" class="form-input"/>
-        </view>
-        <view class="form-row" style="margin-bottom:0;margin-top:8rpx;">
-          <button class="btn-glass btn-glass-secondary" style="width:100%;" bindtap="addFood">添加自定义食物</button>
+        <view style="display:flex;gap:24rpx;margin-top:16rpx;font-size:24rpx;color:var(--text-tertiary);">
+          <text>❤️ 收藏 {{tasteProfile.favoriteCount}}</text>
+          <text wx:if="{{tasteProfile.total > 0}}">🌶️ 辣度偏好 {{tasteProfile.spicyPercent}}%</text>
         </view>
       </view>
     </view>
 
-    <!-- 食物列表 -->
+    <!-- 菜品 -->
     <view class="section-glass">
       <view class="section-header-row">
-        <text class="section-title">食物列表</text>
-        <text class="section-count">{{foodCount}}</text>
+        <text class="section-title">菜品</text>
+        <text class="section-count">共 {{foodCount}} 道</text>
       </view>
-      <view wx:if="{{foods.length === 0}}" class="empty-state">
-        <text class="empty-text">还没有自定义食物</text>
+
+      <view style="padding: 24rpx 32rpx;">
+        <!-- 搜索 -->
+        <view class="search-bar">
+          <text class="search-icon">🔍</text>
+          <input class="search-input" placeholder="搜索菜名" placeholder-class="filter-input-placeholder" value="{{searchText}}" bindinput="onSearchInput" />
+          <text wx:if="{{searchText}}" class="search-clear" bindtap="onClearSearch">✕</text>
+        </view>
+        <!-- 分类筛选 -->
+        <scroll-view scroll-x="true" class="chip-scroll" enhanced="true" show-scrollbar="false">
+          <view class="chip-row">
+            <view wx:for="{{categoryFilterOptions}}" wx:key="*this" class="chip {{categoryFilterIdx === index ? 'chip-active' : ''}}" bindtap="onCategoryFilter" data-index="{{index}}">{{item}}</view>
+          </view>
+        </scroll-view>
       </view>
-      <view wx:for="{{foods}}" wx:key="_id" class="list-item">
+
+      <!-- 空状态 -->
+      <view wx:if="{{displayFoods.length === 0}}" class="empty-state">
+        <text class="empty-text">{{searchText || categoryFilterIdx > 0 ? '没有匹配的菜品' : '还没有菜品'}}</text>
+        <button class="btn-glass" style="margin-top:24rpx;" bindtap="openAddSheet">添加第一道菜</button>
+      </view>
+
+      <!-- 列表（点击编辑） -->
+      <view wx:for="{{displayFoods}}" wx:key="_id" class="list-item" bindtap="openEditSheet" data-id="{{item._id}}">
         <view class="list-item-left">
           <text class="list-emoji">{{item.emoji}}</text>
           <view>
             <text class="list-name">{{item.name}}</text>
-            <view class="list-tags" wx:if="{{item.tags && item.tags.length}}">
+            <view class="list-tags">
+              <text class="list-tag">{{item.category}}</text>
               <text wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this" class="list-tag">{{tag}}</text>
             </view>
           </view>
         </view>
-        <text class="list-delete" bindtap="deleteFood" data-id="{{item._id}}">删除</text>
+        <text class="list-edit">›</text>
       </view>
     </view>
+
+    <!-- 添加菜品 -->
+    <button class="btn-glass" style="width:100%;margin-bottom:24rpx;" bindtap="openAddSheet">＋ 添加菜品</button>
 
     <!-- 最近记录 -->
     <view class="section-glass">
@@ -151,9 +126,46 @@
       <view class="section-header-row">
         <text class="section-title">数据管理</text>
       </view>
-      <view class="form-row" style="margin-bottom:0;margin-top:8rpx;">
-        <button class="btn-glass btn-glass-secondary" style="width:48%;" bindtap="exportData">📋 导出数据</button>
-        <button class="btn-glass" style="width:48%;" bindtap="importData">📥 导入数据</button>
+      <view class="form-row" style="padding: 24rpx 32rpx; margin:0;">
+        <button class="btn-glass btn-glass-secondary" style="flex:1;" bindtap="exportData">📋 导出</button>
+        <button class="btn-glass" style="flex:1;" bindtap="importData">📥 导入</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- ===== 新增 / 编辑 Sheet ===== -->
+  <view class="sheet-overlay" wx:if="{{showFoodSheet}}" bindtap="closeFoodSheet">
+    <view class="sheet-content" catchtap="onModalContentTap">
+      <view class="sheet-solid-bg"></view>
+      <view class="sheet-body">
+        <view class="sheet-handle"></view>
+        <text class="sheet-form-title">{{editingId ? '编辑菜品' : '添加菜品'}}</text>
+        <view class="form-row">
+          <input class="form-input" placeholder="食物名称" placeholder-class="filter-input-placeholder" value="{{foodForm.name}}" bindinput="onFormName" />
+          <input class="form-input" style="flex:0.5;" maxlength="2" placeholder="Emoji" placeholder-class="filter-input-placeholder" value="{{foodForm.emoji}}" bindinput="onFormEmoji" />
+        </view>
+        <view class="form-row">
+          <picker bindchange="onFormCategory" value="{{foodForm.categoryIdx}}" range="{{categoryOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">分类</text><text class="form-picker-value">{{categoryOptions[foodForm.categoryIdx]}}</text></view>
+          </picker>
+          <picker bindchange="onFormScene" value="{{foodForm.sceneIdx}}" range="{{sceneOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">场景</text><text class="form-picker-value">{{sceneOptions[foodForm.sceneIdx]}}</text></view>
+          </picker>
+        </view>
+        <view class="form-row">
+          <picker bindchange="onFormBudget" value="{{foodForm.budgetIdx}}" range="{{budgetOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">预算</text><text class="form-picker-value">{{budgetOptions[foodForm.budgetIdx]}}</text></view>
+          </picker>
+          <picker bindchange="onFormTime" value="{{foodForm.timeIdx}}" range="{{timeOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">时间</text><text class="form-picker-value">{{timeOptions[foodForm.timeIdx]}}</text></view>
+          </picker>
+        </view>
+        <view class="form-row">
+          <input class="form-input" placeholder="标签，用逗号分隔" placeholder-class="filter-input-placeholder" value="{{foodForm.tags}}" bindinput="onFormTags" />
+        </view>
+        <button class="btn-glass" style="width:100%;margin-top:24rpx;" bindtap="saveFood">{{editingId ? '保存' : '添加'}}</button>
+        <button wx:if="{{editingId}}" class="btn-danger" style="width:100%;margin-top:12rpx;" bindtap="deleteFood" data-id="{{editingId}}">删除菜品</button>
+        <button class="btn-glass btn-glass-ghost" style="width:100%;margin-top:8rpx;" bindtap="closeFoodSheet">取消</button>
       </view>
     </view>
   </view>

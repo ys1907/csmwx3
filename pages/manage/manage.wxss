@@ -180,39 +180,95 @@
   color: var(--text-tertiary);
 }
 
-/* ===== 按钮样式（从 app.wxss / index.wxss 复用） ===== */
-.btn-glass {
-  background: var(--primary);
-  color: #fff;
-  font-size: 30rpx;
-  font-weight: 600;
-  padding: 24rpx 48rpx;
-  border-radius: var(--radius-pill);
-  border: none;
-  box-shadow: 0 8rpx 24rpx rgba(255, 122, 107, 0.3);
-  transition: all 0.2s ease;
+/* ===== 搜索栏 ===== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  background: var(--fill-subtle);
+  border-radius: var(--radius-md);
+  padding: 16rpx 20rpx;
+  margin-bottom: 16rpx;
 }
-.btn-glass::after {
-  border: none;
-}
-.btn-glass:active {
-  transform: scale(0.97);
-  box-shadow: 0 4rpx 12rpx rgba(255, 122, 107, 0.2);
-}
-.btn-glass-secondary {
-  background: var(--glass-bg-strong);
-  color: var(--text-primary);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
-}
-.btn-glass-secondary:active {
-  box-shadow: var(--glass-highlight), 0 2rpx 8rpx rgba(31,35,45,0.06);
+.search-icon { font-size: 26rpx; opacity: 0.6; }
+.search-input { flex: 1; font-size: 28rpx; color: var(--text-primary); }
+.search-clear {
+  font-size: 24rpx;
+  color: var(--text-tertiary);
+  min-width: 56rpx; min-height: 56rpx;
+  display: flex; align-items: center; justify-content: center;
 }
 
-/* ===== placeholder 样式 ===== */
-.filter-input-placeholder {
-  font-size: 28rpx;
-  color: var(--text-tertiary);
+/* ===== 分类筛选 chips ===== */
+.chip-scroll { white-space: nowrap; }
+.chip-row { display: inline-flex; gap: 12rpx; padding: 4rpx 0; }
+.chip {
+  display: inline-block;
+  padding: 12rpx 28rpx;
+  border-radius: var(--radius-pill);
+  background: var(--fill-subtle);
+  font-size: 24rpx;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
 }
+.chip-active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== 列表项编辑态 ===== */
+.list-item { transition: background var(--transition-fast); }
+.list-item:active { background: var(--fill-subtle); }
+.list-edit { font-size: 36rpx; color: var(--text-tertiary); line-height: 1; }
+.list-item-right { display: flex; align-items: center; gap: 16rpx; }
+
+/* ===== 底部 Sheet（新增/编辑菜品） ===== */
+.sheet-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.25s ease both;
+}
+.sheet-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: var(--shadow-sheet);
+  animation: sheetSlideUp 0.3s cubic-bezier(0.32, 0.72, 0, 1) both;
+  overflow: hidden;
+}
+.sheet-solid-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--sheet-bg);
+  z-index: 0;
+}
+.sheet-body {
+  position: relative;
+  z-index: 1;
+  padding: 16rpx 40rpx 60rpx;
+}
+.sheet-handle {
+  width: 72rpx; height: 6rpx;
+  background: var(--text-tertiary);
+  border-radius: 3rpx;
+  margin: 0 auto 24rpx;
+  opacity: 0.4;
+}
+.sheet-form-title {
+  display: block;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24rpx;
+}
+
+/* 按钮 .btn-glass* 已统一定义于全局 app.wxss（去重） */
+
 /* ===== placeholder 样式 ===== */
 .filter-input-placeholder {
   font-size: 28rpx;

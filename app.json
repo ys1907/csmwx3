@@ -9,7 +9,7 @@
     "navigationBarTitleText": "到底吃点啥",
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom",
-    "backgroundColor": "#F8F8FA"
+    "backgroundColor": "#F5F5F7"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

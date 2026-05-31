@@ -50,7 +50,7 @@ Page({
     excludeRecent: true,
     filters: { sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tasteIdx: 0, avoid: '' },
     filterSummary: '未筛选',
-    currentMode: 'wheel',
+    currentMode: 'week',
     currentResult: null,
     isSpinning: false,
     isStopping: false,
@@ -77,6 +77,7 @@ Page({
     blindboxFood: null,
     blindboxRarity: '',
     weekFood: null,
+    weekReason: '',
     headerDate: '',
     currentResultIsFav: false,
     resultReason: '',   // 进化④：推荐理由
@@ -119,7 +120,10 @@ Page({
   },
 
   onShow() {
-    this.initData()
+    // 首次进入由 onLoad 完成初始化；再次显示（如从管理页返回）只做轻量数据刷新，
+    // 不重置塔罗/推荐/玩法状态，避免闪动与误重置
+    if (this._everShown) this.refreshFromStorage()
+    this._everShown = true
   },
 
   // FIX: 微信小程序原生分享能力
@@ -172,6 +176,23 @@ Page({
       this.updateFilteredFoods()
       this.initTarot()
       this.rollWeek(true)
+    })
+  },
+
+  // 轻量刷新：仅同步管理页可能改动的数据（菜品/历史/收藏），不重置玩法 UI
+  refreshFromStorage() {
+    const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
+    const localFoods = safeGet(STORAGE_KEYS.foods, null)
+    this._foods = (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
+      ? localFoods.map(util.migrateFood)
+      : foodsData.map(util.migrateFood)
+    this._nameIndex = null
+    const history = safeGet(STORAGE_KEYS.history, [])
+    const favorites = safeGet(STORAGE_KEYS.favorites, [])
+    this.setData({ history, favorites }, () => {
+      this.invalidateCache()
+      this.updateFilteredFoods()
+      this.reconcileWeekFood()
     })
   },
 
@@ -289,7 +310,7 @@ Page({
   },
 
   openFilterSheet() {
-    this.setData({ showFilterSheet: true })
+    this.setData({ showFilterSheet: true, showResult: false, showCombo: false })
   },
 
   closeFilterSheet() {
@@ -380,12 +401,14 @@ Page({
 
   switchTab(e) {
     const mode = e.currentTarget.dataset.mode
-    // 离开转盘时若仍在旋转，停止定时器并复位状态，避免后台空转
-    if (this.data.isSpinning) {
-      this.clearWheelTimers()
-      this.setData({ isSpinning: false, isStopping: false, showReveal: false })
-    }
-    this.setData({ currentMode: mode, blindboxOpened: false, blindboxFood: null })
+    // 离开任一玩法时清理其定时器与临时态，避免后台空转 / 状态残留
+    this.clearWheelTimers()
+    clearTimeout(this._blindboxTimer)
+    this.setData({
+      currentMode: mode,
+      isSpinning: false, isStopping: false, showReveal: false,
+      blindboxOpened: false, blindboxFood: null, blindboxShaking: false, blindboxRarity: ''
+    })
     if (mode === 'tarot') this.initTarot()
     if (mode === 'pk') this.initPK()
   },
@@ -405,7 +428,9 @@ Page({
       currentResultSource: source,
       currentResultIsFav: isFav,
       resultReason,
-      showResult: true
+      showResult: true,
+      // 浮层互斥：结果 Sheet 出现时关闭其它顶层 Sheet
+      showFilterSheet: false, showPickerSheet: false, showCombo: false
     })
     if (source !== 'history') this.addToHistory(food)
   },
@@ -422,7 +447,11 @@ Page({
       wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
       return
     }
-    this.setData({ comboResult: foodLogic.buildMealCombo(filtered, 3), showCombo: true })
+    this.setData({
+      comboResult: foodLogic.buildMealCombo(filtered, 3),
+      showCombo: true,
+      showResult: false, showFilterSheet: false, showPickerSheet: false
+    })
     if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
   },
 
@@ -615,7 +644,7 @@ Page({
     if (savedDate === today && savedFood && savedFood.name) {
       const stillValid = this.getFilteredFoods().some(f => f.name === savedFood.name)
       if (stillValid) {
-        this.setData({ weekFood: savedFood })
+        this.setData({ weekFood: savedFood, weekReason: foodLogic.explainPick(savedFood, this.buildPrefs()) })
         if (!silent) this.showResultModal(savedFood, 'week')
         return
       }
@@ -633,7 +662,8 @@ Page({
     const food = foodLogic.weightedPick(pool, prefs)
     safeSet(storageKey, today)
     safeSet('wtec_week_food', food)
-    this.setData({ weekFood: food })
+    // 首页推荐卡的「推荐理由」（基于个性化偏好）
+    this.setData({ weekFood: food, weekReason: foodLogic.explainPick(food, this.buildPrefs()) })
     if (!silent) this.showResultModal(food, 'week')
   },
 
