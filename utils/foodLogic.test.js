@@ -340,14 +340,6 @@ test('foodWeight: 渠道匹配权重', () => {
   assert.ok(wHigh > wLow, '渠道高匹配权重大于低匹配')
 })
 
-test('foodWeight: 地区匹配权重', () => {
-  const foodLocal = { name: 'a', defaultPoolWeight: 1.0, regionTags: ['川渝', '全国常见'], tags: [] }
-  const foodForeign = { name: 'b', defaultPoolWeight: 1.0, regionTags: ['华南'], tags: [] }
-  const wLocal = foodWeight(foodLocal, {}, { userRegion: '川渝' })
-  const wForeign = foodWeight(foodForeign, {}, { userRegion: '川渝' })
-  assert.ok(wLocal > wForeign, '本地区权重大于外地')
-})
-
 test('foodWeight: 天气匹配权重', () => {
   const foodMatch = { name: 'a', defaultPoolWeight: 1.0, weatherTags: ['降温适合', '雨天适合'], tags: [] }
   const foodNoMatch = { name: 'b', defaultPoolWeight: 1.0, weatherTags: ['炎热适合'], tags: [] }

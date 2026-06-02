@@ -127,15 +127,6 @@ function foodWeight(food, prefs, ctx) {
     w *= (multipliers[level] ?? 1.0)
   }
 
-  // NEW: 地区匹配
-  if (ctx?.userRegion && food.regionTags?.length > 0) {
-    if (food.regionTags.includes(ctx.userRegion) || food.regionTags.includes('全国常见')) {
-      w *= 1.1
-    } else if (!food.regionTags.includes('全国常见')) {
-      w *= 0.7 // 非本地区且非全国常见 → 降权
-    }
-  }
-
   // NEW: 天气匹配
   if (ctx?.weatherTags && food.weatherTags?.length > 0) {
     const match = food.weatherTags.some(t => ctx.weatherTags.includes(t))
