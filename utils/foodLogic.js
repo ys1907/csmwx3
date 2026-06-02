@@ -96,7 +96,7 @@ function resolveWheelWinner(poolLen, rng) {
 
 // ========== 进化①：加权推荐（学自美团/大众点评「猜你喜欢」） ==========
 // prefs: { favoriteSet:Set<name>, tasteCounts:{tag:count}, rejectedSet:Set<name>, cooldownFamilyPicks:{familyId:timestamp} }
-// ctx:   { scene, userRegion, weatherTags }
+// ctx:   { scene, weatherTags }
 // 设计目标：在均匀随机之上叠加温和偏好信号，绝不把任何选项权重归零（保留惊喜）。
 function foodWeight(food, prefs, ctx) {
   const p = prefs || {}
