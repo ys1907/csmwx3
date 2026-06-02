@@ -1,5 +1,5 @@
 <view class="container {{darkMode ? 'dark' : ''}}">
-  <!-- 启动页 -->
+  <!-- 启动页（智能过渡：initData 完成后淡出，最短 300ms，最长 1.2s） -->
   <view class="intro-glass {{introFading ? 'fading' : ''}}" wx:if="{{showIntro}}">
     <view class="intro-orb">
       <text class="intro-orb-inner">🍽️</text>
@@ -15,9 +15,7 @@
         <text class="page-header-title">今天吃什么</text>
         <text class="page-header-date">{{headerDate}}</text>
       </view>
-      <view class="manage-entry tap-target" bindtap="goToManage">
-        <text class="manage-entry-icon">⚙️</text>
-      </view>
+      <!-- 菜品管理已移至「更多」面板 -->
     </view>
   </view>
 
@@ -26,7 +24,7 @@
     <!-- ============ 首页：推荐优先 ============ -->
     <block wx:if="{{currentMode === 'week'}}">
       <!-- 今日推荐卡（首屏唯一主任务） -->
-      <view class="hero-card">
+      <view class="hero-card {{rollPhase ? 'rolling rolling-' + rollPhase : ''}}">
         <text class="hero-emoji">{{weekFood ? weekFood.emoji : '🍽️'}}</text>
         <text class="hero-name">{{weekFood ? weekFood.name : '今天这顿，交给一点运气'}}</text>
         <view class="hero-meta" wx:if="{{weekFood}}">
@@ -40,33 +38,60 @@
           <button class="btn-glass" bindtap="onRollWeekTap">换一个</button>
           <button class="btn-glass btn-glass-secondary" wx:if="{{weekFood}}" bindtap="showWeekResult">就吃这个</button>
         </view>
-        <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="buildCombo">🍱 帮我们凑一桌</button>
+        <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="buildCombo">
+          <view class="icon-combo" style="margin-right:12rpx;color:var(--primary);"></view> 帮我们凑一桌
+        </button>
       </view>
 
-      <!-- 筛选摘要（点开底部 Sheet） -->
-      <view class="filter-trigger-bar" bindtap="openFilterSheet">
-        <view class="filter-trigger-left">
-          <text class="filter-trigger-label">筛选</text>
-          <view class="filter-trigger-dot" wx:if="{{hasActiveFilters}}"></view>
-        </view>
-        <text class="filter-trigger-summary">{{filterSummary}}</text>
-        <text class="filter-trigger-chevron">›</text>
+      <!-- 更多玩法：展开面板入口 -->
+      <view class="play-more-trigger" bindtap="togglePlayMore">
+        <text class="play-more-trigger-text">{{showPlayMore ? '收起' : '更多'}}</text>
+        <text class="play-more-trigger-chevron {{showPlayMore ? 'up' : ''}}">›</text>
       </view>
 
-      <!-- 换种方式决定 -->
-      <text class="play-section-title">换种方式决定</text>
-      <view class="play-grid">
-        <view class="play-card" bindtap="switchTab" data-mode="wheel">
-          <text class="play-emoji">🎡</text><text class="play-label">转盘</text>
+      <!-- 更多玩法：展开面板 -->
+      <view class="play-more-panel {{showPlayMore ? 'expanded' : ''}}">
+        <!-- 玩法模式 -->
+        <text class="play-more-section-title">换种方式决定</text>
+        <view class="play-more-grid">
+          <view class="play-more-card" bindtap="switchTab" data-mode="wheel">
+            <text class="play-more-emoji">🎡</text><text class="play-more-label">转盘</text>
+          </view>
+          <view class="play-more-card" bindtap="switchTab" data-mode="tarot">
+            <text class="play-more-emoji">🔮</text><text class="play-more-label">塔罗</text>
+          </view>
+          <view class="play-more-card" bindtap="switchTab" data-mode="pk">
+            <text class="play-more-emoji">⚔️</text><text class="play-more-label">默契 PK</text>
+          </view>
+          <view class="play-more-card" bindtap="switchTab" data-mode="blindbox">
+            <text class="play-more-emoji">🎁</text><text class="play-more-label">盲盒</text>
+          </view>
         </view>
-        <view class="play-card" bindtap="switchTab" data-mode="tarot">
-          <text class="play-emoji">🔮</text><text class="play-label">塔罗</text>
+        <!-- 场景模式 -->
+        <text class="play-more-section-title">更多场景</text>
+        <view class="play-more-grid">
+          <view class="play-more-card {{poolMode === 'gathering' ? 'play-more-card-active' : ''}}" bindtap="switchPoolMode" data-mode="gathering">
+            <text class="play-more-emoji">🍻</text><text class="play-more-label">聚餐吃什么</text>
+          </view>
+          <view class="play-more-card {{poolMode === 'cooking' ? 'play-more-card-active' : ''}}" bindtap="switchPoolMode" data-mode="cooking">
+            <text class="play-more-emoji">👨‍🍳</text><text class="play-more-label">自己做什么菜</text>
+          </view>
         </view>
-        <view class="play-card" bindtap="switchTab" data-mode="pk">
-          <text class="play-emoji">⚔️</text><text class="play-label">默契 PK</text>
+        <!-- 筛选快捷入口 -->
+        <view class="play-more-filter-row" bindtap="openFilterSheet">
+          <view class="play-more-filter-left">
+            <text class="play-more-filter-label">筛选</text>
+            <view class="play-more-filter-dot" wx:if="{{hasActiveFilters}}"></view>
+          </view>
+          <text class="play-more-filter-summary">{{filterSummary}}</text>
+          <text class="play-more-filter-chevron">›</text>
         </view>
-        <view class="play-card" bindtap="switchTab" data-mode="blindbox">
-          <text class="play-emoji">🎁</text><text class="play-label">盲盒</text>
+        <!-- 菜品管理入口 -->
+        <view class="play-more-filter-row" bindtap="goToManage" style="margin-top:12rpx;">
+          <view class="play-more-filter-left">
+            <text class="play-more-filter-label">菜品管理</text>
+          </view>
+          <text class="play-more-filter-chevron">›</text>
         </view>
       </view>
     </block>
@@ -78,7 +103,7 @@
           <text class="play-back-icon">‹</text>
           <text class="play-back-text">推荐</text>
         </view>
-        <text class="play-title">{{currentMode === 'wheel' ? '转盘' : (currentMode === 'tarot' ? '塔罗' : (currentMode === 'pk' ? '默契 PK' : '盲盒'))}}</text>
+        <text class="play-title">{{modeTitleMap[currentMode]}}</text>
         <view style="width:120rpx;"></view>
       </view>
 
@@ -114,15 +139,13 @@
             </view>
           </view>
           <view class="wheel-empty" wx:if="{{showEmptyWheel}}">
-            <text class="wheel-empty-emoji">🤔</text>
-            <text class="wheel-empty-title">条件太苛刻啦</text>
-            <text class="wheel-empty-sub">试试放宽筛选，更多选择更快乐</text>
-            <button class="btn-glass btn-glass-secondary" bindtap="onRelaxedSpin" style="margin-top: 24rpx;">放宽条件再试</button>
+            <text class="wheel-empty-title">没找到完全符合的</text>
+            <text class="wheel-empty-sub">已自动放宽条件，再试一次吧</text>
+            <button class="btn-glass btn-glass-secondary" bindtap="onRelaxedSpin" style="margin-top: 24rpx;">再试一次</button>
           </view>
           <view class="wheel-wrap" wx:if="{{!showEmptyWheel}}">
-            <view class="wheel-container" style="transform: rotate({{wheelAngle}}deg); {{wheelTransition}};">
-              <view wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]}}" wx:key="*this" class="wheel-tick {{index % 5 === 0 ? 'wheel-tick-major' : ''}}" style="transform: rotate({{index * 10}}deg);"></view>
-              <view wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key="*this" class="wheel-divider" style="transform: rotate({{index * 45}}deg);"></view>
+            <view class="wheel-container {{wheelFreeSpin ? 'wheel-free-spin' : ''}}" style="{{wheelFreeSpin ? '' : 'transform: rotate(' + wheelAngle + 'deg);'}} {{wheelTransition}}">
+              <view class="wheel-dividers"></view>
               <view wx:for="{{wheelPool}}" wx:key="index" class="wheel-emoji-wrap" style="transform: rotate({{index * 45 + 22.5}}deg) translateY(-170rpx) rotate(-{{index * 45 + 22.5}}deg);">
                 <text class="wheel-emoji">{{item.emoji}}</text>
               </view>
@@ -135,7 +158,7 @@
           <view class="wheel-meta" wx:if="{{!showEmptyWheel}}">
             <text class="wheel-hint">{{isSpinning ? (isStopping ? '正在减速…' : '点击停止') : '点击开始，交给运气'}}</text>
           </view>
-          <button class="btn-glass" bindtap="onWheelBtnTap" wx:if="{{!showEmptyWheel}}">
+          <button class="btn-glass" bindtap="onWheelBtnTap" disabled="{{isStopping}}" wx:if="{{!showEmptyWheel}}">
             {{isSpinning ? (isStopping ? '减速中…' : '停止') : '开始旋转'}}
           </button>
         </view>
@@ -176,6 +199,7 @@
           <button class="btn-glass" wx:if="{{pkPhase === 'selectA' && pkSelections.A !== null}}" bindtap="confirmPKA">选好了</button>
           <button class="btn-glass" wx:if="{{pkPhase === 'selectB' && pkSelections.B !== null}}" bindtap="confirmPKB">选好了</button>
           <button class="btn-glass" wx:if="{{pkPhase === 'ready'}}" bindtap="revealPK">揭晓结果</button>
+          <button class="btn-glass" wx:if="{{pkPhase === 'done'}}" bindtap="resetPK">再来一次</button>
         </view>
       </view>
 
@@ -275,15 +299,18 @@
     </view>
   </view>
 
-  <!-- 分享卡片 Canvas（隐藏） -->
-  <canvas type="2d" id="shareCanvas" style="position:fixed;left:-9999px;top:-9999px;width:600px;height:800px;"></canvas>
+  <!-- 分享卡片 Canvas：仅生成图片时挂载，完成后立即释放 -->
+  <canvas wx:if="{{shareCanvasMounted}}" type="2d" id="shareCanvas" style="position:fixed;left:-9999px;top:-9999px;width:600px;height:800px;"></canvas>
 
   <!-- ===== 凑一桌 Sheet ===== -->
-  <view class="sheet-overlay" wx:if="{{showCombo}}" bindtap="closeCombo">
-    <view class="sheet-content" catchtap="onModalContentTap">
+  <view class="sheet-overlay {{comboClosing ? 'overlay-out' : ''}}" wx:if="{{showCombo}}" bindtap="closeCombo">
+    <view class="sheet-content {{comboClosing ? 'sheet-out' : ''}}" catchtap="onModalContentTap">
       <view class="sheet-solid-bg"></view>
       <view class="sheet-handle"></view>
-      <text class="sheet-name">🍱 一桌好菜</text>
+      <view style="display:flex;align-items:center;justify-content:center;gap:12rpx;">
+        <view class="icon-combo" style="color:var(--primary);"></view>
+        <text class="sheet-name">一桌好菜</text>
+      </view>
       <text class="sheet-desc" style="margin-bottom:16rpx;">为你们凑了 {{comboResult.length}} 道，荤素搭配更尽兴</text>
       <view wx:for="{{comboResult}}" wx:key="name" class="combo-row">
         <text class="combo-emoji">{{item.emoji}}</text>
@@ -303,8 +330,8 @@
   </view>
 
   <!-- ===== 结果 Sheet ===== -->
-  <view class="sheet-overlay" wx:if="{{showResult}}" bindtap="closeResultModal">
-    <view class="sheet-content" catchtap="onModalContentTap">
+  <view class="sheet-overlay {{resultClosing ? 'overlay-out' : ''}}" wx:if="{{showResult}}" bindtap="closeResultModal">
+    <view class="sheet-content sheet-pop {{resultClosing ? 'sheet-out' : ''}}" catchtap="onModalContentTap">
       <view class="sheet-solid-bg"></view>
       <view class="sheet-handle"></view>
       <!-- PK 结果 -->
@@ -329,14 +356,38 @@
           <text class="hero-tag">{{currentResult.scene}}</text>
           <text class="hero-tag">{{currentResult.budget}}</text>
         </view>
-        <text class="sheet-desc">{{currentResult.name}}，{{currentResult.scene}}，{{currentResult.time === '快' ? '适合快速解决' : '适合一起慢慢吃'}}</text>
-        <text class="sheet-desc" wx:if="{{resultReason}}" style="opacity:0.6;margin-top:-24rpx;">{{resultReason}}</text>
+        <!-- NEW: 结构化推荐理由 -->
+        <text class="sheet-desc" wx:if="{{resultReason}}" style="opacity:0.7;">{{resultReason}}</text>
+        <!-- NEW: 备选项 -->
+        <view wx:if="{{alternativeResults.length > 0 && showAlternatives}}" style="margin-top:16rpx;">
+          <text style="font-size:24rpx;color:var(--text-secondary);display:block;margin-bottom:12rpx;">或者试试</text>
+          <view wx:for="{{alternativeResults}}" wx:key="index" bindtap="onPickAlternative" data-idx="{{index}}" style="display:flex;align-items:center;padding:16rpx;background:rgba(128,128,128,0.06);border-radius:12rpx;margin-bottom:12rpx;">
+            <text style="font-size:40rpx;margin-right:16rpx;">{{item.emoji}}</text>
+            <view style="flex:1;">
+              <text style="font-size:28rpx;color:var(--text-primary);font-weight:500;">{{item.name}}</text>
+              <text style="font-size:22rpx;color:var(--text-secondary);display:block;">{{item.category}}</text>
+            </view>
+            <text style="font-size:24rpx;color:var(--theme-color);">选这个 →</text>
+          </view>
+        </view>
       </block>
+      <!-- NEW: 反馈面板 -->
+      <view wx:if="{{showFeedback && currentResultSource !== 'pk'}}" style="margin-top:16rpx;padding:16rpx;background:rgba(128,128,128,0.06);border-radius:16rpx;">
+        <text style="font-size:24rpx;color:var(--text-secondary);display:block;margin-bottom:12rpx;">为什么换一个？</text>
+        <view style="display:flex;flex-wrap:wrap;gap:12rpx;">
+          <view wx:for="{{feedbackOptions}}" wx:key="*this" bindtap="onFeedbackSubmit" data-reason="{{item}}" style="padding:10rpx 20rpx;background:rgba(128,128,128,0.1);border-radius:24rpx;font-size:24rpx;color:var(--text-primary);">{{item}}</view>
+        </view>
+      </view>
       <view class="sheet-actions">
         <button class="btn-glass" bindtap="onConfirmResult">{{currentResultSource === 'pk' ? '太棒了' : '就吃这个'}}</button>
-        <button class="btn-glass btn-glass-secondary" bindtap="onRetryResult">{{currentResultSource === 'pk' ? '再来一次' : (currentMode === 'blindbox' ? '再开一个' : '换一个')}}</button>
+        <button class="btn-glass btn-glass-ghost" bindtap="onRetryResult">{{currentResultSource === 'pk' ? '再来一次' : (currentMode === 'blindbox' ? '再开一个' : '换一个')}}</button>
       </view>
-      <button class="btn-glass btn-glass-ghost" style="margin-top:16rpx;width:100%;" bindtap="onToggleFav" wx:if="{{currentResultSource !== 'pk'}}">
+      <!-- NEW: 快捷操作 -->
+      <view wx:if="{{currentResultSource !== 'pk'}}" style="display:flex;gap:12rpx;margin-top:16rpx;">
+        <button class="btn-glass btn-glass-ghost" style="flex:1;" bindtap="onToggleAlternatives">{{showAlternatives ? '收起' : '从三个里面选'}}</button>
+        <button class="btn-glass btn-glass-ghost" style="flex:1;" bindtap="onShowFeedback">💬 反馈</button>
+      </view>
+      <button class="btn-glass btn-glass-ghost" style="margin-top:8rpx;width:100%;" bindtap="onToggleFav" wx:if="{{currentResultSource !== 'pk'}}">
         {{currentResultIsFav ? '♥ 已收藏' : '♡ 加入爱吃榜'}}
       </button>
       <button class="btn-glass btn-glass-ghost" style="margin-top:8rpx;width:100%;" bindtap="onShareResult" wx:if="{{currentResultSource !== 'pk'}}">

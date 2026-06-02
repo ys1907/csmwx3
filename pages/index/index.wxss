@@ -34,11 +34,11 @@
   width: 72rpx;
   height: 72rpx;
   background: var(--glass-bg);
-  backdrop-filter: blur(20rpx);
-  -webkit-backdrop-filter: blur(20rpx);
+
+
   border-radius: 50%;
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,15 +65,99 @@
 /* ===== 大推荐卡片（星期/转盘共用） ===== */
 .hero-card {
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(60rpx);
-  -webkit-backdrop-filter: blur(60rpx);
   border-radius: var(--radius-xl);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-glass);
+  box-shadow: var(--shadow-card);
   padding: 56rpx 40rpx;
   text-align: center;
   margin-bottom: 32rpx;
   animation: fadeScale 0.5s var(--transition-base) both;
+  position: relative;
+  overflow: hidden;
+}
+/* 结果卡片顶部装饰光带 */
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: linear-gradient(90deg, transparent, var(--primary), var(--food-accent), transparent);
+  opacity: 0.6;
+}
+
+/* ===== 换菜动画核心：.rolling 全程遮罩，防止 class 切换闪白 ===== */
+/* 动画期间所有子元素默认不可见（由 .rolling 保持），彻底消除中间态闪烁 */
+.hero-card.rolling:not(.rolling-in) .hero-emoji,
+.hero-card.rolling:not(.rolling-in) .hero-name,
+.hero-card.rolling:not(.rolling-in) .hero-desc,
+.hero-card.rolling:not(.rolling-in) .hero-meta,
+.hero-card.rolling:not(.rolling-in) .hero-actions {
+  opacity: 0;
+}
+
+/* 旧内容退出：只控制 transform，opacity 由 .rolling 统一保持 */
+.hero-card.rolling-out .hero-emoji {
+  animation: rollOutEmoji 150ms ease-in forwards;
+}
+.hero-card.rolling-out .hero-name,
+.hero-card.rolling-out .hero-desc,
+.hero-card.rolling-out .hero-meta,
+.hero-card.rolling-out .hero-actions {
+  animation: rollOutScale 150ms ease-in forwards;
+}
+
+/* 新内容掉落进入：animation 负责把 opacity 从 0 带到 1（forwards 保持），transform 带 bounce */
+.hero-card.rolling-in .hero-emoji {
+  animation: dropInEmoji 350ms cubic-bezier(0.34, 1.4, 0.64, 1) 100ms forwards;
+}
+.hero-card.rolling-in .hero-name {
+  animation: fadeUpIn 200ms ease-out 200ms forwards;
+}
+.hero-card.rolling-in .hero-meta .hero-tag:nth-child(1) {
+  animation: fadeUpIn 150ms ease-out 250ms forwards;
+}
+.hero-card.rolling-in .hero-meta .hero-tag:nth-child(2) {
+  animation: fadeUpIn 150ms ease-out 300ms forwards;
+}
+.hero-card.rolling-in .hero-meta .hero-tag:nth-child(3) {
+  animation: fadeUpIn 150ms ease-out 350ms forwards;
+}
+.hero-card.rolling-in .hero-desc {
+  animation: fadeUpIn 200ms ease-out 350ms forwards;
+}
+.hero-card.rolling-in .hero-actions {
+  animation: fadeUpIn 200ms ease-out 400ms forwards;
+}
+
+/* 盘子轻轻放下晃动：rotate 与 scale(1) 同时保留，避免 transform 覆盖闪烁 */
+.hero-card.rolling-in {
+  animation: plateWobble 120ms ease-out 420ms forwards;
+}
+
+@keyframes rollOutEmoji {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-20rpx); }
+}
+@keyframes rollOutScale {
+  0%   { transform: scale(1); }
+  100% { transform: scale(0.96); }
+}
+@keyframes dropInEmoji {
+  0%   { opacity: 0; transform: translateY(-80rpx) scale(0.8); }
+  60%  { transform: translateY(6rpx) scale(1.05); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes fadeUpIn {
+  0%   { opacity: 0; transform: translateY(12rpx); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes plateWobble {
+  0%   { transform: rotate(0deg)   scale(1); }
+  25%  { transform: rotate(0.8deg) scale(1); }
+  75%  { transform: rotate(-0.8deg) scale(1); }
+  100% { transform: rotate(0deg)   scale(1); }
 }
 .hero-emoji {
   font-size: 96rpx;
@@ -145,8 +229,133 @@
   transition: transform var(--transition-fast);
 }
 .play-card:active { transform: scale(0.96); }
+.play-card:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
+.play-card-active {
+  background: var(--theme-color);
+  box-shadow: 0 4rpx 16rpx rgba(0,122,255,0.25);
+}
+.play-card-active .play-label {
+  color: #fff;
+}
 .play-emoji { font-size: 48rpx; line-height: 1; }
 .play-label { font-size: 24rpx; font-weight: 500; color: var(--text-secondary); }
+
+/* ===== 更多玩法展开面板 ===== */
+.play-more-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+  padding: 20rpx 0;
+  margin-top: 8rpx;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+.play-more-trigger:active { opacity: 0.6; }
+.play-more-trigger-text {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+.play-more-trigger-chevron {
+  font-size: var(--text-base);
+  color: var(--text-tertiary);
+  transform: rotate(90deg);
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+.play-more-trigger-chevron.up {
+  transform: rotate(-90deg);
+}
+
+.play-more-panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s cubic-bezier(0.34, 1.4, 0.64, 1),
+              opacity 0.25s ease-out;
+}
+.play-more-panel.expanded {
+  max-height: 800rpx;
+  opacity: 1;
+}
+
+.play-more-section-title {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  margin: 24rpx 4rpx 16rpx;
+}
+.play-more-grid {
+  display: flex;
+  gap: 16rpx;
+}
+.play-more-card {
+  flex: 1;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 24rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+  cursor: pointer;
+}
+.play-more-card:active { transform: scale(0.96); }
+.play-more-card-active {
+  background: var(--primary);
+  box-shadow: 0 4rpx 16rpx rgba(255,122,0,0.25);
+}
+.play-more-card-active .play-more-label {
+  color: #fff;
+}
+.play-more-emoji { font-size: 44rpx; line-height: 1; }
+.play-more-label { font-size: 22rpx; font-weight: 500; color: var(--text-secondary); }
+
+.play-more-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--glass-bg);
+  border-radius: var(--radius-lg);
+  padding: 24rpx 28rpx;
+  margin-top: 20rpx;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-fast);
+  cursor: pointer;
+}
+.play-more-filter-row:active { transform: scale(0.98); }
+.play-more-filter-left {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+.play-more-filter-label {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.play-more-filter-dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.play-more-filter-summary {
+  flex: 1;
+  text-align: right;
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  margin-right: 12rpx;
+}
+.play-more-filter-chevron {
+  font-size: var(--text-lg);
+  color: var(--text-tertiary);
+  transform: rotate(0deg);
+}
 
 /* ===== 玩法聚焦态返回头 ===== */
 .play-header {
@@ -200,36 +409,29 @@
   position: relative;
   overflow: hidden;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--shadow-glass), inset 0 0 0 1rpx rgba(255,255,255,0.5);
+  box-shadow: var(--shadow-card), inset 0 0 0 1rpx rgba(255,255,255,0.5);
 }
-.wheel-divider {
+/* 自由旋转：纯 CSS 合成动画，60fps、零 setData。
+   周期 0.6s 必须与 index.js 的 SPIN_PERIOD_MS(600) 一致（停时据此反推角度）。 */
+.wheel-free-spin {
+  animation: wheelSpin 0.6s linear infinite;
+  will-change: transform;
+}
+@keyframes wheelSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.wheel-dividers {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 2rpx;
-  background: rgba(0,0,0,0.08);
-  transform-origin: 0 50%;
-  margin-top: -1rpx;
-}
-.wheel-tick {
-  position: absolute;
-  top: 4rpx;
-  left: 50%;
-  width: 8rpx;
-  height: 2rpx;
-  background: rgba(0,0,0,0.12);
-  transform-origin: 0 256rpx;
-  margin-left: -4rpx;
-}
-.wheel-tick-major {
-  width: 16rpx;
-  height: 3rpx;
-  background: rgba(0,0,0,0.2);
-  margin-left: -8rpx;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    transparent 0deg 44.5deg,
+    rgba(0,0,0,0.08) 44.5deg 45.5deg,
+    transparent 45.5deg 90deg
+  );
 }
 .wheel-emoji-wrap {
   position: absolute;
@@ -267,6 +469,11 @@
   font-weight: 800;
   color: var(--primary);
   letter-spacing: 2rpx;
+  animation: breathe 2s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 .wheel-pointer {
   position: absolute;
@@ -291,11 +498,26 @@
   justify-content: center;
   padding: 80rpx 40rpx;
   text-align: center;
+  position: relative;
+}
+/* 空状态 CSS 插图：抽象餐盘 */
+.wheel-empty::before {
+  content: '';
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 4rpx solid var(--separator);
+  margin-bottom: 24rpx;
+  background:
+    radial-gradient(circle at 40% 45%, var(--primary-soft) 15%, transparent 16%),
+    radial-gradient(circle at 60% 40%, var(--orange-soft) 12%, transparent 13%);
+  opacity: 0.7;
 }
 .wheel-empty-emoji {
-  font-size: 80rpx;
+  font-size: 48rpx;
   display: block;
   margin-bottom: 16rpx;
+  color: var(--text-tertiary);
 }
 .wheel-empty-title {
   font-size: 32rpx;
@@ -317,9 +539,10 @@
   right: 0;
   bottom: 0;
   z-index: 9998;
-  background: rgba(248,248,250,0.85);
-  backdrop-filter: blur(20rpx);
-  -webkit-backdrop-filter: blur(20rpx);
+  background: var(--glass-bg-strong);
+  opacity: 0.85;
+
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,9 +553,9 @@
   height: 200rpx;
   border-radius: 50%;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(40rpx);
+
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--shadow-glass);
+  box-shadow: var(--shadow-card);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,11 +595,11 @@
   justify-content: space-between;
   padding: 20rpx 32rpx;
   background: var(--glass-bg);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   margin-top: 24rpx;
 }
 .filter-trigger-left {
@@ -420,8 +643,6 @@
   bottom: 0;
   z-index: 9999;
   background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(8rpx);
-  -webkit-backdrop-filter: blur(8rpx);
   animation: fadeIn 0.25s ease-out both;
 }
 .filter-sheet {
@@ -430,12 +651,10 @@
   left: 0;
   right: 0;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(80rpx);
-  -webkit-backdrop-filter: blur(80rpx);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   border: 1rpx solid var(--glass-border);
   border-bottom: none;
-  box-shadow: var(--glass-highlight), 0 -20rpx 60rpx rgba(31,35,45,0.12);
+  box-shadow: var(--shadow-sheet);
   padding: 24rpx 40rpx 60rpx;
   animation: sheetSlideUp 0.3s cubic-bezier(0.32, 0.72, 0, 1) both;
   overflow: hidden;
@@ -465,11 +684,9 @@
 }
 .filter-group {
   background: var(--glass-bg);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -481,6 +698,7 @@
   padding: 24rpx 32rpx;
   border-bottom: 1rpx solid var(--glass-stroke);
 }
+.filter-row:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .filter-row:last-child {
   border-bottom: none;
 }
@@ -539,6 +757,13 @@
 }
 
 /* ===== 模式内容区 ===== */
+/* T2 复刻：切换视图时，周视图的头部/分组标题/玩法网格随主卡一起淡入，整页过渡更整体
+   （.hero-card 与 .mode-content 本就各自有进入动画，这里补齐其余元素让两个方向都成片淡入） */
+.play-header,
+.play-section-title,
+.play-grid {
+  animation: fadeIn 0.4s var(--transition-base) both;
+}
 .mode-content {
   animation: fadeIn 0.4s var(--transition-base) both;
 }
@@ -554,11 +779,11 @@
   width: 200rpx;
   height: 280rpx;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-glass);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,6 +809,7 @@
 .tarot-card-glass:active {
   transform: scale(0.96);
 }
+.tarot-card-glass:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .tarot-card-inner {
   position: relative;
   z-index: 2;
@@ -606,11 +832,11 @@
 }
 .tarot-fortune-glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   padding: 40rpx;
   text-align: center;
   margin-top: 32rpx;
@@ -636,11 +862,11 @@
 }
 .pk-card {
   background: var(--glass-bg);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   padding: 32rpx;
 }
 .pk-card.placeholder {
@@ -672,6 +898,7 @@
 .pk-option:active {
   transform: scale(0.96);
 }
+.pk-option:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .pk-option.selected {
   background: var(--primary);
   color: var(--text-inverse);
@@ -682,11 +909,11 @@
 }
 .pk-result-glass {
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(60rpx);
-  -webkit-backdrop-filter: blur(60rpx);
+
+
   border-radius: var(--radius-xl);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-glass);
+  box-shadow: var(--shadow-card);
   padding: 48rpx;
   text-align: center;
   margin-top: 32rpx;
@@ -762,11 +989,11 @@
   height: 320rpx;
   margin: 40rpx auto;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(60rpx);
-  -webkit-backdrop-filter: blur(60rpx);
+
+
   border-radius: var(--radius-xl);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-glass), 0 0 60rpx var(--primary-soft);
+  box-shadow: var(--shadow-card), 0 0 60rpx var(--primary-soft);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -789,7 +1016,7 @@
   animation: shake 0.5s ease infinite;
 }
 .blindbox-glass.opened {
-  box-shadow: var(--glass-highlight), var(--shadow-glass), 0 0 100rpx var(--primary-glow);
+  box-shadow: var(--shadow-card), 0 0 100rpx var(--primary-glow);
 }
 .blindbox-icon {
   font-size: 80rpx;
@@ -821,7 +1048,7 @@
 .blindbox-glass.rarity-R .blindbox-rarity { background: #8E8E93; }
 .blindbox-glass.rarity-SR .blindbox-rarity { background: linear-gradient(135deg, #36A2EB, #4BC0C0); }
 .blindbox-glass.rarity-SSR .blindbox-rarity { background: linear-gradient(135deg, #FF9F43, #FF6B6B); }
-.blindbox-glass.rarity-SSR { box-shadow: var(--glass-highlight), var(--shadow-glass), 0 0 120rpx rgba(255,159,67,0.5); }
+.blindbox-glass.rarity-SSR { box-shadow: var(--shadow-card), 0 0 120rpx rgba(255,159,67,0.5); }
 .blindbox-glow {
   position: absolute;
   top: 50%; left: 50%;
@@ -841,8 +1068,6 @@
   bottom: 0;
   z-index: 10000;
   background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(8rpx);
-  -webkit-backdrop-filter: blur(8rpx);
   animation: fadeIn 0.25s ease-out both;
 }
 .picker-sheet {
@@ -851,12 +1076,10 @@
   left: 0;
   right: 0;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(80rpx);
-  -webkit-backdrop-filter: blur(80rpx);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   border: 1rpx solid var(--glass-border);
   border-bottom: none;
-  box-shadow: var(--glass-highlight), 0 -20rpx 60rpx rgba(31,35,45,0.12);
+  box-shadow: var(--shadow-sheet);
   padding: 24rpx 32rpx 60rpx;
   animation: sheetSlideUp 0.3s cubic-bezier(0.32, 0.72, 0, 1) both;
   overflow: hidden;
@@ -889,8 +1112,8 @@
 }
 .picker-list {
   background: var(--glass-bg);
-  backdrop-filter: blur(20rpx);
-  -webkit-backdrop-filter: blur(20rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
   overflow: hidden;
@@ -920,6 +1143,7 @@
   transform: scale(0.96);
   background: rgba(0,0,0,0.06);
 }
+.picker-item:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .picker-item.active {
   background: var(--primary);
   color: var(--text-inverse);
@@ -950,8 +1174,6 @@
   bottom: 0;
   z-index: 9999;
   background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(8rpx);
-  -webkit-backdrop-filter: blur(8rpx);
   animation: fadeIn 0.25s ease-out both;
 }
 .sheet-content {
@@ -960,15 +1182,29 @@
   left: 0;
   right: 0;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(80rpx);
-  -webkit-backdrop-filter: blur(80rpx);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   border: 1rpx solid var(--glass-border);
   border-bottom: none;
-  box-shadow: var(--glass-highlight), 0 -20rpx 60rpx rgba(31,35,45,0.12);
+  box-shadow: var(--shadow-sheet);
   padding: 24rpx 40rpx 60rpx;
   animation: sheetSlideUp 0.3s cubic-bezier(0.32, 0.72, 0, 1) both;
   overflow: hidden;
+}
+/* T3 复刻：关闭时 Sheet 向下滑出 + 遮罩淡出（配合 JS 延迟卸载），与上滑进入对称。
+   .sheet-content.sheet-out 特异度高于 .sheet-content，覆盖上滑动画。 */
+.sheet-content.sheet-out {
+  animation: sheetSlideDown 0.22s cubic-bezier(0.4, 0, 1, 1) both;
+}
+@keyframes sheetSlideDown {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
+}
+.sheet-overlay.overlay-out {
+  animation: fadeOut 0.22s ease both;
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 .sheet-solid-bg {
   position: absolute;
@@ -994,7 +1230,7 @@
   z-index: 1;
 }
 .sheet-handle {
-  width: 72rpx;
+  width: 96rpx;
   height: 6rpx;
   background: var(--text-tertiary);
   border-radius: 3rpx;
@@ -1006,6 +1242,27 @@
   text-align: center;
   display: block;
   margin-bottom: 16rpx;
+  filter: drop-shadow(0 8rpx 24rpx var(--primary-soft));
+}
+/* 复刻参考视频转场1：结果卡主图 spring 弹出（实测放大到约 +13% 后回落）。
+   Sheet 仍走原有 sheetSlideUp 上滑，主图在其落位时弹入，形成分层揭晓。 */
+.sheet-pop .sheet-emoji {
+  animation: heroPop 0.5s var(--transition-spring) 0.08s both;
+  will-change: transform;
+}
+@keyframes heroPop {
+  0%   { transform: scale(0.2); opacity: 0; }
+  55%  { opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* 主图弹出后，名称/标签轻微上浮跟进，让整段揭晓更有层次 */
+.sheet-pop .sheet-name,
+.sheet-pop .sheet-meta {
+  animation: heroRise 0.4s ease-out 0.18s both;
+}
+@keyframes heroRise {
+  0%   { opacity: 0; transform: translateY(10rpx); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 .sheet-name {
   font-size: 40rpx;
@@ -1039,7 +1296,14 @@
   flex: 1;
 }
 
-/* ===== 启动页 ===== */
+/* ===== 响应式 ===== */
+@media (min-width: 375px) {
+  .pk-grid {
+    flex-direction: row;
+  }
+}
+
+/* ===== 启动页 — CSS 绘制的抽象餐盘 ===== */
 .intro-glass {
   position: fixed;
   top: 0;
@@ -1052,7 +1316,7 @@
   align-items: center;
   justify-content: center;
   background: var(--page-bg);
-  transition: opacity 0.8s ease;
+  transition: opacity 0.3s ease;
 }
 .intro-glass.fading {
   opacity: 0;
@@ -1062,16 +1326,60 @@
   width: 200rpx;
   height: 200rpx;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--primary-soft) 0%, transparent 70%);
-  filter: blur(20rpx);
+  background:
+    radial-gradient(circle at 35% 40%, var(--orange-accent) 8%, transparent 9%),
+    radial-gradient(circle at 55% 35%, var(--primary) 10%, transparent 11%),
+    radial-gradient(circle at 50% 55%, var(--food-accent) 12%, transparent 13%),
+    radial-gradient(circle at 40% 60%, var(--secondary) 7%, transparent 8%),
+    radial-gradient(circle, var(--primary-soft) 0%, transparent 70%);
   animation: glowPulse 2s ease-in-out infinite;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+/* 餐盘外圈 */
+.intro-orb::before {
+  content: '';
+  position: absolute;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 4rpx solid var(--separator);
+  opacity: 0.5;
+}
+/* 中心餐具刀叉（CSS 绘制） */
 .intro-orb-inner {
-  font-size: 80rpx;
-  filter: drop-shadow(0 4rpx 12rpx rgba(0,0,0,0.1));
+  width: 48rpx;
+  height: 48rpx;
+  position: relative;
+  z-index: 2;
+}
+.intro-orb-inner::before,
+.intro-orb-inner::after {
+  content: '';
+  position: absolute;
+  background: var(--text-secondary);
+}
+/* 叉子 */
+.intro-orb-inner::before {
+  width: 5rpx;
+  height: 26rpx;
+  left: 14rpx;
+  top: 14rpx;
+  border-radius: 3rpx;
+  box-shadow:
+    -5rpx -10rpx 0 0 var(--text-secondary),
+    0rpx -10rpx 0 0 var(--text-secondary),
+    5rpx -10rpx 0 0 var(--text-secondary);
+}
+/* 刀子 — 上宽下窄楔形 */
+.intro-orb-inner::after {
+  width: 5rpx;
+  height: 24rpx;
+  right: 14rpx;
+  top: 14rpx;
+  border-radius: 4rpx 4rpx 2rpx 2rpx;
 }
 .intro-title-glass {
   font-size: 48rpx;
@@ -1084,13 +1392,6 @@
   font-size: 26rpx;
   color: var(--text-secondary);
   margin-top: 12rpx;
-}
-
-/* ===== 响应式 ===== */
-@media (min-width: 375px) {
-  .pk-grid {
-    flex-direction: row;
-  }
 }
 
 /* FIX: 平板横屏优化 */

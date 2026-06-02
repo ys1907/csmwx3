@@ -11,11 +11,14 @@ const {
   CATEGORY_OPTIONS
 } = require('../../data/options.js')
 
+const MANAGE_PAGE_SIZE = 40 // 菜品列表单批渲染数量（分批渲染，避免一次性把数百道菜全部塞进渲染层）
+
 Page({
   data: {
-    foods: [],
-    displayFoods: [],            // 经搜索/分类过滤后的展示列表
-    history: [],
+    displayFoods: [],            // 当前渲染切片（全量在 this._foods 实例上，不进 data）
+    filteredCount: 0,            // 当前搜索/分类命中总数
+    hasMore: false,              // 是否还有未渲染的菜品（控制「显示更多」）
+    historyDisplay: [],
     favorites: [],
     foodCount: 0,
     sceneOptions: SCENE_OPTIONS,
@@ -33,18 +36,34 @@ Page({
   },
 
   onLoad() {
+    this._isPageVisible = true
     const win = (wx.getWindowInfo && wx.getWindowInfo()) || {}
     this.setData({ statusBarHeight: win.statusBarHeight || 44 })
-    this.loadData()
     // 暗黑模式系统跟随
     const sysInfo = wx.getSystemInfoSync()
     this.setData({ darkMode: sysInfo.theme === 'dark' })
-    wx.onThemeChange && wx.onThemeChange((res) => {
-      this.setData({ darkMode: res.theme === 'dark' })
+    this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
+      const darkMode = res.theme === 'dark'
+      if (this._isPageVisible) this.setData({ darkMode })
+      else this._pendingDarkMode = darkMode
     })
   },
 
+  onHide() {
+    this._isPageVisible = false
+  },
+
+  onUnload() {
+    this._isPageVisible = false
+    if (this._offThemeChange) { this._offThemeChange(); this._offThemeChange = null }
+  },
+
   onShow() {
+    this._isPageVisible = true
+    if (typeof this._pendingDarkMode === 'boolean') {
+      this.setData({ darkMode: this._pendingDarkMode })
+      this._pendingDarkMode = null
+    }
     this.loadData()
   },
 
@@ -67,38 +86,60 @@ Page({
     // 口味画像 + 决策连胜
     const tasteProfile = foodLogic.buildTasteProfile(history, favorites, foods)
     const streak = foodLogic.computeStreak(history, Date.now())
-    this.setData({ foods, history, favorites, foodCount: foods.length, historyDisplay, tasteProfile, streak }, () => {
-      this.computeDisplayFoods()
-    })
+    this._foods = foods // 全量菜品库放实例上，不进 data（避免大数组跨渲染层序列化）
+    this._history = history
+    this.computeDisplayFoods(true, { favorites, foodCount: foods.length, historyDisplay, tasteProfile, streak })
   },
 
-  // 按搜索词 + 分类过滤展示列表
-  computeDisplayFoods() {
-    const { foods, searchText, categoryFilterIdx, categoryFilterOptions } = this.data
+  // 按搜索词 + 分类过滤；全量结果存实例 this._filtered，data 只放当前切片，避免一次性渲染数百节点
+  computeDisplayFoods(resetPage, updates) {
+    updates = updates || {}
+    const searchText = Object.prototype.hasOwnProperty.call(updates, 'searchText') ? updates.searchText : this.data.searchText
+    const categoryFilterIdx = Object.prototype.hasOwnProperty.call(updates, 'categoryFilterIdx') ? updates.categoryFilterIdx : this.data.categoryFilterIdx
+    const { categoryFilterOptions } = this.data
     const q = (searchText || '').trim()
     const cat = categoryFilterIdx > 0 ? categoryFilterOptions[categoryFilterIdx] : null
-    const displayFoods = foods.filter(f => {
+    const filtered = (this._foods || []).filter(f => {
       if (cat && f.category !== cat) return false
       if (q && f.name.indexOf(q) < 0) return false
       return true
     })
-    this.setData({ displayFoods })
+    this._filtered = filtered
+    if (resetPage || !this._shown) this._shown = MANAGE_PAGE_SIZE
+    const shown = Math.min(this._shown, filtered.length)
+    this.setData({
+      ...updates,
+      displayFoods: filtered.slice(0, shown),
+      filteredCount: filtered.length,
+      hasMore: filtered.length > shown
+    })
+  },
+
+  // 「显示更多」：再渲染一批
+  showMoreFoods() {
+    this._shown = (this._shown || MANAGE_PAGE_SIZE) + MANAGE_PAGE_SIZE
+    this.computeDisplayFoods(false)
   },
 
   onSearchInput(e) {
-    this.setData({ searchText: e.detail.value }, () => this.computeDisplayFoods())
+    this.computeDisplayFoods(true, { searchText: e.detail.value })
   },
   onClearSearch() {
-    this.setData({ searchText: '' }, () => this.computeDisplayFoods())
+    this.computeDisplayFoods(true, { searchText: '' })
+  },
+
+  onClearSearchAndFilter() {
+    this.computeDisplayFoods(true, { searchText: '', categoryFilterIdx: 0 })
   },
   onCategoryFilter(e) {
-    this.setData({ categoryFilterIdx: parseInt(e.currentTarget.dataset.index) }, () => this.computeDisplayFoods())
+    this.computeDisplayFoods(true, { categoryFilterIdx: parseInt(e.currentTarget.dataset.index) })
   },
 
   refreshProfile() {
-    const { history, favorites, foods } = this.data
+    const favorites = this.data.favorites
+    const history = this._history || []
     this.setData({
-      tasteProfile: foodLogic.buildTasteProfile(history, favorites, foods),
+      tasteProfile: foodLogic.buildTasteProfile(history, favorites, this._foods || []),
       streak: foodLogic.computeStreak(history, Date.now())
     })
   },
@@ -107,10 +148,12 @@ Page({
   persistFoods(foods) {
     safeSet(STORAGE_KEYS.foods, foods)
     safeSet(STORAGE_KEYS.localVersion, APP_VERSION)
+    safeSet(STORAGE_KEYS.foodsRev, Date.now()) // 标记菜品库已变更，首页据此决定是否重建全量 foods
   },
 
   saveUserData() {
-    const { history, favorites } = this.data
+    const favorites = this.data.favorites
+    const history = this._history || []
     safeSet(STORAGE_KEYS.history, history)
     safeSet(STORAGE_KEYS.favorites, favorites)
     this.refreshProfile()
@@ -136,7 +179,7 @@ Page({
 
   openEditSheet(e) {
     const id = e.currentTarget.dataset.id
-    const food = this.data.foods.find(f => f._id === id)
+    const food = (this._foods || []).find(f => f._id === id)
     if (!food) return
     const sIdx = SCENE_OPTIONS.indexOf(food.scene)
     const bIdx = BUDGET_OPTIONS.indexOf(food.budget)
@@ -167,10 +210,15 @@ Page({
   onFormScene(e) { this.setData({ 'foodForm.sceneIdx': parseInt(e.detail.value) }) },
   onFormBudget(e) { this.setData({ 'foodForm.budgetIdx': parseInt(e.detail.value) }) },
   onFormTime(e) { this.setData({ 'foodForm.timeIdx': parseInt(e.detail.value) }) },
-  onFormTags(e) { this.setData({ 'foodForm.tags': e.detail.value }) },
+  onFormTags(e) {
+    const tagsStr = e.detail.value
+    const tagsPreview = (tagsStr || '').split(/[,，\s]+/).filter(Boolean)
+    this.setData({ 'foodForm.tags': tagsStr, foodFormTagsPreview: tagsPreview })
+  },
 
   saveFood() {
-    const { foodForm, foods, editingId } = this.data
+    const { foodForm, editingId } = this.data
+    const foods = this._foods || []
     const name = (foodForm.name || '').trim()
     const emoji = (foodForm.emoji || '').trim() || '🍽️'
     if (!name) {
@@ -196,9 +244,10 @@ Page({
     } else {
       newFoods = [...foods, { _id: util.uid(), ...fields }]
     }
-    this.setData({ foods: newFoods, foodCount: newFoods.length, showFoodSheet: false }, () => {
+    this._foods = newFoods
+    this.setData({ foodCount: newFoods.length, showFoodSheet: false }, () => {
       this.persistFoods(newFoods)
-      this.computeDisplayFoods()
+      this.computeDisplayFoods(false)
       wx.showToast({ title: editingId ? '已保存' : '添加成功', icon: 'success' })
     })
   },
@@ -206,7 +255,7 @@ Page({
   // 删除（破坏性，需确认）
   deleteFood(e) {
     const id = e.currentTarget.dataset.id || this.data.editingId
-    const food = this.data.foods.find(f => f._id === id)
+    const food = (this._foods || []).find(f => f._id === id)
     wx.showModal({
       title: '删除菜品',
       content: food ? `确定删除「${food.name}」吗？` : '确定删除吗？',
@@ -214,10 +263,11 @@ Page({
       confirmColor: '#FF3B30',
       success: (res) => {
         if (!res.confirm) return
-        const newFoods = this.data.foods.filter(f => f._id !== id)
-        this.setData({ foods: newFoods, foodCount: newFoods.length, showFoodSheet: false }, () => {
+        const newFoods = (this._foods || []).filter(f => f._id !== id)
+        this._foods = newFoods
+        this.setData({ foodCount: newFoods.length, showFoodSheet: false }, () => {
           this.persistFoods(newFoods)
-          this.computeDisplayFoods()
+          this.computeDisplayFoods(false)
           wx.showToast({ title: '已删除', icon: 'success' })
         })
       }
@@ -228,15 +278,16 @@ Page({
 
   deleteHistoryItem(e) {
     const idx = parseInt(e.currentTarget.dataset.index)
-    const { history } = this.data
+    const history = this._history || []
     if (idx >= 0 && idx < history.length) {
       const newHistory = history.slice()
       newHistory.splice(idx, 1)
+      this._history = newHistory
       const historyDisplay = newHistory.slice(0, 30).map(h => ({
         ...h,
         dateStr: h.date ? util.formatDate(new Date(h.date)) : ''
       }))
-      this.setData({ history: newHistory, historyDisplay }, () => {
+      this.setData({ historyDisplay }, () => {
         this.saveUserData()
       })
     }
@@ -256,7 +307,8 @@ Page({
       title: '确认清空', content: '确定要清空最近记录吗？', confirmColor: '#FF3B30',
       success: (res) => {
         if (res.confirm) {
-          this.setData({ history: [], historyDisplay: [] }, () => {
+          this._history = []
+          this.setData({ historyDisplay: [] }, () => {
             this.saveUserData()
             wx.showToast({ title: '已清空', icon: 'success' })
           })
@@ -282,12 +334,24 @@ Page({
   // ===== 数据导出 / 导入 =====
 
   exportData() {
-    const { foods, history, favorites } = this.data
+    const favorites = this.data.favorites
+    const history = this._history || []
+    const foods = this._foods || []
     const pkData = safeGet(STORAGE_KEYS.pkData, { matches: 0, total: 0 })
+    // 仅导出「新增 + 被编辑过」的菜：按 _id 比对内置种子并逐字段判断差异，
+    // 避免旧逻辑「按菜名剔除内置菜」导致改过的内置菜被当作原版而丢失编辑
+    const seedById = new Map(foodsData.map(util.migrateFood).map(f => [f._id, f]))
+    const isCustomOrEdited = (f) => {
+      const seed = seedById.get(f._id)
+      if (!seed) return true
+      return f.name !== seed.name || f.emoji !== seed.emoji || f.category !== seed.category ||
+        f.scene !== seed.scene || f.budget !== seed.budget || f.time !== seed.time ||
+        (f.tags || []).join(',') !== (seed.tags || []).join(',')
+    }
     const payload = {
       version: APP_VERSION,
       exportAt: new Date().toISOString(),
-      foods: foods.filter(f => !foodsData.some(df => df.name === f.name && df._id)),
+      foods: foods.filter(isCustomOrEdited),
       history,
       favorites,
       pkData
@@ -305,12 +369,26 @@ Page({
           const payload = JSON.parse(res.data)
           if (!payload || typeof payload !== 'object') throw new Error('格式错误')
           const { foods: importFoods, history: importHistory, favorites: importFavorites, pkData: importPk } = payload
-          const { foods, history, favorites } = this.data
-          const nameSet = new Set(foods.map(f => f.name))
-          const mergedFoods = foods.slice()
+          const favorites = this.data.favorites
+          const history = this._history || []
+          // 按 _id 优先合并：同 _id 覆盖（恢复对内置菜的编辑），同名异 id 合并字段保留本地 id，全新菜追加
+          const mergedFoods = (this._foods || []).slice()
+          const idIndex = new Map(mergedFoods.map((f, i) => [f._id, i]))
+          const nameIndex = new Map(mergedFoods.map((f, i) => [f.name, i]))
           if (Array.isArray(importFoods)) {
-            importFoods.forEach(f => {
-              if (f && f.name && !nameSet.has(f.name)) { mergedFoods.push(util.migrateFood(f)); nameSet.add(f.name) }
+            importFoods.forEach(raw => {
+              if (!raw || !raw.name) return
+              const f = util.migrateFood(raw)
+              if (idIndex.has(f._id)) {
+                mergedFoods[idIndex.get(f._id)] = f
+              } else if (nameIndex.has(f.name)) {
+                const i = nameIndex.get(f.name)
+                mergedFoods[i] = { ...mergedFoods[i], ...f, _id: mergedFoods[i]._id }
+              } else {
+                const i = mergedFoods.push(f) - 1
+                idIndex.set(f._id, i)
+                nameIndex.set(f.name, i)
+              }
             })
           }
           const historyKeySet = new Set(history.map(h => h.name + '|' + h.date))
@@ -328,16 +406,21 @@ Page({
               if (f && f.name && !favNameSet.has(f.name)) { mergedFavorites.push(f); favNameSet.add(f.name) }
             })
           }
+          this._foods = mergedFoods
+          this._history = mergedHistory
+          const historyDisplay = mergedHistory.slice(0, 30).map(h => ({
+            ...h,
+            dateStr: h.date ? util.formatDate(new Date(h.date)) : ''
+          }))
           this.setData({
-            foods: mergedFoods,
-            history: mergedHistory,
+            historyDisplay,
             favorites: mergedFavorites,
             foodCount: mergedFoods.length
           }, () => {
             this.persistFoods(mergedFoods)
             this.saveUserData()
             if (importPk && typeof importPk === 'object') safeSet(STORAGE_KEYS.pkData, importPk)
-            this.computeDisplayFoods()
+            this.computeDisplayFoods(false)
             wx.showToast({ title: '导入成功', icon: 'success' })
           })
         } catch (e) {

@@ -11,15 +11,19 @@ page {
   --separator: rgba(60, 60, 67, 0.12);
 
   /* ===== 语义色 ===== */
-  --primary: #007AFF;                          /* 主操作色 */
-  --primary-soft: rgba(0, 122, 255, 0.12);
-  --primary-glow: rgba(0, 122, 255, 0.22);
+  --primary: #FF7A00;                          /* 主操作色：暖橙，食物/温暖氛围 */
+  --primary-soft: rgba(255, 122, 0, 0.12);
+  --primary-glow: rgba(255, 122, 0, 0.25);
+  --secondary: #5AC8FA;                        /* 辅助色：清爽蓝 */
+  --secondary-soft: rgba(90, 200, 250, 0.12);
   --food-accent: #FF9F0A;                      /* 食物高亮，独立于主操作色 */
   --food-soft: rgba(255, 159, 10, 0.14);
   --success: #34C759;
   --danger: #FF3B30;
   --blue-accent: #5AC8FA;
   --blue-soft: rgba(90, 200, 250, 0.12);
+  --orange-accent: #FF9F0A;
+  --orange-soft: rgba(255, 159, 10, 0.14);
 
   /* ===== 文字 ===== */
   --text-primary: #1D1D1F;
@@ -33,7 +37,7 @@ page {
   --shadow-float: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
   --shadow-sheet: 0 -8rpx 40rpx rgba(0, 0, 0, 0.12);
   --shadow-inner: inset 0 1rpx 2rpx rgba(0, 0, 0, 0.04);
-  /* 透明占位阴影：用于历史 box-shadow 列表里的 --glass-highlight 位，保持语法合法且不可见 */
+  /* 阴影层级（精简为三级语义） */
   --shadow-none: 0 0 0 0 rgba(0, 0, 0, 0);
 
   /* ===== 圆角（差异化档位，不让所有元素同圆角） ===== */
@@ -51,6 +55,16 @@ page {
   /* ===== 字体（系统字体栈，不嵌入 SF 字体文件） ===== */
   --font-stack: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
 
+  /* ===== 字号阶梯（type scale） ===== */
+  --text-xs: 22rpx;
+  --text-sm: 24rpx;
+  --text-base: 28rpx;
+  --text-lg: 32rpx;
+  --text-xl: 36rpx;
+  --text-2xl: 40rpx;
+  --text-3xl: 48rpx;
+  --text-4xl: 56rpx;
+
   /* ===== 历史「玻璃」别名 → 映射为干净值（旧引用自动生效） ===== */
   --glass-bg: #FFFFFF;
   --glass-bg-strong: #FFFFFF;
@@ -58,8 +72,8 @@ page {
   --glass-border: rgba(60, 60, 67, 0.10);
   --glass-stroke: rgba(60, 60, 67, 0.10);
   --glass-stroke-strong: rgba(60, 60, 67, 0.16);
-  --glass-highlight: 0 0 0 0 rgba(0, 0, 0, 0); /* 占位，保持旧 box-shadow 列表合法 */
-  --shadow-glass: 0 8rpx 28rpx rgba(0, 0, 0, 0.06);
+  --glass-highlight: 0 0 0 0 rgba(0, 0, 0, 0);
+  --shadow-glass: 0 8rpx 28rpx rgba(0, 0, 0, 0.06); /* 已废弃，请使用 --shadow-card */
 
   /* Sheet 材质：默认纯色（低端降级），支持时叠加轻微半透明 */
   --sheet-bg: #FFFFFF;
@@ -73,9 +87,11 @@ page {
   --fill-hover: rgba(120, 120, 128, 0.36);
   --separator: rgba(84, 84, 88, 0.40);
 
-  --primary: #0A84FF;
-  --primary-soft: rgba(10, 132, 255, 0.20);
-  --primary-glow: rgba(10, 132, 255, 0.30);
+  --primary: #FF9F0A;
+  --primary-soft: rgba(255, 159, 10, 0.20);
+  --primary-glow: rgba(255, 159, 10, 0.35);
+  --secondary: #5AC8FA;
+  --secondary-soft: rgba(90, 200, 250, 0.18);
   --food-accent: #FFD60A;
   --food-soft: rgba(255, 214, 10, 0.18);
   --success: #30D158;
@@ -172,7 +188,8 @@ page {
   line-height: 1.2;
 }
 .btn-glass::after { border: none; }      /* 去掉小程序 button 默认边框 */
-.btn-glass:active { transform: scale(0.98); opacity: 0.92; }
+.btn-glass:active { transform: scale(0.98); box-shadow: 0 0 24rpx var(--primary-glow); }
+.btn-glass:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 
 /* 次按钮（描边/中性填充） */
 .btn-glass-secondary {
@@ -181,6 +198,7 @@ page {
   box-shadow: none;
 }
 .btn-glass-secondary:active { background: var(--fill-hover); transform: scale(0.98); }
+.btn-glass-secondary:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 
 /* 文字按钮 */
 .btn-glass-ghost {
@@ -189,6 +207,7 @@ page {
   box-shadow: none;
 }
 .btn-glass-ghost:active { opacity: 0.6; }
+.btn-glass-ghost:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 
 /* 破坏性按钮 */
 .btn-danger {
@@ -200,6 +219,7 @@ page {
 }
 .btn-danger::after { border: none; }
 .btn-danger:active { opacity: 0.9; transform: scale(0.98); }
+.btn-danger:focus { outline: 3rpx solid var(--danger); outline-offset: 2rpx; }
 
 /* 胶囊标签 */
 .tag {
@@ -214,7 +234,78 @@ page {
 /* 细分隔线 */
 .hairline { height: 1rpx; background: var(--separator); }
 
+/* ===== 焦点环（无障碍） ===== */
+.focus-ring:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
+
+/* ===== CSS 几何图标系统 ===== */
+.icon-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.icon-settings::before,
+.icon-settings::after,
+.icon-settings > view::before {
+  content: '';
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.icon-close {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+}
+.icon-close::before,
+.icon-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16rpx;
+  height: 2rpx;
+  background: currentColor;
+  border-radius: 1rpx;
+}
+.icon-close::before { transform: translate(-50%, -50%) rotate(45deg); }
+.icon-close::after  { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.icon-combo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rpx;
+  height: 28rpx;
+  border: 2rpx solid currentColor;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-combo::before,
+.icon-combo::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  border-radius: 1rpx;
+}
+.icon-combo::before { width: 12rpx; height: 2rpx; }
+.icon-combo::after  { width: 2rpx; height: 12rpx; }
+
 /* ===== 工具类 ===== */
 .text-center { text-align: center; }
 .sr-only { position: absolute; width: 1rpx; height: 1rpx; overflow: hidden; }
+
+/* ===== 减少动态效果支持（无障碍） ===== */
+@media (prefers-reduced-motion: reduce) {
+  page, view, text, image, button, input, textarea, scroll-view, swiper, picker, canvas, cover-view, cover-image, navigator {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 .tap-target { min-width: 88rpx; min-height: 88rpx; display: flex; align-items: center; justify-content: center; }

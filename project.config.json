@@ -1,7 +1,10 @@
 {
   "description": "今天吃什么 · 情侣版",
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      { "type": "glob", "value": "**/*.test.js" },
+      { "type": "suffix", "value": ".md" }
+    ],
     "include": []
   },
   "setting": {

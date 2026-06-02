@@ -7,8 +7,5 @@ App({
   },
   onHide() {
     console.log('小程序隐藏')
-  },
-  globalData: {
-    userInfo: null
   }
 })

@@ -10,17 +10,15 @@
   padding: 0 32rpx 24rpx;
 }
 .back-btn {
-  position: fixed;
-  top: 100rpx;
-  left: 32rpx;
+  position: relative;
   width: 72rpx;
   height: 72rpx;
   border-radius: 50%;
   background: var(--glass-bg-strong);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,11 +53,11 @@
 /* ===== 玻璃区块 ===== */
 .section-glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(40rpx);
-  -webkit-backdrop-filter: blur(40rpx);
+
+
   border-radius: var(--radius-lg);
   border: 1rpx solid var(--glass-border);
-  box-shadow: var(--glass-highlight), var(--shadow-soft);
+  box-shadow: var(--shadow-card);
   margin-bottom: 24rpx;
   overflow: hidden;
 }
@@ -121,6 +119,11 @@
   color: var(--text-primary);
   font-weight: 500;
 }
+.form-picker-chevron {
+  font-size: 24rpx;
+  color: var(--text-tertiary);
+  margin-left: 8rpx;
+}
 
 /* ===== 列表项 ===== */
 .list-item {
@@ -174,6 +177,21 @@
 .empty-state {
   text-align: center;
   padding: 60rpx 32rpx;
+  position: relative;
+}
+/* 空状态 CSS 插图 */
+.empty-state::before {
+  content: '';
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 3rpx solid var(--separator);
+  margin: 0 auto 20rpx;
+  background:
+    radial-gradient(circle at 45% 40%, var(--primary-soft) 18%, transparent 19%),
+    radial-gradient(circle at 55% 55%, var(--orange-soft) 14%, transparent 15%);
+  opacity: 0.6;
 }
 .empty-text {
   font-size: 26rpx;
@@ -212,6 +230,7 @@
   white-space: nowrap;
   transition: all var(--transition-fast);
 }
+.chip:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .chip-active {
   background: var(--primary);
   color: #fff;
@@ -221,8 +240,18 @@
 /* ===== 列表项编辑态 ===== */
 .list-item { transition: background var(--transition-fast); }
 .list-item:active { background: var(--fill-subtle); }
+.list-item:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .list-edit { font-size: 36rpx; color: var(--text-tertiary); line-height: 1; }
 .list-item-right { display: flex; align-items: center; gap: 16rpx; }
+/* 分批渲染的「显示更多」展开行：克制、可点，融入列表 */
+.list-more {
+  padding: 24rpx 32rpx;
+  text-align: center;
+  border-top: 1rpx solid var(--glass-stroke);
+  transition: background var(--transition-fast);
+}
+.list-more:active { background: var(--fill-subtle); }
+.list-more-text { font-size: 26rpx; color: var(--primary); font-weight: 600; }
 
 /* ===== 底部 Sheet（新增/编辑菜品） ===== */
 .sheet-overlay {
@@ -252,10 +281,10 @@
   padding: 16rpx 40rpx 60rpx;
 }
 .sheet-handle {
-  width: 72rpx; height: 6rpx;
+  width: 96rpx; height: 6rpx;
   background: var(--text-tertiary);
   border-radius: 3rpx;
-  margin: 0 auto 24rpx;
+  margin: 0 auto 32rpx;
   opacity: 0.4;
 }
 .sheet-form-title {
@@ -268,6 +297,22 @@
 }
 
 /* 按钮 .btn-glass* 已统一定义于全局 app.wxss（去重） */
+
+/* ===== 实时标签预览 ===== */
+.form-tag-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin-top: 16rpx;
+  min-height: 48rpx;
+}
+.form-tag-pill {
+  font-size: 24rpx;
+  color: var(--text-secondary);
+  background: var(--fill-subtle);
+  padding: 8rpx 18rpx;
+  border-radius: var(--radius-pill);
+}
 
 /* ===== placeholder 样式 ===== */
 .filter-input-placeholder {

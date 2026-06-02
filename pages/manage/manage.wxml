@@ -47,7 +47,9 @@
         <view class="search-bar">
           <text class="search-icon">🔍</text>
           <input class="search-input" placeholder="搜索菜名" placeholder-class="filter-input-placeholder" value="{{searchText}}" bindinput="onSearchInput" />
-          <text wx:if="{{searchText}}" class="search-clear" bindtap="onClearSearch">✕</text>
+          <view wx:if="{{searchText}}" class="search-clear" bindtap="onClearSearch">
+            <view class="icon-close" style="color:var(--text-tertiary);"></view>
+          </view>
         </view>
         <!-- 分类筛选 -->
         <scroll-view scroll-x="true" class="chip-scroll" enhanced="true" show-scrollbar="false">
@@ -60,7 +62,8 @@
       <!-- 空状态 -->
       <view wx:if="{{displayFoods.length === 0}}" class="empty-state">
         <text class="empty-text">{{searchText || categoryFilterIdx > 0 ? '没有匹配的菜品' : '还没有菜品'}}</text>
-        <button class="btn-glass" style="margin-top:24rpx;" bindtap="openAddSheet">添加第一道菜</button>
+        <button wx:if="{{searchText || categoryFilterIdx > 0}}" class="btn-glass btn-glass-secondary" style="margin-top:24rpx;" bindtap="onClearSearchAndFilter">清除搜索与筛选</button>
+        <button wx:else class="btn-glass" style="margin-top:24rpx;" bindtap="openAddSheet">添加第一道菜</button>
       </view>
 
       <!-- 列表（点击编辑） -->
@@ -76,6 +79,9 @@
           </view>
         </view>
         <text class="list-edit">›</text>
+      </view>
+      <view wx:if="{{hasMore}}" class="list-more" bindtap="showMoreFoods">
+        <text class="list-more-text">显示更多 · 还有 {{filteredCount - displayFoods.length}} 道</text>
       </view>
     </view>
 
@@ -146,22 +152,25 @@
         </view>
         <view class="form-row">
           <picker bindchange="onFormCategory" value="{{foodForm.categoryIdx}}" range="{{categoryOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">分类</text><text class="form-picker-value">{{categoryOptions[foodForm.categoryIdx]}}</text></view>
+            <view class="form-picker"><text class="form-picker-label">分类</text><text class="form-picker-value">{{categoryOptions[foodForm.categoryIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
           <picker bindchange="onFormScene" value="{{foodForm.sceneIdx}}" range="{{sceneOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">场景</text><text class="form-picker-value">{{sceneOptions[foodForm.sceneIdx]}}</text></view>
+            <view class="form-picker"><text class="form-picker-label">场景</text><text class="form-picker-value">{{sceneOptions[foodForm.sceneIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
         </view>
         <view class="form-row">
           <picker bindchange="onFormBudget" value="{{foodForm.budgetIdx}}" range="{{budgetOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">预算</text><text class="form-picker-value">{{budgetOptions[foodForm.budgetIdx]}}</text></view>
+            <view class="form-picker"><text class="form-picker-label">预算</text><text class="form-picker-value">{{budgetOptions[foodForm.budgetIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
           <picker bindchange="onFormTime" value="{{foodForm.timeIdx}}" range="{{timeOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">时间</text><text class="form-picker-value">{{timeOptions[foodForm.timeIdx]}}</text></view>
+            <view class="form-picker"><text class="form-picker-label">时间</text><text class="form-picker-value">{{timeOptions[foodForm.timeIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
         </view>
         <view class="form-row">
           <input class="form-input" placeholder="标签，用逗号分隔" placeholder-class="filter-input-placeholder" value="{{foodForm.tags}}" bindinput="onFormTags" />
+        </view>
+        <view class="form-tag-preview" wx:if="{{foodFormTagsPreview.length > 0}}">
+          <text wx:for="{{foodFormTagsPreview}}" wx:key="*this" class="form-tag-pill">{{item}}</text>
         </view>
         <button class="btn-glass" style="width:100%;margin-top:24rpx;" bindtap="saveFood">{{editingId ? '保存' : '添加'}}</button>
         <button wx:if="{{editingId}}" class="btn-danger" style="width:100%;margin-top:12rpx;" bindtap="deleteFood" data-id="{{editingId}}">删除菜品</button>

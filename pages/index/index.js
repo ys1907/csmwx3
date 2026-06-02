@@ -9,7 +9,6 @@ const {
   SCENE_OPTIONS,
   BUDGET_OPTIONS,
   TIME_OPTIONS,
-  CATEGORY_OPTIONS,
   WEEK_THEMES,
   TASTE_OPTIONS,
   AVOID_TAG_OPTIONS,
@@ -41,14 +40,18 @@ const PK_PUNISHMENTS = [
   { match: false, text: '默契值为零，一起做家务换大餐吧 🧹' }
 ]
 
+const STORAGE_FLUSH_DELAY_MS = 250
+const INTRO_HOLD_MS = 600
+const INTRO_FADE_MS = 200
+
 Page({
   data: {
     // 渲染层状态（食物全集与过滤缓存改为实例属性，不进 data，避免跨渲染层序列化大数组）
-    history: [],
-    favorites: [],
+    rollPhase: '',
     pkData: { matches: 0, total: 0 },
     excludeRecent: true,
     filters: { sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tasteIdx: 0, avoid: '' },
+    requireMeal: true, // NEW: 严格模式——只推荐可作为完整一餐的菜品
     filterSummary: '未筛选',
     currentMode: 'week',
     currentResult: null,
@@ -73,6 +76,7 @@ Page({
     blindboxShaking: false,
     wheelAngle: 0,
     wheelTransition: '',
+    wheelFreeSpin: false, // 自由旋转阶段：true 时由纯 CSS 动画驱动（不走 setData）
     wheelPool: [],
     blindboxFood: null,
     blindboxRarity: '',
@@ -83,6 +87,13 @@ Page({
     resultReason: '',   // 进化④：推荐理由
     comboResult: [],    // 进化⑥：一桌好菜
     showCombo: false,
+    resultClosing: false, // T3：结果 Sheet 正在下滑退出（延迟卸载用）
+    comboClosing: false,  // T3：凑一桌 Sheet 正在下滑退出
+    // NEW: 结果页闭环
+    alternativeResults: [], // 2 个备选项
+    showAlternatives: false, // 是否展开备选项
+    showFeedback: false, // 是否显示反馈面板
+    feedbackOptions: ['今天不想吃肉', '太贵', '太慢', '最近吃过', '不喜欢', '只是想再看看'],
     // 自定义选择器
     showPickerSheet: false,
     pickerTitle: '',
@@ -95,35 +106,52 @@ Page({
     timeOptions: TIME_OPTIONS,
     tasteOptions: TASTE_OPTIONS,
     avoidOptions: AVOID_TAG_OPTIONS,
-    categoryOptions: CATEGORY_OPTIONS,
     showFilterSheet: false,
     hasActiveFilters: false,
-    // 启动页
+    showPlayMore: false,
+    modeTitleMap: { wheel: '转盘', tarot: '塔罗', pk: '默契 PK', blindbox: '盲盒', week: '推荐' },
+    poolMode: 'default', // NEW: 池模式（default/gathering/cooking）
     showIntro: true,
     introFading: false,
+    shareCanvasMounted: false,
   },
 
   onLoad() {
+    this._isPageVisible = true
+    this._introStartTs = Date.now()
     this.initData()
     // FIX: 暗黑模式系统跟随
     const sysInfo = wx.getSystemInfoSync()
     this.setData({ darkMode: sysInfo.theme === 'dark' })
-    wx.onThemeChange && wx.onThemeChange((res) => {
-      this.setData({ darkMode: res.theme === 'dark' })
+    this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
+      const darkMode = res.theme === 'dark'
+      if (this._isPageVisible) this.setData({ darkMode })
+      else this._pendingDarkMode = darkMode
     })
-    this._introTimer1 = setTimeout(() => {
-      this.setData({ introFading: true })
-      this._introTimer2 = setTimeout(() => {
-        this.setData({ showIntro: false, introFading: false })
-      }, 800)
-    }, 2000)
+    // 保险：1.8s 后强制结束启动页，防止异常卡住
+    this._introMaxTimer = setTimeout(() => this.finishIntro(true), 1800)
   },
 
   onShow() {
+    this._isPageVisible = true
     // 首次进入由 onLoad 完成初始化；再次显示（如从管理页返回）只做轻量数据刷新，
     // 不重置塔罗/推荐/玩法状态，避免闪动与误重置
     if (this._everShown) this.refreshFromStorage()
     this._everShown = true
+    if (typeof this._pendingDarkMode === 'boolean') {
+      this.setData({ darkMode: this._pendingDarkMode })
+      this._pendingDarkMode = null
+    }
+    this.resumePausedTasks()
+  },
+
+  onHide() {
+    this._isPageVisible = false
+    this.flushPendingWrites()
+    this.pauseActiveTasks()
+    this.settleInterruptedSheets()
+    this.releaseShareCanvas()
+    this.stopAudio()
   },
 
   // FIX: 微信小程序原生分享能力
@@ -144,13 +172,106 @@ Page({
   },
 
   onUnload() {
+    this._isPageVisible = false
+    this.flushPendingWrites()
     this.clearWheelTimers()
-    clearTimeout(this._avoidTimer)
-    clearTimeout(this._introTimer1)
-    clearTimeout(this._introTimer2)
-    clearTimeout(this._blindboxTimer)
+    this.clearBlindboxTimers()
+    this.interruptRollAnimation()
+    this.clearTimer('_avoidTimer')
+    this.clearTimer('_introDelayTimer')
+    this.clearTimer('_introMaxTimer')
+    this.clearTimer('_introFadeTimer')
+    this.clearTimer('_resultCloseTimer')
+    this.clearTimer('_comboCloseTimer')
+    this.clearTimer('_storageFlushTimer')
+    this.releaseShareCanvas(false)
+    this.stopAudio()
     if (this._tickAudio) { this._tickAudio.destroy(); this._tickAudio = null }
     if (this._dingAudio) { this._dingAudio.destroy(); this._dingAudio = null }
+    if (this._offThemeChange) { this._offThemeChange(); this._offThemeChange = null }
+  },
+
+  clearTimer(name) {
+    if (!this[name]) return
+    clearTimeout(this[name])
+    this[name] = null
+  },
+
+  stopAudio() {
+    if (this._tickAudio) this._tickAudio.stop()
+    if (this._dingAudio) this._dingAudio.stop()
+  },
+
+  settleInterruptedSheets() {
+    this.clearTimer('_resultCloseTimer')
+    this.clearTimer('_comboCloseTimer')
+    const updates = {}
+    if (this.data.resultClosing) {
+      updates.showResult = false
+      updates.resultClosing = false
+      updates.blindboxOpened = false
+      updates.blindboxFood = null
+    }
+    if (this.data.comboClosing) {
+      updates.showCombo = false
+      updates.comboClosing = false
+    }
+    if (Object.keys(updates).length > 0) this.setData(updates)
+  },
+
+  pauseActiveTasks() {
+    if (this.data.currentMode === 'wheel' && this.data.isSpinning) {
+      this._pausedWheel = this.data.isStopping && this._wheelPendingFood
+        ? { phase: 'reveal', food: this._wheelPendingFood }
+        : { phase: 'spin' }
+      this.clearWheelTimers()
+      this.setData({
+        isSpinning: false,
+        isStopping: false,
+        showReveal: false,
+        wheelFreeSpin: false,
+        wheelTransition: ''
+      })
+    }
+
+    if (this.data.currentMode === 'blindbox') {
+      if (this._blindboxRevealTimer && this._blindboxPendingFood) {
+        this._pausedBlindbox = {
+          phase: 'reveal',
+          food: this._blindboxPendingFood,
+          rarity: this._blindboxPendingRarity
+        }
+      } else if (this._blindboxTimer || this.data.blindboxShaking) {
+        this._pausedBlindbox = { phase: 'shake' }
+      }
+      this.clearBlindboxTimers(false)
+      if (this.data.blindboxShaking) this.setData({ blindboxShaking: false })
+    }
+  },
+
+  resumePausedTasks() {
+    if (this._pausedWheel) {
+      const paused = this._pausedWheel
+      this._pausedWheel = null
+      if (paused.phase === 'reveal' && paused.food) this.finishWheelResult(paused.food)
+      else if (this.data.currentMode === 'wheel') this.spinWheel()
+    }
+
+    if (this._pausedBlindbox) {
+      const paused = this._pausedBlindbox
+      this._pausedBlindbox = null
+      if (paused.phase === 'reveal' && paused.food) {
+        this.setData({
+          blindboxShaking: false,
+          blindboxOpened: true,
+          blindboxFood: paused.food,
+          blindboxRarity: paused.rarity
+        })
+        this.finishBlindboxResult(paused.food)
+      } else if (this.data.currentMode === 'blindbox') {
+        this.openBlindbox()
+      }
+    }
   },
 
   // ========== 初始化 ==========
@@ -166,44 +287,80 @@ Page({
     this._filteredCache = null
     this._cacheKey = ''
     this._nameIndex = null // foods 变化后，名称→食物索引需重建（供偏好/画像反查）
+    this._foodsRev = safeGet(STORAGE_KEYS.foodsRev, 0) // 记录已加载的菜品库修订，供 onShow 判断是否需重建
 
     const history = safeGet(STORAGE_KEYS.history, [])
     const favorites = safeGet(STORAGE_KEYS.favorites, [])
     const pkData = safeGet(STORAGE_KEYS.pkData, { matches: 0, total: 0 })
     const headerDate = util.formatDate(new Date(), true)
+    this._history = history
+    this._favorites = favorites
+    this._weekFoodDate = safeGet(STORAGE_KEYS.weekFoodDate, '')
+    this._weekFood = safeGet(STORAGE_KEYS.weekFood, null)
+    // NEW: 冷却族抽取记录（session 级，不长期存储）
+    this._cooldownFamilyPicks = {}
 
-    this.setData({ history, favorites, pkData, headerDate }, () => {
-      this.updateFilteredFoods()
-      this.initTarot()
+    this.setData({ pkData, headerDate }, () => {
       this.rollWeek(true)
+      this.finishIntro()
     })
+  },
+
+  finishIntro(force) {
+    if (!this.data.showIntro || this.data.introFading) return
+    const elapsed = Date.now() - (this._introStartTs || Date.now())
+    const MIN_INTRO_MS = 600
+    if (!force && elapsed < MIN_INTRO_MS) {
+      this._introDelayTimer = setTimeout(() => this.finishIntro(true), MIN_INTRO_MS - elapsed)
+      return
+    }
+    this.setData({ introFading: true })
+    this._introFadeTimer = setTimeout(() => {
+      this.setData({ showIntro: false, introFading: false })
+    }, 300)
   },
 
   // 轻量刷新：仅同步管理页可能改动的数据（菜品/历史/收藏），不重置玩法 UI
   refreshFromStorage() {
-    const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
-    const localFoods = safeGet(STORAGE_KEYS.foods, null)
-    this._foods = (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
-      ? localFoods.map(util.migrateFood)
-      : foodsData.map(util.migrateFood)
-    this._nameIndex = null
+    // 仅当管理页确实改过菜品（foodsRev 变化）时才重建全量 foods，
+    // 避免每次 onShow（如从管理页返回）都对 500 条重跑 migrateFood、产生 500 个新对象
+    const rev = safeGet(STORAGE_KEYS.foodsRev, 0)
+    if (rev !== this._foodsRev) {
+      const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
+      const localFoods = safeGet(STORAGE_KEYS.foods, null)
+      this._foods = (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
+        ? localFoods.map(util.migrateFood)
+        : foodsData.map(util.migrateFood)
+      this._nameIndex = null
+      this._foodsRev = rev
+    }
     const history = safeGet(STORAGE_KEYS.history, [])
     const favorites = safeGet(STORAGE_KEYS.favorites, [])
-    this.setData({ history, favorites }, () => {
-      this.invalidateCache()
-      this.updateFilteredFoods()
-      this.reconcileWeekFood()
-    })
+    this._history = history
+    this._favorites = favorites
+    this.invalidateCache()
+    if (this.data.currentMode === 'wheel') this.updateFilteredFoods()
+    this.reconcileWeekFood()
   },
 
   // ========== 存储 ==========
 
-  // 本页只持久化会变更的用户数据；foods 仅在管理页增删时持久化，避免每次互动全量重写
-  saveState() {
-    const { history, favorites, pkData } = this.data
-    safeSet(STORAGE_KEYS.history, history)
-    safeSet(STORAGE_KEYS.favorites, favorites)
-    safeSet(STORAGE_KEYS.pkData, pkData)
+  queueStorageWrite(key, value) {
+    if (!this._pendingStorageWrites) this._pendingStorageWrites = {}
+    this._pendingStorageWrites[key] = value
+    this.clearTimer('_storageFlushTimer')
+    this._storageFlushTimer = setTimeout(() => {
+      this._storageFlushTimer = null
+      this.flushPendingWrites()
+    }, STORAGE_FLUSH_DELAY_MS)
+  },
+
+  flushPendingWrites() {
+    this.clearTimer('_storageFlushTimer')
+    const writes = this._pendingStorageWrites
+    this._pendingStorageWrites = null
+    if (!writes) return
+    Object.keys(writes).forEach(key => safeSet(key, writes[key]))
   },
 
   // ========== 过滤与缓存（实例缓存，不经 setData） ==========
@@ -213,12 +370,64 @@ Page({
     this._cacheKey = ''
   },
 
+  // NEW: 根据当前小时自动推断 mealPeriod
+  inferMealPeriod() {
+    const hour = new Date().getHours()
+    if (hour >= 5 && hour < 10) return '早餐'
+    if (hour >= 10 && hour < 14) return '午餐'
+    if (hour >= 14 && hour < 17) return '加餐'
+    if (hour >= 17 && hour < 22) return '晚餐'
+    return '夜宵'
+  },
+
   getFilteredFoods() {
-    const { filters, excludeRecent, history } = this.data
-    const key = JSON.stringify({ s: filters.sceneIdx, b: filters.budgetIdx, t: filters.timeIdx, ta: filters.tasteIdx, a: filters.avoid, e: excludeRecent, h: history.map(item => item.name).join(',') })
+    const { filters, excludeRecent } = this.data
+    const requireMeal = this._poolMode === 'cooking' ? false : this.data.requireMeal
+    const history = this._history || []
+    const now = Date.now()
+    const mealPeriod = this.inferMealPeriod()
+    const poolMode = this._poolMode || 'default'
+    // 缓存键须精确覆盖会影响过滤结果的输入：排除近期开启时，纳入 3 天窗口内的全部菜名（不再只取前 20 条）
+    let recentPart = ''
+    if (excludeRecent) {
+      const THREE_DAYS = 3 * 24 * 60 * 60 * 1000
+      recentPart = history
+        .filter(h => { const d = new Date(h.date).getTime(); return !Number.isNaN(d) && now - d <= THREE_DAYS })
+        .map(h => h.name).join('\x00')
+    }
+    const key = JSON.stringify({ s: filters.sceneIdx, b: filters.budgetIdx, t: filters.timeIdx, ta: filters.tasteIdx, a: filters.avoid, e: excludeRecent, r: requireMeal, m: mealPeriod, h: recentPart, p: poolMode })
     if (this._filteredCache && this._cacheKey === key) return this._filteredCache
 
-    const result = foodLogic.filterFoods(this._foods, filters, { excludeRecent, history, now: Date.now() })
+    let result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal, mealPeriod }, { excludeRecent, history, now })
+    // 按池模式过滤
+    if (poolMode === 'gathering') {
+      result = result.filter(f => f.itemLevel === '聚餐方式' && f.enabled !== false)
+    } else if (poolMode === 'cooking') {
+      result = result.filter(f => f.itemLevel === '单道菜' && f.enabled !== false)
+    } else {
+      // 默认只从 defaultPool 中抽取（审查后仅 110 条左右进入首页默认池）
+      const poolFiltered = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
+      if (poolFiltered.length > 0) result = poolFiltered
+    }
+    // 空集回退：若时段/池过滤导致空集，先降级为不限时段
+    if (result.length === 0 && mealPeriod) {
+      result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal }, { excludeRecent, history, now })
+      if (poolMode === 'gathering') {
+        result = result.filter(f => f.itemLevel === '聚餐方式' && f.enabled !== false)
+      } else if (poolMode === 'cooking') {
+        result = result.filter(f => f.itemLevel === '单道菜' && f.enabled !== false)
+      } else {
+        const poolFiltered2 = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
+        if (poolFiltered2.length > 0) result = poolFiltered2
+      }
+    }
+    // 二次回退：若池过滤导致空集，移除池限制（保证始终有结果）
+    if (result.length === 0) {
+      result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal, mealPeriod }, { excludeRecent, history, now })
+      if (result.length === 0 && mealPeriod) {
+        result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal }, { excludeRecent, history, now })
+      }
+    }
     this._filteredCache = result
     this._cacheKey = key
     return result
@@ -226,7 +435,8 @@ Page({
 
   // 进化①②：由收藏/历史/本次拒绝构建偏好信号（喂给 foodLogic 的加权随机）
   buildPrefs() {
-    const { favorites, history } = this.data
+    const favorites = this._favorites || []
+    const history = this._history || []
     const favoriteSet = new Set(favorites.map(f => f.name))
     const tasteCounts = {}
     const bump = tags => (tags || []).forEach(t => { tasteCounts[t] = (tasteCounts[t] || 0) + 1 })
@@ -234,7 +444,20 @@ Page({
     // 历史仅存 name，借 _foods 的名称索引反查 tags
     const nameIndex = this._nameIndex || (this._nameIndex = new Map(this._foods.map(f => [f.name, f])))
     history.forEach(h => { const f = nameIndex.get(h.name); if (f) bump(f.tags) })
-    return { favoriteSet, tasteCounts, rejectedSet: this._rejected || (this._rejected = new Set()) }
+    return {
+      favoriteSet,
+      tasteCounts,
+      rejectedSet: this._rejected || (this._rejected = new Set()),
+      cooldownFamilyPicks: this._cooldownFamilyPicks || {}
+    }
+  },
+
+  // NEW: 构建推荐上下文（渠道/地区/天气）
+  buildCtx() {
+    const { filters } = this.data
+    const scene = filters.sceneIdx > 0 ? SCENE_OPTIONS[filters.sceneIdx] : null
+    // userRegion / weatherTags 后续从 storage 获取，目前预留
+    return { scene }
   },
 
   // 进化②：记录本次会话被「换一个/再开一个」拒绝的菜，后续降权（换筛选时清空）
@@ -244,21 +467,32 @@ Page({
     this._rejected.add(food.name)
   },
 
+  // 会话级「换一个」语义：在过滤集基础上剔除本次被拒绝的菜（若剔空则保留过滤集）。
+  // 统一供转盘/盲盒/塔罗/推荐复用，让各玩法的「换一个」去重力度一致。
+  candidatePool(base) {
+    let pool = base || this.getFilteredFoods()
+    if (this._rejected && this._rejected.size > 0 && pool.length > 1) {
+      const without = pool.filter(f => !this._rejected.has(f.name))
+      if (without.length > 0) pool = without
+    }
+    return pool
+  },
+
   pickRandom(fromPool) {
-    const pool = fromPool || this.getFilteredFoods()
-    return foodLogic.weightedPick(pool, this.buildPrefs())
+    const pool = fromPool || this.candidatePool()
+    return foodLogic.weightedPick(pool, this.buildPrefs(), null, this.buildCtx())
   },
 
   updateFilteredFoods() {
     const filtered = this.getFilteredFoods()
-    this.setData({ wheelPool: foodLogic.buildWheelPool(filtered) })
+    this.setData({ wheelPool: foodLogic.buildWheelPool(filtered).map(f => ({ emoji: f.emoji })) })
   },
 
   // 筛选条件变化后统一刷新：失效缓存 → 重算转盘 → 校正已选推荐菜
   applyFilterChange() {
     if (this._rejected) this._rejected.clear() // 换筛选 = 全新语境，清空会话级负反馈
     this.invalidateCache()
-    this.updateFilteredFoods()
+    if (this.data.currentMode === 'wheel') this.updateFilteredFoods()
     this.reconcileWeekFood()
     const { filters, excludeRecent } = this.data
     const parts = []
@@ -277,7 +511,13 @@ Page({
     const { weekFood } = this.data
     if (!weekFood) return
     const stillValid = this.getFilteredFoods().some(f => f.name === weekFood.name)
-    if (!stillValid) this.setData({ weekFood: null })
+    if (!stillValid) {
+      this._weekFood = null
+      this._weekFoodDate = ''
+      this.queueStorageWrite(STORAGE_KEYS.weekFoodDate, '')
+      this.queueStorageWrite(STORAGE_KEYS.weekFood, null)
+      this.setData({ weekFood: null, weekReason: '' })
+    }
   },
 
   // ========== 筛选器事件 ==========
@@ -395,20 +635,39 @@ Page({
   // ========== Tab 切换 ==========
 
   onWheelBtnTap() {
+    if (this.data.isStopping) return
     if (this.data.isSpinning) this.stopWheel()
     else this.spinWheel()
+  },
+
+  togglePlayMore() {
+    this.setData({ showPlayMore: !this.data.showPlayMore })
+  },
+
+  switchPoolMode(e) {
+    const mode = e.currentTarget.dataset.mode
+    if (!mode) return
+    this._poolMode = mode
+    this.setData({ poolMode: mode })
+    // 刷新推荐池，让新场景立即生效
+    this.rollWeek(true, true)
+    wx.showToast({ title: mode === 'gathering' ? '已切换：聚餐场景' : '已切换：自己做菜', icon: 'none', duration: 1200 })
   },
 
   switchTab(e) {
     const mode = e.currentTarget.dataset.mode
     // 离开任一玩法时清理其定时器与临时态，避免后台空转 / 状态残留
     this.clearWheelTimers()
-    clearTimeout(this._blindboxTimer)
+    this.clearBlindboxTimers()
+    this._pausedWheel = null
+    this._wheelPendingFood = null
+    this._pausedBlindbox = null
     this.setData({
       currentMode: mode,
-      isSpinning: false, isStopping: false, showReveal: false,
+      isSpinning: false, isStopping: false, showReveal: false, wheelFreeSpin: false,
       blindboxOpened: false, blindboxFood: null, blindboxShaking: false, blindboxRarity: ''
     })
+    if (mode === 'wheel') this.updateFilteredFoods()
     if (mode === 'tarot') this.initTarot()
     if (mode === 'pk') this.initPK()
   },
@@ -420,24 +679,48 @@ Page({
       wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
       return
     }
-    const isFav = this.data.favorites.some(f => f.name === food.name)
-    // 进化④：非 PK 结果附「推荐理由」（基于当前偏好，在写入历史前计算）
-    const resultReason = source !== 'pk' ? foodLogic.explainPick(food, this.buildPrefs()) : ''
+    const isFav = (this._favorites || []).some(f => f.name === food.name)
+    // 进化④：非 PK 结果附「推荐理由」（在写入历史前计算）。
+    // week 来源与其推荐依据（星期主题）保持一致，其余来源用个性化偏好解释。
+    const ctx = this.buildCtx()
+    const resultReason = source === 'pk'
+      ? ''
+      : (source === 'week' ? this.buildWeekReason(food) : foodLogic.buildRichReason(food, ctx))
+    // NEW: 生成 2 个备选项
+    const pool = this.candidatePool()
+    let alternatives = (source === 'pk') ? [] : foodLogic.pickAlternatives(pool, food, 2, this.buildPrefs(), null, ctx)
+    // 兜底：若 pickAlternatives 未返回足够备选项，从 pool 中随机补几个
+    if (alternatives.length < 2 && pool && pool.length > 1) {
+      const poolNames = new Set([food.name, ...alternatives.map(a => a.name)])
+      const fillers = pool
+        .filter(f => !poolNames.has(f.name))
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 2 - alternatives.length)
+      alternatives = alternatives.concat(fillers)
+    }
     this.setData({
       currentResult: food,
       currentResultSource: source,
       currentResultIsFav: isFav,
       resultReason,
+      alternativeResults: alternatives.map(f => ({ name: f.name, emoji: f.emoji, category: f.category })),
+      showAlternatives: false,
+      showFeedback: false,
       showResult: true,
+      resultClosing: false, // 重新打开时清掉退出态，避免被上一次的关闭定时器隐藏
       // 浮层互斥：结果 Sheet 出现时关闭其它顶层 Sheet
       showFilterSheet: false, showPickerSheet: false, showCombo: false
     })
+    this.clearTimer('_resultCloseTimer')
     if (source !== 'history') this.addToHistory(food)
   },
 
   showWeekResult() {
     const { weekFood } = this.data
-    if (weekFood) this.showResultModal(weekFood, 'week')
+    if (!weekFood) return
+    this.addToHistory(weekFood)
+    wx.showToast({ title: `已决定：${weekFood.name}`, icon: 'none' })
+    // 不弹出结果 Sheet，首页 hero-card 已展示全部信息
   },
 
   // 进化⑥：一键凑一桌（情侣一起点多道菜，品类尽量不重复）
@@ -447,20 +730,35 @@ Page({
       wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
       return
     }
+    this.clearTimer('_comboCloseTimer')
     this.setData({
       comboResult: foodLogic.buildMealCombo(filtered, 3),
       showCombo: true,
+      comboClosing: false, // 「换一桌」复用本函数：清掉可能残留的退出态
       showResult: false, showFilterSheet: false, showPickerSheet: false
     })
     if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
   },
 
+  // T3：先播下滑退出动画，再延迟卸载（与上滑进入对称）
   closeCombo() {
-    this.setData({ showCombo: false })
+    if (this.data.comboClosing) return
+    this.clearTimer('_comboCloseTimer')
+    this.setData({ comboClosing: true })
+    this._comboCloseTimer = setTimeout(() => {
+      this._comboCloseTimer = null
+      this.setData({ showCombo: false, comboClosing: false })
+    }, 220)
   },
 
   closeResultModal() {
-    this.setData({ showResult: false, blindboxOpened: false, blindboxFood: null })
+    if (this.data.resultClosing) return
+    this.clearTimer('_resultCloseTimer')
+    this.setData({ resultClosing: true })
+    this._resultCloseTimer = setTimeout(() => {
+      this._resultCloseTimer = null
+      this.setData({ showResult: false, resultClosing: false, blindboxOpened: false, blindboxFood: null })
+    }, 220)
   },
 
   onModalContentTap() {
@@ -468,26 +766,27 @@ Page({
   },
 
   onConfirmResult() {
-    this.setData({ showResult: false, blindboxOpened: false, blindboxFood: null })
+    this.closeResultModal()
   },
 
   onRetryResult() {
     const mode = this.data.currentMode
     this.noteRejected(this.data.currentResult)
-    this.setData({ showResult: false, blindboxOpened: false, blindboxFood: null })
+    // 「换一个」即时关闭并重开（不走下滑退出），同时清掉待执行的关闭定时器，避免竞态隐藏新结果
+    this.clearTimer('_resultCloseTimer')
+    this.setData({ showResult: false, resultClosing: false, blindboxOpened: false, blindboxFood: null })
     if (mode === 'wheel') this.spinWheel()
     else if (mode === 'week') {
-      // FIX: 清除当天记忆，让"换一个"真正换菜
-      safeSet('wtec_week_food_date', '')
-      this.rollWeek()
+      this.rollWeek(true, true)
     }
     else if (mode === 'blindbox') this.openBlindbox()
-    else if (mode === 'tarot') { this.initTarot(); this.switchTab(null, 'tarot') }
-    else if (mode === 'pk') { this.resetPK(); this.switchTab(null, 'pk') }
+    else if (mode === 'tarot') { this.initTarot(); this.setData({ currentMode: 'tarot' }) }
+    else if (mode === 'pk') { this.resetPK(); this.setData({ currentMode: 'pk' }) }
   },
 
   onToggleFav() {
-    const { currentResult, favorites } = this.data
+    const { currentResult } = this.data
+    const favorites = this._favorites || []
     if (!currentResult) return
     const idx = favorites.findIndex(f => f.name === currentResult.name)
     let newFavorites
@@ -497,42 +796,43 @@ Page({
     } else {
       newFavorites = [...favorites, currentResult]
     }
-    this.setData({ favorites: newFavorites, currentResultIsFav: idx < 0 }, () => {
-      this.saveState()
-    })
+    this._favorites = newFavorites
+    this.setData({ currentResultIsFav: idx < 0 })
+    safeSet(STORAGE_KEYS.favorites, newFavorites)
   },
 
   // ========== 历史记录 ==========
 
   addToHistory(food) {
     if (!food) return
-    const history = [{ name: food.name, emoji: food.emoji, date: new Date().toISOString() }, ...this.data.history]
+    const history = [{ name: food.name, emoji: food.emoji, date: new Date().toISOString() }, ...(this._history || [])]
     if (history.length > 50) history.length = 50
-    this.setData({ history }, () => {
-      this.invalidateCache()
-      this.saveState()
-    })
+    this._history = history
+    // NEW: 记录冷却族抽取时间（session 级，不写入 storage）
+    if (food.cooldownFamilyId) {
+      if (!this._cooldownFamilyPicks) this._cooldownFamilyPicks = {}
+      this._cooldownFamilyPicks[food.cooldownFamilyId] = Date.now()
+    }
+    this.invalidateCache()
+    this.queueStorageWrite(STORAGE_KEYS.history, history)
   },
 
   // ========== 转盘 ==========
 
   // 清理转盘相关的所有定时器
   clearWheelTimers() {
+    if (this._tickTimer) { clearInterval(this._tickTimer); this._tickTimer = null }
     if (this._spinTimer) { clearInterval(this._spinTimer); this._spinTimer = null }
-    if (this._revealTimer) { clearTimeout(this._revealTimer); this._revealTimer = null }
-    if (this._resultTimer) { clearTimeout(this._resultTimer); this._resultTimer = null }
-    if (this._rafId) { cancelAnimationFrame(this._rafId); this._rafId = null }
+    this.clearTimer('_stopTimer2')
+    this.clearTimer('_revealTimer')
+    this.clearTimer('_resultTimer')
     this._stopWheel = null
   },
 
   spinWheel() {
     if (this.data.isSpinning) return
-    let filtered = this.getFilteredFoods()
-    // FIX: 排除最近被拒绝的食物，确保"换一个"真正换菜
-    if (this._rejected && this._rejected.size > 0 && filtered.length > 1) {
-      const withoutRejected = filtered.filter(f => !this._rejected.has(f.name))
-      if (withoutRejected.length > 0) filtered = withoutRejected
-    }
+    // 排除最近被拒绝的食物，确保"换一个"真正换菜（与其它玩法统一走 candidatePool）
+    const filtered = this.candidatePool()
     if (filtered.length === 0) {
       this.setData({ showEmptyWheel: true })
       return
@@ -540,41 +840,64 @@ Page({
     this.setData({ showEmptyWheel: false })
     const pool = foodLogic.buildWheelPool(filtered)
     this._wheelAngle = this._wheelAngle || 0
-    this._lastTickSector = -1
-    // FIX: 旋转用 CSS transition 驱动，setInterval 只更新目标角度
-    this.setData({ isSpinning: true, isStopping: false, wheelPool: pool, wheelTransition: 'transition: transform 0.05s linear;', wheelAngle: this._wheelAngle })
-    this._spinTimer = setInterval(() => {
-      this._wheelAngle += 36
-      this.setData({ wheelAngle: this._wheelAngle })
-      const sector = Math.floor(this._wheelAngle / 90) % 4
-      if (sector !== this._lastTickSector) {
-        this._lastTickSector = sector
-        this.playTick()
-      }
-    }, 50)
+    // 纯 CSS 60fps 自由旋转：不再用 setData 逐帧驱动（省功耗、更顺）。
+    // SPIN_PERIOD_MS 必须与 wxss 中 .wheel-free-spin 的 animation 周期保持一致。
+    const SPIN_PERIOD_MS = 600
+    this.setData({ isSpinning: true, isStopping: false, wheelPool: pool.map(f => ({ emoji: f.emoji })), wheelFreeSpin: true, wheelTransition: '' }, () => {
+      this._spinStartTs = Date.now() // 视图更新后再记起转时刻，停时据此反推当前角度
+    })
+    // tick 音效用轻量定时器，仅播声音、不 setData（约每 90° 一次）
+    this._tickTimer = setInterval(() => this.playTick(), SPIN_PERIOD_MS / 4)
 
     this._stopWheel = () => {
-      if (this.data.isStopping || !this._spinTimer) return
-      clearInterval(this._spinTimer)
-      this._spinTimer = null
-      this.setData({ isStopping: true, wheelTransition: '' })
+      if (this.data.isStopping || !this.data.wheelFreeSpin) return
+      if (this._tickTimer) { clearInterval(this._tickTimer); this._tickTimer = null }
+      // 反推 CSS 动画当前角度，交接到内联 transform 时不跳变
+      const elapsed = Date.now() - (this._spinStartTs || Date.now())
+      const currentAngle = (elapsed / SPIN_PERIOD_MS) * 360
+      const currentMod = ((currentAngle % 360) + 360) % 360
+      // 同一次 setData：撤掉无限动画 + 用内联 transform 接住当前角度（无过渡），避免回弹闪烁
+      this._wheelAngle = currentAngle
+      this.setData({ isStopping: true, wheelFreeSpin: false, wheelTransition: '', wheelAngle: currentAngle })
       // 进化①：中奖扇区按收藏/口味偏好加权选出（落点几何由 angleForWinner 保证一致）
-      const winnerIdx = foodLogic.weightedPickIndex(pool, this.buildPrefs())
+      const winnerIdx = foodLogic.weightedPickIndex(pool, this.buildPrefs(), null, this.buildCtx())
       const targetMod = foodLogic.angleForWinner(winnerIdx)
-      const currentMod = ((this._wheelAngle % 360) + 360) % 360
       const delta = (targetMod - currentMod + 360) % 360
       const extraRounds = 3 + Math.floor(Math.random() * 3)
-      this._wheelAngle = this._wheelAngle + extraRounds * 360 + delta
-      this.setData({ wheelAngle: this._wheelAngle, wheelTransition: 'transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);' })
-      this._revealTimer = setTimeout(() => {
-        this.playDing()
-        this.setData({ showReveal: true })
-        this._resultTimer = setTimeout(() => {
-          this.setData({ showReveal: false, isSpinning: false, isStopping: false })
-          this.showResultModal(pool[winnerIdx], 'wheel')
-        }, 600)
-      }, 2000)
+      const finalAngle = currentAngle + extraRounds * 360 + delta
+      this._wheelAngle = finalAngle
+      this._wheelPendingFood = pool[winnerIdx]
+      // 下一帧再设目标角度 + 减速缓动，确保"接住当前角度"已先生效（否则两次 setData 合并会从旧值直接缓动）
+      this._stopTimer2 = setTimeout(() => {
+        this._stopTimer2 = null
+        this.setData({ wheelAngle: finalAngle, wheelTransition: 'transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);' })
+        this._revealTimer = setTimeout(() => {
+          this._revealTimer = null
+          this.playDing()
+          this.setData({ showReveal: true })
+          this._resultTimer = setTimeout(() => {
+            this._resultTimer = null
+            this.finishWheelResult(this._wheelPendingFood)
+          }, 600)
+        }, 2000)
+      }, 32)
     }
+  },
+
+  finishWheelResult(food) {
+    if (!food) return
+    // 落点已稳定：把累计角度归一到 [0,360)，避免长会话角度无限增大（mod 360 视觉等价）
+    this._wheelAngle = ((this._wheelAngle % 360) + 360) % 360
+    this._wheelPendingFood = null
+    this.setData({
+      showReveal: false,
+      isSpinning: false,
+      isStopping: false,
+      wheelFreeSpin: false,
+      wheelTransition: '',
+      wheelAngle: this._wheelAngle
+    })
+    this.showResultModal(food, 'wheel')
   },
 
   stopWheel() {
@@ -584,7 +907,7 @@ Page({
   // ========== 塔罗 ==========
 
   initTarot() {
-    const pool = this.getFilteredFoods()
+    const pool = this.candidatePool()
     const fortune = TAROT_FORTUNES[Math.floor(Math.random() * TAROT_FORTUNES.length)]
     let tarotPool = pool.filter(fortune.filter)
     if (tarotPool.length < 3) tarotPool = pool
@@ -592,27 +915,27 @@ Page({
     const prefs = this.buildPrefs()
     const tarotAssigned = []
     for (let i = 0; i < 3; i++) {
-      const food = tarotPool.length > 0 ? foodLogic.weightedPick(tarotPool, prefs) : { emoji: '🍽️', name: '暂无' }
+      const food = tarotPool.length > 0 ? foodLogic.weightedPick(tarotPool, prefs, null, this.buildCtx()) : { emoji: '🍽️', name: '暂无' }
       tarotAssigned.push(food)
     }
+    this._tarotFortuneObj = fortune
     this.setData({
-      tarotAssigned,
+      tarotAssigned: tarotAssigned.map(f => ({ emoji: f.emoji, name: f.name })),
       tarotFlipped: [false, false, false],
       tarotFortune: null,
-      tarotFortuneObj: fortune,
       showTarotReset: false
     })
   },
 
   onFlipTarot(e) {
     const idx = parseInt(e.currentTarget.dataset.index)
-    const { tarotFlipped, tarotAssigned, tarotFortuneObj } = this.data
+    const { tarotFlipped, tarotAssigned } = this.data
     if (tarotFlipped[idx]) return
     const flipped = tarotFlipped.slice()
     flipped[idx] = true
     const updates = { tarotFlipped: flipped }
     if (!tarotFlipped.some(f => f)) {
-      updates.tarotFortune = tarotFortuneObj
+      updates.tarotFortune = this._tarotFortuneObj
     }
     updates.showTarotReset = flipped.every(f => f)
     this.setData(updates)
@@ -631,25 +954,65 @@ Page({
   // ========== 星期 ==========
 
   onRollWeekTap() {
-    this.rollWeek()
+    if (this._isRolling) {
+      this.interruptRollAnimation()
+    }
+    this.startRollAnimation()
   },
 
-  rollWeek(silent) {
+  startRollAnimation() {
+    const pool = this.candidatePool()
+    if (pool.length === 0) {
+      wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
+      this._isRolling = false
+      return
+    }
+    this._isRolling = true
+    this.noteRejected(this.data.weekFood)
+    // Phase 1: 旧内容退出
+    this.setData({ rollPhase: 'out' })
+    this._rollTimer1 = setTimeout(() => {
+      // Phase 2: 更新数据
+      this.rollWeek(true, true)
+      // Phase 3: 新内容进入
+      this.setData({ rollPhase: 'in' })
+      this._rollTimer2 = setTimeout(() => {
+        // Phase 4: 清理（延迟 800ms 确保所有 animation 已完成，避免 forwards 与 class 移除冲突）
+        this._isRolling = false
+        this.setData({ rollPhase: '' })
+      }, 800)
+    }, 150)
+  },
+
+  interruptRollAnimation() {
+    this.clearTimer('_rollTimer1')
+    this.clearTimer('_rollTimer2')
+    this._isRolling = false
+    this.setData({ rollPhase: '' })
+  },
+
+  // 「今日推荐」理由：与实际推荐依据（当天星期主题）一致，而非个人历史偏好，避免解释与选菜脱节
+  buildWeekReason(food) {
+    if (!food) return ''
+    const day = new Date().getDay()
+    const theme = WEEK_THEMES[day]
+    const matched = (food.tags || []).find(t => WEEK_THEME_TAGS[day].includes(t))
+    return matched ? `${theme} · 适合「${matched}」一下` : `${theme} · 换换口味`
+  },
+
+  rollWeek(silent, force) {
     if (typeof silent !== 'boolean') silent = false
     const today = new Date().toDateString()
-    const storageKey = 'wtec_week_food_date'
-    const savedDate = safeGet(storageKey, '')
-    const savedFood = safeGet('wtec_week_food', null)
     // FIX: 同一天返回已推荐的结果
-    if (savedDate === today && savedFood && savedFood.name) {
-      const stillValid = this.getFilteredFoods().some(f => f.name === savedFood.name)
+    if (!force && this._weekFoodDate === today && this._weekFood && this._weekFood.name) {
+      const stillValid = this.getFilteredFoods().some(f => f.name === this._weekFood.name)
       if (stillValid) {
-        this.setData({ weekFood: savedFood, weekReason: foodLogic.explainPick(savedFood, this.buildPrefs()) })
-        if (!silent) this.showResultModal(savedFood, 'week')
+        this.setData({ weekFood: this._weekFood, weekReason: this.buildWeekReason(this._weekFood) })
+        if (!silent) this.showResultModal(this._weekFood, 'week')
         return
       }
     }
-    const pool = this.getFilteredFoods()
+    const pool = this.candidatePool()
     if (pool.length === 0) {
       wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
       return
@@ -659,11 +1022,12 @@ Page({
     const themeTags = WEEK_THEME_TAGS[day]
     const prefs = { tasteCounts: {} }
     themeTags.forEach((tag, i) => { prefs.tasteCounts[tag] = (3 - i) * 2 })
-    const food = foodLogic.weightedPick(pool, prefs)
-    safeSet(storageKey, today)
-    safeSet('wtec_week_food', food)
-    // 首页推荐卡的「推荐理由」（基于个性化偏好）
-    this.setData({ weekFood: food, weekReason: foodLogic.explainPick(food, this.buildPrefs()) })
+    const food = foodLogic.weightedPick(pool, prefs, null, this.buildCtx())
+    this._weekFoodDate = today
+    this._weekFood = food
+    this.queueStorageWrite(STORAGE_KEYS.weekFoodDate, today)
+    this.queueStorageWrite(STORAGE_KEYS.weekFood, food)
+    this.setData({ weekFood: food, weekReason: this.buildWeekReason(food) })
     if (!silent) this.showResultModal(food, 'week')
   },
 
@@ -727,14 +1091,14 @@ Page({
       : `你选了"${pkSelections.A}"，TA选了"${pkSelections.B}"`
     this.setData({
       pkData: newPkData,
-      pkPhase: 'ready',
+      pkPhase: 'done', // 揭晓后进入终态，防止重复点「揭晓结果」刷高默契计数；经「再来一次」重置
       pkMatch: match,
       pkPunishment: punishment ? punishment.text : '',
       pkResultTitle: title,
       pkResultText: text,
       pkResultFood: food || null
     }, () => {
-      this.saveState()
+      safeSet(STORAGE_KEYS.pkData, newPkData)
       if (food) this.addToHistory(food)
       this.showResultModal(food, 'pk')
       if (wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
@@ -748,9 +1112,10 @@ Page({
   // ========== 盲盒 ==========
 
   openBlindbox() {
-    if (this.data.blindboxOpened) return
+    if (this.data.blindboxOpened || this.data.blindboxShaking || this._blindboxTimer || this._blindboxRevealTimer) return
     this.setData({ blindboxShaking: true, blindboxFood: null, blindboxRarity: '' })
     this._blindboxTimer = setTimeout(() => {
+      this._blindboxTimer = null
       const food = this.pickRandom()
       if (!food) {
         wx.showToast({ title: '没有符合条件的食物', icon: 'none' })
@@ -760,14 +1125,33 @@ Page({
       // FIX: 按预算映射稀有度 R/SR/SSR
       const rarityMap = { '💰': 'R', '💰💰': 'SR', '💰💰💰': 'SSR' }
       const rarity = rarityMap[food.budget] || 'R'
+      this._blindboxPendingFood = food
+      this._blindboxPendingRarity = rarity
       // FIX: 分阶段动画：shake → 光效 → 展示
       this.setData({ blindboxShaking: false, blindboxOpened: true, blindboxFood: food, blindboxRarity: rarity })
       // FIX: 盲盒揭晓震动反馈
       if (wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
-      setTimeout(() => {
-        this.showResultModal(food, 'blindbox')
+      // 内层揭晓定时器也需追踪，否则离开页面后仍会对已卸载页面 setData
+      this._blindboxRevealTimer = setTimeout(() => {
+        this._blindboxRevealTimer = null
+        this.finishBlindboxResult(food)
       }, 600)
     }, 800)
+  },
+
+  finishBlindboxResult(food) {
+    this._blindboxPendingFood = null
+    this._blindboxPendingRarity = ''
+    if (food) this.showResultModal(food, 'blindbox')
+  },
+
+  clearBlindboxTimers(clearPending) {
+    this.clearTimer('_blindboxTimer')
+    this.clearTimer('_blindboxRevealTimer')
+    if (clearPending !== false) {
+      this._blindboxPendingFood = null
+      this._blindboxPendingRarity = ''
+    }
   },
 
   // ========== 跳转管理页 ==========
@@ -804,28 +1188,74 @@ Page({
   // ========== 空状态处理 ==========
 
   onRelaxedSpin() {
-    const { filters } = this.data
-    const relaxed = { ...filters }
-    if (relaxed.sceneIdx > 0) relaxed.sceneIdx = 0
-    else if (relaxed.budgetIdx > 0) relaxed.budgetIdx = 0
-    else if (relaxed.timeIdx > 0) relaxed.timeIdx = 0
-    this.setData({ filters: relaxed }, () => {
+    // 空集可能由任一维度（含口味/避免/排除近期）造成，一次性全部放宽再转，避免原地打转回到空状态
+    this.setData({
+      filters: { sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tasteIdx: 0, avoid: '' },
+      excludeRecent: false
+    }, () => {
       this.applyFilterChange()
       this.spinWheel()
     })
   },
 
+  // NEW: 展开/收起备选项
+  onToggleAlternatives() {
+    this.setData({ showAlternatives: !this.data.showAlternatives })
+  },
+
+  // NEW: 显示反馈面板
+  onShowFeedback() {
+    this.setData({ showFeedback: true })
+  },
+
+  // NEW: 提交反馈（把当前结果标记为拒绝）
+  onFeedbackSubmit(e) {
+    this.noteRejected(this.data.currentResult)
+    this.setData({ showFeedback: false })
+    wx.showToast({ title: '已收到反馈', icon: 'none' })
+  },
+
+  // NEW: 选择备选项作为主结果
+  onPickAlternative(e) {
+    const idx = e.currentTarget.dataset.idx
+    const alt = this.data.alternativeResults[idx]
+    if (!alt) return
+    const nameIndex = this._nameIndex || new Map(this._foods.map(f => [f.name, f]))
+    const fullFood = nameIndex.get(alt.name)
+    if (!fullFood) return
+    this.noteRejected(this.data.currentResult)
+    this.showResultModal(fullFood, this.data.currentResultSource)
+  },
+
   onShareResult() {
     const { currentResult } = this.data
-    if (!currentResult) return
+    if (!currentResult || this._shareBusy) return
+    this._shareBusy = true
+    const requestId = (this._shareRequestId || 0) + 1
+    this._shareRequestId = requestId
+    this.setData({ shareCanvasMounted: true }, () => {
+      const start = () => this.drawShareCard(currentResult, requestId)
+      if (wx.nextTick) wx.nextTick(start)
+      else this._shareMountTimer = setTimeout(() => {
+        this._shareMountTimer = null
+        start()
+      }, 0)
+    })
+  },
+
+  drawShareCard(currentResult, requestId) {
+    if (!this._isPageVisible || requestId !== this._shareRequestId) return
     const query = wx.createSelectorQuery()
     query.select('#shareCanvas').fields({ node: true, size: true }).exec((res) => {
+      if (!this._isPageVisible || requestId !== this._shareRequestId) return
       if (!res[0] || !res[0].node) {
         wx.showToast({ title: '画布初始化失败', icon: 'none' })
+        this.releaseShareCanvas()
         return
       }
       try {
         const canvas = res[0].node
+        this._shareCanvasNode = canvas
         const ctx = canvas.getContext('2d')
         const dpr = (wx.getWindowInfo && wx.getWindowInfo().pixelRatio) || 2
         const w = 600, h = 800
@@ -893,6 +1323,8 @@ Page({
         wx.canvasToTempFilePath({
           canvas: canvas,
           success: (res) => {
+            if (requestId !== this._shareRequestId) return
+            this.releaseShareCanvas()
             wx.saveImageToPhotosAlbum({
               filePath: res.tempFilePath,
               success: () => wx.showToast({ title: '已保存到相册', icon: 'success' }),
@@ -905,14 +1337,30 @@ Page({
             })
           },
           fail: (err) => {
+            if (requestId !== this._shareRequestId) return
+            this.releaseShareCanvas()
             wx.showToast({ title: '图片生成失败：' + (err.errMsg || ''), icon: 'none' })
           }
         })
       } catch (e) {
+        this.releaseShareCanvas()
         wx.showToast({ title: '生成失败：' + (e.message || ''), icon: 'none' })
       }
     })
   },
 
+  releaseShareCanvas(updateView) {
+    this.clearTimer('_shareMountTimer')
+    this._shareRequestId = (this._shareRequestId || 0) + 1
+    this._shareBusy = false
+    if (this._shareCanvasNode) {
+      this._shareCanvasNode.width = 1
+      this._shareCanvasNode.height = 1
+      this._shareCanvasNode = null
+    }
+    if (updateView !== false && this.data.shareCanvasMounted) {
+      this.setData({ shareCanvasMounted: false })
+    }
+  },
 
 })
