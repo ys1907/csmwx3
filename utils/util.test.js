@@ -46,3 +46,17 @@ test('uid: 生成非空且基本唯一', () => {
   assert.ok(a && b)
   assert.notStrictEqual(a, b)
 })
+
+test('migrateFood: 旧分类归一到新分类', () => {
+  assert.strictEqual(migrateFood({ name: '黄焖鸡', category: '中式快餐' }).category, '饭类套餐')
+  assert.strictEqual(migrateFood({ name: '煎饼', category: '街边小吃' }).category, '小吃点心')
+  assert.strictEqual(migrateFood({ name: '寿司', category: '日韩' }).category, '日韩料理')
+  assert.strictEqual(migrateFood({ name: '意面', category: '西式' }).category, '西式简餐')
+  // 火锅烧烤需细分：foodType 或菜名命中烧烤 → 烧烤，否则火锅冒菜
+  assert.strictEqual(migrateFood({ name: '自助烧烤', category: '火锅烧烤' }).category, '烧烤')
+  assert.strictEqual(migrateFood({ name: '烤羊腿', category: '火锅烧烤', foodType: '烧烤' }).category, '烧烤')
+  assert.strictEqual(migrateFood({ name: '四川火锅', category: '火锅烧烤' }).category, '火锅冒菜')
+  // 新分类与缺失分类保持既有行为
+  assert.strictEqual(migrateFood({ name: '红烧肉', category: '家常菜' }).category, '家常菜')
+  assert.strictEqual(migrateFood({ name: '无分类' }).category, '家常菜')
+})
