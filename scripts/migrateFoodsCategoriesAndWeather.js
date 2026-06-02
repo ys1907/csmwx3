@@ -21,7 +21,7 @@ function normalizeCategory(item) {
     if (item.foodType === '烧烤' || /烧烤|烤串|烤羊/.test(item.name || '')) return '烧烤'
     return '火锅冒菜'
   }
-  return CATEGORY_REMAP[c] || c
+  return CATEGORY_REMAP[c] || c || '家常菜'
 }
 
 // ② weatherTags 推断（逻辑源自 scripts/enrichFoods.js inferWeatherTags）
