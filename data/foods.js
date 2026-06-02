@@ -57595,7 +57595,10 @@ module.exports = [
     },
     "aliases": [],
     "regionTags": [],
-    "weatherTags": [],
+    "weatherTags": [
+      "降温适合",
+      "雨天适合"
+    ],
     "dietWarnings": [],
     "allergenTags": []
   }
