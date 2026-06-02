@@ -21,4 +21,14 @@ function safeSet(key, val) {
   }
 }
 
-module.exports = { safeGet, safeSet }
+function safeRemove(key) {
+  try {
+    wx.removeStorageSync(key)
+    return true
+  } catch (e) {
+    console.error('[storage] removeStorageSync failed:', key, e)
+    return false
+  }
+}
+
+module.exports = { safeGet, safeSet, safeRemove }

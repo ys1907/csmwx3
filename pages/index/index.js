@@ -4,7 +4,6 @@ const { DING_SOUND } = require('../../data/sounds.js')
 const { safeGet, safeSet } = require('../../utils/storage.js')
 const foodLogic = require('../../utils/foodLogic.js')
 const {
-  APP_VERSION,
   FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,

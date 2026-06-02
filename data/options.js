@@ -1,22 +1,26 @@
 // 共享常量：index 页与 manage 页统一从此处引用，避免重复定义导致不一致
+// 仅作导出/导入的数据格式标记（manage 导出 payload.version）。
+// ⚠️ 绝不进任何 storage key——用户数据 key 已与版本解耦，见 STORAGE_KEYS 与 utils/migrations.js。
 const APP_VERSION = 'v3'
 
-// foods 种子版本：仅用于「是否从 data/foods.js 重播种菜品库」的闸门。
-// 与 APP_VERSION 解耦——更新菜品数据只重置 foods，不动 history/收藏/SSR 图鉴/PK（它们的 key 仍挂 APP_VERSION）。
+// foods 种子版本：仅用于「是否从 data/foods.js 重播种菜品库」的闸门（与用户数据无关）。
+// bump 它 → 下次启动从 data/foods.js 重播种菜品库；history/收藏/SSR 图鉴/PK 全不受影响。
 const FOODS_SEED_VERSION = 'v4'
 
+// 所有 key 稳定、与版本号解耦：版本变更永不误删用户数据。数据结构变更走 utils/migrations.js。
 const STORAGE_KEYS = {
-  foods: 'wtec_foods_' + APP_VERSION,
-  history: 'wtec_history_' + APP_VERSION,
-  favorites: 'wtec_fav_' + APP_VERSION,
-  pkData: 'wtec_pk_' + APP_VERSION,
+  foods: 'wtec_foods',
+  history: 'wtec_history',
+  favorites: 'wtec_fav',
+  pkData: 'wtec_pk',
   localVersion: 'wtec_foods_local_version',
   foodsRev: 'wtec_foods_rev', // 菜品库修订标记：管理页每次持久化时更新，供首页判断是否需重建全量 foods
   weekFood: 'wtec_week_food',
   weekFoodDate: 'wtec_week_food_date',
-  cooldownFamilyPicks: 'wtec_cooldown_fam_' + APP_VERSION,
-  ssrPity: 'wtec_ssr_pity_' + APP_VERSION,        // 抽卡保底计数（自上次 SSR 后的累计抽数）
-  ssrCollection: 'wtec_ssr_dex_' + APP_VERSION    // SSR 图鉴（抽到过的 SSR 菜，去重）
+  cooldownFamilyPicks: 'wtec_cooldown_fam',
+  ssrPity: 'wtec_ssr_pity',        // 抽卡保底计数（自上次 SSR 后的累计抽数）
+  ssrCollection: 'wtec_ssr_dex',   // SSR 图鉴（抽到过的 SSR 菜，去重）
+  schemaVersion: 'wtec_schema_version' // 存储 schema 版本，见 utils/migrations.js
 }
 
 const SCENE_OPTIONS = ['全部场景', '外卖', '堂食', '自己做', '公司食堂']
