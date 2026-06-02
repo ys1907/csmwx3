@@ -387,4 +387,10 @@ test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () =
   assert.deepStrictEqual(inferSeason(new Date(2026, 11, 15).getTime()), ['降温适合']) // 12 月
   assert.deepStrictEqual(inferSeason(new Date(2026, 3, 15).getTime()), [])            // 4 月（春）
   assert.deepStrictEqual(inferSeason(new Date(2026, 9, 15).getTime()), [])            // 10 月（秋）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 5, 1).getTime()), ['炎热适合'])   // 6 月（夏下界）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 1, 28).getTime()), ['降温适合'])  // 2 月（冬上界）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 4, 31).getTime()), [])            // 5 月（夏前）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 8, 1).getTime()), [])             // 9 月（夏后）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 2, 1).getTime()), [])             // 3 月（冬后）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 10, 30).getTime()), [])           // 11 月（冬前）
 })
