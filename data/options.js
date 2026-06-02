@@ -10,7 +10,9 @@ const STORAGE_KEYS = {
   foodsRev: 'wtec_foods_rev', // 菜品库修订标记：管理页每次持久化时更新，供首页判断是否需重建全量 foods
   weekFood: 'wtec_week_food',
   weekFoodDate: 'wtec_week_food_date',
-  cooldownFamilyPicks: 'wtec_cooldown_fam_' + APP_VERSION
+  cooldownFamilyPicks: 'wtec_cooldown_fam_' + APP_VERSION,
+  ssrPity: 'wtec_ssr_pity_' + APP_VERSION,        // 抽卡保底计数（自上次 SSR 后的累计抽数）
+  ssrCollection: 'wtec_ssr_dex_' + APP_VERSION    // SSR 图鉴（抽到过的 SSR 菜，去重）
 }
 
 const SCENE_OPTIONS = ['全部场景', '外卖', '堂食', '自己做', '公司食堂']

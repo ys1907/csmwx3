@@ -4,7 +4,7 @@ const {
   filterFoods, buildWheelPool, resolveWheelWinner, SECTOR_DEG, SECTOR_OFFSET,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
   explainPick, computeStreak, buildMealCombo,
-  buildRichReason, pickAlternatives, inferSeason, rollRarity
+  buildRichReason, pickAlternatives, inferSeason, rollRarityWithPity
 } = require('./foodLogic.js')
 
 const FOODS = [
@@ -387,27 +387,31 @@ test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () =
   assert.deepStrictEqual(inferSeason(new Date(2026, 10, 30).getTime()), [])           // 11 月（冬前）
 })
 
-test('rollRarity: 概率边界映射 R<0.80<=SR<0.95<=SSR', () => {
-  assert.strictEqual(rollRarity(() => 0), 'R')
-  assert.strictEqual(rollRarity(() => 0.79), 'R')
-  assert.strictEqual(rollRarity(() => 0.80), 'SR')
-  assert.strictEqual(rollRarity(() => 0.94), 'SR')
-  assert.strictEqual(rollRarity(() => 0.95), 'SSR')
-  assert.strictEqual(rollRarity(() => 0.999), 'SSR')
+test('rollRarityWithPity: 基础概率（pity=0）R88 / SR11 / SSR1', () => {
+  assert.strictEqual(rollRarityWithPity(0, () => 0.005).rarity, 'SSR')  // r<0.01
+  assert.strictEqual(rollRarityWithPity(0, () => 0.05).rarity, 'SR')    // 0.01<=r<0.12
+  assert.strictEqual(rollRarityWithPity(0, () => 0.5).rarity, 'R')      // r>=0.12
 })
 
-test('rollRarity: 大样本分布近似 80/15/5', () => {
-  let seed = 987654321
-  const rng = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff }
-  const c = { R: 0, SR: 0, SSR: 0 }
-  for (let i = 0; i < 20000; i++) c[rollRarity(rng)]++
-  assert.ok(Math.abs(c.R / 20000 - 0.80) < 0.03, 'R≈80%')
-  assert.ok(Math.abs(c.SR / 20000 - 0.15) < 0.03, 'SR≈15%')
-  assert.ok(Math.abs(c.SSR / 20000 - 0.05) < 0.02, 'SSR≈5%')
+test('rollRarityWithPity: 未中SSR则计数+1，中SSR重置为0', () => {
+  assert.strictEqual(rollRarityWithPity(0, () => 0.5).ssrPity, 1)
+  assert.strictEqual(rollRarityWithPity(5, () => 0.5).ssrPity, 6)
+  assert.strictEqual(rollRarityWithPity(10, () => 0.005).ssrPity, 0)   // 中SSR重置
 })
 
-test('rollRarity 与选菜解耦：签名只吃 rng、不接触 food', () => {
+test('rollRarityWithPity: SSR概率随计数递增并封顶16%', () => {
+  assert.strictEqual(rollRarityWithPity(15, () => 0.155).rarity, 'SSR')   // pity15→rSSR=0.16，0.155命中
+  assert.notStrictEqual(rollRarityWithPity(20, () => 0.17).rarity, 'SSR') // 封顶0.16，0.17不中
+  assert.notStrictEqual(rollRarityWithPity(14, () => 0.155).rarity, 'SSR')// pity14→rSSR=0.15，0.155不中
+})
+
+test('rollRarityWithPity: 累计25抽硬保底必出SSR', () => {
+  assert.strictEqual(rollRarityWithPity(24, () => 0.99).rarity, 'SSR')
+  assert.strictEqual(rollRarityWithPity(24, () => 0.99).ssrPity, 0)
+})
+
+test('rollRarityWithPity: 与选菜解耦（只吃 pity + rng）', () => {
   const food = { name: '蛋炒饭', tags: [], defaultPoolWeight: 1.0 }
-  assert.strictEqual(rollRarity(() => 0.99), 'SSR')
+  assert.strictEqual(rollRarityWithPity(0, () => 0.005).rarity, 'SSR')
   assert.strictEqual(weightedPick([food], {}, () => 0.5).name, '蛋炒饭')
 })

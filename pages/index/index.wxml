@@ -7,7 +7,7 @@
   </view>
 
   <!-- ============ 推荐 tab：盲盒 ============ -->
-  <view wx:if="{{activeTab === 'home'}}" class="home">
+  <view hidden="{{activeTab !== 'home'}}" class="home">
     <view class="topbar">
       <view class="topbar-text">
         <text class="app-title">今天吃什么</text>
@@ -34,7 +34,19 @@
         <view class="dishcard rarity-{{revealRarity}}">
           <view class="holo" wx:if="{{revealRarity === 'SSR'}}"></view>
           <view class="fav-corner" catchtap="onToggleFav">{{currentResultIsFav ? '♥' : '♡'}}</view>
+          <view class="rarity-badge badge-{{revealRarity}}">{{revealRarity}}</view>
           <text class="crown" wx:if="{{revealRarity === 'SSR'}}">👑</text>
+          <block wx:if="{{revealRarity === 'SSR'}}">
+            <view class="spark spark-a"></view>
+            <view class="spark spark-b"></view>
+            <view class="spark spark-c"></view>
+            <view class="spark spark-d"></view>
+            <view class="spark spark-e"></view>
+            <view class="spark spark-f"></view>
+            <view class="spark spark-g"></view>
+            <view class="spark spark-h"></view>
+            <view class="spark spark-i"></view>
+          </block>
           <text class="dish-emoji">{{currentResult.emoji}}</text>
           <text class="dish-name">{{currentResult.name}}</text>
           <text class="dish-reason">{{resultReason}}</text>
@@ -56,7 +68,7 @@
   </view>
 
   <!-- ============ 我的 tab ============ -->
-  <view wx:if="{{activeTab === 'mine'}}" class="mine">
+  <view hidden="{{activeTab !== 'mine'}}" class="mine">
     <view class="mine-header"><text class="app-title">我的</text></view>
     <view class="mine-card streak-card" wx:if="{{mineStreak}}">
       <text class="streak-num">{{mineStreak.current}}</text>
@@ -65,6 +77,18 @@
     <view class="mine-card" wx:if="{{mineProfile}}">
       <text class="mine-sec">口味画像</text>
       <text class="mine-headline">{{mineProfile.headline}}</text>
+    </view>
+    <view class="mine-card">
+      <text class="mine-sec">✨ SSR 图鉴（{{mineSsrDex.length}}）</text>
+      <view wx:if="{{mineSsrDex.length === 0}}" class="mine-empty">还没抽到 SSR，继续开盲盒碰碰运气 ✨</view>
+      <view class="dex-grid">
+        <view wx:for="{{mineSsrDex}}" wx:key="name" class="dex-card">
+          <view class="dex-badge">SSR</view>
+          <text class="dex-emoji">{{item.emoji}}</text>
+          <text class="dex-name">{{item.name}}</text>
+          <text class="dex-date">{{item.dateStr}}</text>
+        </view>
+      </view>
     </view>
     <view class="mine-card">
       <text class="mine-sec">爱吃榜（{{mineFavorites.length}}）</text>

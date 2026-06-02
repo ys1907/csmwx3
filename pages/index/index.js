@@ -60,6 +60,7 @@ Page({
     mineStreak: null,
     mineHistory: [],
     mineFavorites: [],
+    mineSsrDex: [],
     // ===== 分享 =====
     shareCanvasMounted: false,
   },
@@ -174,6 +175,8 @@ Page({
     this._history = safeGet(STORAGE_KEYS.history, [])
     this._favorites = safeGet(STORAGE_KEYS.favorites, [])
     this._cooldownFamilyPicks = {}
+    this._ssrPity = safeGet(STORAGE_KEYS.ssrPity, 0)
+    this._ssrCollection = safeGet(STORAGE_KEYS.ssrCollection, [])
 
     this.setData({ headerDate: util.formatDate(new Date(), true) }, () => {
       this.updateFilterSummary()
@@ -335,7 +338,10 @@ Page({
     if (this.data.boxPhase !== 'idle') return
     const food = this.pickRandom()
     if (!food) { wx.showToast({ title: '没有符合条件的食物', icon: 'none' }); return }
-    const rarity = foodLogic.rollRarity()          // 纯概率，与 food 无关
+    const roll = foodLogic.rollRarityWithPity(this._ssrPity)   // 伪概率保底，与 food 无关
+    const rarity = roll.rarity
+    this._ssrPity = roll.ssrPity
+    this.queueStorageWrite(STORAGE_KEYS.ssrPity, roll.ssrPity)
     const isFav = (this._favorites || []).some(f => f.name === food.name)
     const resultReason = foodLogic.buildRichReason(food, this.buildCtx())
     this._pendingReveal = { food, rarity, isFav, resultReason }
@@ -362,6 +368,7 @@ Page({
       auraClass: '',
     })
     this.addToHistory(p.food)
+    if (p.rarity === 'SSR') this.addToSsrCollection(p.food)
   },
 
   onRetry() {
@@ -392,6 +399,15 @@ Page({
     }
     this.invalidateCache()
     this.queueStorageWrite(STORAGE_KEYS.history, history)
+  },
+
+  // 抽到 SSR 记入图鉴（同名去重，存本地缓存）
+  addToSsrCollection(food) {
+    if (!food) return
+    const col = this._ssrCollection || []
+    if (col.some(c => c.name === food.name)) return
+    this._ssrCollection = [{ name: food.name, emoji: food.emoji, category: food.category, date: new Date().toISOString() }, ...col]
+    this.queueStorageWrite(STORAGE_KEYS.ssrCollection, this._ssrCollection)
   },
 
   onToggleFav() {
@@ -445,6 +461,7 @@ Page({
         mineStreak: foodLogic.computeStreak(history, Date.now()),
         mineHistory: history.slice(0, 20).map(h => ({ ...h, dateStr: h.date ? util.formatDate(new Date(h.date)) : '' })),
         mineFavorites: this._favorites || [],
+        mineSsrDex: (this._ssrCollection || []).map(c => ({ ...c, dateStr: c.date ? util.formatDate(new Date(c.date)) : '' })),
       })
     } else {
       this.setData({ activeTab: 'home' })

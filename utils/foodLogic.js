@@ -362,11 +362,23 @@ function inferSeason(now) {
 
 // ========== 盲盒稀有度：纯概率，与菜无关（R 80% / SR 15% / SSR 5%）==========
 // 仅决定揭晓动画档位；rng 可注入便于测试。
-function rollRarity(rng) {
-  const r = (rng || Math.random)()
-  if (r < 0.80) return 'R'
-  if (r < 0.95) return 'SR'
-  return 'SSR'
+// 伪概率（保底）抽稀有度：基础 R88 / SR11 / SSR1。
+// SSR 每未中一次概率 +1%，封顶 16%；累计 25 抽硬保底必出；中 SSR 后计数清零。
+// ssrPity = 自上次 SSR 后的累计抽数（持久化于本地缓存）。返回 { rarity, ssrPity:新计数 }。
+function rollRarityWithPity(ssrPity, rng) {
+  const random = rng || Math.random
+  const pity = ssrPity || 0
+  let rarity
+  if (pity + 1 >= 25) {
+    rarity = 'SSR'                                  // 硬保底：累计第 25 抽必出
+  } else {
+    const rSSR = Math.min(0.01 + pity * 0.01, 0.16) // SSR 动态概率，封顶 16%
+    const r = random()
+    if (r < rSSR) rarity = 'SSR'
+    else if (r < rSSR + 0.11) rarity = 'SR'         // SR 固定 11%
+    else rarity = 'R'                               // 其余为 R（基础 88%）
+  }
+  return { rarity, ssrPity: rarity === 'SSR' ? 0 : pity + 1 }
 }
 
 module.exports = {
@@ -384,7 +396,7 @@ module.exports = {
   computeStreak,
   buildMealCombo,
   inferSeason,
-  rollRarity,
+  rollRarityWithPity,
   WHEEL_SECTORS,
   SECTOR_DEG,
   SECTOR_OFFSET
