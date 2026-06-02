@@ -1,6 +1,10 @@
 // 共享常量：index 页与 manage 页统一从此处引用，避免重复定义导致不一致
 const APP_VERSION = 'v3'
 
+// foods 种子版本：仅用于「是否从 data/foods.js 重播种菜品库」的闸门。
+// 与 APP_VERSION 解耦——更新菜品数据只重置 foods，不动 history/收藏/SSR 图鉴/PK（它们的 key 仍挂 APP_VERSION）。
+const FOODS_SEED_VERSION = 'v4'
+
 const STORAGE_KEYS = {
   foods: 'wtec_foods_' + APP_VERSION,
   history: 'wtec_history_' + APP_VERSION,
@@ -39,6 +43,7 @@ const MEAL_ROLE_OPTIONS = ['全部类型', '正餐', '配菜', '小吃', '甜品
 
 module.exports = {
   APP_VERSION,
+  FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,
   BUDGET_OPTIONS,

@@ -4,6 +4,7 @@ const { safeGet, safeSet } = require('../../utils/storage.js')
 const foodLogic = require('../../utils/foodLogic.js')
 const {
   APP_VERSION,
+  FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,
   BUDGET_OPTIONS,
@@ -71,7 +72,7 @@ Page({
     const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
     const localFoods = safeGet(STORAGE_KEYS.foods, null)
     let foods = []
-    if (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0) {
+    if (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0) {
       foods = localFoods.map(util.migrateFood)
     } else {
       foods = foodsData.map(util.migrateFood)
@@ -147,7 +148,7 @@ Page({
   // foods 的唯一持久化入口
   persistFoods(foods) {
     safeSet(STORAGE_KEYS.foods, foods)
-    safeSet(STORAGE_KEYS.localVersion, APP_VERSION)
+    safeSet(STORAGE_KEYS.localVersion, FOODS_SEED_VERSION)
     safeSet(STORAGE_KEYS.foodsRev, Date.now()) // 标记菜品库已变更，首页据此决定是否重建全量 foods
   },
 

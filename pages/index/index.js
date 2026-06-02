@@ -5,6 +5,7 @@ const { safeGet, safeSet } = require('../../utils/storage.js')
 const foodLogic = require('../../utils/foodLogic.js')
 const {
   APP_VERSION,
+  FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,
   BUDGET_OPTIONS,
@@ -164,7 +165,7 @@ Page({
   initData() {
     const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
     const localFoods = safeGet(STORAGE_KEYS.foods, null)
-    this._foods = (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
+    this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
       ? localFoods.map(util.migrateFood)
       : foodsData.map(util.migrateFood)
     this._filteredCache = null
@@ -203,7 +204,7 @@ Page({
     if (rev !== this._foodsRev) {
       const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
       const localFoods = safeGet(STORAGE_KEYS.foods, null)
-      this._foods = (localVersion === APP_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
+      this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
         ? localFoods.map(util.migrateFood)
         : foodsData.map(util.migrateFood)
       this._nameIndex = null
