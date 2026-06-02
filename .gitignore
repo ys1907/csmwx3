@@ -13,8 +13,8 @@ dist/
 .DS_Store
 Thumbs.db
 
-# 数据迁移/清洗脚本备份
-*.backup
+# 数据迁移/清洗脚本备份（覆盖 .backup / .enrich_backup / .pre_migrate.backup 等命名）
+*backup
 
 # 菜品库导出产物
 食谱导出_*
