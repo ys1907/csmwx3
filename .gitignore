@@ -12,3 +12,9 @@ dist/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 数据迁移/清洗脚本备份
+*.backup
+
+# 菜品库导出产物
+食谱导出_*
