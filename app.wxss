@@ -4,37 +4,45 @@
 
 page {
   /* ===== 背景 / 卡片 / 填充 ===== */
-  --page-bg: #F5F5F7;
+  --page-bg: #FCF7F1;
   --card-bg: #FFFFFF;
-  --fill-subtle: rgba(120, 120, 128, 0.08);   /* 标签、输入框等次级填充 */
-  --fill-hover: rgba(120, 120, 128, 0.16);
-  --separator: rgba(60, 60, 67, 0.12);
+  --fill-subtle: rgba(74, 63, 58, 0.06);   /* 标签、输入框等次级填充 */
+  --fill-hover: rgba(74, 63, 58, 0.12);
+  --separator: #EFE7DD;
 
   /* ===== 语义色 ===== */
-  --primary: #FF7A00;                          /* 主操作色：暖橙，食物/温暖氛围 */
-  --primary-soft: rgba(255, 122, 0, 0.12);
-  --primary-glow: rgba(255, 122, 0, 0.25);
-  --secondary: #5AC8FA;                        /* 辅助色：清爽蓝 */
-  --secondary-soft: rgba(90, 200, 250, 0.12);
-  --food-accent: #FF9F0A;                      /* 食物高亮，独立于主操作色 */
-  --food-soft: rgba(255, 159, 10, 0.14);
+  --primary: #FF9466;                          /* 行动与食物：暖橙 */
+  --primary-soft: rgba(255, 148, 102, 0.12);
+  --primary-glow: rgba(255, 148, 102, 0.25);
+  --primary-deep: #FF7A45;
+  --secondary: #9FD8C8;                        /* 薄荷：清新标签 */
+  --secondary-soft: #E6F4EF;
+  --food-accent: #FF9466;                      /* 食物高亮 = 行动色 */
+  --food-soft: rgba(255, 148, 102, 0.14);
+  --pink: #EBA9C4;                             /* 柔粉：收藏 / 情侣 */
+  --pink-soft: #FBEAF1;
+  --mint: #9FD8C8;
+  --mint-soft: #E6F4EF;
+  --gold: #FFC36B;                             /* SSR 专用 */
+  --gold-deep: #F5A623;
+  --gold-light: #FFE7BE;
   --success: #34C759;
   --danger: #FF3B30;
-  --blue-accent: #5AC8FA;
-  --blue-soft: rgba(90, 200, 250, 0.12);
-  --orange-accent: #FF9F0A;
-  --orange-soft: rgba(255, 159, 10, 0.14);
+  --blue-accent: #9FD8C8;
+  --blue-soft: #E6F4EF;
+  --orange-accent: #FF9466;
+  --orange-soft: rgba(255, 148, 102, 0.14);
 
   /* ===== 文字 ===== */
-  --text-primary: #1D1D1F;
-  --text-secondary: #6E6E73;
-  --text-tertiary: #8E8E93;
+  --text-primary: #4A3F3A;
+  --text-secondary: #9B8D85;
+  --text-tertiary: #B8ADA3;
   --text-inverse: #FFFFFF;
 
   /* ===== 阴影（克制、轻） ===== */
-  --shadow-card: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
-  --shadow-soft: 0 8rpx 28rpx rgba(0, 0, 0, 0.06);
-  --shadow-float: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4rpx 18rpx rgba(255, 148, 102, 0.10);
+  --shadow-soft: 0 16rpx 44rpx rgba(255, 148, 102, 0.14);
+  --shadow-float: 0 10rpx 22rpx rgba(255, 148, 102, 0.12);
   --shadow-sheet: 0 -8rpx 40rpx rgba(0, 0, 0, 0.12);
   --shadow-inner: inset 0 1rpx 2rpx rgba(0, 0, 0, 0.04);
   /* 阴影层级（精简为三级语义） */
@@ -68,12 +76,12 @@ page {
   /* ===== 历史「玻璃」别名 → 映射为干净值（旧引用自动生效） ===== */
   --glass-bg: #FFFFFF;
   --glass-bg-strong: #FFFFFF;
-  --glass-bg-hover: #F5F5F7;
-  --glass-border: rgba(60, 60, 67, 0.10);
-  --glass-stroke: rgba(60, 60, 67, 0.10);
-  --glass-stroke-strong: rgba(60, 60, 67, 0.16);
+  --glass-bg-hover: #FCF7F1;
+  --glass-border: #EFE7DD;
+  --glass-stroke: #EFE7DD;
+  --glass-stroke-strong: rgba(74, 63, 58, 0.16);
   --glass-highlight: 0 0 0 0 rgba(0, 0, 0, 0);
-  --shadow-glass: 0 8rpx 28rpx rgba(0, 0, 0, 0.06); /* 已废弃，请使用 --shadow-card */
+  --shadow-glass: 0 8rpx 28rpx rgba(255, 148, 102, 0.10); /* 已废弃，请使用 --shadow-card */
 
   /* Sheet 材质：默认纯色（低端降级），支持时叠加轻微半透明 */
   --sheet-bg: #FFFFFF;
