@@ -360,6 +360,15 @@ function buildMealCombo(foods, count, rng) {
   return picked
 }
 
+// ========== 季节弱信号：纯本地、零依赖（替代需联网的实时天气） ==========
+// 由当前月份推断适配的 weatherTags，喂给 foodWeight 的天气匹配。now 可注入便于测试。
+function inferSeason(now) {
+  const month = (now ? new Date(now) : new Date()).getMonth() + 1 // 1..12
+  if (month >= 6 && month <= 8) return ['炎热适合']
+  if (month === 12 || month === 1 || month === 2) return ['降温适合']
+  return [] // 春秋中性，不加权（「雨天适合」需实时天气，季节方案不触发）
+}
+
 module.exports = {
   filterFoods,
   buildWheelPool,
@@ -374,6 +383,7 @@ module.exports = {
   pickAlternatives,
   computeStreak,
   buildMealCombo,
+  inferSeason,
   WHEEL_SECTORS,
   SECTOR_DEG,
   SECTOR_OFFSET

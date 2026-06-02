@@ -4,7 +4,7 @@ const {
   filterFoods, buildWheelPool, resolveWheelWinner, SECTOR_DEG, SECTOR_OFFSET,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
   explainPick, computeStreak, buildMealCombo,
-  buildRichReason, pickAlternatives
+  buildRichReason, pickAlternatives, inferSeason
 } = require('./foodLogic.js')
 
 const FOODS = [
@@ -378,4 +378,13 @@ test('pickAlternatives: 排除同组同族', () => {
   assert.strictEqual(alts.length, 2)
   assert.ok(!alts.some(a => a.name === '红烧肉盖饭'), '不应出现同等价组')
   assert.ok(!alts.some(a => a.name === '红烧肉'), '不应出现主推荐')
+})
+
+test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () => {
+  assert.deepStrictEqual(inferSeason(new Date(2026, 6, 15).getTime()), ['炎热适合'])  // 7 月
+  assert.deepStrictEqual(inferSeason(new Date(2026, 7, 1).getTime()), ['炎热适合'])   // 8 月
+  assert.deepStrictEqual(inferSeason(new Date(2026, 0, 15).getTime()), ['降温适合'])  // 1 月
+  assert.deepStrictEqual(inferSeason(new Date(2026, 11, 15).getTime()), ['降温适合']) // 12 月
+  assert.deepStrictEqual(inferSeason(new Date(2026, 3, 15).getTime()), [])            // 4 月（春）
+  assert.deepStrictEqual(inferSeason(new Date(2026, 9, 15).getTime()), [])            // 10 月（秋）
 })
