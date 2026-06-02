@@ -16,6 +16,26 @@ function normalizeCategory(food) {
   return LEGACY_CATEGORY_MAP[c] || c || '家常菜'
 }
 
+// 按 name/category/tags/foodType/mealRole 推断季节适配标签（炎热/降温/雨天适合）。
+// 供 migrateFood 在 weatherTags 缺失时运行时填充，使季节弱信号加权生效。
+function inferWeatherTags(food) {
+  const name = food.name || ''
+  const category = food.category
+  const tags = Array.isArray(food.tags) ? food.tags : []
+  const foodType = food.foodType
+  const mealRole = food.mealRole
+  const weather = []
+  if (tags.includes('凉') || tags.includes('清爽') || category === '轻食') weather.push('炎热适合')
+  if (/凉皮|冷面|沙拉|凉面|凉粉|冰/.test(name) && !weather.includes('炎热适合')) weather.push('炎热适合')
+  if ((foodType === '饮品' || mealRole === '饮品') && !weather.includes('炎热适合')) weather.push('炎热适合')
+  if (tags.includes('热食') || tags.includes('辣') || category === '火锅冒菜' || category === '烧烤') weather.push('降温适合')
+  if (/火锅|羊肉汤|麻辣烫|烧烤|烤肉|烤鱼|串串/.test(name) && !weather.includes('降温适合')) weather.push('降温适合')
+  if (category === '汤粥炖品' && mealRole === '汤品' && !weather.includes('降温适合')) weather.push('降温适合')
+  if (/馄饨|云吞|抄手|热汤|汤面|拉面|火锅/.test(name) && !weather.includes('雨天适合')) weather.push('雨天适合')
+  if ((category === '火锅冒菜' || category === '汤粥炖品') && !weather.includes('雨天适合')) weather.push('雨天适合')
+  return weather
+}
+
 function uid() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36)
 }
@@ -40,11 +60,12 @@ function formatDate(date, withWeekday) {
 }
 
 function migrateFood(food) {
+  const category = normalizeCategory(food)
   return {
     _id: food._id || uid(),
     name: food.name || '未知食物',
     emoji: food.emoji || '🍽️',
-    category: normalizeCategory(food),
+    category,
     scene: food.scene || '堂食',
     budget: food.budget || '💰',
     time: food.time || '快',
@@ -68,7 +89,9 @@ function migrateFood(food) {
     availability: food.availability || { 外卖: '中', 堂食: '中', 自己做: '中', 食堂: '中' },
     aliases: Array.isArray(food.aliases) ? food.aliases : [],
     regionTags: Array.isArray(food.regionTags) ? food.regionTags : [],
-    weatherTags: Array.isArray(food.weatherTags) ? food.weatherTags : [],
+    weatherTags: (Array.isArray(food.weatherTags) && food.weatherTags.length > 0)
+      ? food.weatherTags
+      : inferWeatherTags({ name: food.name, category, tags: food.tags, foodType: food.foodType, mealRole: food.mealRole }),
     dietWarnings: Array.isArray(food.dietWarnings) ? food.dietWarnings : [],
     allergenTags: Array.isArray(food.allergenTags) ? food.allergenTags : [],
   }

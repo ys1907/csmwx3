@@ -60,3 +60,14 @@ test('migrateFood: 旧分类归一到新分类', () => {
   assert.strictEqual(migrateFood({ name: '红烧肉', category: '家常菜' }).category, '家常菜')
   assert.strictEqual(migrateFood({ name: '无分类' }).category, '家常菜')
 })
+
+test('migrateFood: weatherTags 为空时按 category/tags 推断填充', () => {
+  // 辣/火锅冒菜 → 降温适合
+  assert.ok(migrateFood({ name: '麻辣香锅', category: '火锅冒菜', tags: ['辣'] }).weatherTags.includes('降温适合'))
+  // 凉 → 炎热适合
+  assert.ok(migrateFood({ name: '凉面', category: '面食粉类', tags: ['凉'] }).weatherTags.includes('炎热适合'))
+  // 旧分类先归一(火锅烧烤→火锅冒菜)再推断，含辣 → 降温适合
+  assert.ok(migrateFood({ name: '麻辣烫', category: '火锅烧烤', tags: ['辣'] }).weatherTags.includes('降温适合'))
+  // 已有 weatherTags 则保留，不覆盖
+  assert.deepStrictEqual(migrateFood({ name: 'x', category: '家常菜', weatherTags: ['雨天适合'] }).weatherTags, ['雨天适合'])
+})
