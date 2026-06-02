@@ -70,4 +70,6 @@ test('migrateFood: weatherTags 为空时按 category/tags 推断填充', () => {
   assert.ok(migrateFood({ name: '麻辣烫', category: '火锅烧烤', tags: ['辣'] }).weatherTags.includes('降温适合'))
   // 已有 weatherTags 则保留，不覆盖
   assert.deepStrictEqual(migrateFood({ name: 'x', category: '家常菜', weatherTags: ['雨天适合'] }).weatherTags, ['雨天适合'])
+  // 纯 category 路径：火锅烧烤归一为火锅冒菜后，即使无辣 tag 也应触发降温适合
+  assert.ok(migrateFood({ name: '清汤火锅', category: '火锅烧烤', tags: [] }).weatherTags.includes('降温适合'), '归一后 category=火锅冒菜 应触发降温适合')
 })
