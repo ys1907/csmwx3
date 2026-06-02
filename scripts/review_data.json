@@ -1,0 +1,3154 @@
+{
+  "review": {
+    "炸茄盒": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸茄盒",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "客家咸鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "客家咸鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "土豆泥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "土豆泥",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "海南鸡饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "海南鸡饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "炸鸡": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "炸鸡",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "关东煮": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "关东煮",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "盐烤青花鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "盐烤青花鱼",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "卷饼": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "卷饼",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "玉米排骨汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "玉米排骨汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "毛豆": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "毛豆",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤饭团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤饭团",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "烤虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤虾",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "小葱拌豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "小葱拌豆腐",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "山药排骨汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "山药排骨汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "绿豆饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "绿豆饼",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "鸡爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸡爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "油酥烧饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "油酥烧饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "大盘鸡拌面": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "大盘鸡拌面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "臭干子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "臭干子",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "蒜泥白肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜泥白肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "蛋炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "蛋炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "炸糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸糕",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "烤培根": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤培根",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "蒸南瓜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸南瓜",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "麻团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "麻团",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "水煮肉片饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.35,
+      "suggested_name": "水煮肉片饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "珍珠丸子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "珍珠丸子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "煎蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "煎蛋",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "白灼菜心": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "白灼菜心",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "花胶鸡火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "花胶鸡火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "香菇滑鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香菇滑鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "炸鱿鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸鱿鱼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "粉蒸肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "粉蒸肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "扬州炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "扬州炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "热狗": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "热狗",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "越南春卷": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "越南春卷",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "河南烩面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "河南烩面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "松鼠鳜鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "松鼠鳜鱼",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "炸酱面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "炸酱面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "奶油蘑菇汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "奶油蘑菇汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "粢饭团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "粢饭团",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "照烧鸡饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "照烧鸡饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "红烧肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "红烧肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烧饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烧饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "披萨": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "披萨",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "京酱肉丝饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "京酱肉丝饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "盖浇饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "自选盖浇饭",
+      "pool": "全国默认午晚餐池",
+      "action": "作为父级选项保留"
+    },
+    "燕麦碗": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "燕麦碗",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "客家酿豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "客家酿豆腐",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "海鲜盖饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "海鲜盖饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "莲藕排骨汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "莲藕排骨汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "豆花饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "豆花饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "东坡肉饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "东坡肉饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "金边粉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "金边粉",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "啤酒鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "啤酒鸭",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "四川火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "四川火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烤猪排": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤猪排",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "和风炸酱面": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "和风炸酱面",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "煮花生": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "煮花生",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "番茄牛腩": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "番茄牛腩",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烤三文鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤三文鱼",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "炸春卷": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸春卷",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "回锅肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "回锅肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "咸味可丽饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "咸味法式可丽饼",
+      "pool": "尝鲜/加餐池",
+      "action": "改名后保留"
+    },
+    "肉丸汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "肉丸汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "自助烧烤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "自助烧烤",
+      "pool": "聚餐/到店池",
+      "action": "作为父级选项保留"
+    },
+    "冒菜": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "冒菜",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "重庆小面": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "重庆小面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "乌冬面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "日式乌冬面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "泡菜炒饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "泡菜炒饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "猪肚鸡火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "猪肚鸡火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烤鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鸭",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "鱼头豆腐汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鱼头豆腐汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "小米粥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "小米粥",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "蒜蓉蒸虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉蒸虾",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "三明治": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "三明治",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "生鱼片": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "生鱼片",
+      "pool": "尝鲜/风险提示池",
+      "action": "保留"
+    },
+    "东北烧烤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "东北烧烤",
+      "pool": "聚餐/到店池",
+      "action": "作为父级选项保留"
+    },
+    "油条": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "油条",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "炒河粉": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "炒河粉",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "番茄牛腩饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "番茄牛腩饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "鱼香茄子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鱼香茄子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "肉末茄子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "肉末茄子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烤玉米": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤玉米",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤扇贝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤扇贝",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "蒸红薯": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸红薯",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "羊肉粉": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "羊肉粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "美蛙鱼头": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "美蛙鱼头",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "红烧肉盖饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "红烧肉盖饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "意式肉酱面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "意式肉酱面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "板栗烧鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "板栗烧鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "椰子鸡汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "椰子鸡汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "咖喱饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "咖喱饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "咖喱叻沙": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "叻沙米粉（咖喱风味）",
+      "pool": "地区/尝鲜扩展池",
+      "action": "合并或保留风味变体"
+    },
+    "烤鱿鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鱿鱼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "炸麻球": {
+      "conclusion": "合并后不独立展示",
+      "weight": 0,
+      "suggested_name": "炸麻球",
+      "pool": "甜品饮品池",
+      "action": "合并为别名"
+    },
+    "辣椒船": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "辣椒船",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "香肠": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香肠",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "大阪煎饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "大阪烧（御好烧）",
+      "pool": "地区/尝鲜扩展池",
+      "action": "改名后保留"
+    },
+    "过桥米线": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "过桥米线",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "水煮鱼饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.35,
+      "suggested_name": "水煮鱼饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "酸菜鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸菜鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "炸蘑菇": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸蘑菇",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "糖葫芦": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖葫芦",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "拌饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "韩式拌饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "烤肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤肉",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "叉烧饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "叉烧饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "豉油鸡饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "豉油鸡饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "地三鲜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "地三鲜",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "卤肉饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "卤肉饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "干锅花菜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "干锅花菜",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "阳春面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "阳春面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "鸭锁骨": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸭锁骨",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "炒乌冬": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "日式炒乌冬",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "腊肉炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "腊肉炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "山西刀削面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "山西刀削面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "吐司": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "吐司",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "炒面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "家常炒面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "作为父级选项保留"
+    },
+    "龙抄手": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "龙抄手",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "潮汕牛肉火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "潮汕牛肉火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "煎饼果子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "煎饼果子",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "咖喱鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "咖喱鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "糖拌西红柿": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖拌西红柿",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "凉皮": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "凉皮",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "鸭头": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸭头",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "打卤面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "打卤面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "猪蹄": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "猪蹄",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "咸豆浆": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "咸豆浆",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "绿豆粥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "绿豆粥",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "水蒸蛋": {
+      "conclusion": "合并后不独立展示",
+      "weight": 0,
+      "suggested_name": "水蒸蛋",
+      "pool": "做饭配菜池",
+      "action": "合并为别名"
+    },
+    "煮玉米": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "煮玉米",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "虎皮青椒": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "虎皮青椒",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "螺蛳粉": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "螺蛳粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "烤羊肉串": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤羊肉串",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "羊肉泡馍": {
+      "conclusion": "默认低权重",
+      "weight": 0.3,
+      "suggested_name": "羊肉泡馍",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "拍黄瓜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "拍黄瓜",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "牛肉火锅": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "牛肉火锅",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "鱼肉汉堡": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "鱼排汉堡",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "金枪鱼饭团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "金枪鱼饭团",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "烤鸡心": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鸡心",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤牛肉串": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤牛肉串",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "回锅肉饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "回锅肉饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "手抓饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "手抓饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "锅盔": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "锅盔",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "砂锅米线": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "砂锅米线",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "麻辣烫": {
+      "conclusion": "保留默认池",
+      "weight": 0.35,
+      "suggested_name": "麻辣烫",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "黄瓜蛋汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "黄瓜蛋汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "烤香菇": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤香菇",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "温州糯米饭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "温州糯米饭",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "馄饨": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "馄饨",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "胡辣汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "胡辣汤",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "亲子盖饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "日式亲子丼",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "清蒸鲈鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "清蒸鲈鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "蔬菜沙拉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蔬菜沙拉",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "冬瓜丸子汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "冬瓜丸子汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "炸猪排": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸猪排",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "驴打滚": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "驴打滚",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "烤生蚝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤生蚝",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "白切鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "白切鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "裤带面": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "裤带面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "糖火烧": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖火烧",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "生煎包": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "生煎包",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "钟水饺": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "钟水饺",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "鱼香肉丝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鱼香肉丝",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "酸汤面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "酸汤面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "饭团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "饭团",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "南瓜汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "南瓜汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "香辣虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香辣虾",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "蛋花汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蛋花汤",
+      "pool": "汤羹搭配池",
+      "action": "建立父子关系"
+    },
+    "万州烤鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "万州烤鱼",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "土豆饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "土豆饼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "华夫饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "华夫饼",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "盐焗鸡饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "盐焗鸡饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "云吞面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "云吞面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "萝卜丸子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "萝卜丸子",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "炒年糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炒年糕",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "芸豆卷": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "芸豆卷",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "玉米卷饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "玉米卷饼",
+      "pool": "尝鲜/加餐池",
+      "action": "保留"
+    },
+    "烧鹅饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "烧鹅饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "炸蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸蛋",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "手撕包菜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "手撕包菜",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "铁板烧": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "铁板烧",
+      "pool": "聚餐/到店池",
+      "action": "作为父级选项保留"
+    },
+    "章鱼丸子": {
+      "conclusion": "合并后不独立展示",
+      "weight": 0,
+      "suggested_name": "章鱼小丸子",
+      "pool": "小吃夜宵池",
+      "action": "合并为别名"
+    },
+    "梅菜扣肉饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "梅菜扣肉饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "鸡蛋灌饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸡蛋灌饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "烤豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤豆腐",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "油泼面": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "油泼面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "豚骨拉面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "豚骨拉面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "豆腐脑": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "豆腐脑",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "三文鱼饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "三文鱼饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "醋溜土豆丝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "醋溜土豆丝",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "凉拌黄瓜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "凉拌黄瓜",
+      "pool": "做饭配菜池",
+      "action": "合并或降重"
+    },
+    "印尼炒饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "印尼炒饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "凉拌木耳": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "凉拌木耳",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "白切鸡饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "白切鸡饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "脆皮烤肠": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "脆皮烤肠",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "炒粿条": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "炒粿条",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "沙嗲": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "沙嗲",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "糖醋鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖醋鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "鸡蛋饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸡蛋饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "部队火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "韩式部队锅",
+      "pool": "聚餐/到店池",
+      "action": "改名后保留"
+    },
+    "长沙臭豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "长沙臭豆腐",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "锅包肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "锅包肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烤乳猪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤乳猪",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "火烧": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "火烧",
+      "pool": "小吃夜宵池",
+      "action": "改名或拆分"
+    },
+    "糖糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖糕",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "酸奶碗": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸奶碗",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "酸辣汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸辣汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "荷叶粉蒸肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "荷叶粉蒸肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "驴肉火烧": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "驴肉火烧",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "冷面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "冷面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "粽子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "粽子",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "麻婆豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "麻婆豆腐",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "白菜豆腐汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "白菜豆腐汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "豆腐鱼汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "豆腐鱼汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "臭豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "臭豆腐",
+      "pool": "小吃夜宵池",
+      "action": "建立父子关系"
+    },
+    "蒸蛋羹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸蛋羹",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "烤羊腿": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤羊腿",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "酱香饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酱香饼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤秋刀鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤秋刀鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "淀粉肠": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "淀粉肠",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "番茄炒蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "番茄炒蛋",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "炸藕盒": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "炸藕盒",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "梅干菜锅盔": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "梅干菜锅盔",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "糖醋里脊饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "糖醋里脊饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "可乐鸡翅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "可乐鸡翅",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "鱼香肉丝饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "鱼香肉丝饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "烤鳗鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鳗鱼",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "烧鸭饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "烧鸭饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "红豆薏米粥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "红豆薏米粥",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "青椒肉丝饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "青椒肉丝饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "三文鱼饭团": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "三文鱼饭团",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "宫保鸡丁": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "宫保鸡丁",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "香炒面": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "香炒面",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "溜肉段": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "溜肉段",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "桂花糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "桂花糕",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "猪排饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "猪排饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "清炒时蔬": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "清炒时蔬",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "锅贴": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "锅贴",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "蒸玉米": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸玉米",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "葱姜炒蟹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "葱姜炒蟹",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "福建面": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "福建面",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "叫花鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "叫花鸡",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烤春鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤春鸡",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "干炸丸子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "干炸丸子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "茶叶蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "茶叶蛋",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "番茄蛋汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "番茄蛋汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "椰浆饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "椰浆饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "小锅米线": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "小锅米线",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "姜母鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "姜母鸭",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "老北京涮羊肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "老北京涮羊肉",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烧肉": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "烧肉",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "蒸紫薯": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸紫薯",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "麻辣香锅": {
+      "conclusion": "默认低权重",
+      "weight": 0.35,
+      "suggested_name": "麻辣香锅",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "椒麻鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "椒麻鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "手撕鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "手撕鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "油焖大虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "油焖大虾",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "三杯鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "三杯鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "菌菇火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "菌菇火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "糖醋里脊": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖醋里脊",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "炸猪排饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "炸猪排饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "溏心蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "溏心蛋",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "牛肉粉": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "牛肉粉",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "咖喱炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "咖喱炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "梅菜扣肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "梅菜扣肉",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "皮蛋豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "皮蛋豆腐",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "猪脚饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "猪脚饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "椰子鸡火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "椰子鸡火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "土豆肉丝饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "土豆肉丝饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "干煸豆角饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "干煸豆角饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "木须肉饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "木须肉饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "蒸山药": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒸山药",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "软炸里脊": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "软炸里脊",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "宫保鸡丁饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "宫保鸡丁饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "重庆火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "重庆火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "黄焖鸡米饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "黄焖鸡米饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "清蒸鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "清蒸鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "盐水鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "盐水鸭",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "虾饺": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "虾饺",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤鸡爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鸡爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "寿司": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "寿司",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "避风塘炒蟹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "避风塘炒蟹",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "辣子鸡丁饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.35,
+      "suggested_name": "辣子鸡丁饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "户外烧烤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "户外烧烤",
+      "pool": "聚餐/到店池",
+      "action": "作为父级选项保留"
+    },
+    "清蒸大闸蟹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "清蒸大闸蟹",
+      "pool": "季节限定池",
+      "action": "保留"
+    },
+    "鸭脖": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸭脖",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "酸辣粉": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "酸辣粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "串串香": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "串串香",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "麻婆豆腐饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "麻婆豆腐饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "宜宾燃面": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "宜宾燃面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "双层牛肉堡": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "双层牛肉汉堡",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "烤土豆": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤土豆",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "烤红薯": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤红薯",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "新加坡鸡饭": {
+      "conclusion": "合并后不独立展示",
+      "weight": 0,
+      "suggested_name": "海南鸡饭（新加坡式）",
+      "pool": "地区/尝鲜扩展池",
+      "action": "合并为别名"
+    },
+    "豌豆黄": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "豌豆黄",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "擀面皮": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "擀面皮",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "酿苦瓜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酿苦瓜",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "芝麻烧饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "芝麻烧饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "红油抄手": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "红油抄手",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "小笼包": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "小笼包",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "香煎鳕鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香煎鳕鱼",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "烤茄子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤茄子",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "猪肉盖饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "猪肉盖饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "鸭掌": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸭掌",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤香肠": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤香肠",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "卤味": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "卤味",
+      "pool": "小吃夜宵池",
+      "action": "作为父级选项保留"
+    },
+    "孜然羊肉饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "孜然羊肉饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "酿豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酿豆腐",
+      "pool": "自己做/下馆子单菜池",
+      "action": "建立父子关系"
+    },
+    "烤全羊": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤全羊",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烤羊排": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤羊排",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "柠檬凤爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "柠檬凤爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "新疆拌面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "新疆拌面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "泡菜饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "泡菜饼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "酸菜炖粉条": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸菜炖粉条",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "煎饼": {
+      "conclusion": "暂停默认展示",
+      "weight": 0,
+      "suggested_name": "煎饼",
+      "pool": "待确认暂停",
+      "action": "改名或拆分后再启用"
+    },
+    "番茄蔬菜汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "番茄蔬菜汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "泡椒凤爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "泡椒凤爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "红烧鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "红烧鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "小酥肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "小酥肉",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "口水鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "口水鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "玉米片": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "玉米片",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "生牛肉拌饭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "韩式生拌牛肉饭",
+      "pool": "尝鲜/风险提示池",
+      "action": "改名后保留"
+    },
+    "蒜蓉开边虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉开边虾",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "灌汤包": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "灌汤包",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "葱油饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "葱油饼",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "卤鸡爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "卤鸡爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "叻沙": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "叻沙米粉",
+      "pool": "地区/尝鲜扩展池",
+      "action": "改名后保留"
+    },
+    "肉骨茶饭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "肉骨茶套餐",
+      "pool": "地区/尝鲜扩展池",
+      "action": "改名后保留"
+    },
+    "盐焗鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "盐焗鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "水果碗": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "水果碗",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "豆浆": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "豆浆",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "烤五花肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤五花肉",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "虫草花鸡汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "虫草花鸡汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "肉火烧": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "肉火烧",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "云吞": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "云吞",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "萝卜牛腩汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "萝卜牛腩汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "燕麦粥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "燕麦粥",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "地三鲜饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "地三鲜饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "烤馒头片": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤馒头片",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "酿青椒": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酿青椒",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烤冷面": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤冷面",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "可丽饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "可丽饼",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "冬瓜排骨汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "冬瓜排骨汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "蘑菇汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蘑菇汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "酸辣白菜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸辣白菜",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "海鲜葱饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "海鲜葱饼",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "白灼虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "白灼虾",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "糖醋排骨": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糖醋排骨",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "黄焖鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "黄焖鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "干煸四季豆": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "干煸四季豆",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "兰州拉面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "兰州拉面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "葱油拌面": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "葱油拌面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "丝瓜蛋汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "丝瓜蛋汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "水煮鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "水煮鱼",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "猪脏粉": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "猪脏粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "石锅拌饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "石锅拌饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "担担面": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "担担面",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "樟茶鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "樟茶鸭",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "武汉热干面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "武汉热干面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "青菜蛋汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "青菜蛋汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "香煎牛排": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香煎牛排",
+      "pool": "尝鲜/单菜池",
+      "action": "保留"
+    },
+    "四喜丸子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "四喜丸子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "紫薯粥": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "紫薯粥",
+      "pool": "轻食/早餐池",
+      "action": "保留"
+    },
+    "酱肘子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酱肘子",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "章鱼小丸子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "章鱼小丸子",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "天妇罗": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "天妇罗",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤猪蹄": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤猪蹄",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "酱油炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "酱油炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "鸭翅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鸭翅",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "海鲜泡菜饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "海鲜泡菜饼",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "紫菜蛋花汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "紫菜蛋花汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "玉米浓汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "玉米浓汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "鸡排饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "鸡排饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "蒜蓉粉丝蒸虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉粉丝蒸虾",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "炸虾盖饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "炸虾盖饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "香辣蟹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "香辣蟹",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "烤鸡翅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鸡翅",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "抄手": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "抄手",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "罗宋汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "罗宋汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "肉夹馍": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "肉夹馍",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "番茄火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "番茄火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "鳗鱼饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "鳗鱼饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "蒜蓉西兰花": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉西兰花",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "蒜蓉粉丝扇贝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉粉丝扇贝",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "烤鸡腿": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤鸡腿",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "肥肠粉": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "肥肠粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "糯米糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "糯米糕",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "烤年糕": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤年糕",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "清汤面": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "清汤面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "虎皮鸡爪": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "虎皮鸡爪",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "韭菜盒子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "韭菜盒子",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    },
+    "越南河粉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "越南河粉",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "香炒河粉": {
+      "conclusion": "合并后不独立展示",
+      "weight": 0,
+      "suggested_name": "香炒河粉",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "合并为别名"
+    },
+    "松饼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "松饼",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "葱油鸡": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "葱油鸡",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "卤蛋": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "卤蛋",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "烤牛肉": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤牛肉",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "咖喱牛腩饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "咖喱牛腩饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "红烧茄子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "红烧茄子",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "新疆烧烤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "新疆烧烤",
+      "pool": "聚餐/到店池",
+      "action": "作为父级选项保留"
+    },
+    "蒜蓉茄子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蒜蓉茄子",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "黑椒牛柳饭": {
+      "conclusion": "保留默认池",
+      "weight": 0.65,
+      "suggested_name": "黑椒牛柳饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "醉蟹": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "醉蟹",
+      "pool": "尝鲜/风险提示池",
+      "action": "保留"
+    },
+    "海鲜炒饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "海鲜炒饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "米皮": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "米皮",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "天妇罗盖饭": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "天妇罗盖饭",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "烧鸭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烧鸭",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "爆米花": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "爆米花",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "棉花糖": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "棉花糖",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "酸菜鱼火锅": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "酸菜鱼火锅",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "鲫鱼豆腐汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "鲫鱼豆腐汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "煲仔饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "煲仔饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "味噌蔬菜汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "味噌蔬菜汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "艾窝窝": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "艾窝窝",
+      "pool": "甜品饮品池",
+      "action": "保留"
+    },
+    "纸上烤鱼": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "纸上烤鱼",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "牛肉盖饭": {
+      "conclusion": "保留默认池",
+      "weight": 1,
+      "suggested_name": "牛肉盖饭",
+      "pool": "全国默认午晚餐池",
+      "action": "保留"
+    },
+    "油泼扯面（biángbiáng面）": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "油泼扯面（biángbiáng 面）",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "改名后保留"
+    },
+    "蟹粉豆腐": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蟹粉豆腐",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "椒盐虾": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "椒盐虾",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "臊子面": {
+      "conclusion": "默认低权重",
+      "weight": 0.4,
+      "suggested_name": "臊子面",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "保留"
+    },
+    "汉堡": {
+      "conclusion": "默认低权重",
+      "weight": 0.45,
+      "suggested_name": "汉堡",
+      "pool": "全国默认午晚餐池（低权重）",
+      "action": "作为父级选项保留"
+    },
+    "冬阴功汤面": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "冬阴功汤面",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "蚝油生菜": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蚝油生菜",
+      "pool": "做饭配菜池",
+      "action": "保留"
+    },
+    "西班牙海鲜饭": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "西班牙海鲜饭",
+      "pool": "地区/尝鲜扩展池",
+      "action": "保留"
+    },
+    "蔬菜汤": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "蔬菜汤",
+      "pool": "汤羹搭配池",
+      "action": "保留"
+    },
+    "东坡肘子": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "东坡肘子",
+      "pool": "聚餐/到店池",
+      "action": "保留"
+    },
+    "狮子头": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "狮子头",
+      "pool": "自己做/下馆子单菜池",
+      "action": "保留"
+    },
+    "烤肠": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤肠",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烤金针菇": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烤金针菇",
+      "pool": "小吃夜宵池",
+      "action": "保留"
+    },
+    "烧麦": {
+      "conclusion": "移出默认池",
+      "weight": 0,
+      "suggested_name": "烧麦",
+      "pool": "早餐/加餐池",
+      "action": "保留"
+    }
+  },
+  "new_items": [
+    {
+      "priority": "P0",
+      "name": "水饺",
+      "pools": "全国默认午晚餐池、早餐池",
+      "reason": "全国通用，当前库缺少最基础的饺子父级选项。"
+    },
+    {
+      "priority": "P0",
+      "name": "牛肉面",
+      "pools": "全国默认午晚餐池",
+      "reason": "比“兰州拉面”更通用，可作为父级并保留兰州拉面为地区变体。"
+    },
+    {
+      "priority": "P0",
+      "name": "西红柿鸡蛋面",
+      "pools": "全国默认午晚餐池、自己做",
+      "reason": "高频、清淡、适合家庭和外卖。"
+    },
+    {
+      "priority": "P0",
+      "name": "鸡公煲",
+      "pools": "全国默认午晚餐池",
+      "reason": "常见外卖与堂食选项。"
+    },
+    {
+      "priority": "P0",
+      "name": "烤肉拌饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "常见外卖选项，适合单人午餐。"
+    },
+    {
+      "priority": "P0",
+      "name": "鸡腿饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "基础套餐，覆盖当前单菜“烤鸡腿”的完整餐食版本。"
+    },
+    {
+      "priority": "P0",
+      "name": "红烧排骨饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "常见中式套餐。"
+    },
+    {
+      "priority": "P0",
+      "name": "土豆烧牛肉饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "常见中式套餐。"
+    },
+    {
+      "priority": "P0",
+      "name": "青椒炒肉饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "比“青椒肉丝饭”更普适，可保留二者父子关系。"
+    },
+    {
+      "priority": "P0",
+      "name": "农家小炒肉饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "常见下饭类套餐。"
+    },
+    {
+      "priority": "P0",
+      "name": "自选中式快餐",
+      "pools": "全国默认午晚餐池",
+      "reason": "解决用户只想选店型、不想精确到单菜的情况。"
+    },
+    {
+      "priority": "P0",
+      "name": "两荤一素盒饭",
+      "pools": "全国默认午晚餐池",
+      "reason": "贴近中国用户工作日午餐场景。"
+    },
+    {
+      "priority": "P1",
+      "name": "鲜肉包",
+      "pools": "早餐池",
+      "reason": "当前有小笼包、灌汤包，但缺少更通用的包子父级。"
+    },
+    {
+      "priority": "P1",
+      "name": "肠粉",
+      "pools": "早餐池、地区扩展池",
+      "reason": "华南高频早餐，适合地区增强。"
+    },
+    {
+      "priority": "P1",
+      "name": "皮蛋瘦肉粥",
+      "pools": "早餐池",
+      "reason": "高频粥品，当前粥类偏素。"
+    },
+    {
+      "priority": "P1",
+      "name": "沙县拌面",
+      "pools": "地区扩展池、早餐池",
+      "reason": "全国可获得性较高。"
+    },
+    {
+      "priority": "P1",
+      "name": "桂林米粉",
+      "pools": "地区扩展池",
+      "reason": "常见地区粉面选项。"
+    },
+    {
+      "priority": "P1",
+      "name": "常德米粉",
+      "pools": "地区扩展池",
+      "reason": "适合作为地区包内容。"
+    },
+    {
+      "priority": "P1",
+      "name": "广式烧腊双拼饭",
+      "pools": "地区扩展池、全国默认低权重",
+      "reason": "华南常见且可独立成餐。"
+    },
+    {
+      "priority": "P1",
+      "name": "重庆鸡公煲",
+      "pools": "全国默认低权重",
+      "reason": "常见堂食与外卖品类。"
+    }
+  ],
+  "pauses": [
+    "卷饼",
+    "和风炸酱面",
+    "辣椒船",
+    "牛肉火锅",
+    "沙嗲",
+    "香炒面",
+    "福建面",
+    "烧肉",
+    "煎饼"
+  ],
+  "merges": [
+    "炸麻球",
+    "水蒸蛋",
+    "章鱼小丸子",
+    "海南鸡饭（新加坡式）",
+    "香炒河粉"
+  ]
+}

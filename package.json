@@ -1,0 +1,12 @@
+{
+  "name": "what-to-eat-couple",
+  "version": "3.0.0",
+  "description": "今天吃什么 · 情侣版",
+  "scripts": {
+    "test": "node --test utils/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true
+}
