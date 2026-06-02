@@ -360,6 +360,15 @@ function inferSeason(now) {
   return [] // 春秋中性，不加权（「雨天适合」需实时天气，季节方案不触发）
 }
 
+// ========== 盲盒稀有度：纯概率，与菜无关（R 80% / SR 15% / SSR 5%）==========
+// 仅决定揭晓动画档位；rng 可注入便于测试。
+function rollRarity(rng) {
+  const r = (rng || Math.random)()
+  if (r < 0.80) return 'R'
+  if (r < 0.95) return 'SR'
+  return 'SSR'
+}
+
 module.exports = {
   filterFoods,
   buildWheelPool,
@@ -375,6 +384,7 @@ module.exports = {
   computeStreak,
   buildMealCombo,
   inferSeason,
+  rollRarity,
   WHEEL_SECTORS,
   SECTOR_DEG,
   SECTOR_OFFSET

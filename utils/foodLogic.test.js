@@ -4,7 +4,7 @@ const {
   filterFoods, buildWheelPool, resolveWheelWinner, SECTOR_DEG, SECTOR_OFFSET,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
   explainPick, computeStreak, buildMealCombo,
-  buildRichReason, pickAlternatives, inferSeason
+  buildRichReason, pickAlternatives, inferSeason, rollRarity
 } = require('./foodLogic.js')
 
 const FOODS = [
@@ -385,4 +385,29 @@ test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () =
   assert.deepStrictEqual(inferSeason(new Date(2026, 8, 1).getTime()), [])             // 9 月（夏后）
   assert.deepStrictEqual(inferSeason(new Date(2026, 2, 1).getTime()), [])             // 3 月（冬后）
   assert.deepStrictEqual(inferSeason(new Date(2026, 10, 30).getTime()), [])           // 11 月（冬前）
+})
+
+test('rollRarity: 概率边界映射 R<0.80<=SR<0.95<=SSR', () => {
+  assert.strictEqual(rollRarity(() => 0), 'R')
+  assert.strictEqual(rollRarity(() => 0.79), 'R')
+  assert.strictEqual(rollRarity(() => 0.80), 'SR')
+  assert.strictEqual(rollRarity(() => 0.94), 'SR')
+  assert.strictEqual(rollRarity(() => 0.95), 'SSR')
+  assert.strictEqual(rollRarity(() => 0.999), 'SSR')
+})
+
+test('rollRarity: 大样本分布近似 80/15/5', () => {
+  let seed = 987654321
+  const rng = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff }
+  const c = { R: 0, SR: 0, SSR: 0 }
+  for (let i = 0; i < 20000; i++) c[rollRarity(rng)]++
+  assert.ok(Math.abs(c.R / 20000 - 0.80) < 0.03, 'R≈80%')
+  assert.ok(Math.abs(c.SR / 20000 - 0.15) < 0.03, 'SR≈15%')
+  assert.ok(Math.abs(c.SSR / 20000 - 0.05) < 0.02, 'SSR≈5%')
+})
+
+test('rollRarity 与选菜解耦：签名只吃 rng、不接触 food', () => {
+  const food = { name: '蛋炒饭', tags: [], defaultPoolWeight: 1.0 }
+  assert.strictEqual(rollRarity(() => 0.99), 'SSR')
+  assert.strictEqual(weightedPick([food], {}, () => 0.5).name, '蛋炒饭')
 })
