@@ -452,12 +452,13 @@ Page({
     }
   },
 
-  // NEW: 构建推荐上下文（渠道/地区/天气）
+  // NEW: 构建推荐上下文（渠道 + 季节弱信号）
   buildCtx() {
     const { filters } = this.data
     const scene = filters.sceneIdx > 0 ? SCENE_OPTIONS[filters.sceneIdx] : null
-    // userRegion / weatherTags 后续从 storage 获取，目前预留
-    return { scene }
+    // 季节弱信号：按当前月份注入 weatherTags（纯本地，零依赖）
+    const weatherTags = foodLogic.inferSeason()
+    return { scene, weatherTags }
   },
 
   // 进化②：记录本次会话被「换一个/再开一个」拒绝的菜，后续降权（换筛选时清空）
