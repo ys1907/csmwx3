@@ -109,7 +109,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -146,7 +146,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -223,7 +223,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -255,7 +255,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "奶香",
-      "绵软"
+      "绵软",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "配菜",
@@ -348,7 +349,7 @@ module.exports = [
         "奶香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -465,7 +466,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -587,7 +588,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -622,12 +623,13 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食"
+      "热食",
+      "鲜"
     ],
     "cuisine": "日韩料理",
     "foodType": "汤羹炖品",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -706,7 +708,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -807,7 +809,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -924,8 +926,8 @@ module.exports = [
     "cookingMethods": [
       "常规制作"
     ],
-    "spicyLevel": 2,
-    "enabled": false,
+    "spicyLevel": 1,
+    "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -948,7 +950,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -991,7 +993,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -1073,7 +1075,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1108,7 +1110,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "咸",
-      "香"
+      "香",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -1190,7 +1193,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1281,7 +1284,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -1433,7 +1436,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1469,7 +1472,8 @@ module.exports = [
       "家常",
       "素食",
       "清淡",
-      "素"
+      "素",
+      "凉"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -1566,7 +1570,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1600,12 +1604,13 @@ module.exports = [
       "家常",
       "滋补",
       "热食",
-      "肉"
+      "肉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -1687,7 +1692,7 @@ module.exports = [
         "滋补"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1804,7 +1809,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1915,7 +1920,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2025,7 +2030,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -2160,7 +2165,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2317,7 +2322,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -2397,7 +2402,7 @@ module.exports = [
         "蒜香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2638,7 +2643,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2676,7 +2681,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "配菜",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -2755,7 +2760,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2788,7 +2793,8 @@ module.exports = [
     "tags": [
       "甜",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -2882,7 +2888,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2988,7 +2994,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3152,7 +3158,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -3232,7 +3238,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3361,7 +3367,7 @@ module.exports = [
         "家常"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3492,7 +3498,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3611,7 +3617,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -3655,7 +3661,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -3736,7 +3742,7 @@ module.exports = [
         "嫩"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3869,7 +3875,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "鱿鱼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -3911,7 +3917,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -3994,7 +4000,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4225,7 +4231,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4304,7 +4310,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -4444,7 +4450,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4558,7 +4564,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4724,7 +4730,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "奶香",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
@@ -4821,7 +4828,7 @@ module.exports = [
         "奶香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4920,7 +4927,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -5112,7 +5119,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -5194,7 +5201,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "红烧肉_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.95,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -5301,7 +5308,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5410,7 +5417,7 @@ module.exports = [
         "芝士"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5687,7 +5694,8 @@ module.exports = [
       "家常",
       "素食",
       "饱腹",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
@@ -5780,7 +5788,7 @@ module.exports = [
         "饱腹"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5818,7 +5826,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -5902,7 +5910,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6068,7 +6076,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -6149,7 +6157,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6250,7 +6258,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -6274,7 +6282,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "豆花族",
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -6497,7 +6505,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -6564,7 +6572,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -6643,7 +6651,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6743,7 +6751,7 @@ module.exports = [
     "cookingMethods": [
       "涮煮"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -6767,7 +6775,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -6813,7 +6821,7 @@ module.exports = [
     "cuisine": "西式料理",
     "foodType": "西式主食",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -6886,7 +6894,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -7042,7 +7050,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "咸",
-      "香"
+      "香",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -7126,7 +7135,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7166,7 +7175,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -7246,7 +7255,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7366,7 +7375,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7482,7 +7491,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7524,7 +7533,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -7604,7 +7613,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "回锅肉_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -7694,7 +7703,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -7839,7 +7848,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7958,7 +7967,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -8189,7 +8198,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8321,7 +8330,7 @@ module.exports = [
         "滑"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8452,7 +8461,7 @@ module.exports = [
         "酸辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8577,7 +8586,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -8689,7 +8698,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8717,7 +8726,7 @@ module.exports = [
     "emoji": "🍲",
     "category": "汤粥炖品",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -8727,7 +8736,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -8810,7 +8819,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8853,7 +8862,8 @@ module.exports = [
       "素食",
       "热食",
       "易消化",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -8950,7 +8960,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "粥族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -8990,7 +9000,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -9071,7 +9081,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9108,7 +9118,8 @@ module.exports = [
     "tags": [
       "家常",
       "含蛋",
-      "清爽少负担"
+      "清爽少负担",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
@@ -9199,7 +9210,7 @@ module.exports = [
         "健康"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9294,7 +9305,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -9438,7 +9449,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -9548,7 +9559,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9585,7 +9596,9 @@ module.exports = [
     "tags": [
       "甜",
       "酸",
-      "热食"
+      "热食",
+      "香",
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -9671,7 +9684,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9835,12 +9848,13 @@ module.exports = [
     "tags": [
       "甜辣",
       "素食",
-      "素"
+      "素",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -9921,7 +9935,7 @@ module.exports = [
         "甜辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9961,7 +9975,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -10041,7 +10055,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10169,7 +10183,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10293,7 +10307,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10328,7 +10342,8 @@ module.exports = [
     "tags": [
       "甜",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -10423,7 +10438,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "红薯族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -10543,7 +10558,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10643,7 +10658,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 3,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -10970,7 +10985,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -11052,7 +11067,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11082,7 +11097,7 @@ module.exports = [
     "emoji": "🍲",
     "category": "汤粥炖品",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -11093,7 +11108,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -11175,7 +11190,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11299,7 +11314,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11397,7 +11412,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -11560,7 +11575,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "鱿鱼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -11671,7 +11686,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": "麻团_合并组",
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11895,7 +11910,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12014,7 +12029,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12238,7 +12253,7 @@ module.exports = [
     "cookingMethods": [
       "水煮"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -12261,7 +12276,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.35,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12308,7 +12323,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -12390,7 +12405,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12527,7 +12542,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12633,7 +12648,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12746,7 +12761,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12865,7 +12880,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13147,7 +13162,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -13226,7 +13241,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13386,7 +13401,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -13466,7 +13481,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13589,7 +13604,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13704,7 +13719,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13823,7 +13838,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14108,7 +14123,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "适合早午餐"
+      "适合早午餐",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
@@ -14200,7 +14216,7 @@ module.exports = [
         "早午餐"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14308,7 +14324,7 @@ module.exports = [
       "炒制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -14380,10 +14396,10 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
-      "夜宵"
+      "夜宵",
+      "早餐"
     ],
     "scenes": [
       "外卖",
@@ -14450,7 +14466,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14575,7 +14591,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -14689,7 +14705,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "煎饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -14730,7 +14746,7 @@ module.exports = [
     "cuisine": "东南亚料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -14809,7 +14825,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14844,7 +14860,8 @@ module.exports = [
       "甜",
       "酸",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -14930,7 +14947,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14962,7 +14979,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "凉食"
+      "凉食",
+      "凉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -15048,7 +15066,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15333,7 +15351,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -15414,7 +15432,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15452,7 +15470,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "饮品",
     "mealRole": "小吃",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -15534,7 +15552,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15572,7 +15590,8 @@ module.exports = [
       "素食",
       "热食",
       "易消化",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -15666,7 +15685,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "粥族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -15705,7 +15724,8 @@ module.exports = [
       "嫩滑",
       "素食",
       "蛋",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -15804,7 +15824,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": "蒸蛋羹_合并组",
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15837,7 +15857,8 @@ module.exports = [
     "tags": [
       "甜",
       "热食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -15933,7 +15954,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16062,7 +16083,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16190,7 +16211,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16312,7 +16333,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -16409,7 +16430,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -16430,7 +16451,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16466,7 +16487,9 @@ module.exports = [
     "tags": [
       "辣",
       "凉食",
-      "素"
+      "素",
+      "凉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -16537,7 +16560,7 @@ module.exports = [
     "cookingMethods": [
       "常规制作"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -16561,7 +16584,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16598,7 +16621,8 @@ module.exports = [
       "肉食",
       "热食",
       "适合聚餐",
-      "肉"
+      "肉",
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -16665,7 +16689,7 @@ module.exports = [
       "涮煮"
     ],
     "spicyLevel": 0,
-    "enabled": false,
+    "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -16689,7 +16713,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16806,7 +16830,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16907,7 +16931,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -17048,7 +17072,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -17159,7 +17183,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -17400,7 +17424,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -17442,8 +17466,9 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
+      "早餐",
       "夜宵",
       "加餐"
     ],
@@ -17512,7 +17537,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -17889,7 +17914,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18024,7 +18049,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18114,7 +18139,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -18175,14 +18200,18 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐",
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -18249,7 +18278,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18380,7 +18409,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18554,7 +18583,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -18635,7 +18664,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18673,7 +18702,8 @@ module.exports = [
       "家常",
       "素食",
       "清爽少负担",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
@@ -18766,7 +18796,7 @@ module.exports = [
         "健康"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18898,7 +18928,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18940,7 +18970,7 @@ module.exports = [
     "cuisine": "日韩料理",
     "foodType": "日韩主食",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -19024,7 +19054,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -19133,7 +19163,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19258,7 +19288,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19300,7 +19330,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -19379,7 +19409,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "白切鸡_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -19473,7 +19503,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -19494,7 +19524,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19607,7 +19637,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -19636,7 +19666,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "酥脆"
+      "酥脆",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -19708,7 +19739,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19752,6 +19783,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
+      "午餐",
+      "晚餐",
       "早餐"
     ],
     "scenes": [
@@ -19817,7 +19850,7 @@ module.exports = [
         "甜辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19853,12 +19886,13 @@ module.exports = [
     "tags": [
       "甜辣",
       "肉食",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -19938,7 +19972,7 @@ module.exports = [
         "甜辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20066,7 +20100,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20163,7 +20197,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -20220,7 +20254,8 @@ module.exports = [
       "甜",
       "绵软",
       "热食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -20315,7 +20350,7 @@ module.exports = [
         "绵"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20356,7 +20391,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -20437,7 +20472,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20575,7 +20610,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20694,7 +20729,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烤鱼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -20741,8 +20776,8 @@ module.exports = [
     "canBeMeal": false,
     "mealPeriods": [
       "早餐",
-      "夜宵",
-      "加餐"
+      "加餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -20813,7 +20848,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20932,7 +20967,7 @@ module.exports = [
         "早午餐"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21307,7 +21342,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21398,7 +21433,7 @@ module.exports = [
     "cookingMethods": [
       "炒制"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -21423,7 +21458,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21538,7 +21573,7 @@ module.exports = [
         "绵"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21628,7 +21663,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -21775,7 +21810,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22143,7 +22178,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22257,7 +22292,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": "章鱼小丸子_合并组",
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22503,7 +22538,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "煎饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -22636,7 +22671,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22755,7 +22790,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22881,7 +22916,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22922,7 +22957,8 @@ module.exports = [
     "tags": [
       "咸",
       "嫩滑",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -23001,7 +23037,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "豆花族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -23098,7 +23134,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -23122,7 +23158,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23255,7 +23291,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23287,7 +23323,9 @@ module.exports = [
       "家常",
       "凉食",
       "素食",
-      "素"
+      "素",
+      "凉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -23384,7 +23422,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23483,7 +23521,7 @@ module.exports = [
       "炒制"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -23505,7 +23543,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23544,7 +23582,9 @@ module.exports = [
       "家常",
       "凉食",
       "素食",
-      "素"
+      "素",
+      "凉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -23642,7 +23682,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23876,7 +23916,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23972,7 +24012,7 @@ module.exports = [
       "炒制"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -23996,7 +24036,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24162,7 +24202,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -24239,7 +24279,7 @@ module.exports = [
         "酸甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24366,7 +24406,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "煎饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -24490,7 +24530,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -24604,7 +24644,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24649,7 +24689,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -24730,7 +24770,7 @@ module.exports = [
         "酸甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24820,7 +24860,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -24880,7 +24920,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "夜宵",
@@ -24953,7 +24993,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25059,7 +25099,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25092,12 +25132,13 @@ module.exports = [
     "tags": [
       "甜",
       "酸",
-      "清爽少负担"
+      "清爽少负担",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
     "mealRole": "小吃",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -25185,7 +25226,7 @@ module.exports = [
         "健康"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25315,7 +25356,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25359,7 +25400,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -25440,7 +25481,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25482,7 +25523,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -25552,7 +25594,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25588,7 +25630,8 @@ module.exports = [
     "tags": [
       "酸甜",
       "凉食",
-      "热食"
+      "热食",
+      "凉"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
@@ -25675,7 +25718,7 @@ module.exports = [
         "酸甜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25715,7 +25758,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "咸",
-      "软糯"
+      "软糯",
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -25792,7 +25836,7 @@ module.exports = [
     "festivalTags": [
       "端午节"
     ],
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25831,7 +25875,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -25915,7 +25959,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "麻婆豆腐_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -26054,7 +26098,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26097,7 +26141,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -26179,7 +26223,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26295,7 +26339,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26333,7 +26377,8 @@ module.exports = [
       "嫩滑",
       "素食",
       "蛋",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -26432,7 +26477,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26521,7 +26566,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -26581,11 +26626,11 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
-      "夜宵",
-      "加餐"
+      "加餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -26650,7 +26695,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26692,7 +26737,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -26774,7 +26819,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26817,9 +26862,9 @@ module.exports = [
     "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
       "夜宵",
-      "加餐"
+      "加餐",
+      "早餐"
     ],
     "scenes": [
       "外卖",
@@ -26885,7 +26930,7 @@ module.exports = [
       "time": "快",
       "tags": []
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -26929,7 +26974,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -27021,7 +27066,7 @@ module.exports = [
         "家常"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -27155,7 +27200,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -27192,8 +27237,9 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
+      "早餐",
       "夜宵",
       "加餐"
     ],
@@ -27262,7 +27308,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -27423,7 +27469,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -27503,7 +27549,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -27749,7 +27795,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -27909,7 +27955,8 @@ module.exports = [
       "素食",
       "热食",
       "易消化",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -28003,7 +28050,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -28224,7 +28271,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -28295,7 +28342,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -28373,7 +28420,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "宫保鸡丁_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -28507,7 +28554,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -28551,7 +28598,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -28630,7 +28677,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -28737,7 +28784,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -28862,7 +28909,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -28994,7 +29041,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29102,7 +29149,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29137,7 +29184,8 @@ module.exports = [
     "tags": [
       "甜",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -29232,7 +29280,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29341,7 +29389,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29449,7 +29497,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29536,7 +29584,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -29598,7 +29646,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -29679,7 +29727,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29719,7 +29767,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "配菜",
     "mealRole": "配菜",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -29808,7 +29856,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -29938,7 +29986,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30038,7 +30086,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -30063,7 +30111,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30188,7 +30236,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30233,7 +30281,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -30312,7 +30360,7 @@ module.exports = [
         "滋补"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30428,7 +30476,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -30525,7 +30573,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": false,
+    "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -30550,7 +30598,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30583,7 +30631,8 @@ module.exports = [
     "tags": [
       "甜",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -30677,7 +30726,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30835,7 +30884,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -30913,7 +30962,7 @@ module.exports = [
         "凉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -30955,7 +31004,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -31034,7 +31083,7 @@ module.exports = [
         "凉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -31072,7 +31121,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -31153,7 +31202,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -31195,7 +31244,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -31271,7 +31320,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -31397,7 +31446,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -31438,7 +31487,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -31519,7 +31568,7 @@ module.exports = [
         "酸甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -31645,7 +31694,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -31776,7 +31825,7 @@ module.exports = [
         "嫩"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -32024,7 +32073,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -32067,7 +32116,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -32150,7 +32199,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "梅菜扣肉_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -32184,7 +32233,9 @@ module.exports = [
       "凉食",
       "素食",
       "蛋",
-      "素"
+      "素",
+      "凉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -32285,7 +32336,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -32529,7 +32580,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -32933,7 +32984,8 @@ module.exports = [
       "家常",
       "素食",
       "滋补",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -33029,7 +33081,7 @@ module.exports = [
         "滋补"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -33066,7 +33118,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -33145,7 +33197,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -33370,7 +33422,7 @@ module.exports = [
     "cookingMethods": [
       "涮煮"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -33395,7 +33447,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -33564,7 +33616,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -33644,7 +33696,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -33685,7 +33737,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -33763,7 +33815,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -33795,7 +33847,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "海鲜"
+      "海鲜",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -33803,8 +33856,8 @@ module.exports = [
     "canBeMeal": false,
     "mealPeriods": [
       "早餐",
-      "夜宵",
-      "加餐"
+      "加餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -33875,7 +33928,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34217,7 +34270,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34463,7 +34516,7 @@ module.exports = [
         "社交"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34575,7 +34628,7 @@ module.exports = [
     "seasonTags": [
       "秋季"
     ],
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34687,7 +34740,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34811,7 +34864,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -34904,7 +34957,7 @@ module.exports = [
     "cookingMethods": [
       "煮制"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -34929,7 +34982,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -34968,7 +35021,8 @@ module.exports = [
     "tags": [
       "辣",
       "素食",
-      "素"
+      "素",
+      "麻辣"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -35159,7 +35213,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -35182,7 +35236,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -35303,7 +35357,7 @@ module.exports = [
         "饱腹"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -35428,7 +35482,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -35555,7 +35609,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "红薯族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -35651,7 +35705,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -35785,7 +35839,7 @@ module.exports = [
         "绵"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -35880,7 +35934,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -35903,7 +35957,7 @@ module.exports = [
         "凉"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -35947,7 +36001,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -36026,7 +36080,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -36137,7 +36191,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -36186,10 +36240,10 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
-      "夜宵"
+      "夜宵",
+      "早餐"
     ],
     "scenes": [
       "外卖",
@@ -36257,7 +36311,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -36374,7 +36428,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "包子族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -36476,7 +36530,7 @@ module.exports = [
       "煎制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -36632,7 +36686,7 @@ module.exports = [
         "蒜香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -36975,7 +37029,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -37103,7 +37157,7 @@ module.exports = [
         "咸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -37261,7 +37315,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -37342,7 +37396,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -37434,7 +37488,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -37544,7 +37598,7 @@ module.exports = [
       "烧烤/烤制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -37678,7 +37732,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -37816,7 +37870,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -37993,7 +38047,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "面食粉类",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -38076,7 +38130,7 @@ module.exports = [
         "家常"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38121,7 +38175,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "夜宵",
@@ -38173,7 +38227,7 @@ module.exports = [
       "煎制"
     ],
     "spicyLevel": 0,
-    "enabled": false,
+    "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -38197,7 +38251,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38235,7 +38289,8 @@ module.exports = [
       "酸",
       "素食",
       "热食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
@@ -38332,7 +38387,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38445,7 +38500,7 @@ module.exports = [
         "酸"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38487,7 +38542,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -38565,7 +38620,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38700,7 +38755,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38738,7 +38793,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -38817,7 +38872,7 @@ module.exports = [
         "凉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -38932,7 +38987,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -39033,7 +39088,7 @@ module.exports = [
       "拌制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -39191,7 +39246,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -39299,7 +39354,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "包子族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -39419,7 +39474,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -39637,7 +39692,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -39700,7 +39755,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -39778,7 +39833,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "盐焗鸡_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -39814,7 +39869,7 @@ module.exports = [
     "cuisine": "西式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -39892,7 +39947,7 @@ module.exports = [
         "清爽"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -39929,7 +39984,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "饮品",
     "mealRole": "饮品",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "早餐"
     ],
@@ -40011,7 +40066,7 @@ module.exports = [
         "素"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40124,7 +40179,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40152,18 +40207,19 @@ module.exports = [
     "emoji": "🍲",
     "category": "汤粥炖品",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
       "滋补",
       "热食",
-      "肉"
+      "肉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -40245,7 +40301,7 @@ module.exports = [
         "滋补"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40288,7 +40344,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -40358,7 +40415,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40396,14 +40453,18 @@ module.exports = [
     "tags": [
       "鲜",
       "爽滑",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐",
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -40473,7 +40534,7 @@ module.exports = [
         "滑"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40508,7 +40569,7 @@ module.exports = [
     "emoji": "🍲",
     "category": "汤粥炖品",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -40519,7 +40580,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -40601,7 +40662,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -40639,7 +40700,8 @@ module.exports = [
       "素食",
       "热食",
       "易消化",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -40736,7 +40798,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "粥族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -41016,7 +41078,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -41096,7 +41158,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41136,9 +41198,9 @@ module.exports = [
     "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
       "夜宵",
-      "加餐"
+      "加餐",
+      "早餐"
     ],
     "scenes": [
       "外卖",
@@ -41205,7 +41267,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41327,7 +41389,7 @@ module.exports = [
         "法"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41362,12 +41424,13 @@ module.exports = [
     "tags": [
       "鲜",
       "热食",
-      "肉"
+      "肉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -41448,7 +41511,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41485,7 +41548,8 @@ module.exports = [
       "鲜",
       "素食",
       "热食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
@@ -41580,7 +41644,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41715,7 +41779,7 @@ module.exports = [
         "酸辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -41980,7 +42044,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -42020,7 +42084,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -42099,7 +42163,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -42138,7 +42202,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -42215,7 +42279,7 @@ module.exports = [
       ]
     },
     "equivalentGroupId": "黄焖鸡_套餐族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -42319,7 +42383,7 @@ module.exports = [
     "cookingMethods": [
       "常规制作"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -42343,7 +42407,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -42643,7 +42707,8 @@ module.exports = [
       "素食",
       "热食",
       "蛋",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -42742,7 +42807,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -42786,7 +42851,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -42866,7 +42931,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -42972,7 +43037,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -42994,7 +43059,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43113,7 +43178,7 @@ module.exports = [
         "辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43240,7 +43305,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43284,7 +43349,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -43360,7 +43425,7 @@ module.exports = [
       "time": "快",
       "tags": []
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43477,7 +43542,7 @@ module.exports = [
       "time": "快",
       "tags": []
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43620,7 +43685,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43744,7 +43809,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43782,7 +43847,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -43860,7 +43925,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -43894,7 +43959,8 @@ module.exports = [
       "甜",
       "热食",
       "易消化",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -43990,7 +44056,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "粥族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -44110,7 +44176,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -44219,7 +44285,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -44330,7 +44396,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -44372,7 +44438,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -44455,7 +44521,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -44867,7 +44933,8 @@ module.exports = [
     "tags": [
       "鲜",
       "热食",
-      "蛋"
+      "蛋",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -44965,7 +45032,7 @@ module.exports = [
         "热"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45003,7 +45070,8 @@ module.exports = [
     "tags": [
       "甜",
       "热食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
@@ -45097,7 +45165,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45359,7 +45427,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45460,7 +45528,7 @@ module.exports = [
       "油炸"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -45482,7 +45550,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45608,7 +45676,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45653,7 +45721,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -45735,7 +45803,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45778,6 +45846,9 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
+      "午餐",
+      "晚餐",
+      "夜宵",
       "早餐"
     ],
     "scenes": [
@@ -45847,7 +45918,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -45984,7 +46055,7 @@ module.exports = [
         "酸甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46029,7 +46100,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -46096,7 +46168,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46222,7 +46294,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -46322,7 +46394,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -46345,7 +46417,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46385,7 +46457,8 @@ module.exports = [
       "蒜香",
       "素食",
       "清爽少负担",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -46480,7 +46553,7 @@ module.exports = [
         "健康"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46612,7 +46685,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46654,7 +46727,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -46735,7 +46808,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46836,7 +46909,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -46860,7 +46933,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -46976,7 +47049,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -47090,7 +47163,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -47225,7 +47298,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -47384,7 +47457,8 @@ module.exports = [
     "mealRole": "小吃",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -47456,7 +47530,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -47553,7 +47627,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -47680,7 +47754,7 @@ module.exports = [
       "炒制"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -47827,7 +47901,7 @@ module.exports = [
         "早午餐"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -47864,7 +47938,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -47939,7 +48013,7 @@ module.exports = [
       "time": "慢",
       "tags": []
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48071,7 +48145,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48182,7 +48256,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48276,7 +48350,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -48298,7 +48372,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48339,7 +48413,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -48418,7 +48492,7 @@ module.exports = [
         "酱香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48534,7 +48608,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烧烤族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -48662,7 +48736,7 @@ module.exports = [
         "蒜香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -48756,7 +48830,7 @@ module.exports = [
     "cookingMethods": [
       "常规制作"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -48872,7 +48946,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -49131,7 +49205,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -49154,7 +49228,7 @@ module.exports = [
         "滑"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -49251,7 +49325,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -49275,7 +49349,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -49317,7 +49391,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -49397,7 +49471,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -49512,7 +49586,7 @@ module.exports = [
         "脆"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -49615,7 +49689,7 @@ module.exports = [
         "甜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -49742,7 +49816,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -49781,12 +49855,13 @@ module.exports = [
     "tags": [
       "鲜",
       "海鲜",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -49871,7 +49946,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50128,7 +50203,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50241,7 +50316,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50352,7 +50427,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "烤鱼族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -50577,7 +50652,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -50600,7 +50675,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50646,7 +50721,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -50734,7 +50809,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50871,7 +50946,7 @@ module.exports = [
         "海鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -50994,7 +51069,7 @@ module.exports = [
         "酸辣"
       ]
     },
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51110,7 +51185,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51220,7 +51295,7 @@ module.exports = [
       "汤煮"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -51285,7 +51360,8 @@ module.exports = [
       "鲜",
       "酱香",
       "素食",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -51380,7 +51456,7 @@ module.exports = [
         "鲜"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51476,7 +51552,7 @@ module.exports = [
       "常规制作"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "pickCount": 0,
     "lastPickedAt": null,
     "cooldownDays": 3,
@@ -51635,7 +51711,7 @@ module.exports = [
         "清淡"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51749,7 +51825,7 @@ module.exports = [
         "糯"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51788,7 +51864,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -51868,7 +51944,7 @@ module.exports = [
         "嫩"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -51977,7 +52053,7 @@ module.exports = [
         "肉"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -52108,7 +52184,7 @@ module.exports = [
         "香"
       ]
     },
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -52217,7 +52293,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "包子族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -52340,7 +52416,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -52466,7 +52542,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -52591,7 +52667,7 @@ module.exports = [
       ]
     },
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -52698,7 +52774,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -52810,7 +52886,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -52917,7 +52993,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53027,7 +53103,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53132,7 +53208,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53238,7 +53314,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53344,7 +53420,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53448,7 +53524,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53553,7 +53629,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.9,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53661,7 +53737,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.9,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53768,7 +53844,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53870,7 +53946,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -53971,7 +54047,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54074,7 +54150,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54177,7 +54253,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54275,7 +54351,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54373,7 +54449,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54471,7 +54547,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54504,12 +54580,13 @@ module.exports = [
     "tags": [
       "酸辣",
       "素食",
-      "家常"
+      "家常",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -54569,7 +54646,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54607,7 +54684,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -54667,7 +54744,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54707,7 +54784,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -54767,7 +54844,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54808,7 +54885,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -54868,7 +54945,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -54907,7 +54984,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
@@ -54967,7 +55044,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55003,7 +55080,8 @@ module.exports = [
     "tags": [
       "鲜",
       "清淡",
-      "热食"
+      "热食",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -55068,7 +55146,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55172,7 +55250,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55215,7 +55293,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -55279,7 +55357,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55314,12 +55392,13 @@ module.exports = [
     "tags": [
       "素",
       "家常",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -55383,7 +55462,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55417,12 +55496,13 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "饱腹"
+      "饱腹",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -55481,7 +55561,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55515,12 +55595,13 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "香"
+      "香",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -55579,7 +55660,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55682,7 +55763,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55720,12 +55801,13 @@ module.exports = [
     "tags": [
       "鲜",
       "滑嫩",
-      "热食"
+      "热食",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "夜宵",
@@ -55790,7 +55872,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55836,7 +55918,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -55900,7 +55982,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -55939,7 +56021,8 @@ module.exports = [
     "tags": [
       "家常",
       "香",
-      "热食"
+      "热食",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -56003,7 +56086,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56049,7 +56132,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "加餐"
@@ -56113,7 +56196,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56152,7 +56235,8 @@ module.exports = [
     "tags": [
       "肉",
       "酥脆",
-      "热食"
+      "热食",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -56220,7 +56304,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56257,7 +56341,8 @@ module.exports = [
     "tags": [
       "肉",
       "鲜",
-      "热食"
+      "热食",
+      "酥脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -56325,7 +56410,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56422,7 +56507,7 @@ module.exports = [
     "cookingMethods": [
       "常规制作"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "pickCount": 0,
     "lastPickedAt": null,
@@ -56433,7 +56518,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56545,7 +56630,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56658,7 +56743,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56704,7 +56789,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐",
@@ -56769,7 +56854,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56874,7 +56959,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -56915,7 +57000,7 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "小吃",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "早餐",
       "午餐"
@@ -56979,7 +57064,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57093,7 +57178,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57201,7 +57286,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57306,7 +57391,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57414,7 +57499,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57528,7 +57613,7 @@ module.exports = [
       "2026-06-01: 新增高频菜品"
     ],
     "legacy": null,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57568,17 +57653,18 @@ module.exports = [
     "tags": [
       "辣",
       "鸡肉",
-      "火锅"
+      "火锅",
+      "适合聚餐"
     ],
     "calories": null,
-    "spicyLevel": 0,
+    "spicyLevel": 2,
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
       "晚餐"
     ],
     "mealRole": "正餐",
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -57601,5 +57687,1356 @@ module.exports = [
     ],
     "dietWarnings": [],
     "allergenTags": []
+  },
+  {
+    "_id": "4aa7669bf93f3d35",
+    "name": "韭菜炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "937fcc968f2d9e59",
+    "name": "木耳炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "4ada40e1df8c6a3f",
+    "name": "虾仁炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "5597d452bc438b3b",
+    "name": "辣椒炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "辣",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 1,
+    "enabled": true
+  },
+  {
+    "_id": "a1c23b0d98d2f48d",
+    "name": "苦瓜炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.6,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "bb9f397c6086ba5a",
+    "name": "黄瓜炒鸡蛋",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "d7286c43ec411ec4",
+    "name": "芹菜炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "cff774aa86077fe2",
+    "name": "洋葱炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "7abd36e4cda4295f",
+    "name": "莴笋炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "8785791411300089",
+    "name": "荷兰豆炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "77a09a4c5cd9f26b",
+    "name": "苦瓜炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "a5339b0469530732",
+    "name": "香干炒肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "5a6eea009c3de544",
+    "name": "青椒炒牛肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 1,
+    "enabled": true
+  },
+  {
+    "_id": "dcf0e7fbf0400975",
+    "name": "洋葱炒牛肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "300da34051f350b7",
+    "name": "芹菜炒牛肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "e8a84115aa5adf5f",
+    "name": "孜然牛肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "香辣",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.8,
+    "spicyLevel": 2,
+    "enabled": true
+  },
+  {
+    "_id": "01fbec6d70e3b90a",
+    "name": "葱爆羊肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.8,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "7b60ceb071e93027",
+    "name": "肉末豆腐",
+    "emoji": "🫘",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "1cc3eaea93a6c988",
+    "name": "红烧豆腐",
+    "emoji": "🫘",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "a4d275bc8d830b14",
+    "name": "香煎豆腐",
+    "emoji": "🫘",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "8e513cea45911ed3",
+    "name": "家常豆腐",
+    "emoji": "🫘",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "047e2baeb247bd3f",
+    "name": "剁椒鱼头",
+    "emoji": "🐟",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "辣",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 2,
+    "enabled": true
+  },
+  {
+    "_id": "9f1eb9afea21a253",
+    "name": "香煎带鱼",
+    "emoji": "🐟",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "3f4cac193711cb82",
+    "name": "红烧带鱼",
+    "emoji": "🐟",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.8,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "3da6beddca3600f1",
+    "name": "土豆烧排骨",
+    "emoji": "🍖",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "b9767e322ee0a9f1",
+    "name": "豆角烧排骨",
+    "emoji": "🍖",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "b1697e8e15fcaf53",
+    "name": "萝卜炖牛肉",
+    "emoji": "🍖",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "4c54e7ad624e9cf1",
+    "name": "香菇炖鸡",
+    "emoji": "🍗",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "d627f7d7f15975ea",
+    "name": "红烧鸡翅",
+    "emoji": "🍗",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "a66ab2dc12fa5511",
+    "name": "土豆烧鸡块",
+    "emoji": "🍗",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.85,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "a388de79b3e7a2a9",
+    "name": "酸辣土豆丝",
+    "emoji": "🥔",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "辣",
+      "素",
+      "清淡"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.25,
+    "spicyLevel": 1,
+    "enabled": true
+  },
+  {
+    "_id": "a3e3fd2679f7e2a1",
+    "name": "醋溜白菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "639f816fa6eef456",
+    "name": "蒜蓉空心菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "3ddcb57c3340443f",
+    "name": "清炒油麦菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "590942a2d12491b5",
+    "name": "清炒豆芽",
+    "emoji": "🌱",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.15,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "33e9968517d70d24",
+    "name": "香菇青菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "bb7e931cc621c244",
+    "name": "清炒小白菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.15,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "4ba727006904b361",
+    "name": "蒜蓉生菜",
+    "emoji": "🥬",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.15,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "db3bdbe5ebb6a507",
+    "name": "凉拌海带丝",
+    "emoji": "🌿",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "凉菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.15,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "70e998bf2ce608ba",
+    "name": "凉拌腐竹",
+    "emoji": "🌿",
+    "category": "配菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "凉菜",
+    "mealRole": "配菜",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.15,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "afd49d5993ee663a",
+    "name": "西兰花炒虾仁",
+    "emoji": "🥦",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.75,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "3c6e91b605b99cfe",
+    "name": "青椒炒香干",
+    "emoji": "🥬",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "鲜香",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "e332c0e44a518199",
+    "name": "萝卜排骨汤",
+    "emoji": "🍲",
+    "category": "汤粥炖品",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "汤",
+    "mealRole": "汤品",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.5,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "b775bad75af989c4",
+    "name": "冬瓜虾皮汤",
+    "emoji": "🍲",
+    "category": "汤粥炖品",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "素"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "汤",
+    "mealRole": "汤品",
+    "canBeMeal": false,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.2,
+    "spicyLevel": 0,
+    "enabled": true
+  },
+  {
+    "_id": "d50d2164e1d74237",
+    "name": "农家一碗香",
+    "emoji": "🥘",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "鲜香",
+      "肉"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.7,
+    "spicyLevel": 0,
+    "enabled": true
   }
 ]
