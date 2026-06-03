@@ -25,7 +25,7 @@
   transition: all var(--transition-fast);
   z-index: 100;
 }
-.back-btn:active {
+.back-btn-hover {
   transform: scale(0.92);
   background: var(--glass-bg-hover);
 }
@@ -169,7 +169,7 @@
   padding: 8rpx 16rpx;
   transition: opacity var(--transition-fast);
 }
-.list-delete:active {
+.list-delete-hover {
   opacity: 0.6;
 }
 
@@ -239,7 +239,7 @@
 
 /* ===== 列表项编辑态 ===== */
 .list-item { transition: background var(--transition-fast); }
-.list-item:active { background: var(--fill-subtle); }
+.list-item-hover { background: var(--fill-subtle); }
 .list-item:focus { outline: 3rpx solid var(--primary); outline-offset: 2rpx; }
 .list-edit { font-size: 36rpx; color: var(--text-tertiary); line-height: 1; }
 .list-item-right { display: flex; align-items: center; gap: 16rpx; }
@@ -250,7 +250,7 @@
   border-top: 1rpx solid var(--glass-stroke);
   transition: background var(--transition-fast);
 }
-.list-more:active { background: var(--fill-subtle); }
+.list-more-hover { background: var(--fill-subtle); }
 .list-more-text { font-size: 26rpx; color: var(--primary); font-weight: 600; }
 
 /* ===== 底部 Sheet（新增/编辑菜品） ===== */

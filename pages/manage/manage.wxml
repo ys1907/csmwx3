@@ -1,7 +1,7 @@
 <view class="container {{darkMode ? 'dark' : ''}}">
   <!-- 顶部导航 -->
   <view class="manage-header" style="padding-top: {{statusBarHeight + 12}}px;">
-    <view class="back-btn tap-target" bindtap="goBack">
+    <view class="back-btn tap-target" hover-class="back-btn-hover" hover-stay-time="70" bindtap="goBack">
       <text class="back-icon">‹</text>
     </view>
     <text class="manage-title">菜品管理</text>
@@ -67,7 +67,7 @@
       </view>
 
       <!-- 列表（点击编辑） -->
-      <view wx:for="{{displayFoods}}" wx:key="_id" class="list-item" bindtap="openEditSheet" data-id="{{item._id}}">
+      <view wx:for="{{displayFoods}}" wx:key="_id" class="list-item" hover-class="list-item-hover" hover-stay-time="70" bindtap="openEditSheet" data-id="{{item._id}}">
         <view class="list-item-left">
           <text class="list-emoji">{{item.emoji}}</text>
           <view>
@@ -80,7 +80,7 @@
         </view>
         <text class="list-edit">›</text>
       </view>
-      <view wx:if="{{hasMore}}" class="list-more" bindtap="showMoreFoods">
+      <view wx:if="{{hasMore}}" class="list-more" hover-class="list-more-hover" hover-stay-time="70" bindtap="showMoreFoods">
         <text class="list-more-text">显示更多 · 还有 {{filteredCount - displayFoods.length}} 道</text>
       </view>
     </view>
@@ -92,19 +92,19 @@
     <view class="section-glass">
       <view class="section-header-row">
         <text class="section-title">最近记录</text>
-        <text class="list-delete" bindtap="clearHistory" wx:if="{{historyDisplay.length > 0}}">清空</text>
+        <text class="list-delete" hover-class="list-delete-hover" hover-stay-time="70" bindtap="clearHistory" wx:if="{{historyDisplay.length > 0}}">清空</text>
       </view>
       <view wx:if="{{historyDisplay.length === 0}}" class="empty-state">
         <text class="empty-text">还没有记录</text>
       </view>
-      <view wx:for="{{historyDisplay}}" wx:key="index" class="list-item">
+      <view wx:for="{{historyDisplay}}" wx:key="index" class="list-item" hover-class="list-item-hover" hover-stay-time="70">
         <view class="list-item-left">
           <text class="list-emoji">{{item.emoji}}</text>
           <text class="list-name">{{item.name}}</text>
         </view>
         <view class="list-item-right">
           <text class="section-count">{{item.dateStr}}</text>
-          <text class="list-delete" bindtap="deleteHistoryItem" data-index="{{index}}">删除</text>
+          <text class="list-delete" hover-class="list-delete-hover" hover-stay-time="70" bindtap="deleteHistoryItem" data-index="{{index}}">删除</text>
         </view>
       </view>
     </view>
@@ -113,17 +113,17 @@
     <view class="section-glass">
       <view class="section-header-row">
         <text class="section-title">爱吃榜</text>
-        <text class="list-delete" bindtap="clearFavorites" wx:if="{{favorites.length > 0}}">清空</text>
+        <text class="list-delete" hover-class="list-delete-hover" hover-stay-time="70" bindtap="clearFavorites" wx:if="{{favorites.length > 0}}">清空</text>
       </view>
       <view wx:if="{{favorites.length === 0}}" class="empty-state">
         <text class="empty-text">还没有收藏</text>
       </view>
-      <view wx:for="{{favorites}}" wx:key="name" class="list-item">
+      <view wx:for="{{favorites}}" wx:key="name" class="list-item" hover-class="list-item-hover" hover-stay-time="70">
         <view class="list-item-left">
           <text class="list-emoji">{{item.emoji}}</text>
           <text class="list-name">{{item.name}}</text>
         </view>
-        <text class="list-delete" bindtap="removeFavorite" data-name="{{item.name}}">取消收藏</text>
+        <text class="list-delete" hover-class="list-delete-hover" hover-stay-time="70" bindtap="removeFavorite" data-name="{{item.name}}">取消收藏</text>
       </view>
     </view>
 
