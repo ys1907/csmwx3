@@ -1,6 +1,7 @@
 const test = require('node:test')
 const assert = require('node:assert')
 const path = require('node:path')
+const { STORAGE_KEYS } = require('../data/options.js')
 
 class FakeTimers {
   constructor() {
@@ -175,7 +176,7 @@ test('index storage: 揭晓写历史走延迟队列，flush 后合并落盘', ()
     timers.run(page._revealTimer)  // finishReveal → addToHistory → queueStorageWrite（延迟）
     assert.strictEqual(storageWrites.length, 0, '揭晓不立即写盘')
     page.flushPendingWrites()
-    assert.ok(storageWrites.includes('wtec_history_v3'), 'flush 后历史落盘')
+    assert.ok(storageWrites.includes(STORAGE_KEYS.history), 'flush 后历史落盘')
   })
 })
 
