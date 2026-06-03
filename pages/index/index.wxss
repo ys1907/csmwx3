@@ -176,16 +176,17 @@
   border-radius: 48rpx; font-size: 32rpx; font-weight: 700; color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--primary-deep)); box-shadow: 0 20rpx 44rpx var(--primary-soft);
 }
-.btn-eat:active { transform: scale(0.97); }
+.btn-eat-hover { transform: scale(0.97); }
 .btn-retry { display: inline-flex; align-items: center; justify-content: center; gap: 6rpx; min-height: 64rpx; font-size: 28rpx; font-weight: 600; color: var(--text-secondary); }
-.btn-retry:active { opacity: 0.6; }
-.share-link { font-size: 24rpx; color: var(--text-tertiary); }
+.btn-retry-hover { opacity: 0.6; }
+.share-link { font-size: 24rpx; color: var(--text-tertiary); display: inline-block; padding: 20rpx 36rpx; }
+.share-link-hover { opacity: 0.5; }
 
 .combo-entry {
   font-size: 28rpx; font-weight: 600; color: var(--text-secondary);
   padding: 22rpx 44rpx; border-radius: 999rpx; background: var(--card-bg); box-shadow: var(--shadow-card);
 }
-.combo-entry:active { transform: scale(0.97); }
+.combo-entry-hover { transform: scale(0.97); }
 
 /* ===== 底部 tab ===== */
 .tabbar {
@@ -213,7 +214,7 @@
 .mine-row-main { font-size: 28rpx; color: var(--text-primary); }
 .mine-row-date { font-size: 24rpx; color: var(--text-tertiary); }
 .mine-entry { text-align: center; font-size: 28rpx; font-weight: 600; color: var(--primary); padding: 30rpx; background: var(--card-bg); border-radius: 36rpx; box-shadow: var(--shadow-card); }
-.mine-entry:active { transform: scale(0.98); }
+.mine-entry-hover { transform: scale(0.98); }
 
 /* SSR 图鉴：彩虹边卡片网格 */
 .dex-grid { display: flex; flex-wrap: wrap; gap: 18rpx; margin-top: 8rpx; }

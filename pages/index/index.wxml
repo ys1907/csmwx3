@@ -56,14 +56,14 @@
           </view>
         </view>
         <view class="dish-actions">
-          <view class="btn-eat" bindtap="onConfirmEat">就吃这个</view>
-          <view class="btn-retry" bindtap="onRetry">↻ 换一个</view>
+          <view class="btn-eat" hover-class="btn-eat-hover" hover-stay-time="70" bindtap="onConfirmEat">就吃这个</view>
+          <view class="btn-retry" hover-class="btn-retry-hover" hover-stay-time="70" bindtap="onRetry">↻ 换一个</view>
         </view>
-        <text class="share-link" bindtap="onShareResult">📤 生成分享卡片</text>
+        <text class="share-link" hover-class="share-link-hover" hover-stay-time="70" bindtap="onShareResult">📤 生成分享卡片</text>
       </block>
 
       <!-- 凑一桌入口（仅待揭晓态显示） -->
-      <view wx:if="{{boxPhase === 'idle'}}" class="combo-entry" bindtap="buildCombo">🍱 两个人？帮你们凑一桌</view>
+      <view wx:if="{{boxPhase === 'idle'}}" class="combo-entry" hover-class="combo-entry-hover" hover-stay-time="70" bindtap="buildCombo">🍱 两个人？帮你们凑一桌</view>
     </view>
   </view>
 
@@ -103,7 +103,7 @@
         <text class="mine-row-date">{{item.dateStr}}</text>
       </view>
     </view>
-    <view class="mine-entry" bindtap="goToManage">管理菜品库 ›</view>
+    <view class="mine-entry" hover-class="mine-entry-hover" hover-stay-time="70" bindtap="goToManage">管理菜品库 ›</view>
   </view>
 
   <!-- ============ 底部 tab ============ -->
@@ -159,8 +159,8 @@
         </view>
       </view>
       <view class="sheet-actions">
-        <view class="btn-eat" bindtap="closeCombo">就这桌了</view>
-        <view class="btn-retry" bindtap="buildCombo">↻ 换一桌</view>
+        <view class="btn-eat" hover-class="btn-eat-hover" hover-stay-time="70" bindtap="closeCombo">就这桌了</view>
+        <view class="btn-retry" hover-class="btn-retry-hover" hover-stay-time="70" bindtap="buildCombo">↻ 换一桌</view>
       </view>
     </view>
   </view>
