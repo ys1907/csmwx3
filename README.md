@@ -25,7 +25,7 @@
 | `utils/storage.js` | `safeGet` / `safeSet`：包裹 wx storage，配额超限只提示不崩 |
 | `utils/migrations.js` | **存储 schema 迁移框架**：用户数据 key 与版本号解耦，小程序更新永不误删收藏 / 历史 / 图鉴 |
 | `data/options.js` | 共享常量：`STORAGE_KEYS`、版本号、各选项列表 |
-| `data/foods.js` | 内置近 500 道中式日常菜的富数据库 |
+| `data/foods.js` | 524 道精选中式日常菜的富数据库（经合理性治理：剔除生僻/异国/猎奇项、补齐家常菜，盲盒出菜更贴近中国人日常） |
 
 ## 📂 项目结构
 
