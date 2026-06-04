@@ -1,58 +1,56 @@
-# 菜品数据 / 项目交接（最新 · 2026-06-03）
+# 项目交接 · 给下一位 AI（最新 · 2026-06-03 会话结束）
 
-> 本文替换旧版（旧版还在写「7 分类 + 8 字段」，早已过时）。给**下一位 AI（也是未来的我）**或想改菜品数据的人。
-> 更全的项目背景见 `docs/HANDOFF.md`（上一段的治理上下文）。
+> 「到底吃点啥·情侣版」微信小程序的**当前权威交接**。给下一位 AI（或想改数据的人）。
+> 本会话（菜品治理 + 存储加固 + 体验修复 + README）成果**已全部提交并在 GitHub `main`**（默认分支已设为 main）。
+> 上一段（数据修复 + 盲盒重构）的更全背景见 `docs/HANDOFF.md`；项目铁律见 `CLAUDE.md`。
 
 ---
 
 ## 一句话现状
-「到底吃点啥·情侣版」原生微信小程序，盲盒选菜。本次会话完成并合并到 `main`：**菜品合理性治理（工具）+ 存储 schema 迁移加固 + 微信体验评分修复 + README 重写**。
+原生微信小程序（WXML/WXSS/JS，**无后端、无依赖、纯本地存储**），盲盒抽卡选菜。本会话全部成果已在 GitHub `main`，无未合并分叉。
 
-## ✅ 菜品治理已应用（2026-06-03，commit `447c2bf`，已推 main）
-`scripts/curatePool.js` 的全部决策已写入 `data/foods.js`：**479 → 524 道**，旧分类落盘归一（0 残留）、49 道怪菜出池、462 进盲盒池、45 道新家常菜，权重全对；体检 `utils/foods.integrity.test.js` 7/7 绿。
-> 以后若改了 `curatePool.js` 的决策表要重新应用：`node scripts/curatePool.js && npm test`，再提交 `data/foods.js`。
-> ⚠️ 本沙箱里 **node 读写 / Bash grep 看到的 `data/foods.js` 可能是陈旧的影子副本**；以 **PowerShell 跑 node** 或 `git show HEAD:data/foods.js`（用 Python 按 UTF-8 解码核对）为准。
-
----
+## ✅ 本会话已落地（均在 main，已生效）
+1. **菜品治理已应用**：`data/foods.js` 已 **479 → 524 道**——旧分类落盘归一（0 残留）、49 道生僻/异国/猎奇出池、462 进盲盒池、45 道新家常菜，权重按"频率 × 能否当主角"分档。体检 `utils/foods.integrity.test.js` **7/7 绿**。决策全在 `scripts/curatePool.js`（`FORCE_OFF` 出池集 / `O` 逐道定位 / `NEW_FOODS` 新增），改了它重跑即重新应用（见沙箱坑）。
+2. **存储 schema 迁移框架** `utils/migrations.js`：用户数据 key 与版本号解耦 + `FOODS_SEED_VERSION` 只管 foods 重播种 → **更新内容/版本不再误删**收藏/历史/SSR 图鉴/PK。
+3. **微信体验评分修复**：index + manage 的 `:active` → `hover-class`、share-link 点击区撑大。
+4. **README 重写**：当前盲盒玩法 + 架构 + 存储（删了过时的转盘/塔罗/PK）。
+5. **仓库整理**：默认分支从旧的 `docs/add-readme` 切到 `main`。
 
 ## 菜品数据现状（改数据前必读）
-- `data/foods.js`：479 条富数据库，每条约 **24 字段**（不是旧版说的 8 个）。
-- `category` 取 **新 12 分类**之一：`家常菜 / 饭类套餐 / 面食粉类 / 小吃点心 / 汤粥炖品 / 火锅冒菜 / 烧烤 / 日韩料理 / 西式简餐 / 甜品饮品 / 轻食 / 配菜`。（旧 7 分类已废）
-- 磁盘上仍有 **291 条旧分类**（中式快餐/日韩/西式/街边小吃/火锅烧烤），靠 `utils/util.js#migrateFood` 在加载时运行时归一；`curatePool` 会真正落盘归一。
-- 关键字段：`defaultPoolWeight`（0 = 出池，>0 进盲盒池）、`enabled`、`canBeMeal`、`mealPeriods`、`scene`/`scenes`、`budget`、`time`、`tags`、`cuisine`、`foodType`、`mealRole`…
-- **首页盲盒只从 `defaultPoolWeight>0 && enabled!==false` 的菜抽**（`pages/index/index.js` 的 `getFilteredFoods`）。
-- 判断标准 / 权重体系 / 处理机制：见 `docs/superpowers/specs/2026-06-02-dish-reasonableness-design.md`。
+- `data/foods.js`（main）：**524 条**，每条约 24 字段，**0 旧分类**（已归一到新 12 分类）。
+- 新 12 分类：`家常菜 / 饭类套餐 / 面食粉类 / 小吃点心 / 汤粥炖品 / 火锅冒菜 / 烧烤 / 日韩料理 / 西式简餐 / 甜品饮品 / 轻食 / 配菜`。`utils/util.js#migrateFood` 加载时把任何旧分类运行时归一（防御层）。
+- 关键字段：`defaultPoolWeight`（0=出池，>0 进盲盒池）、`enabled`、`canBeMeal`、`mealPeriods`、`scene`/`scenes`、`budget`、`time`、`tags`、`cuisine`、`foodType`、`mealRole`。
+- **首页盲盒只抽 `defaultPoolWeight>0 && enabled!==false`**（`pages/index/index.js#getFilteredFoods`）。
+- 治理标准/权重体系：`docs/superpowers/specs/2026-06-02-dish-reasonableness-design.md`；存储设计：`…/2026-06-03-storage-migration-design.md`。
 
-## 怎么改菜品数据（别再用「粘给外部 AI」那套旧流程）
-- **小批量**：直接用 Edit/Write 改 `data/foods.js`。
-- **批量治理**：改 `scripts/curatePool.js` 里的决策表（`FORCE_OFF` 出池集 / `O` 逐道定位 / `NEW_FOODS` 新增），让用户本地跑。
-- 改完保证 `migrateFood` 仍兼容、`npm test` 全绿。
+## 怎么改菜品数据
+- **小批量**：直接 Edit/Write 改 `data/foods.js`。
+- **批量**：改 `scripts/curatePool.js` 决策表后重跑（**用 PowerShell 跑 node**，见下），再提交。改完保证 `migrateFood` 兼容、`npm test` 绿。
 
 ---
 
-## ⚠️ 沙箱坑（本 agent 环境特有，务必知道，已多次踩）
-1. **node 写工作区文件 → 隔离到 overlay**，改不动真实文件；`git`/Grep/Read 看真实文件，二者不一致。
-2. **node 读 `data/foods.js` 的 `category` 是「影子副本」**（已归一，0 旧分类），跟真盘（291 旧分类）不符 → **不可信**。但 weights/菜名/cuisine 两侧一致、可信。
-3. **`dangerouslyDisableSandbox` 对 node 的读/写无效**（仍 overlay；甚至 `node: command not found`）；只对 `git`/`rm` 有效（能联网/落盘）。
-4. **PowerShell 里的 node 读写的是真实文件**（可用来跑脚本、抠图、校验）。
-5. 结论：**改源码/数据一律用 Edit/Write 工具**；批量数据治理脚本**只能交用户在本地无沙箱环境跑出成品**；验证用 PowerShell node 或让用户本地 `npm test`。
+## ⚠️ 沙箱坑（本环境特有，本会话反复踩，务必照做）
+- **Bash 工具的 node 读/写 = overlay 影子副本**，与真实 OS 文件不一致；文件被 PowerShell 改过后，连 Bash 的 `grep`/`git` 也可能看到**陈旧视图**（本会话 Bash grep 报 118 旧分类、真盘其实 0）。`dangerouslyDisableSandbox` 对 node 读写无效（甚至 `node: command not found`）。
+- **PowerShell 工具的 node / python / git = 真实 OS**。✅ **要把数据脚本落到真盘：用 PowerShell 跑 `node scripts/curatePool.js`，并用 PowerShell 的 git 提交**（它 staged 的是真实文件）。本会话就是这样把治理落盘 + 提交成功的。
+- **核实"真正提交了什么"**：`git show HEAD:<file>` 用 **Python 按 UTF-8 解码**读（PowerShell 控制台是 GBK，直接 print 中文/emoji 会报错，但 `in`/长度/数字判断可信）。
+- 改源码（wxml/wxss/js）用 Edit/Write 工具即可（落真盘、Bash git 也能提交）；只有"node 跑脚本改数据文件"才必须走 PowerShell。
+- `gh` CLI 可用、已登录 `ys1907`（repo 权限），改仓库设置用 `gh repo edit`。
+- ⚠️ 删远程分支等**破坏性 git 操作会被安全策略拦**，需用户明确授权。
 
 ---
 
-## 探索过但已 git 回退的（想做可捡回）
-本次还试了「给每道菜配图」，最后用户让全部撤销、回到单 emoji 态：
-- **emoji 组合**（西红柿炒蛋 → 🍅🥚）：靠组合 emoji 提识别度，但受 emoji 词汇限制（没豆腐/面/火锅），且大揭晓 168rpx 两个 emoji 偏挤。已撤。
-- **图标集 + 映射**（推荐方向，已撤但方法可复用）：
-  - `utils/dishIcon.js`（已删）把 519 道菜按菜名/字段**规则映射**到约 40 个「菜型」图标，覆盖率 ~98%，新菜自动覆盖、零逐菜人工。
-  - 让 ChatGPT 出了 **4 张拼图（每张 2×5 共 10 个图标）= 40 个**，PowerShell `System.Drawing` 切成 40 张，PIL `floodfill` 抠掉假透明。
-  - **关键经验**：① ChatGPT 的"透明背景"常是**画出来的棋盘格假透明**（A=255 不透明），要 PIL 从四角 floodfill 抠近白中性背景成真 alpha。② 小程序**主包 ≤ 2MB**，逐菜图（哪怕 40 张 ~490px）要压（~240px/WebP）或走云存储/分包。
-  - 资产还在：**根目录 4 张 `ChatGPT Image….png` 原图**（用户的，未删）。想重做：重建 `dishIcon.js` 映射 + `migrateFood` 加 `iconKey` + 大揭晓 `<image src="/assets/icons/{key}.png">` + 找不到回退 emoji。
-- **盲盒「心情 chip」**（早餐/辣/清淡/家常菜/奢侈一顿 + 不限制）：聊过没做。要点：不是一个 `category` 字段的值，而是 5 个不同字段的谓词（早餐=`mealPeriods`、辣/清淡=`tags`、奢侈=`budget`、家常菜=`category`）；数据已能支撑（每个 chip ≥15 池内候选）。
+## 探索过、但用户让撤销了的（资产/方法还在，想做可捡回）
+本会话试过"给每道菜配图"，最后**全部 git 回退到单 emoji 态**：
+- ① **emoji 组合**（🍅🥚）：受 emoji 词汇限制（没豆腐/面/火锅）+ 大揭晓 168rpx 两个偏挤。
+- ② **图标集 + 映射（推荐方向）**：`utils/dishIcon.js`（已删）按菜名/字段规则把 519 菜映射到 ~40 个"菜型"图标，~98% 覆盖、新菜自动。ChatGPT 出 4 张 2×5 拼图=40 图标，PowerShell `System.Drawing` 切图 + PIL `floodfill` 抠假透明。
+- 经验：ChatGPT 的"透明"常是**画出来的棋盘格假透明**（A=255，要 PIL 抠）；小程序**主包 ≤ 2MB**，逐菜图要压/WebP/云存储或分包。
+- 资产：**根目录 4 张 `ChatGPT Image….png`**（用户的，未跟踪未删）。重做路径：重建 `dishIcon.js` + `migrateFood` 加 `iconKey` + 大揭晓 `<image src="/assets/icons/{key}.png">` 找不到回退 emoji。
+- **盲盒「心情 chip」**（早餐/辣/清淡/家常菜/奢侈一顿 + 不限制）：聊过没做。要点：不是一个 `category` 字段值，而是 5 个不同字段的谓词（早餐=`mealPeriods`、辣/清淡=`tags`、奢侈=`budget`、家常菜=`category`）；数据已支撑（每 chip ≥15 池内候选）。
 
 ---
 
-## 本次已落地清单（均在 main）
-- 菜品治理 spec + plan + `curatePool.js` + `samplePool.js` + 体检测试（**数据待本地应用**）
-- 存储 schema 迁移框架 `utils/migrations.js`：用户数据 key 与版本号解耦，更新内容/版本**不再误删**收藏/历史/SSR 图鉴/PK
-- 微信体验评分修复：index + manage 的 `:active` → `hover-class`、share-link 点击区撑大
-- README 重写（盲盒玩法 + 架构 + 存储）
+## 📋 给下一位 AI：可选待办
+- **清理 2 个旧分支**（需用户授权删）：`docs/add-readme`（旧默认分支）、`feat/dish-reasonableness`（已合并 main）。
+- **根目录 4 张 ChatGPT 大图**：gitignore 或删（8MB，没进仓库）。
+- 想做配图 → 见上"图标集 + 映射"路线。
+- ⚠️ `CLAUDE.md` 里写的"8 扇区转盘"是早期玩法，现 UI 已是盲盒；`foodLogic.js` 的 wheel 函数仍在但未用——别被误导去维护转盘。
