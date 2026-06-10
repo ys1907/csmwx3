@@ -29,8 +29,8 @@
 - **`utils/foodLogic.js`** —— 纯决策引擎，全app的核心。筛选（`filterFoods`）、加权推荐
   （`foodWeight` / `weightedPick` —— 偏好只对随机结果做*温和加权*，绝不把任何选项清零，
   另有 10% ε-greedy 探索）、带保底的抽卡稀有度（`rollRarityWithPity` —— 纯演出层，与选菜
-  解耦）、场景词表桥接（`matchesScene` / `availabilityLevel`，见下文）、口味画像
-  （`buildTasteProfile`）、可解释推荐（`explainPick` / `buildRichReason`）、决策连胜
+  解耦）、场景词表桥接（`matchesScene` / `availabilityLevel`）与标签同义桥接
+  （`foodHasTag`，见下文）、口味画像（`buildTasteProfile`）、可解释推荐（`buildRichReason`）、决策连胜
   （`computeStreak`）、一桌好菜组合（`buildMealCombo`）。所有随机都经由可注入的 `rng`
   参数；时间相关逻辑接受可注入的 `now`（经 `ctx.now`）。
 - **`utils/util.js`** —— `uid`、`shuffleArray`（Fisher–Yates，可注入 rng）、`formatDate`

@@ -73,11 +73,13 @@ Page({
     this.initData()
     const baseInfo = (wx.getAppBaseInfo && wx.getAppBaseInfo()) || {}
     this.setData({ darkMode: baseInfo.theme === 'dark' })
-    this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
+    // wx.onThemeChange 无返回值，解绑必须用 wx.offThemeChange(listener)
+    this._themeListener = (res) => {
       const darkMode = res.theme === 'dark'
       if (this._isPageVisible) this.setData({ darkMode })
       else this._pendingDarkMode = darkMode
-    })
+    }
+    if (wx.onThemeChange) wx.onThemeChange(this._themeListener)
     this._introMaxTimer = setTimeout(() => this.finishIntro(true), 1800)
   },
 
@@ -114,7 +116,8 @@ Page({
     this.releaseShareCanvas(false)
     this.stopAudio()
     if (this._dingAudio) { this._dingAudio.destroy(); this._dingAudio = null }
-    if (this._offThemeChange) { this._offThemeChange(); this._offThemeChange = null }
+    if (this._themeListener && wx.offThemeChange) { wx.offThemeChange(this._themeListener) }
+    this._themeListener = null
   },
 
   onShareAppMessage() {
@@ -174,7 +177,7 @@ Page({
 
     this._history = safeGet(STORAGE_KEYS.history, [])
     this._favorites = safeGet(STORAGE_KEYS.favorites, [])
-    this._cooldownFamilyPicks = {}
+    this._cooldownFamilyPicks = safeGet(STORAGE_KEYS.cooldownFamilyPicks, {})
     this._ssrPity = safeGet(STORAGE_KEYS.ssrPity, 0)
     this._ssrCollection = safeGet(STORAGE_KEYS.ssrCollection, [])
 
@@ -265,21 +268,24 @@ Page({
     const key = JSON.stringify({ s: filters.sceneIdx, b: filters.budgetIdx, t: filters.timeIdx, ta: filters.tasteIdx, a: filters.avoid, e: excludeRecent, r: requireMeal, m: mealPeriod, h: recentPart })
     if (this._filteredCache && this._cacheKey === key) return this._filteredCache
 
-    let result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal, mealPeriod }, { excludeRecent, history, now })
+    // 注入场景名以启用渠道硬过滤（剔除该场景下可得性为低/极低的菜）
+    const sceneName = filters.sceneIdx > 0 ? SCENE_OPTIONS[filters.sceneIdx] : null
+    const baseFilters = { ...filters, requireMeal, scene: sceneName }
+    let result = foodLogic.filterFoods(this._foods, { ...baseFilters, mealPeriod }, { excludeRecent, history, now })
     // 默认只从 defaultPool 抽取（审查后进入首页池的条目）
     const poolFiltered = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
     if (poolFiltered.length > 0) result = poolFiltered
     // 空集回退：放宽时段
     if (result.length === 0 && mealPeriod) {
-      result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal }, { excludeRecent, history, now })
+      result = foodLogic.filterFoods(this._foods, baseFilters, { excludeRecent, history, now })
       const pf2 = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
       if (pf2.length > 0) result = pf2
     }
     // 二次回退：移除池限制
     if (result.length === 0) {
-      result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal, mealPeriod }, { excludeRecent, history, now })
+      result = foodLogic.filterFoods(this._foods, { ...baseFilters, mealPeriod }, { excludeRecent, history, now })
       if (result.length === 0 && mealPeriod) {
-        result = foodLogic.filterFoods(this._foods, { ...filters, requireMeal }, { excludeRecent, history, now })
+        result = foodLogic.filterFoods(this._foods, baseFilters, { excludeRecent, history, now })
       }
     }
     this._filteredCache = result
@@ -340,11 +346,10 @@ Page({
     if (!food) { wx.showToast({ title: '没有符合条件的食物', icon: 'none' }); return }
     const roll = foodLogic.rollRarityWithPity(this._ssrPity)   // 伪概率保底，与 food 无关
     const rarity = roll.rarity
-    this._ssrPity = roll.ssrPity
-    this.queueStorageWrite(STORAGE_KEYS.ssrPity, roll.ssrPity)
+    // 保底计数到 finishReveal 才提交：动画途中进程被杀不白扣保底
     const isFav = (this._favorites || []).some(f => f.name === food.name)
     const resultReason = foodLogic.buildRichReason(food, this.buildCtx())
-    this._pendingReveal = { food, rarity, isFav, resultReason }
+    this._pendingReveal = { food, rarity, isFav, resultReason, pityAfter: roll.ssrPity }
     this.setData({ boxPhase: 'revealing', revealRarity: rarity, auraClass: rarity === 'SSR' ? 'aura-SSR' : '' })
     if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
     this.clearTimer('_revealTimer')
@@ -358,6 +363,8 @@ Page({
     const p = this._pendingReveal
     if (!p) return
     this._pendingReveal = null
+    this._ssrPity = p.pityAfter
+    this.queueStorageWrite(STORAGE_KEYS.ssrPity, p.pityAfter)
     this.playDing()
     if (p.rarity !== 'R' && wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
     this.setData({
@@ -396,6 +403,7 @@ Page({
     if (food.cooldownFamilyId) {
       if (!this._cooldownFamilyPicks) this._cooldownFamilyPicks = {}
       this._cooldownFamilyPicks[food.cooldownFamilyId] = Date.now()
+      this.queueStorageWrite(STORAGE_KEYS.cooldownFamilyPicks, this._cooldownFamilyPicks)
     }
     this.invalidateCache()
     this.queueStorageWrite(STORAGE_KEYS.history, history)
@@ -624,7 +632,15 @@ Page({
               filePath: res.tempFilePath,
               success: () => wx.showToast({ title: '已保存到相册', icon: 'success' }),
               fail: (err) => {
-                if (err.errMsg && err.errMsg.indexOf('auth') > -1) wx.showToast({ title: '需要授权保存相册', icon: 'none' })
+                // 授权被永久拒绝后 wx 不再弹授权框，必须引导用户去设置页手动打开
+                if (err.errMsg && err.errMsg.indexOf('auth') > -1) {
+                  wx.showModal({
+                    title: '需要相册权限',
+                    content: '保存分享图需要相册权限，去设置中打开？',
+                    confirmText: '去设置',
+                    success: (r) => { if (r.confirm && wx.openSetting) wx.openSetting() },
+                  })
+                }
                 wx.previewImage({ urls: [res.tempFilePath] })
               },
             })

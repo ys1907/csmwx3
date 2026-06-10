@@ -97,7 +97,7 @@
       <view wx:if="{{historyDisplay.length === 0}}" class="empty-state">
         <text class="empty-text">还没有记录</text>
       </view>
-      <view wx:for="{{historyDisplay}}" wx:key="index" class="list-item" hover-class="list-item-hover" hover-stay-time="70">
+      <view wx:for="{{historyDisplay}}" wx:key="date" class="list-item" hover-class="list-item-hover" hover-stay-time="70">
         <view class="list-item-left">
           <text class="list-emoji">{{item.emoji}}</text>
           <text class="list-name">{{item.name}}</text>

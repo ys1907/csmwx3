@@ -166,7 +166,9 @@
 .list-delete {
   font-size: 24rpx;
   color: #FF3B30;
-  padding: 8rpx 16rpx;
+  /* 行内文字按钮：内边距撑到 ≥88rpx 触控高度，负外边距抵消行高占位 */
+  padding: 28rpx 20rpx;
+  margin: -20rpx -8rpx;
   transition: opacity var(--transition-fast);
 }
 .list-delete-hover {
@@ -278,7 +280,7 @@
 .sheet-body {
   position: relative;
   z-index: 1;
-  padding: 16rpx 40rpx 60rpx;
+  padding: 16rpx 40rpx calc(60rpx + env(safe-area-inset-bottom));
 }
 .sheet-handle {
   width: 96rpx; height: 6rpx;

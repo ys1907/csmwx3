@@ -32,7 +32,6 @@
       <!-- 揭晓态：① 菜卡（内容）② 操作（卡外） -->
       <block wx:if="{{boxPhase === 'revealed'}}">
         <view class="dishcard rarity-{{revealRarity}}">
-          <view class="holo" wx:if="{{revealRarity === 'SSR'}}"></view>
           <view class="fav-corner" catchtap="onToggleFav">{{currentResultIsFav ? '♥' : '♡'}}</view>
           <view class="rarity-badge badge-{{revealRarity}}">{{revealRarity}}</view>
           <text class="crown" wx:if="{{revealRarity === 'SSR'}}">👑</text>

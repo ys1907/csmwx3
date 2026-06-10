@@ -75,7 +75,9 @@ function withIndexPage(run) {
     getStorageSync: key => { storageReads.push(key); return storage.has(key) ? storage.get(key) : '' },
     setStorageSync: (key, value) => { storageWrites.push(key); storage.set(key, value) },
     getAppBaseInfo: () => ({ theme: 'light' }),
-    onThemeChange: fn => { themeHandler = fn; return () => { themeHandler = null } },
+    // 与真机一致：onThemeChange 无返回值，解绑走 offThemeChange(listener)
+    onThemeChange: fn => { themeHandler = fn },
+    offThemeChange: fn => { if (themeHandler === fn) themeHandler = null },
     createInnerAudioContext: () => {
       const audio = {
         stopCount: 0, playCount: 0, destroyCount: 0,

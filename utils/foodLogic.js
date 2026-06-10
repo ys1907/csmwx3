@@ -18,11 +18,13 @@ function sceneAliases(sceneValue) {
   return SCENE_ALIASES[sceneValue] || [sceneValue]
 }
 
-// 菜品是否匹配某个 UI 场景：优先看治理后的 scenes 数组（多渠道），缺失时回退顶层 scene（单值）
+// 菜品是否匹配某个 UI 场景：优先看治理后的 scenes 数组（多渠道），缺失时回退顶层 scene（单值）。
+// 数据缺口兜底：31 道菜的 scenes 漏标了渠道适配度为「高」的场景，按 availability 补回，避免整菜在该场景下消失。
 function matchesScene(food, sceneValue) {
   const accepted = sceneAliases(sceneValue)
   if (Array.isArray(food.scenes) && food.scenes.length > 0) {
-    return food.scenes.some(s => accepted.includes(s))
+    if (food.scenes.some(s => accepted.includes(s))) return true
+    return availabilityLevel(food, sceneValue) === '高'
   }
   return accepted.includes(food.scene)
 }
@@ -34,6 +36,24 @@ function availabilityLevel(food, sceneValue) {
     if (food.availability[key] !== undefined) return food.availability[key]
   }
   return undefined
+}
+
+// 标签同义对：数据治理产出「肉食/素食/酥脆/热食」，UI 选项（口味/避雷）用「肉/素/脆/热」，
+// 按 tags 的匹配必须经此展开，否则避雷「脆/热」全库 0 命中、避「肉」拦不住只标「肉食」的菜。
+const TAG_ALIASES = {
+  '肉': ['肉', '肉食'],
+  '素': ['素', '素食'],
+  '脆': ['脆', '酥脆'],
+  '热': ['热', '热食'],
+}
+
+// 菜品是否带某个 UI 标签（含同义展开；「辣」额外认 spicyLevel——少数辣菜只标了辣度没打 tag）
+function foodHasTag(food, tag) {
+  const accepted = TAG_ALIASES[tag] || [tag]
+  const tags = food.tags || []
+  if (accepted.some(t => tags.includes(t))) return true
+  if (tag === '辣') return (food.spicyLevel || 0) > 0
+  return false
 }
 
 // 根据筛选条件过滤食物。ctx: { excludeRecent, history, now }
@@ -61,7 +81,7 @@ function filterFoods(foods, filters, ctx) {
     if (filters.sceneIdx > 0 && !matchesScene(f, sceneValue)) return false
     if (filters.budgetIdx > 0 && f.budget !== budgetValue) return false
     if (filters.timeIdx > 0 && f.time !== timeValue) return false
-    if (filters.tasteIdx > 0 && !(f.tags || []).includes(tasteValue)) return false
+    if (filters.tasteIdx > 0 && !foodHasTag(f, tasteValue)) return false
     // NEW: 默认只推荐可作为完整一餐的菜品（严格模式）
     if (filters.requireMeal !== false && f.canBeMeal === false) return false
     // NEW: 时段过滤
@@ -79,8 +99,7 @@ function filterFoods(foods, filters, ctx) {
     }
     if (excludeRecent && recentNames.has(f.name)) return false
     if (avoidSet.size > 0) {
-      const foodTags = new Set(f.tags || [])
-      for (const a of avoidSet) if (foodTags.has(a)) return false
+      for (const a of avoidSet) if (foodHasTag(f, a)) return false
     }
     return true
   })
@@ -201,23 +220,7 @@ function buildTasteProfile(history, favorites, foods) {
   }
 }
 
-// ========== 进化④：可解释推荐（学自网易云「每日推荐」的推荐理由） ==========
-// 根据偏好信号反推「为什么推它」，让加权推荐对用户可感知、可信任。
-function explainPick(food, prefs) {
-  const p = prefs || {}
-  if (p.favoriteSet && p.favoriteSet.has(food.name)) return '你们的最爱之一 ❤️'
-  if (p.tasteCounts && food.tags && food.tags.length) {
-    let bestTag = null, bestCount = 0
-    for (const t of food.tags) {
-      const c = p.tasteCounts[t] || 0
-      if (c > bestCount) { bestCount = c; bestTag = t }
-    }
-    if (bestTag && bestCount >= 2) return `你们近来偏爱「${bestTag}」`
-  }
-  return '换换口味，碰碰运气 🎲'
-}
-
-// NEW: 丰富的推荐理由（结构化标签）
+// ========== 进化④：可解释推荐（结构化推荐理由） ==========
 function buildRichReason(food, ctx) {
   if (!food) return ''
   const parts = []
@@ -244,45 +247,6 @@ function buildRichReason(food, ctx) {
   return parts.join(' · ') || '换换口味，碰碰运气 🎲'
 }
 
-// NEW: 从池中选取备选项（排除同组/同族）
-function pickAlternatives(pool, mainFood, count, prefs, rng, ctx) {
-  const n = count || 2
-  if (!pool || pool.length <= 1) return []
-  // 排除主推荐及其同组/同族
-  const excludeIds = new Set()
-  if (mainFood.equivalentGroupId) excludeIds.add(mainFood.equivalentGroupId)
-  if (mainFood.cooldownFamilyId) excludeIds.add(mainFood.cooldownFamilyId)
-  const candidates = pool.filter(f => {
-    if (f.name === mainFood.name) return false
-    if (f.equivalentGroupId && excludeIds.has(f.equivalentGroupId)) return false
-    if (f.cooldownFamilyId && excludeIds.has(f.cooldownFamilyId)) return false
-    return true
-  })
-  if (candidates.length === 0) return []
-  // 用加权随机选取，但排除已选中的
-  const result = []
-  const pickedNames = new Set([mainFood.name])
-  for (let i = 0; i < n && candidates.length > 0; i++) {
-    const available = candidates.filter(c => !pickedNames.has(c.name))
-    if (available.length === 0) break
-    const weights = available.map(f => foodWeight(f, prefs, ctx))
-    const total = weights.reduce((a, b) => a + b, 0)
-    const random = rng || Math.random
-    let r = random() * total
-    let idx = 0
-    for (let j = 0; j < available.length; j++) {
-      r -= weights[j]
-      if (r < 0) { idx = j; break }
-    }
-    const pick = available[idx]
-    result.push(pick)
-    pickedNames.add(pick.name)
-    if (pick.equivalentGroupId) excludeIds.add(pick.equivalentGroupId)
-    if (pick.cooldownFamilyId) excludeIds.add(pick.cooldownFamilyId)
-  }
-  return result
-}
-
 // ========== 进化⑤：决策连胜（学自微信运动 / Duolingo 的连续打卡） ==========
 function dayKey(d) {
   return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`
@@ -291,7 +255,6 @@ function dayKey(d) {
 // 从历史日期算出「当前连胜 / 最长连胜 / 今天是否已决定」。now 可注入便于测试。
 function computeStreak(history, now) {
   const today = now ? new Date(now) : new Date()
-  const dayMs = 24 * 60 * 60 * 1000
   const days = new Set()
   ;(history || []).forEach(h => {
     const d = new Date(h.date)
@@ -299,24 +262,32 @@ function computeStreak(history, now) {
   })
 
   const decidedToday = days.has(dayKey(today))
-  // 当前连胜：从今天（或昨天，给「还没决定但昨天决定过」留活口）向前数连续天数
+  // 当前连胜：从今天（或昨天，给「还没决定但昨天决定过」留活口）向前数连续天数。
+  // 日期游标用 setDate 按日历日推进而非减 24h 毫秒——夏令时地区某天是 23/25 小时，毫秒法会断链。
   let current = 0
-  let cursor = decidedToday ? new Date(today) : new Date(today.getTime() - dayMs)
+  const cursor = new Date(today)
+  if (!decidedToday) cursor.setDate(cursor.getDate() - 1)
   while (days.has(dayKey(cursor))) {
     current++
-    cursor = new Date(cursor.getTime() - dayMs)
+    cursor.setDate(cursor.getDate() - 1)
   }
 
-  // 最长连胜：把所有去重日期排序，找最长连续段
+  // 最长连胜：把所有去重日期排序，相邻日判定同样走日历日（setDate）而非毫秒差
   const sorted = Array.from(days).map(k => {
     const [y, m, d] = k.split('-').map(Number)
-    return new Date(y, m, d).getTime()
+    return new Date(y, m, d)
   }).sort((a, b) => a - b)
   let longest = 0, run = 0, prev = null
-  for (const t of sorted) {
-    run = (prev !== null && t - prev === dayMs) ? run + 1 : 1
+  for (const dt of sorted) {
+    if (prev !== null) {
+      const next = new Date(prev)
+      next.setDate(next.getDate() + 1)
+      run = next.getTime() === dt.getTime() ? run + 1 : 1
+    } else {
+      run = 1
+    }
     if (run > longest) longest = run
-    prev = t
+    prev = dt
   }
 
   return { current, longest, decidedToday }
@@ -353,7 +324,7 @@ function inferSeason(now) {
   return [] // 春秋中性，不加权（「雨天适合」需实时天气，季节方案不触发）
 }
 
-// ========== 盲盒稀有度：纯概率，与菜无关（R 80% / SR 15% / SSR 5%）==========
+// ========== 盲盒稀有度：纯概率，与菜无关 ==========
 // 仅决定揭晓动画档位；rng 可注入便于测试。
 // 伪概率（保底）抽稀有度：基础 R88 / SR11 / SSR1。
 // SSR 每未中一次概率 +1%，封顶 16%；累计 25 抽硬保底必出；中 SSR 后计数清零。
@@ -378,13 +349,12 @@ module.exports = {
   filterFoods,
   matchesScene,
   availabilityLevel,
+  foodHasTag,
   foodWeight,
   weightedPick,
   weightedPickIndex,
   buildTasteProfile,
-  explainPick,
   buildRichReason,
-  pickAlternatives,
   computeStreak,
   buildMealCombo,
   inferSeason,

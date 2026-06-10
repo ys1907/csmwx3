@@ -11,6 +11,7 @@
     "navigationStyle": "custom",
     "backgroundColor": "#F5F5F7"
   },
+  "darkmode": true,
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"

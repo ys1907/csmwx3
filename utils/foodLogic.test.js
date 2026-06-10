@@ -1,10 +1,10 @@
 const test = require('node:test')
 const assert = require('node:assert')
 const {
-  filterFoods, matchesScene, availabilityLevel,
+  filterFoods, matchesScene, availabilityLevel, foodHasTag,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
-  explainPick, computeStreak, buildMealCombo,
-  buildRichReason, pickAlternatives, inferSeason, rollRarityWithPity
+  computeStreak, buildMealCombo,
+  buildRichReason, inferSeason, rollRarityWithPity
 } = require('./foodLogic.js')
 
 const FOODS = [
@@ -96,6 +96,35 @@ test('availabilityLevel: 「公司食堂」读 availability 的「食堂」key',
   assert.strictEqual(availabilityLevel({}, '外卖'), undefined)
 })
 
+test('matchesScene: scenes 漏标但渠道适配度为「高」时兜底命中', () => {
+  const food = { scene: '外卖', scenes: ['外卖'], availability: { 外卖: '高', 堂食: '中', 自己做: '高', 食堂: '低' } }
+  assert.strictEqual(matchesScene(food, '自己做'), true, 'availability 高 → 兜底命中')
+  assert.strictEqual(matchesScene(food, '堂食'), false, 'availability 中 → 不兜底')
+  assert.strictEqual(matchesScene(food, '公司食堂'), false, 'availability 低 → 不兜底')
+})
+
+test('foodHasTag: 标签同义展开（肉/素/脆/热）与「辣」的 spicyLevel 兜底', () => {
+  assert.strictEqual(foodHasTag({ tags: ['肉食'] }, '肉'), true)
+  assert.strictEqual(foodHasTag({ tags: ['素食'] }, '素'), true)
+  assert.strictEqual(foodHasTag({ tags: ['酥脆'] }, '脆'), true)
+  assert.strictEqual(foodHasTag({ tags: ['热食'] }, '热'), true)
+  assert.strictEqual(foodHasTag({ tags: ['清淡'] }, '肉'), false)
+  // 只标了辣度没打「辣」tag 的菜，「辣」也要认
+  assert.strictEqual(foodHasTag({ tags: [], spicyLevel: 2 }, '辣'), true)
+  assert.strictEqual(foodHasTag({ tags: [], spicyLevel: 0 }, '辣'), false)
+})
+
+test('filterFoods: 避雷经同义展开（避「肉」拦得住只标「肉食」的菜）', () => {
+  const foods = [
+    { name: '酱大骨', scene: '堂食', budget: '💰💰', time: '慢', tags: ['肉食'] },
+    { name: '白灼菜心', scene: '自己做', budget: '💰', time: '快', tags: ['素食', '清淡'] },
+  ]
+  const r = filterFoods(foods, { ...NO_FILTER, avoid: '肉' }, {})
+  assert.deepStrictEqual(r.map(f => f.name), ['白灼菜心'])
+  const r2 = filterFoods(foods, { ...NO_FILTER, avoid: '素' }, {})
+  assert.deepStrictEqual(r2.map(f => f.name), ['酱大骨'])
+})
+
 // ===== 进化①②：加权推荐 + 负反馈降权 =====
 
 test('foodWeight: 收藏加成、口味加成、拒绝降权', () => {
@@ -153,22 +182,6 @@ test('buildTasteProfile: 统计品类/标签/辣度占比', () => {
   assert.strictEqual(p.spicyCount, 1)                  // 仅麻辣烫含「辣」
   assert.ok(Math.abs(p.spicyRatio - 0.25) < 1e-9)
   assert.ok(p.headline.includes('4 餐'))
-})
-
-// ===== 进化④：可解释推荐 =====
-
-test('explainPick: 收藏 > 口味 > 兜底 的优先级', () => {
-  assert.strictEqual(
-    explainPick({ name: '红烧肉', tags: ['肉'] }, { favoriteSet: new Set(['红烧肉']) }),
-    '你们的最爱之一 ❤️'
-  )
-  assert.strictEqual(
-    explainPick({ name: '麻辣烫', tags: ['辣'] }, { tasteCounts: { 辣: 3 } }),
-    '你们近来偏爱「辣」'
-  )
-  // 口味信号不足阈值 → 落到兜底文案
-  assert.ok(explainPick({ name: 'x', tags: ['辣'] }, { tasteCounts: { 辣: 1 } }).includes('碰碰运气'))
-  assert.ok(explainPick({ name: 'x', tags: [] }, {}).includes('碰碰运气'))
 })
 
 // ===== 进化⑤：决策连胜 =====
@@ -375,35 +388,6 @@ test('buildRichReason: 不辣/含辣警示/较快/家常小炒 分支', () => {
   assert.ok(hot.includes('重辣'), 'spicyLevel>=3 应标重辣')
   // 空食物兜底
   assert.strictEqual(buildRichReason(null, {}), '')
-})
-
-test('pickAlternatives: 排除同组同族', () => {
-  const foods = [
-    { name: '红烧肉', equivalentGroupId: '红烧肉_套餐族' },
-    { name: '红烧肉盖饭', equivalentGroupId: '红烧肉_套餐族' },
-    { name: '白灼菜心' },
-    { name: '麻婆豆腐', equivalentGroupId: '麻婆豆腐_套餐族' },
-    { name: '番茄炒蛋' },
-  ]
-  const main = foods[0]
-  const alts = pickAlternatives(foods, main, 2, {}, () => 0.1, {})
-  assert.strictEqual(alts.length, 2)
-  assert.ok(!alts.some(a => a.name === '红烧肉盖饭'), '不应出现同等价组')
-  assert.ok(!alts.some(a => a.name === '红烧肉'), '不应出现主推荐')
-})
-
-test('pickAlternatives: 排除主推荐的同冷却族', () => {
-  const foods = [
-    { name: '四川火锅', cooldownFamilyId: '火锅族' },
-    { name: '潮汕牛肉锅', cooldownFamilyId: '火锅族' },
-    { name: '麻辣香锅', cooldownFamilyId: '火锅族' },
-    { name: '白灼菜心' },
-    { name: '番茄炒蛋' },
-  ]
-  const alts = pickAlternatives(foods, foods[0], 2, {}, () => 0.1, {})
-  assert.strictEqual(alts.length, 2)
-  assert.ok(!alts.some(a => a.cooldownFamilyId === '火锅族'), '备选不应出现主推荐的同冷却族')
-  assert.deepStrictEqual(alts.map(a => a.name).sort(), ['番茄炒蛋', '白灼菜心'].sort())
 })
 
 test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () => {

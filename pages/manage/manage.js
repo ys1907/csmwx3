@@ -53,11 +53,13 @@ Page({
     // 暗黑模式系统跟随
     const baseInfo = (wx.getAppBaseInfo && wx.getAppBaseInfo()) || {}
     this.setData({ darkMode: baseInfo.theme === 'dark' })
-    this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
+    // wx.onThemeChange 无返回值，解绑必须用 wx.offThemeChange(listener)
+    this._themeListener = (res) => {
       const darkMode = res.theme === 'dark'
       if (this._isPageVisible) this.setData({ darkMode })
       else this._pendingDarkMode = darkMode
-    })
+    }
+    if (wx.onThemeChange) wx.onThemeChange(this._themeListener)
   },
 
   onHide() {
@@ -66,7 +68,8 @@ Page({
 
   onUnload() {
     this._isPageVisible = false
-    if (this._offThemeChange) { this._offThemeChange(); this._offThemeChange = null }
+    if (this._themeListener && wx.offThemeChange) { wx.offThemeChange(this._themeListener) }
+    this._themeListener = null
   },
 
   onShow() {
@@ -260,7 +263,13 @@ Page({
     }
     let newFoods
     if (editingId) {
-      newFoods = foods.map(f => f._id === editingId ? { ...f, ...fields } : f)
+      newFoods = foods.map(f => {
+        if (f._id !== editingId) return f
+        const updated = { ...f, ...fields }
+        // 场景被改动时清空多渠道 scenes：matchesScene 在 scenes 非空时优先读它，不清空会让这次编辑被旧 scenes 静默遮蔽
+        if (f.scene !== fields.scene) updated.scenes = []
+        return updated
+      })
     } else {
       newFoods = [...foods, { _id: util.uid(), ...fields }]
     }
@@ -357,7 +366,6 @@ Page({
     const favorites = this.data.favorites
     const history = this._history || []
     const foods = this._foods || []
-    const pkData = safeGet(STORAGE_KEYS.pkData, { matches: 0, total: 0 })
     // 仅导出「新增 + 被编辑过」的菜：按 _id 比对内置种子并逐字段判断差异，
     // 避免旧逻辑「按菜名剔除内置菜」导致改过的内置菜被当作原版而丢失编辑
     const seedById = new Map(foodsData.map(util.migrateFood).map(f => [f._id, f]))
@@ -366,7 +374,11 @@ Page({
       if (!seed) return true
       return f.name !== seed.name || f.emoji !== seed.emoji || f.category !== seed.category ||
         f.scene !== seed.scene || f.budget !== seed.budget || f.time !== seed.time ||
-        (f.tags || []).join(',') !== (seed.tags || []).join(',')
+        (f.tags || []).join(',') !== (seed.tags || []).join(',') ||
+        (f.scenes || []).join(',') !== (seed.scenes || []).join(',') ||
+        (f.mealPeriods || []).join(',') !== (seed.mealPeriods || []).join(',') ||
+        f.canBeMeal !== seed.canBeMeal || f.enabled !== seed.enabled ||
+        f.defaultPoolWeight !== seed.defaultPoolWeight || f.spicyLevel !== seed.spicyLevel
     }
     const payload = {
       version: APP_VERSION,
@@ -374,7 +386,10 @@ Page({
       foods: foods.filter(isCustomOrEdited),
       history,
       favorites,
-      pkData
+      // 换机迁移要带上抽卡与冷却状态（pkData 属已下线玩法，不再导出；导入侧仍兼容旧备份）
+      ssrPity: safeGet(STORAGE_KEYS.ssrPity, 0),
+      ssrCollection: safeGet(STORAGE_KEYS.ssrCollection, []),
+      cooldownFamilyPicks: safeGet(STORAGE_KEYS.cooldownFamilyPicks, {})
     }
     wx.setClipboardData({
       data: JSON.stringify(payload, null, 2),
@@ -391,20 +406,27 @@ Page({
           const { foods: importFoods, history: importHistory, favorites: importFavorites, pkData: importPk } = payload
           const favorites = this.data.favorites
           const history = this._history || []
-          // 按 _id 优先合并：同 _id 覆盖（恢复对内置菜的编辑），同名异 id 合并字段保留本地 id，全新菜追加
+          // 按 _id 优先合并：同 _id 覆盖（恢复对内置菜的编辑），同名异 id 合并字段保留本地 id，全新菜追加。
+          // 关键：先 spread 原始导入记录（只覆盖它实际带的字段）再整体过 migrateFood——
+          // 直接用 migrateFood(raw) 替换会让旧版备份缺失的治理字段（scenes 等）被默认值抹掉本地值
           const mergedFoods = (this._foods || []).slice()
           const idIndex = new Map(mergedFoods.map((f, i) => [f._id, i]))
           const nameIndex = new Map(mergedFoods.map((f, i) => [f.name, i]))
           if (Array.isArray(importFoods)) {
             importFoods.forEach(raw => {
               if (!raw || !raw.name) return
-              const f = util.migrateFood(raw)
-              if (idIndex.has(f._id)) {
-                mergedFoods[idIndex.get(f._id)] = f
-              } else if (nameIndex.has(f.name)) {
-                const i = nameIndex.get(f.name)
-                mergedFoods[i] = { ...mergedFoods[i], ...f, _id: mergedFoods[i]._id }
+              if (raw._id && idIndex.has(raw._id)) {
+                const i = idIndex.get(raw._id)
+                const local = mergedFoods[i]
+                // 改名会撞本地另一道菜（全应用以 name 为主键）→ 跳过该条，避免产生重名
+                if (raw.name !== local.name && nameIndex.has(raw.name) && nameIndex.get(raw.name) !== i) return
+                if (raw.name !== local.name) { nameIndex.delete(local.name); nameIndex.set(raw.name, i) }
+                mergedFoods[i] = util.migrateFood({ ...local, ...raw })
+              } else if (nameIndex.has(raw.name)) {
+                const i = nameIndex.get(raw.name)
+                mergedFoods[i] = util.migrateFood({ ...mergedFoods[i], ...raw, _id: mergedFoods[i]._id })
               } else {
+                const f = util.migrateFood(raw)
                 const i = mergedFoods.push(f) - 1
                 idIndex.set(f._id, i)
                 nameIndex.set(f.name, i)
@@ -418,6 +440,8 @@ Page({
               const key = h.name + '|' + h.date
               if (!historyKeySet.has(key)) { mergedHistory.push(h); historyKeySet.add(key) }
             })
+            // 按时间倒序排——首页 addToHistory 会按位置截断到 50 条，不排序会按插入位置（而非日期）丢记录
+            mergedHistory.sort((a, b) => (new Date(b.date).getTime() || 0) - (new Date(a.date).getTime() || 0))
           }
           const favNameSet = new Set(favorites.map(f => f.name))
           const mergedFavorites = favorites.slice()
@@ -439,7 +463,20 @@ Page({
           }, () => {
             this.persistFoods(mergedFoods)
             this.saveUserData()
-            if (importPk && typeof importPk === 'object') safeSet(STORAGE_KEYS.pkData, importPk)
+            if (importPk && typeof importPk === 'object') safeSet(STORAGE_KEYS.pkData, importPk) // 旧备份兼容
+            // 抽卡与冷却状态：取两边较大/合并，避免导入旧备份把本地进度倒退
+            if (typeof payload.ssrPity === 'number') {
+              safeSet(STORAGE_KEYS.ssrPity, Math.max(safeGet(STORAGE_KEYS.ssrPity, 0), payload.ssrPity))
+            }
+            if (Array.isArray(payload.ssrCollection)) {
+              const localDex = safeGet(STORAGE_KEYS.ssrCollection, [])
+              const dexNames = new Set(localDex.map(c => c.name))
+              const mergedDex = localDex.concat(payload.ssrCollection.filter(c => c && c.name && !dexNames.has(c.name)))
+              safeSet(STORAGE_KEYS.ssrCollection, mergedDex)
+            }
+            if (payload.cooldownFamilyPicks && typeof payload.cooldownFamilyPicks === 'object') {
+              safeSet(STORAGE_KEYS.cooldownFamilyPicks, { ...payload.cooldownFamilyPicks, ...safeGet(STORAGE_KEYS.cooldownFamilyPicks, {}) })
+            }
             this.computeDisplayFoods(false)
             wx.showToast({ title: '导入成功', icon: 'success' })
           })
