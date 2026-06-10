@@ -4,8 +4,10 @@
 const APP_VERSION = 'v3'
 
 // foods 种子版本：仅用于「是否从 data/foods.js 重播种菜品库」的闸门（与用户数据无关）。
-// bump 它 → 下次启动从 data/foods.js 重播种菜品库；history/收藏/SSR 图鉴/PK 全不受影响。
-const FOODS_SEED_VERSION = 'v4'
+// bump 它 → 下次启动从 data/foods.js 重播种菜品库；history/收藏/SSR 图鉴全不受影响，
+// 用户自建菜经 util.mergeSeedWithLocal 保留（对内置菜的编辑会被新种子覆盖）。
+// v5: 同名菜去重 524→519（scripts/dedupeFoods.js）
+const FOODS_SEED_VERSION = 'v5'
 
 // 所有 key 稳定、与版本号解耦：版本变更永不误删用户数据。数据结构变更走 utils/migrations.js。
 const STORAGE_KEYS = {

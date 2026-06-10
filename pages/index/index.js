@@ -167,9 +167,10 @@ Page({
   initData() {
     const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
     const localFoods = safeGet(STORAGE_KEYS.foods, null)
+    // 重播种时经 mergeSeedWithLocal 保留用户自建菜，不整库替换
     this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
       ? localFoods.map(util.migrateFood)
-      : foodsData.map(util.migrateFood)
+      : util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
     this._filteredCache = null
     this._cacheKey = ''
     this._nameIndex = null
@@ -208,7 +209,7 @@ Page({
       const localFoods = safeGet(STORAGE_KEYS.foods, null)
       this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
         ? localFoods.map(util.migrateFood)
-        : foodsData.map(util.migrateFood)
+        : util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
       this._nameIndex = null
       this._foodsRev = rev
     }

@@ -88,7 +88,8 @@ Page({
     if (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0) {
       foods = localFoods.map(util.migrateFood)
     } else {
-      foods = foodsData.map(util.migrateFood)
+      // 重播种时经 mergeSeedWithLocal 保留用户自建菜，不整库替换
+      foods = util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
     }
 
     const history = safeGet(STORAGE_KEYS.history, [])

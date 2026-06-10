@@ -1,6 +1,6 @@
 const test = require('node:test')
 const assert = require('node:assert')
-const { shuffleArray, formatDate, migrateFood, uid } = require('./util.js')
+const { shuffleArray, formatDate, migrateFood, uid, mergeSeedWithLocal } = require('./util.js')
 
 const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
 
@@ -28,6 +28,34 @@ test('migrateFood: tags 非数组归一为空数组、保留已有 _id', () => {
   const m = migrateFood({ name: '红烧肉', tags: '辣', _id: 'fixed-id' })
   assert.deepStrictEqual(m.tags, [])
   assert.strictEqual(m._id, 'fixed-id')
+})
+
+test('mergeSeedWithLocal: 重播种保留用户自建菜', () => {
+  const seed = [{ _id: 's1', name: '红烧肉' }, { _id: 's2', name: '麻辣烫' }]
+  const local = [
+    { _id: 's1', name: '红烧肉', emoji: '改过的' }, // 内置菜的编辑：不保留，以新种子为准
+    { _id: 'u1', name: '我家秘制菜' },              // 自建菜：保留
+  ]
+  const merged = mergeSeedWithLocal(seed, local)
+  assert.strictEqual(merged.length, 3)
+  assert.ok(merged.some(f => f._id === 'u1'))
+  assert.strictEqual(merged.find(f => f._id === 's1').emoji, undefined, '内置菜编辑不保留')
+})
+
+test('mergeSeedWithLocal: 同名冲突时自建菜优先、种子条让位（防重名）', () => {
+  const seed = [{ _id: 's1', name: '红烧肉' }, { _id: 's2', name: '生煎包' }]
+  const local = [{ _id: 'u1', name: '生煎包', emoji: '🥟' }]
+  const merged = mergeSeedWithLocal(seed, local)
+  assert.strictEqual(merged.length, 2)
+  assert.strictEqual(merged.find(f => f.name === '生煎包')._id, 'u1')
+  assert.strictEqual(new Set(merged.map(f => f.name)).size, merged.length, '合并结果无重名')
+})
+
+test('mergeSeedWithLocal: 本地为空/脏数据时原样返回种子', () => {
+  const seed = [{ _id: 's1', name: '红烧肉' }]
+  assert.deepStrictEqual(mergeSeedWithLocal(seed, null), seed)
+  assert.deepStrictEqual(mergeSeedWithLocal(seed, []), seed)
+  assert.deepStrictEqual(mergeSeedWithLocal(seed, [null, { name: '没有id' }, { _id: 'x' }]), seed)
 })
 
 test('migrateFood: 保留治理后的 scenes 多渠道数组（场景匹配依赖它）', () => {

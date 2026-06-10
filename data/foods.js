@@ -19667,7 +19667,8 @@ module.exports = [
     "tags": [
       "鲜",
       "酥脆",
-      "肉"
+      "肉",
+      "热食"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -19678,7 +19679,9 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "到店吃",
+      "堂食",
+      "自己做"
     ],
     "primaryScene": "到店吃",
     "budgetCnyByScene": {
@@ -24316,7 +24319,9 @@ module.exports = [
     "tags": [
       "家常",
       "肉",
-      "蛋"
+      "蛋",
+      "香",
+      "热食"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -24328,7 +24333,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "到店吃",
+      "堂食"
     ],
     "primaryScene": "到店吃",
     "budgetCnyByScene": {
@@ -29072,7 +29078,8 @@ module.exports = [
     "tags": [
       "香",
       "酥脆",
-      "肉"
+      "肉",
+      "热食"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -29083,7 +29090,9 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "到店吃",
+      "堂食",
+      "自己做"
     ],
     "primaryScene": "到店吃",
     "budgetCnyByScene": {
@@ -41438,7 +41447,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "到店吃",
+      "堂食"
     ],
     "primaryScene": "自己做",
     "budgetCnyByScene": {
@@ -44949,7 +44959,8 @@ module.exports = [
       "自己做",
       "外卖",
       "到店吃",
-      "食堂"
+      "食堂",
+      "堂食"
     ],
     "primaryScene": "自己做",
     "budgetCnyByScene": {
@@ -54967,212 +54978,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "10f6903593d41724",
-    "name": "冬瓜排骨汤",
-    "aliases": [],
-    "emoji": "🍲",
-    "category": "汤粥炖品",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "清淡",
-      "热食",
-      "肉"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "汤羹炖品",
-    "mealRole": "汤品",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "冬瓜排骨汤",
-    "flavors": [
-      "鲜",
-      "清淡",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
-    "defaultPoolWeight": 0.5,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "汤羹",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
-    "_id": "6f0d0119a1d30630",
-    "name": "紫菜蛋花汤",
-    "aliases": [],
-    "emoji": "🥣",
-    "category": "汤粥炖品",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "鲜",
-      "清淡",
-      "热食",
-      "蛋"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "汤羹炖品",
-    "mealRole": "汤品",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "紫菜蛋花汤",
-    "flavors": [
-      "鲜",
-      "清淡",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "汤羹",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": [
-      "蛋"
-    ]
-  },
-  {
     "_id": "3f908ecff7f2d4eb",
     "name": "西红柿鸡蛋汤",
     "aliases": [],
@@ -56010,109 +55815,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "59ee3eca61f870e5",
-    "name": "鸡蛋饼",
-    "aliases": [],
-    "emoji": "🥚",
-    "category": "小吃点心",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "家常",
-      "香",
-      "热食",
-      "蛋"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "中式面点",
-    "mealRole": "小吃",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鸡蛋饼",
-    "flavors": [
-      "家常",
-      "香",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
-    "defaultPoolWeight": 0.5,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "早餐单品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": [
-      "麸质",
-      "蛋"
-    ]
-  },
-  {
     "_id": "b6f32dc739b5ef38",
     "name": "杂粮煎饼",
     "aliases": [
@@ -56222,216 +55924,6 @@ module.exports = [
     "allergenTags": [
       "麸质"
     ]
-  },
-  {
-    "_id": "cec612ef27499b42",
-    "name": "锅贴",
-    "aliases": [],
-    "emoji": "🥟",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "肉",
-      "酥脆",
-      "热食",
-      "香"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "中式面点",
-    "mealRole": "小吃",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐"
-    ],
-    "scenes": [
-      "堂食",
-      "自己做",
-      "外卖"
-    ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "锅贴",
-    "flavors": [
-      "肉",
-      "酥脆",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
-    "defaultPoolWeight": 0.55,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "早餐单品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高油"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "65715d7fad22d9bd",
-    "name": "生煎包",
-    "aliases": [],
-    "emoji": "🥟",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "肉",
-      "鲜",
-      "热食",
-      "酥脆"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "中式面点",
-    "mealRole": "小吃",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐"
-    ],
-    "scenes": [
-      "堂食",
-      "自己做",
-      "外卖"
-    ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "生煎包",
-    "flavors": [
-      "肉",
-      "鲜",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
-    "defaultPoolWeight": 0.6,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "早餐单品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": []
   },
   {
     "_id": "681edb5dd0a0872a",

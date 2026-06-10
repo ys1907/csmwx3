@@ -40,6 +40,20 @@ function uid() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36)
 }
 
+// 重播种合并：bump FOODS_SEED_VERSION 重置菜品库时，把本地「用户自建菜」（_id 不在种子里）带进新库，
+// 不再整库替换丢数据。同名冲突时用户自建菜优先、对应种子条让位（避免重名破坏 name 主键约定）。
+// 注意：用户对内置菜的编辑不保留——重播种的本义就是接受新种子的治理结果。
+function mergeSeedWithLocal(seedFoods, localFoods) {
+  const seed = Array.isArray(seedFoods) ? seedFoods : []
+  const local = Array.isArray(localFoods) ? localFoods : []
+  if (local.length === 0) return seed.slice()
+  const seedIds = new Set(seed.map(f => f._id))
+  const custom = local.filter(f => f && f._id && f.name && !seedIds.has(f._id))
+  if (custom.length === 0) return seed.slice()
+  const customNames = new Set(custom.map(f => f.name))
+  return seed.filter(s => !customNames.has(s.name)).concat(custom)
+}
+
 function shuffleArray(arr, rng) {
   const random = rng || Math.random
   const a = arr.slice()
@@ -102,5 +116,6 @@ module.exports = {
   uid,
   shuffleArray,
   formatDate,
-  migrateFood
+  migrateFood,
+  mergeSeedWithLocal
 }
