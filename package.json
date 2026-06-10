@@ -1,7 +1,7 @@
 {
   "name": "what-to-eat-couple",
   "version": "3.0.0",
-  "description": "今天吃什么 · 情侣版",
+  "description": "到底该吃啥",
   "scripts": {
     "test": "node --test utils/*.test.js"
   },

@@ -219,6 +219,24 @@ Page({
     }
   },
 
+  // 震动统一入口：老机型（如 iPhone 6s 及以下）不支持 type 触感引擎时 vibrateShort 走 fail——
+  // 标记后降级用 vibrateLong 兜底（脉冲场景不兜底：400ms 长震连发体验极差）。
+  // 注意：API 成功但真机无感多为系统级开关（iOS 静音拨片/系统触感反馈/低电量模式；Android 勿扰/省电/静音）。
+  vibrate(type, isPulse) {
+    if (this._vibrateUnsupported) {
+      if (!isPulse && wx.vibrateLong) wx.vibrateLong()
+      return
+    }
+    if (!wx.vibrateShort) return
+    wx.vibrateShort({
+      type,
+      fail: () => {
+        this._vibrateUnsupported = true
+        if (!isPulse && wx.vibrateLong) wx.vibrateLong()
+      },
+    })
+  },
+
   // 摇晃蓄力期间的连续震动脉冲（与 charge/charge2 动画时长对齐）；R 档动画太快不脉冲。
   // 用 setTimeout 链而非 setInterval，统一走 _xxxTimer + clearTimer 约定，便于暂停/卸载清理。
   startRevealHaptics(rarity) {
@@ -232,7 +250,7 @@ Page({
     const tick = () => {
       this._hapticTimer = null
       if (Date.now() - startTs >= plan.until) return
-      wx.vibrateShort({ type: 'light' })
+      this.vibrate('light', true)
       this._hapticTimer = setTimeout(tick, plan.interval)
     }
     this._hapticTimer = setTimeout(tick, plan.interval)
@@ -410,7 +428,7 @@ Page({
     const resultReason = foodLogic.buildRichReason(food, this.buildCtx())
     this._pendingReveal = { food, rarity, isFav, resultReason, pityAfter: roll.ssrPity }
     this.setData({ boxPhase: 'revealing', revealRarity: rarity, auraClass: rarity === 'SSR' ? 'aura-SSR' : '' })
-    if (wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
+    this.vibrate('medium')
     this.startRevealHaptics(rarity)
     this.clearTimer('_revealTimer')
     this._revealTimer = setTimeout(() => {
@@ -428,10 +446,8 @@ Page({
     this.queueStorageWrite(STORAGE_KEYS.ssrPity, p.pityAfter)
     this.playDing()
     // 揭晓瞬间按稀有度给力度：SSR 重击 / SR 中击 / R 不加（点盒时已有反馈）
-    if (wx.vibrateShort) {
-      if (p.rarity === 'SSR') wx.vibrateShort({ type: 'heavy' })
-      else if (p.rarity === 'SR') wx.vibrateShort({ type: 'medium' })
-    }
+    if (p.rarity === 'SSR') this.vibrate('heavy')
+    else if (p.rarity === 'SR') this.vibrate('medium')
     this.setData({
       boxPhase: 'revealed',
       currentResult: p.food,
@@ -509,7 +525,7 @@ Page({
       showCombo: true,
       comboClosing: false,
     })
-    if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
+    this.vibrate('light')
   },
 
   closeCombo() {
@@ -686,7 +702,7 @@ Page({
         ctx.fillText(`${currentResult.category} · ${currentResult.scene} · ${currentResult.budget}`, w / 2, 440)
         ctx.fillStyle = '#B8ADA3'; ctx.font = '24px sans-serif'
         ctx.fillText('今天这顿，交给运气', w / 2, 520)
-        ctx.fillText('到底吃点啥 · 情侣版', w / 2, 560)
+        ctx.fillText('到底该吃啥', w / 2, 560)
         ctx.fillStyle = '#FBEAF1'
         ctx.beginPath(); ctx.arc(w / 2, 660, 50, 0, Math.PI * 2); ctx.fill()
         ctx.fillStyle = '#B8ADA3'; ctx.font = '20px sans-serif'

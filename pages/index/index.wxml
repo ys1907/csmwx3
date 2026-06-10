@@ -2,7 +2,7 @@
   <!-- 启动页 -->
   <view class="intro-glass {{introFading ? 'fading' : ''}}" wx:if="{{showIntro}}">
     <view class="intro-orb"><text class="intro-orb-inner">🍽️</text></view>
-    <text class="intro-title-glass">今天吃什么</text>
+    <text class="intro-title-glass">到底该吃啥</text>
     <text class="intro-sub-glass">给你们的一餐建议</text>
   </view>
 
@@ -10,7 +10,7 @@
   <view hidden="{{activeTab !== 'home'}}" class="home">
     <view class="topbar">
       <view class="topbar-text">
-        <text class="app-title">今天吃什么</text>
+        <text class="app-title">到底该吃啥</text>
         <text class="app-date">{{headerDate}}</text>
       </view>
       <view class="gear tap-target" bindtap="openFilterSheet">
