@@ -17,11 +17,20 @@ function normalizeTags(tags) {
   return [...new Set(tags.map(t => LEGACY_TAG_MAP[t] || t))]
 }
 
-// scenes 归一 + 去重；空则回填主场景，保证非空（matchesScene 以 scenes 为唯一匹配权威）
-function normalizeScenes(food, scene) {
+const UI_SCENES = ['外卖', '堂食', '自己做', '公司食堂']
+
+// scenes 归一 + 去重；空则回填主场景，保证非空（matchesScene 以 scenes 为唯一匹配权威）。
+// 末步复刻 scripts/normalizeVocab.js 的「高可得补标」：availability 为「高」但 scenes 漏标的场景补回——
+// 这是被删除的 matchesScene 运行时兜底的语义等价物，少了它，归一前的旧备份导入会覆盖掉落盘补标、
+// 让菜在高可得场景下静默消失（防线必须与落盘脚本同一条规则）。
+function normalizeScenes(food, scene, availability) {
   const list = (Array.isArray(food.scenes) ? food.scenes : []).map(s => LEGACY_SCENE_MAP[s] || s)
-  const out = [...new Set(list)]
-  return out.length > 0 ? out : [scene]
+  let out = [...new Set(list)]
+  if (out.length === 0) out = [scene]
+  for (const s of UI_SCENES) {
+    if (availability && availability[s] === '高' && !out.includes(s)) out.push(s)
+  }
+  return out
 }
 
 function normalizeAvailability(av) {
@@ -102,13 +111,14 @@ function migrateFood(food) {
   const category = normalizeCategory(food)
   const scene = LEGACY_SCENE_MAP[food.scene] || food.scene || '堂食'
   const tags = normalizeTags(food.tags)
+  const availability = normalizeAvailability(food.availability)
   return {
     _id: food._id || uid(),
     name: food.name || '未知食物',
     emoji: food.emoji || '🍽️',
     category,
     scene,
-    scenes: normalizeScenes(food, scene), // 多渠道场景，matchesScene 的唯一匹配权威（保证非空）
+    scenes: normalizeScenes(food, scene, availability), // 多渠道场景，matchesScene 的唯一匹配权威（保证非空、含高可得补标）
     budget: food.budget || '💰',
     time: food.time || '快',
     tags,
@@ -128,7 +138,7 @@ function migrateFood(food) {
     enabled: food.enabled !== false,
     // NEW: v3 字段扩充（阶段1）
     itemLevel: food.itemLevel || '完整餐食',
-    availability: normalizeAvailability(food.availability),
+    availability,
     aliases: Array.isArray(food.aliases) ? food.aliases : [],
     regionTags: Array.isArray(food.regionTags) ? food.regionTags : [],
     weatherTags: (Array.isArray(food.weatherTags) && food.weatherTags.length > 0)
@@ -144,5 +154,6 @@ module.exports = {
   shuffleArray,
   formatDate,
   migrateFood,
-  mergeSeedWithLocal
+  mergeSeedWithLocal,
+  normalizeTags
 }

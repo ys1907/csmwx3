@@ -269,8 +269,9 @@ Page({
     const tasteCounts = {}
     const bump = tags => (tags || []).forEach(t => { tasteCounts[t] = (tasteCounts[t] || 0) + 1 })
     const nameIndex = this._nameIndex || (this._nameIndex = new Map(this._foods.map(f => [f.name, f])))
-    // 收藏是历史快照，tags 可能还是旧词表——优先按名字反查当前菜库的归一 tags，快照只作兜底
-    favorites.forEach(f => { const cur = nameIndex.get(f.name); bump((cur && cur.tags) || f.tags) })
+    // 收藏是历史快照，tags 可能还是旧词表——优先按名字反查当前菜库的归一 tags；
+    // 反查不到（孤儿收藏）时快照 tags 也要过词表归一，否则旧词计数器对归一菜库永不命中
+    favorites.forEach(f => { const cur = nameIndex.get(f.name); bump(cur ? cur.tags : util.normalizeTags(f.tags)) })
     history.forEach(h => { const f = nameIndex.get(h.name); if (f) bump(f.tags) })
     return {
       favoriteSet,

@@ -82,6 +82,27 @@ test('migrateFood: availability 的 key 归一（食堂→公司食堂），缺�
   assert.deepStrictEqual(migrateFood({ name: 'x' }).availability, { 外卖: '中', 堂食: '中', 自己做: '中', 公司食堂: '中' })
 })
 
+test('migrateFood: 高可得补标——availability=高 但 scenes 漏标的场景补回（旧备份导入防线）', () => {
+  // 复刻回归场景：归一前导出的备份里 scenes 未含落盘补标，导入覆盖后必须由 migrateFood 救回
+  const m = migrateFood({
+    name: '松鼠鳜鱼',
+    scenes: ['外卖', '堂食'],
+    availability: { 外卖: '中', 堂食: '高', 自己做: '高', 食堂: '低' },
+  })
+  assert.ok(m.scenes.includes('自己做'), 'availability=高 的场景必须被补进 scenes')
+  assert.ok(!m.scenes.includes('公司食堂'), 'availability=低 不补')
+  assert.deepStrictEqual([...m.scenes].sort(), ['外卖', '堂食', '自己做'].sort())
+  // availability 缺失（默认全中）→ 不补标
+  assert.deepStrictEqual(migrateFood({ name: 'x', scenes: ['外卖'] }).scenes, ['外卖'])
+})
+
+test('normalizeTags: 已导出，旧词归一 + 去重 + 脏类型回空（buildPrefs 孤儿收藏兜底依赖它）', () => {
+  const { normalizeTags } = require('./util.js')
+  assert.deepStrictEqual(normalizeTags(['肉食', '肉', '热食']), ['肉', '热'])
+  assert.deepStrictEqual(normalizeTags('辣'), [])
+  assert.deepStrictEqual(normalizeTags(null), [])
+})
+
 test('formatDate: 带/不带星期', () => {
   const d = new Date(2024, 4, 31) // 2024-05-31 本地时间
   assert.strictEqual(formatDate(d, false), '5月31日')
