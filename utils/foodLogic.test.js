@@ -247,6 +247,32 @@ test('buildMealCombo: 品类不足时用剩余菜补足数量', () => {
   assert.strictEqual(new Set(combo.map(f => f.name)).size, 3)
 })
 
+test('buildMealCombo: 池含配菜/汤品时保证至少一道正餐', () => {
+  const foods = [
+    { name: '紫菜蛋花汤', category: '汤粥炖品', canBeMeal: false },
+    { name: '拍黄瓜', category: '配菜', canBeMeal: false },
+    { name: '蒜蓉西兰花', category: '配菜', canBeMeal: false },
+    { name: '红烧肉', category: '家常菜', canBeMeal: true },
+  ]
+  // 多个 rng 种子下都必须含正餐
+  for (const seed of [0, 0.3, 0.6, 0.99]) {
+    const combo = buildMealCombo(foods, 3, () => seed)
+    assert.strictEqual(combo.length, 3)
+    assert.ok(combo.some(f => f.canBeMeal !== false), `seed=${seed} 组合应含至少一道正餐`)
+    assert.strictEqual(new Set(combo.map(f => f.name)).size, 3, '无重复')
+  }
+})
+
+test('buildMealCombo: 全是配菜的极端池也能凑满（无正餐可锁定时回退）', () => {
+  const foods = [
+    { name: '拍黄瓜', category: '配菜', canBeMeal: false },
+    { name: '蛋花汤', category: '汤粥炖品', canBeMeal: false },
+    { name: '糖葫芦', category: '甜品饮品', canBeMeal: false },
+  ]
+  const combo = buildMealCombo(foods, 3, () => 0)
+  assert.strictEqual(combo.length, 3)
+})
+
 // ===== 进化⑦：智能池过滤与权重分层 =====
 
 test('filterFoods: 严格模式下排除 canBeMeal=false', () => {

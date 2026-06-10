@@ -254,8 +254,10 @@ Page({
     return '夜宵'
   },
 
-  getFilteredFoods() {
-    const { filters, excludeRecent, requireMeal } = this.data
+  // opts.requireMeal 可覆盖页面默认（凑一桌传 false 放行配菜/汤品）；缓存键含 r 字段，两种池互不串
+  getFilteredFoods(opts) {
+    const { filters, excludeRecent } = this.data
+    const requireMeal = (opts && typeof opts.requireMeal === 'boolean') ? opts.requireMeal : this.data.requireMeal
     const history = this._history || []
     const now = Date.now()
     const mealPeriod = this.inferMealPeriod()
@@ -435,7 +437,8 @@ Page({
   // ========== 凑一桌 ==========
 
   buildCombo() {
-    const filtered = this.getFilteredFoods()
+    // 放宽「可成餐」限制：配菜/汤品可作为第 2、3 道入选（buildMealCombo 保证至少一道正餐）
+    const filtered = this.getFilteredFoods({ requireMeal: false })
     if (filtered.length === 0) { wx.showToast({ title: '没有符合条件的食物', icon: 'none' }); return }
     this.clearTimer('_comboCloseTimer')
     this.setData({

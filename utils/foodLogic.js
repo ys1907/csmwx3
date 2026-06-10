@@ -295,14 +295,20 @@ function computeStreak(history, now) {
 
 // ========== 进化⑥：一键凑一桌（学自美团凑单 / 盒马「一桌好菜」） ==========
 // 为「情侣一起点多道菜」场景，挑选品类尽量不重复的多样化组合。rng 可注入。
+// 池可包含配菜/汤品（canBeMeal=false）——这是它们在全应用唯一的可达入口；
+// 但只要池里有能当主角的正餐（canBeMeal !== false），就保证组合里至少一道，不会凑出三碗汤。
 function buildMealCombo(foods, count, rng) {
   const n = count || 3
   const shuffled = shuffleArray(foods, rng)
   const picked = []
   const usedCat = new Set()
+  // 第 0 轮：先锁定一道能当主角的正餐
+  const main = shuffled.find(f => f.canBeMeal !== false)
+  if (main) { picked.push(main); usedCat.add(main.category) }
   // 第一轮：优先不同品类，保证一桌的多样性
   for (const f of shuffled) {
     if (picked.length >= n) break
+    if (picked.includes(f)) continue
     if (!usedCat.has(f.category)) { picked.push(f); usedCat.add(f.category) }
   }
   // 第二轮：品类不够时，用剩余菜补足数量
