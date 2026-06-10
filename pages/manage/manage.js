@@ -257,8 +257,8 @@ Page({
       newFoods = foods.map(f => {
         if (f._id !== editingId) return f
         const updated = { ...f, ...fields }
-        // 场景被改动时清空多渠道 scenes：matchesScene 在 scenes 非空时优先读它，不清空会让这次编辑被旧 scenes 静默遮蔽
-        if (f.scene !== fields.scene) updated.scenes = []
+        // 场景被改动时把 scenes 重置为新场景单值：scenes 是匹配的唯一权威，不重置会让这次编辑被旧 scenes 静默遮蔽
+        if (f.scene !== fields.scene) updated.scenes = [fields.scene]
         return updated
       })
     } else {

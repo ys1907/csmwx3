@@ -4,54 +4,25 @@ const { shuffleArray } = require('./util.js')
 
 const THREE_DAYS = 3 * 24 * 60 * 60 * 1000
 
-// 三套场景词表的对齐桥：UI 选项（SCENE_OPTIONS）↔ 数据词表（f.scene / f.scenes 的取值、availability 的 key）。
-// 数据治理后 scenes 数组用「到店吃」、availability 用「食堂」，与 UI 的「堂食」「公司食堂」措辞不同，
-// 所有按场景的匹配必须经 sceneAliases 展开，否则会静默匹配不到。
-const SCENE_ALIASES = {
-  '外卖': ['外卖'],
-  '堂食': ['堂食', '到店吃'],
-  '自己做': ['自己做'],
-  '公司食堂': ['公司食堂', '食堂'],
-}
+// 场景/标签词表已全库统一（scripts/normalizeVocab.js 落盘归一 + migrateFood 在数据入口兜旧备份），
+// 引擎层按字面比较，没有别名桥。新增词表取值时同步三处：data/options.js 选项数组、数据本身、
+// （如出现新旧措辞）utils/util.js 的 LEGACY_SCENE_MAP/LEGACY_TAG_MAP。
 
-function sceneAliases(sceneValue) {
-  return SCENE_ALIASES[sceneValue] || [sceneValue]
-}
-
-// 菜品是否匹配某个 UI 场景：优先看治理后的 scenes 数组（多渠道），缺失时回退顶层 scene（单值）。
-// 数据缺口兜底：31 道菜的 scenes 漏标了渠道适配度为「高」的场景，按 availability 补回，避免整菜在该场景下消失。
+// 菜品是否匹配某个场景：scenes 数组是唯一匹配权威（migrateFood 保证非空）；
+// 极端脏数据下 scenes 缺失时回退顶层 scene。
 function matchesScene(food, sceneValue) {
-  const accepted = sceneAliases(sceneValue)
-  if (Array.isArray(food.scenes) && food.scenes.length > 0) {
-    if (food.scenes.some(s => accepted.includes(s))) return true
-    return availabilityLevel(food, sceneValue) === '高'
-  }
-  return accepted.includes(food.scene)
+  if (Array.isArray(food.scenes) && food.scenes.length > 0) return food.scenes.includes(sceneValue)
+  return food.scene === sceneValue
 }
 
-// 取菜品在某个 UI 场景下的渠道适配度（'高'|'中'|'低'|'极低'），找不到返回 undefined
+// 取菜品在某个场景下的渠道适配度（'高'|'中'|'低'|'极低'），找不到返回 undefined
 function availabilityLevel(food, sceneValue) {
-  if (!food.availability) return undefined
-  for (const key of sceneAliases(sceneValue)) {
-    if (food.availability[key] !== undefined) return food.availability[key]
-  }
-  return undefined
+  return food.availability ? food.availability[sceneValue] : undefined
 }
 
-// 标签同义对：数据治理产出「肉食/素食/酥脆/热食」，UI 选项（口味/避雷）用「肉/素/脆/热」，
-// 按 tags 的匹配必须经此展开，否则避雷「脆/热」全库 0 命中、避「肉」拦不住只标「肉食」的菜。
-const TAG_ALIASES = {
-  '肉': ['肉', '肉食'],
-  '素': ['素', '素食'],
-  '脆': ['脆', '酥脆'],
-  '热': ['热', '热食'],
-}
-
-// 菜品是否带某个 UI 标签（含同义展开；「辣」额外认 spicyLevel——少数辣菜只标了辣度没打 tag）
+// 菜品是否带某个标签。「辣」额外认 spicyLevel——这是语义兜底（少数辣菜只标了辣度没打 tag），不是词表桥
 function foodHasTag(food, tag) {
-  const accepted = TAG_ALIASES[tag] || [tag]
-  const tags = food.tags || []
-  if (accepted.some(t => tags.includes(t))) return true
+  if ((food.tags || []).includes(tag)) return true
   if (tag === '辣') return (food.spicyLevel || 0) > 0
   return false
 }

@@ -58,11 +58,28 @@ test('mergeSeedWithLocal: 本地为空/脏数据时原样返回种子', () => {
   assert.deepStrictEqual(mergeSeedWithLocal(seed, [null, { name: '没有id' }, { _id: 'x' }]), seed)
 })
 
-test('migrateFood: 保留治理后的 scenes 多渠道数组（场景匹配依赖它）', () => {
+test('migrateFood: scenes 旧词归一 + 去重 + 空回填主场景（matchesScene 依赖非空）', () => {
+  // 旧版备份导入：到店吃→堂食、食堂→公司食堂
   const m = migrateFood({ name: '木须肉', scenes: ['到店吃', '食堂'] })
-  assert.deepStrictEqual(m.scenes, ['到店吃', '食堂'])
-  assert.deepStrictEqual(migrateFood({ name: 'x' }).scenes, [])
-  assert.deepStrictEqual(migrateFood({ name: 'x', scenes: '到店吃' }).scenes, [])
+  assert.deepStrictEqual(m.scenes, ['堂食', '公司食堂'])
+  // 新旧词混标 → 映射后去重
+  assert.deepStrictEqual(migrateFood({ name: 'x', scenes: ['堂食', '到店吃', '外卖'] }).scenes, ['堂食', '外卖'])
+  // scenes 缺失/脏类型 → 回填主场景，保证非空
+  assert.deepStrictEqual(migrateFood({ name: 'x' }).scenes, ['堂食'])
+  assert.deepStrictEqual(migrateFood({ name: 'x', scene: '自己做', scenes: '到店吃' }).scenes, ['自己做'])
+})
+
+test('migrateFood: tags 旧词归一（肉食→肉等）+ 去重；顶层 scene 同样归一', () => {
+  const m = migrateFood({ name: '酱大骨', tags: ['肉食', '肉', '酥脆', '热食'] })
+  assert.deepStrictEqual(m.tags, ['肉', '脆', '热'])
+  assert.deepStrictEqual(migrateFood({ name: 'x', tags: ['素食'] }).tags, ['素'])
+  assert.strictEqual(migrateFood({ name: 'x', scene: '到店吃' }).scene, '堂食')
+})
+
+test('migrateFood: availability 的 key 归一（食堂→公司食堂），缺失给统一默认', () => {
+  const m = migrateFood({ name: 'x', availability: { 外卖: '高', 食堂: '低' } })
+  assert.deepStrictEqual(m.availability, { 外卖: '高', 公司食堂: '低' })
+  assert.deepStrictEqual(migrateFood({ name: 'x' }).availability, { 外卖: '中', 堂食: '中', 自己做: '中', 公司食堂: '中' })
 })
 
 test('formatDate: 带/不带星期', () => {

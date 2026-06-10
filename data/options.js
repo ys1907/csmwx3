@@ -7,7 +7,8 @@ const APP_VERSION = 'v3'
 // bump 它 → 下次启动从 data/foods.js 重播种菜品库；history/收藏/SSR 图鉴全不受影响，
 // 用户自建菜经 util.mergeSeedWithLocal 保留（对内置菜的编辑会被新种子覆盖）。
 // v5: 同名菜去重 524→519（scripts/dedupeFoods.js）
-const FOODS_SEED_VERSION = 'v5'
+// v6: 词表归一——scenes/availability/tags 对齐 UI 措辞（scripts/normalizeVocab.js）
+const FOODS_SEED_VERSION = 'v6'
 
 // 所有 key 稳定、与版本号解耦：版本变更永不误删用户数据。数据结构变更走 utils/migrations.js。
 const STORAGE_KEYS = {

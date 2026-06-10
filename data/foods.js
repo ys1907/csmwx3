@@ -10,9 +10,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -25,8 +24,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -42,7 +41,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -75,7 +74,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -91,7 +90,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -125,8 +124,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -142,7 +141,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -173,8 +172,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -190,7 +189,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -212,8 +211,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆",
-      "肉食",
+      "脆",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -227,7 +225,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -243,7 +241,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -266,7 +264,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食",
+      "热",
       "鲜"
     ],
     "cuisine": "日韩料理",
@@ -280,7 +278,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -296,7 +294,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -334,7 +332,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -350,7 +348,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -374,7 +372,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -388,7 +385,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -404,7 +401,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -429,7 +426,7 @@ module.exports = [
     "tags": [
       "甜",
       "鲜",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -443,7 +440,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -459,7 +456,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -496,7 +493,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -512,7 +509,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -544,8 +541,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -561,7 +558,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -597,8 +594,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -614,7 +611,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -636,9 +633,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "清淡",
       "素",
+      "清淡",
       "凉"
     ],
     "cuisine": "中式料理",
@@ -652,8 +648,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -669,7 +665,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -690,7 +686,7 @@ module.exports = [
     "tags": [
       "家常",
       "滋补",
-      "热食",
+      "热",
       "肉",
       "清淡"
     ],
@@ -705,7 +701,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -721,7 +717,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -744,9 +740,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
-      "酥脆",
-      "素"
+      "素",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
@@ -759,7 +754,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -775,7 +770,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -810,7 +805,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -826,7 +821,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -850,7 +845,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -861,7 +856,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -877,7 +872,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -902,9 +897,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -919,8 +913,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -936,7 +930,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -977,7 +971,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -993,7 +987,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -1015,7 +1009,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "蒜香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -1029,7 +1022,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1045,7 +1038,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1079,8 +1072,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1096,7 +1089,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -1121,7 +1114,7 @@ module.exports = [
     "tags": [
       "甜",
       "软糯",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
@@ -1133,7 +1126,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1149,7 +1142,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1169,7 +1162,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -1182,7 +1174,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1198,7 +1190,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1218,7 +1210,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
       "素",
       "清淡"
     ],
@@ -1233,8 +1224,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1250,7 +1241,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1280,7 +1271,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1296,7 +1287,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1315,7 +1306,6 @@ module.exports = [
     "tags": [
       "辣",
       "麻辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -1328,8 +1318,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 3,
     "enabled": true,
@@ -1345,7 +1335,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -1370,9 +1360,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "软糯",
-      "肉"
+      "肉",
+      "软糯"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1385,7 +1374,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1401,7 +1390,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1421,7 +1410,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "酥脆",
+      "脆",
       "蛋"
     ],
     "cuisine": "中式料理",
@@ -1436,8 +1425,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1453,7 +1442,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1475,9 +1464,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "清淡",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -1490,8 +1478,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1507,7 +1495,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1526,7 +1514,7 @@ module.exports = [
     "tags": [
       "鲜",
       "滋补",
-      "热食",
+      "热",
       "适合聚餐",
       "肉",
       "海鲜"
@@ -1542,7 +1530,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1558,7 +1546,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -1599,7 +1587,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1615,7 +1603,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1635,7 +1623,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "酥脆",
+      "脆",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -1649,8 +1637,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1666,7 +1654,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1689,10 +1677,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
+      "肉",
       "软糯",
-      "热食",
-      "肉"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1706,7 +1693,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1722,7 +1709,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1756,8 +1743,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1773,7 +1760,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -1795,7 +1782,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -1808,7 +1794,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1824,7 +1810,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1853,7 +1839,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -1869,7 +1855,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -1890,7 +1876,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -1904,8 +1890,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1921,7 +1907,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -1959,7 +1945,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -1975,7 +1962,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2001,8 +1988,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -2016,8 +2003,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2033,7 +2020,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -2061,7 +2048,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "奶香",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -2075,8 +2062,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2092,7 +2079,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2130,8 +2117,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -2147,7 +2134,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -2168,7 +2155,6 @@ module.exports = [
     "tags": [
       "甜",
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "日韩料理",
@@ -2181,8 +2167,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2198,7 +2184,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -2224,7 +2210,6 @@ module.exports = [
     "tags": [
       "甜",
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2238,7 +2223,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2254,7 +2239,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2274,7 +2259,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -2285,7 +2270,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2301,7 +2286,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -2337,7 +2322,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2353,7 +2338,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西式"
@@ -2374,7 +2359,6 @@ module.exports = [
     "tags": [
       "甜",
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2387,8 +2371,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2404,7 +2388,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -2439,8 +2423,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2456,7 +2440,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -2478,9 +2462,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "饱腹",
       "素",
+      "饱腹",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -2493,8 +2476,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2510,7 +2493,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "中",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -2530,7 +2513,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2544,7 +2526,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2560,7 +2542,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2594,8 +2576,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2611,7 +2593,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -2637,7 +2619,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2651,7 +2633,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2667,7 +2649,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2690,7 +2672,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -2703,8 +2684,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -2720,7 +2701,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -2744,7 +2725,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2757,8 +2737,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2774,7 +2754,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -2799,7 +2779,7 @@ module.exports = [
     "tags": [
       "甜",
       "酸",
-      "热食"
+      "热"
     ],
     "cuisine": "东南亚料理",
     "foodType": "面食粉类",
@@ -2813,8 +2793,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -2830,7 +2810,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2856,7 +2836,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -2870,7 +2849,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2886,7 +2865,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -2910,7 +2889,7 @@ module.exports = [
     "tags": [
       "辣",
       "麻辣",
-      "热食",
+      "热",
       "适合聚餐"
     ],
     "cuisine": "中式料理",
@@ -2925,7 +2904,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -2941,7 +2920,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南",
@@ -2970,7 +2949,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -2983,7 +2961,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2999,7 +2977,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -3017,8 +2995,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
@@ -3032,8 +3010,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -3049,7 +3027,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -3092,7 +3070,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3108,7 +3086,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -3130,7 +3108,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -3144,7 +3121,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3160,7 +3137,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -3194,7 +3171,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3210,7 +3187,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -3232,7 +3209,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -3245,7 +3222,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3261,7 +3238,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -3299,7 +3276,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -3315,7 +3292,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -3354,7 +3331,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -3370,7 +3347,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西式"
@@ -3392,9 +3369,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -3407,7 +3383,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3423,7 +3399,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -3446,9 +3422,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -3461,7 +3436,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3477,7 +3452,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -3497,7 +3472,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅冒菜",
@@ -3510,7 +3485,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -3526,7 +3501,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -3552,7 +3527,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -3566,8 +3541,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -3583,7 +3558,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -3614,7 +3589,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食",
+      "热",
       "爽滑"
     ],
     "cuisine": "日韩料理",
@@ -3629,8 +3604,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3646,7 +3621,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -3686,8 +3661,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -3703,7 +3678,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -3730,7 +3705,7 @@ module.exports = [
     "tags": [
       "鲜",
       "滋补",
-      "热食",
+      "热",
       "适合聚餐",
       "肉"
     ],
@@ -3745,7 +3720,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3761,7 +3736,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -3786,7 +3761,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -3799,7 +3773,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3815,7 +3790,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -3835,7 +3810,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -3849,7 +3824,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3865,7 +3840,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -3893,10 +3868,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "热食",
-      "易消化",
       "素",
+      "热",
+      "易消化",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -3909,8 +3883,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3926,7 +3900,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -3963,7 +3937,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3979,7 +3953,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4017,8 +3991,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4034,7 +4008,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -4067,7 +4041,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -4083,7 +4057,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4108,9 +4082,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -4123,7 +4096,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4139,7 +4112,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "东北"
@@ -4161,8 +4134,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -4173,7 +4146,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4189,7 +4162,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -4214,7 +4187,7 @@ module.exports = [
     "tags": [
       "甜",
       "酸",
-      "热食",
+      "热",
       "香",
       "鲜"
     ],
@@ -4230,8 +4203,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4247,7 +4220,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -4274,7 +4247,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -4287,8 +4259,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4304,7 +4276,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -4326,7 +4298,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜辣",
-      "素食",
       "素",
       "辣"
     ],
@@ -4341,7 +4312,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -4357,7 +4328,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4379,7 +4350,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -4393,7 +4363,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4409,7 +4379,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4429,7 +4399,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -4443,8 +4412,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4460,7 +4429,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -4491,8 +4460,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4508,7 +4477,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -4530,7 +4499,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
       "素",
       "清淡"
     ],
@@ -4545,8 +4513,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4562,7 +4530,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -4580,9 +4548,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -4596,8 +4563,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4613,7 +4580,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -4655,7 +4622,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 3,
     "enabled": false,
@@ -4671,7 +4638,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4701,7 +4668,6 @@ module.exports = [
     "tags": [
       "香",
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -4714,8 +4680,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4731,7 +4697,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -4753,9 +4719,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "西式料理",
     "foodType": "面食粉类",
@@ -4769,8 +4734,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4786,7 +4751,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -4813,7 +4778,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -4827,7 +4791,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4843,7 +4807,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4866,7 +4830,7 @@ module.exports = [
     "tags": [
       "鲜",
       "甜",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -4880,7 +4844,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4896,7 +4860,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -4931,8 +4895,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4948,7 +4912,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -4985,8 +4949,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -5002,7 +4966,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -5043,8 +5007,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5060,7 +5024,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5084,7 +5048,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
@@ -5096,7 +5060,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5112,7 +5076,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5132,7 +5096,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -5145,7 +5108,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -5161,7 +5124,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -5183,7 +5146,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -5196,7 +5158,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5212,7 +5175,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5235,7 +5198,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "日韩料理",
     "foodType": "日韩主食",
@@ -5249,7 +5212,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5265,7 +5228,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -5287,7 +5250,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -5301,8 +5264,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5318,7 +5281,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -5359,8 +5322,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -5376,7 +5339,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -5419,7 +5382,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -5435,7 +5398,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -5462,8 +5425,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "酥脆",
-      "素食",
+      "脆",
       "素"
     ],
     "cuisine": "中式料理",
@@ -5477,8 +5439,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5494,7 +5456,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5526,7 +5488,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5542,7 +5504,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5573,8 +5535,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -5590,7 +5552,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -5616,7 +5578,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "日韩料理",
@@ -5630,7 +5591,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5646,7 +5607,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -5668,7 +5629,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -5681,8 +5641,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5698,7 +5658,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -5732,8 +5692,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5749,7 +5709,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -5772,7 +5732,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -5786,7 +5745,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5802,7 +5761,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -5823,7 +5782,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -5836,8 +5794,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5853,7 +5811,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -5875,7 +5833,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -5889,7 +5846,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -5905,7 +5862,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -5930,7 +5887,7 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -5944,8 +5901,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5961,7 +5918,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6000,7 +5957,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -6016,7 +5973,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6054,7 +6011,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6070,7 +6027,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -6090,7 +6047,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -6104,8 +6060,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6121,7 +6077,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -6143,7 +6099,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -6157,8 +6113,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6174,7 +6130,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6213,8 +6169,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6230,7 +6186,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -6254,7 +6210,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "热食"
+      "热"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
@@ -6269,8 +6225,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -6286,7 +6242,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -6317,7 +6273,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -6331,7 +6287,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6347,7 +6304,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6374,10 +6331,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
-      "热食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "热",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -6390,7 +6346,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6406,7 +6362,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "华南",
@@ -6434,7 +6390,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -6445,7 +6401,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6461,7 +6417,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6485,7 +6441,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "东南亚料理",
@@ -6499,7 +6454,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6515,7 +6470,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -6537,7 +6492,6 @@ module.exports = [
     "tags": [
       "甜",
       "酸",
-      "素食",
       "素",
       "清淡"
     ],
@@ -6552,7 +6506,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6568,7 +6522,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6602,8 +6556,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -6619,7 +6573,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -6661,7 +6615,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -6677,7 +6631,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6702,7 +6656,7 @@ module.exports = [
     "tags": [
       "酱香",
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -6716,8 +6670,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6733,7 +6687,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6759,7 +6713,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -6773,7 +6726,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6789,7 +6742,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6809,7 +6762,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "咸",
-      "热食",
+      "热",
       "素"
     ],
     "cuisine": "中式料理",
@@ -6822,7 +6775,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6838,7 +6791,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -6861,10 +6814,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "热食",
-      "易消化",
       "素",
+      "热",
+      "易消化",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -6877,8 +6829,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6894,7 +6846,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6920,9 +6872,8 @@ module.exports = [
     "tags": [
       "家常",
       "嫩滑",
-      "素食",
-      "蛋",
       "素",
+      "蛋",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -6937,8 +6888,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6954,7 +6905,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -6974,7 +6925,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "热食",
+      "热",
       "素",
       "清淡"
     ],
@@ -6989,8 +6940,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7006,7 +6957,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7026,7 +6977,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -7040,8 +6990,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -7057,7 +7007,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7081,7 +7031,7 @@ module.exports = [
       "辣",
       "发酵风味",
       "海鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -7095,8 +7045,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -7112,7 +7062,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -7142,7 +7092,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -7156,7 +7105,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7172,7 +7122,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7192,9 +7142,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -7207,7 +7156,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -7223,7 +7172,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -7262,8 +7211,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -7279,7 +7228,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7301,10 +7250,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
-      "热食",
-      "适合聚餐",
       "肉",
+      "热",
+      "适合聚餐",
       "鲜"
     ],
     "cuisine": "中式料理",
@@ -7319,7 +7267,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7335,7 +7283,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -7373,7 +7321,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7389,7 +7337,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西式"
@@ -7426,8 +7374,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -7443,7 +7391,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -7469,7 +7417,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -7483,7 +7430,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7499,7 +7447,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7519,7 +7467,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -7533,7 +7480,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7549,7 +7497,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7584,8 +7532,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -7601,7 +7549,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -7628,7 +7576,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -7640,7 +7588,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7656,7 +7604,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -7681,7 +7629,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -7694,7 +7642,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7710,7 +7658,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -7732,7 +7680,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -7746,8 +7694,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7763,7 +7711,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -7790,7 +7738,7 @@ module.exports = [
     "tags": [
       "辣",
       "麻辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅冒菜",
@@ -7803,7 +7751,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 3,
     "enabled": true,
@@ -7819,7 +7767,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西南",
@@ -7845,11 +7793,10 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "蛋",
-      "素"
+      "热",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -7863,8 +7810,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7880,7 +7827,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -7905,7 +7852,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -7919,8 +7865,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -7936,7 +7882,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -7965,8 +7911,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -7982,7 +7928,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -8007,7 +7953,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -8022,7 +7968,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8038,7 +7985,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8065,7 +8012,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -8077,8 +8024,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -8094,7 +8041,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8121,9 +8068,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "含蛋",
       "肉",
+      "含蛋",
       "蛋"
     ],
     "cuisine": "日韩料理",
@@ -8136,8 +8082,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8153,7 +8099,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -8192,7 +8138,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8208,7 +8154,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8232,9 +8178,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "清爽少负担",
       "素",
+      "清爽少负担",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -8247,8 +8192,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8264,7 +8209,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "中",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -8284,10 +8229,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
+      "肉",
       "清淡",
-      "热食",
-      "肉"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -8300,8 +8244,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8317,7 +8261,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8340,8 +8284,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆",
-      "肉食",
+      "脆",
       "肉"
     ],
     "cuisine": "日韩料理",
@@ -8355,7 +8298,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8371,7 +8314,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -8405,7 +8348,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8421,7 +8364,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -8452,8 +8395,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8469,7 +8412,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -8507,7 +8450,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8523,7 +8466,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8543,7 +8486,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -8557,8 +8500,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -8574,7 +8517,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8613,7 +8556,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8629,7 +8572,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -8647,9 +8590,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "酥脆",
+      "脆",
       "肉",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -8660,7 +8603,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
       "堂食",
       "自己做"
     ],
@@ -8678,7 +8620,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8716,7 +8658,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -8732,7 +8675,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8755,7 +8698,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜辣",
-      "肉食",
       "肉",
       "辣"
     ],
@@ -8770,7 +8712,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -8786,7 +8728,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8808,7 +8750,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -8823,8 +8765,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8840,7 +8782,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -8878,8 +8820,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -8895,7 +8837,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -8917,7 +8859,7 @@ module.exports = [
     "tags": [
       "甜",
       "绵软",
-      "热食",
+      "热",
       "素",
       "清淡"
     ],
@@ -8932,8 +8874,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8949,7 +8891,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -8986,7 +8928,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -9002,7 +8944,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -9030,7 +8972,7 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "热食",
+      "热",
       "蛋"
     ],
     "cuisine": "中式料理",
@@ -9045,8 +8987,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9062,7 +9004,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -9100,7 +9042,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -9116,7 +9059,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -9143,7 +9086,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "日韩料理",
@@ -9157,7 +9099,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9173,7 +9115,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -9210,7 +9152,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9226,7 +9168,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -9260,8 +9202,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9277,7 +9219,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -9299,7 +9241,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -9313,8 +9255,9 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9330,7 +9273,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -9357,7 +9300,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -9371,8 +9313,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9388,7 +9330,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -9419,7 +9361,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -9435,7 +9377,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -9472,7 +9414,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9488,7 +9430,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -9507,7 +9449,6 @@ module.exports = [
     "tags": [
       "辣",
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -9521,7 +9462,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -9537,7 +9478,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -9561,7 +9502,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -9574,8 +9514,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9591,7 +9531,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -9613,7 +9553,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆",
+      "脆",
       "蛋"
     ],
     "cuisine": "中式料理",
@@ -9628,7 +9568,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9644,7 +9584,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -9668,7 +9608,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -9683,8 +9622,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -9700,7 +9639,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -9722,7 +9661,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -9736,7 +9674,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9752,7 +9690,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -9786,7 +9724,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9802,7 +9740,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -9829,7 +9767,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "咸",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -9842,8 +9779,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9859,7 +9796,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -9883,7 +9820,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆",
+      "脆",
       "肉",
       "蛋"
     ],
@@ -9896,7 +9833,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9912,7 +9849,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -9937,7 +9874,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -9951,8 +9887,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9968,7 +9904,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -9989,7 +9925,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -10003,8 +9939,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -10020,7 +9956,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -10048,7 +9984,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
@@ -10062,8 +9998,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10079,7 +10015,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -10120,7 +10056,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10136,7 +10072,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -10170,8 +10106,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -10187,7 +10123,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -10213,7 +10149,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "酸",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -10227,8 +10162,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10244,7 +10179,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -10263,7 +10198,6 @@ module.exports = [
     "tags": [
       "家常",
       "凉食",
-      "素食",
       "素",
       "凉",
       "清淡"
@@ -10279,8 +10213,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10296,7 +10230,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -10327,8 +10261,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -10344,7 +10278,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -10370,7 +10304,6 @@ module.exports = [
     "tags": [
       "家常",
       "凉食",
-      "素食",
       "素",
       "凉",
       "清淡"
@@ -10386,8 +10319,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10403,7 +10336,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -10436,8 +10369,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10453,7 +10386,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -10475,8 +10408,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "酥脆",
-      "肉食",
+      "脆",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -10489,7 +10421,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10505,7 +10437,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -10541,8 +10473,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -10558,7 +10490,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -10585,7 +10517,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "东南亚料理",
@@ -10599,7 +10530,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -10615,7 +10546,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -10649,7 +10580,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10665,7 +10596,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -10692,7 +10623,7 @@ module.exports = [
       "肉",
       "蛋",
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -10704,7 +10635,6 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -10721,7 +10651,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -10747,7 +10677,7 @@ module.exports = [
     "tags": [
       "辣",
       "适合聚餐",
-      "热食"
+      "热"
     ],
     "cuisine": "日韩料理",
     "foodType": "火锅",
@@ -10761,7 +10691,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -10777,7 +10707,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "日韩"
@@ -10815,7 +10745,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -10831,7 +10761,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -10858,7 +10788,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -10873,7 +10802,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10889,7 +10818,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -10910,7 +10839,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -10924,7 +10852,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -10940,7 +10868,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -10960,7 +10888,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -10974,7 +10901,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10990,7 +10917,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -11010,7 +10937,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
@@ -11022,7 +10949,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11038,7 +10965,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -11072,8 +10999,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11089,7 +11016,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -11113,7 +11040,7 @@ module.exports = [
       "酸辣",
       "辣",
       "酸",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -11126,8 +11053,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -11143,7 +11070,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11168,9 +11095,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -11184,7 +11110,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11200,7 +11126,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11222,7 +11148,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -11235,7 +11160,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11251,7 +11176,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -11275,7 +11200,7 @@ module.exports = [
     "tags": [
       "酸甜",
       "凉食",
-      "热食",
+      "热",
       "凉"
     ],
     "cuisine": "日韩料理",
@@ -11290,8 +11215,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11307,7 +11232,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -11347,7 +11272,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11365,7 +11290,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -11387,7 +11312,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -11401,7 +11325,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -11417,7 +11341,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11443,10 +11367,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "素"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -11459,8 +11382,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11476,7 +11399,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11501,7 +11424,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -11515,7 +11438,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11531,7 +11454,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11572,7 +11495,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11588,7 +11511,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -11612,9 +11535,8 @@ module.exports = [
     "tags": [
       "家常",
       "嫩滑",
-      "素食",
-      "蛋",
       "素",
+      "蛋",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -11629,8 +11551,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11646,7 +11568,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -11666,7 +11588,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -11680,7 +11601,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -11696,7 +11617,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -11716,7 +11637,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "酱香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -11729,7 +11650,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11745,7 +11666,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -11783,7 +11704,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11799,7 +11720,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11823,7 +11744,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -11836,7 +11757,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11852,7 +11773,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -11876,10 +11797,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "酸",
-      "素食",
+      "素",
       "家常",
-      "蛋",
-      "素"
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -11893,8 +11813,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11910,7 +11830,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -11932,9 +11852,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -11947,8 +11866,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11964,7 +11883,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -11984,7 +11903,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "咸",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -11997,7 +11916,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12013,7 +11932,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -12048,8 +11967,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12065,7 +11984,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -12087,7 +12006,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12101,7 +12019,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12117,7 +12035,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12137,7 +12055,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12150,8 +12067,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -12167,7 +12084,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -12204,7 +12121,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12220,7 +12137,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -12244,7 +12161,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12257,8 +12173,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12274,7 +12190,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -12296,10 +12212,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
-      "热食",
-      "易消化",
       "素",
+      "热",
+      "易消化",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -12312,8 +12227,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12329,7 +12244,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12364,8 +12279,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12381,7 +12296,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -12416,8 +12331,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -12433,7 +12348,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -12474,7 +12389,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -12490,7 +12405,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12516,7 +12431,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -12531,8 +12446,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12548,7 +12463,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12574,7 +12489,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12588,7 +12502,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12604,7 +12518,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12636,7 +12550,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12652,7 +12566,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -12673,9 +12587,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -12687,8 +12600,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12704,7 +12617,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -12728,9 +12641,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "清淡",
-      "素"
+      "素",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -12743,8 +12655,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12760,7 +12672,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -12778,9 +12690,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆",
+      "脆",
       "肉",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -12791,7 +12703,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
       "堂食",
       "自己做"
     ],
@@ -12809,7 +12720,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -12831,7 +12742,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
       "素",
       "清淡"
     ],
@@ -12846,8 +12756,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12863,7 +12773,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -12894,7 +12804,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12910,7 +12821,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -12946,7 +12857,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12962,7 +12874,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -12982,7 +12894,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -12995,7 +12906,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -13011,7 +12922,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -13029,9 +12940,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -13044,7 +12954,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13060,7 +12970,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13095,8 +13005,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13112,7 +13022,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -13132,7 +13042,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "酸",
-      "热食",
+      "热",
       "蛋"
     ],
     "cuisine": "中式料理",
@@ -13147,8 +13057,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13164,7 +13074,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13204,8 +13114,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -13221,7 +13131,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -13247,7 +13157,7 @@ module.exports = [
     "tags": [
       "辣",
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -13261,8 +13171,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -13278,7 +13188,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13319,7 +13229,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13335,7 +13245,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13355,9 +13265,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "清淡",
-      "肉"
+      "肉",
+      "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -13370,7 +13279,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13386,7 +13295,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -13407,7 +13316,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -13421,7 +13329,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13437,7 +13345,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13457,7 +13365,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "素食",
       "素",
       "清淡"
     ],
@@ -13472,8 +13379,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13489,7 +13396,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -13522,7 +13429,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 3,
     "enabled": true,
@@ -13538,7 +13445,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西南",
@@ -13578,7 +13485,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -13594,7 +13501,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13632,7 +13539,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13648,7 +13555,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13682,7 +13589,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13698,7 +13605,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13736,7 +13643,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13752,7 +13659,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13772,10 +13679,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "素食",
-      "热食",
-      "适合聚餐",
-      "素"
+      "素",
+      "热",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -13789,7 +13695,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13805,7 +13711,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -13829,7 +13735,6 @@ module.exports = [
     "tags": [
       "酸甜",
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -13843,7 +13748,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13859,7 +13764,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -13881,8 +13786,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆",
-      "肉食",
+      "脆",
       "肉"
     ],
     "cuisine": "日韩料理",
@@ -13895,8 +13799,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13912,7 +13816,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -13951,8 +13855,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13968,7 +13872,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -13988,9 +13892,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -14004,8 +13907,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14021,7 +13924,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14059,8 +13962,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14076,7 +13979,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -14101,7 +14004,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "咸",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14115,7 +14017,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14131,7 +14033,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14152,9 +14054,8 @@ module.exports = [
     "tags": [
       "家常",
       "凉食",
-      "素食",
-      "蛋",
       "素",
+      "蛋",
       "凉",
       "清淡"
     ],
@@ -14170,8 +14071,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14187,7 +14088,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -14211,7 +14112,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14224,8 +14124,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14241,7 +14141,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14264,7 +14164,7 @@ module.exports = [
     "tags": [
       "鲜",
       "清淡",
-      "热食",
+      "热",
       "适合聚餐",
       "肉"
     ],
@@ -14279,7 +14179,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14295,7 +14195,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -14330,8 +14230,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14347,7 +14247,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14369,7 +14269,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -14382,8 +14281,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -14399,7 +14298,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14438,8 +14337,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14455,7 +14354,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14477,9 +14376,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "素食",
-      "滋补",
       "素",
+      "滋补",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -14493,8 +14391,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14510,7 +14408,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -14528,9 +14426,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -14543,7 +14440,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14559,7 +14456,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14595,8 +14492,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -14612,7 +14509,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14642,7 +14539,7 @@ module.exports = [
       "辣",
       "麻辣",
       "适合聚餐",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -14656,7 +14553,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -14672,7 +14569,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南",
@@ -14700,7 +14597,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14713,8 +14609,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -14730,7 +14626,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -14769,7 +14665,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14785,7 +14681,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14822,7 +14718,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14838,7 +14734,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14872,7 +14768,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14888,7 +14784,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -14925,7 +14821,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14941,7 +14837,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -14972,8 +14868,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14989,7 +14885,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -15025,7 +14921,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15041,7 +14938,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -15079,8 +14976,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 3,
     "enabled": true,
@@ -15096,7 +14993,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -15121,9 +15018,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -15136,7 +15032,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15152,7 +15048,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -15184,7 +15080,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15202,7 +15099,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -15239,7 +15136,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -15255,7 +15152,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -15280,7 +15177,7 @@ module.exports = [
     "tags": [
       "酸",
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -15294,8 +15191,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -15311,7 +15208,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -15352,7 +15249,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -15368,7 +15265,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西南"
@@ -15395,7 +15292,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "素食",
       "素",
       "麻辣"
     ],
@@ -15409,8 +15305,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -15426,7 +15322,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -15453,7 +15349,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -15467,8 +15363,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -15484,7 +15380,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -15513,9 +15409,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "饱腹",
-      "肉"
+      "肉",
+      "饱腹"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -15527,7 +15422,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15543,7 +15438,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -15561,7 +15456,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -15575,8 +15469,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15592,7 +15486,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -15610,7 +15504,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "热食",
+      "热",
       "素"
     ],
     "cuisine": "中式料理",
@@ -15624,8 +15518,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15641,7 +15535,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -15676,8 +15570,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -15693,7 +15587,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -15728,7 +15622,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15744,7 +15638,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -15763,7 +15657,7 @@ module.exports = [
     "tags": [
       "家常",
       "凉食",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -15777,8 +15671,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -15794,7 +15688,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -15820,7 +15714,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -15834,7 +15727,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15850,7 +15743,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -15870,7 +15763,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -15881,7 +15774,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15897,7 +15790,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -15928,7 +15821,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -15942,7 +15835,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -15958,7 +15852,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -15987,7 +15881,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -15998,7 +15892,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16014,7 +15908,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16040,7 +15934,7 @@ module.exports = [
       "鲜",
       "嫩滑",
       "海鲜",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -16053,7 +15947,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -16069,7 +15963,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -16092,7 +15986,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "蒜香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -16106,8 +15999,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16123,7 +16016,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -16141,7 +16034,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16154,8 +16046,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16171,7 +16063,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -16193,7 +16085,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "酥脆",
+      "脆",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16206,7 +16098,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16222,7 +16114,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16247,7 +16139,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16260,7 +16151,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16276,7 +16167,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16312,8 +16203,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16329,7 +16220,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -16347,7 +16238,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16360,8 +16250,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16377,7 +16267,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -16399,7 +16289,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16413,7 +16302,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16429,7 +16318,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -16451,9 +16340,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -16466,7 +16354,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -16482,7 +16370,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -16502,7 +16390,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16516,7 +16403,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -16532,7 +16419,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -16565,7 +16452,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16581,7 +16468,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16605,9 +16492,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -16622,8 +16508,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16639,7 +16525,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -16681,8 +16567,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16698,7 +16584,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "日韩"
@@ -16724,7 +16610,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸",
-      "热食",
+      "热",
       "家常"
     ],
     "cuisine": "中式料理",
@@ -16739,8 +16625,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16756,7 +16642,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -16782,9 +16668,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "酥脆",
-      "素"
+      "素",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -16797,7 +16682,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16813,7 +16698,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16837,9 +16722,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "酸",
-      "素食",
-      "热食",
       "素",
+      "热",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -16853,8 +16737,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16870,7 +16754,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -16906,7 +16790,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16922,7 +16806,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16960,7 +16844,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16976,7 +16860,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17000,9 +16884,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -17015,8 +16898,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17032,7 +16915,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -17066,7 +16949,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -17082,7 +16965,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17106,7 +16989,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "酥脆",
+      "脆",
       "素"
     ],
     "cuisine": "西式料理",
@@ -17119,7 +17002,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17135,7 +17018,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17159,7 +17042,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "日韩料理",
@@ -17172,8 +17054,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -17189,7 +17071,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -17227,8 +17109,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17244,7 +17126,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -17266,7 +17148,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -17277,7 +17159,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17293,7 +17175,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17317,7 +17199,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -17329,7 +17211,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17345,7 +17227,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17383,7 +17265,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17399,7 +17281,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17436,7 +17318,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -17452,7 +17334,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17489,7 +17371,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17505,7 +17387,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17537,7 +17419,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17553,7 +17435,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -17571,8 +17453,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "热食",
-      "素食",
+      "热",
       "素"
     ],
     "cuisine": "中式料理",
@@ -17585,7 +17466,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17601,7 +17482,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -17624,7 +17505,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -17638,7 +17518,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17654,7 +17534,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -17675,7 +17555,7 @@ module.exports = [
     "tags": [
       "家常",
       "滋补",
-      "热食",
+      "热",
       "肉",
       "清淡"
     ],
@@ -17690,7 +17570,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17706,7 +17586,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17729,7 +17609,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -17742,7 +17621,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17758,7 +17637,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17784,7 +17663,7 @@ module.exports = [
     "tags": [
       "鲜",
       "爽滑",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -17799,7 +17678,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17815,7 +17695,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17842,9 +17722,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "肉食",
-      "热食",
-      "肉"
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -17857,7 +17736,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17873,7 +17752,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -17896,10 +17775,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
-      "热食",
-      "易消化",
       "素",
+      "热",
+      "易消化",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -17912,8 +17790,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17929,7 +17807,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17952,7 +17830,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -17965,8 +17842,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17982,7 +17859,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -18005,7 +17882,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -18019,7 +17895,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18035,7 +17911,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -18057,7 +17933,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -18071,7 +17946,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18087,7 +17962,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18107,7 +17982,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "热食",
+      "热",
       "凉食"
     ],
     "cuisine": "中式料理",
@@ -18121,7 +17996,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18137,7 +18012,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -18176,7 +18051,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18192,7 +18067,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西式"
@@ -18214,7 +18089,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "肉",
       "清淡"
     ],
@@ -18229,7 +18104,6 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -18246,7 +18120,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18269,9 +18143,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "素食",
-      "热食",
       "素",
+      "热",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -18285,8 +18158,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18302,7 +18175,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18327,7 +18200,6 @@ module.exports = [
       "酸辣",
       "辣",
       "酸",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -18341,8 +18213,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -18358,7 +18230,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -18394,8 +18266,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18411,7 +18283,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -18448,8 +18320,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18465,7 +18337,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -18487,7 +18359,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -18501,7 +18372,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18517,7 +18388,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18552,7 +18423,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18568,7 +18439,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18588,7 +18459,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -18602,8 +18472,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -18619,7 +18489,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -18644,7 +18514,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -18658,8 +18528,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18675,7 +18545,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -18704,7 +18574,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -18719,8 +18589,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18736,7 +18606,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -18764,10 +18634,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "素食",
-      "热食",
-      "蛋",
       "素",
+      "热",
+      "蛋",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -18782,8 +18651,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18799,7 +18668,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18839,7 +18708,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 3,
     "enabled": true,
@@ -18855,7 +18724,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18882,7 +18751,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -18897,8 +18766,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -18914,7 +18783,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -18951,8 +18820,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -18968,7 +18837,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -18995,7 +18864,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -19009,8 +18878,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -19026,7 +18895,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19066,7 +18935,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19082,7 +18951,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19102,7 +18971,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -19116,8 +18985,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19133,7 +19002,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -19160,11 +19029,10 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "蛋",
-      "素"
+      "热",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -19178,8 +19046,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19195,7 +19063,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19220,9 +19088,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "酥脆",
-      "肉"
+      "肉",
+      "脆"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -19235,7 +19102,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19251,7 +19118,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -19271,7 +19138,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -19285,7 +19151,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19301,7 +19167,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19321,7 +19187,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "热食",
+      "热",
       "易消化",
       "素",
       "清淡"
@@ -19336,8 +19202,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19353,7 +19219,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19376,7 +19242,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -19390,7 +19255,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19406,7 +19271,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19438,7 +19303,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19454,7 +19319,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -19479,7 +19344,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "日韩料理",
     "foodType": "小吃",
@@ -19491,7 +19356,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19507,7 +19372,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -19530,9 +19395,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "软糯",
-      "肉"
+      "肉",
+      "软糯"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -19545,7 +19409,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19561,7 +19425,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19594,8 +19458,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19611,7 +19475,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -19647,7 +19511,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -19663,7 +19527,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19702,8 +19566,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -19719,7 +19583,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "日韩"
@@ -19747,7 +19611,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "热食",
+      "热",
       "蛋",
       "清淡"
     ],
@@ -19763,9 +19627,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19781,7 +19644,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19806,7 +19669,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "热食",
+      "热",
       "素",
       "清淡"
     ],
@@ -19821,8 +19684,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19838,7 +19701,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19861,8 +19724,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆",
-      "肉食",
+      "脆",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -19875,8 +19737,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19892,7 +19754,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -19917,7 +19779,7 @@ module.exports = [
       "鲜",
       "蒜香",
       "海鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -19931,8 +19793,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -19948,7 +19810,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -19972,7 +19834,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "酥脆",
+      "脆",
       "海鲜"
     ],
     "cuisine": "日韩料理",
@@ -19985,8 +19847,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20002,7 +19864,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -20043,7 +19905,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -20059,7 +19921,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -20086,7 +19948,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -20100,7 +19961,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20116,7 +19977,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -20140,7 +20001,7 @@ module.exports = [
     "tags": [
       "辣",
       "鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -20154,7 +20015,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -20170,7 +20032,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -20199,7 +20061,7 @@ module.exports = [
     "tags": [
       "酸甜",
       "酸",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -20213,8 +20075,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20230,7 +20092,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -20255,7 +20117,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -20268,7 +20129,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20284,7 +20145,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -20308,7 +20169,7 @@ module.exports = [
     "tags": [
       "酸甜",
       "酸",
-      "热食",
+      "热",
       "适合聚餐"
     ],
     "cuisine": "中式料理",
@@ -20323,7 +20184,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20339,7 +20200,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -20375,8 +20236,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20392,7 +20253,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -20418,9 +20279,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "蒜香",
-      "素食",
-      "清爽少负担",
       "素",
+      "清爽少负担",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -20434,8 +20294,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20451,7 +20311,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -20471,7 +20331,7 @@ module.exports = [
       "鲜",
       "蒜香",
       "海鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -20485,8 +20345,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20502,7 +20362,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [
@@ -20526,7 +20386,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -20540,7 +20399,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20556,7 +20415,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -20577,7 +20436,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食",
+      "热",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -20592,8 +20451,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -20609,7 +20468,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -20650,7 +20509,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20666,7 +20525,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -20697,7 +20556,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20713,7 +20572,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "日韩"
@@ -20733,10 +20592,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "素"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -20751,8 +20609,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20768,7 +20626,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -20808,7 +20666,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20824,7 +20682,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -20844,7 +20702,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -20857,7 +20714,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20873,7 +20730,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -20894,7 +20751,7 @@ module.exports = [
     "tags": [
       "鲜",
       "清淡",
-      "热食"
+      "热"
     ],
     "cuisine": "东南亚料理",
     "foodType": "面食粉类",
@@ -20908,8 +20765,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20925,7 +20782,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -20954,7 +20811,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "东南亚料理",
     "foodType": "面食粉类",
@@ -20968,8 +20825,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20985,7 +20842,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -21026,7 +20883,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21042,7 +20899,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21075,7 +20932,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21091,7 +20948,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -21129,8 +20986,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21146,7 +21003,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21166,7 +21023,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "甜",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -21180,7 +21036,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21196,7 +21052,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -21228,8 +21084,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21245,7 +21101,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -21268,7 +21124,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -21282,7 +21137,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21298,7 +21153,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -21318,9 +21173,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "适合聚餐"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -21333,7 +21187,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21349,7 +21203,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西北"
@@ -21371,7 +21225,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "蒜香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -21385,8 +21238,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21402,7 +21255,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21420,7 +21273,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -21433,8 +21285,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 1,
     "enabled": true,
@@ -21450,7 +21302,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -21487,7 +21339,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21505,7 +21358,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -21543,8 +21396,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21560,7 +21413,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -21599,8 +21452,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21616,7 +21469,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -21640,7 +21493,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -21652,8 +21505,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21669,7 +21522,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -21693,7 +21546,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -21707,7 +21559,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21723,7 +21575,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -21743,7 +21595,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "酥脆"
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
@@ -21756,7 +21608,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21772,7 +21624,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21803,7 +21655,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21819,7 +21671,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21838,7 +21690,7 @@ module.exports = [
     "tags": [
       "酸",
       "鲜",
-      "热食",
+      "热",
       "适合聚餐",
       "海鲜"
     ],
@@ -21854,7 +21706,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21870,7 +21722,7 @@ module.exports = [
       "外卖": "极低",
       "堂食": "高",
       "自己做": "极低",
-      "食堂": "极低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "西南"
@@ -21898,7 +21750,7 @@ module.exports = [
     "tags": [
       "鲜",
       "海鲜",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -21912,7 +21764,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21928,7 +21780,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -21967,8 +21819,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21984,7 +21836,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -22007,10 +21859,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "素"
+      "热"
     ],
     "cuisine": "日韩料理",
     "foodType": "汤羹炖品",
@@ -22023,8 +21874,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22040,7 +21891,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -22078,7 +21929,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22094,7 +21945,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22125,7 +21976,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -22141,7 +21993,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22168,7 +22020,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -22181,8 +22032,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22198,7 +22049,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -22222,7 +22073,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -22236,8 +22087,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -22253,7 +22104,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22282,7 +22133,7 @@ module.exports = [
       "鲜",
       "嫩滑",
       "海鲜",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -22296,7 +22147,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22312,7 +22163,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22353,8 +22204,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22370,7 +22221,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22393,7 +22244,7 @@ module.exports = [
     "tags": [
       "酸辣",
       "辣",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -22407,8 +22258,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -22424,7 +22275,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22451,7 +22302,6 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -22464,7 +22314,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22480,7 +22330,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "西式"
@@ -22503,7 +22353,7 @@ module.exports = [
       "鲜",
       "辣",
       "酸",
-      "热食"
+      "热"
     ],
     "cuisine": "东南亚料理",
     "foodType": "面食粉类",
@@ -22518,8 +22368,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -22535,7 +22385,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -22565,7 +22415,6 @@ module.exports = [
     "tags": [
       "鲜",
       "酱香",
-      "素食",
       "素",
       "清淡"
     ],
@@ -22580,8 +22429,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22597,7 +22446,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22629,8 +22478,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -22646,7 +22495,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -22672,10 +22521,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "素食",
+      "素",
       "清淡",
-      "热食",
-      "素"
+      "热"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
@@ -22688,8 +22536,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22705,7 +22553,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22728,9 +22576,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "软糯",
-      "肉"
+      "肉",
+      "软糯"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -22742,7 +22589,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22758,7 +22606,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22778,9 +22626,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "肉食",
-      "嫩滑",
-      "肉"
+      "肉",
+      "嫩滑"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -22793,7 +22640,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22809,7 +22656,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -22829,7 +22676,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "肉食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -22842,7 +22688,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22858,7 +22704,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -22880,7 +22726,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素食",
       "素"
     ],
     "cuisine": "中式料理",
@@ -22894,8 +22739,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22911,7 +22756,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22941,7 +22786,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22957,7 +22802,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -22982,7 +22827,7 @@ module.exports = [
     "tags": [
       "鲜",
       "香",
-      "热食",
+      "热",
       "面食"
     ],
     "cuisine": "中式料理",
@@ -22997,8 +22842,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23014,7 +22859,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -23042,7 +22887,7 @@ module.exports = [
     "tags": [
       "鲜",
       "香",
-      "热食",
+      "热",
       "面食"
     ],
     "cuisine": "中式料理",
@@ -23057,8 +22902,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23074,7 +22919,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -23101,7 +22946,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "热食",
+      "热",
       "面食"
     ],
     "cuisine": "中式料理",
@@ -23116,8 +22961,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "到店吃",
-      "食堂"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23133,7 +22978,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -23193,7 +23038,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -23253,7 +23098,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -23282,7 +23127,7 @@ module.exports = [
     "tags": [
       "家常",
       "鲜",
-      "素食",
+      "素",
       "面食"
     ],
     "cuisine": "中式料理",
@@ -23312,7 +23157,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -23338,7 +23183,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "热食",
+      "热",
       "肉",
       "适合聚餐"
     ],
@@ -23370,7 +23215,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -23407,7 +23252,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23423,7 +23269,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23447,7 +23293,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "肉",
-      "酥脆",
+      "脆",
       "饱腹"
     ],
     "cuisine": "中式料理",
@@ -23461,7 +23307,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23477,7 +23324,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23515,7 +23362,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23531,7 +23379,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23567,7 +23415,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23583,7 +23432,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23620,7 +23469,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -23636,7 +23486,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23676,7 +23526,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -23692,7 +23543,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23731,7 +23582,8 @@ module.exports = [
     "scenes": [
       "堂食",
       "自己做",
-      "外卖"
+      "外卖",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23747,7 +23599,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23782,7 +23634,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -23798,7 +23651,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -23851,7 +23704,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -23906,7 +23759,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -23961,7 +23814,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24011,7 +23864,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24061,7 +23914,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24111,7 +23964,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24131,7 +23984,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "酸辣",
-      "素食",
+      "素",
       "家常",
       "清淡"
     ],
@@ -24162,7 +24015,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24212,7 +24065,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24264,7 +24117,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -24317,7 +24170,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24339,7 +24192,7 @@ module.exports = [
       "鲜",
       "酸",
       "清淡",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -24368,7 +24221,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24394,7 +24247,7 @@ module.exports = [
     "tags": [
       "肉",
       "家常",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -24423,7 +24276,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24446,7 +24299,7 @@ module.exports = [
     "tags": [
       "素",
       "家常",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -24476,7 +24329,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24528,7 +24381,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24580,7 +24433,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24601,7 +24454,7 @@ module.exports = [
     "tags": [
       "鲜",
       "咸",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -24631,7 +24484,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -24657,7 +24510,7 @@ module.exports = [
     "tags": [
       "鲜",
       "滑嫩",
-      "热食",
+      "热",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -24688,7 +24541,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -24716,8 +24569,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -24746,7 +24599,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24775,8 +24628,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -24805,7 +24658,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -24865,7 +24718,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -24925,7 +24778,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -24986,7 +24839,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -25015,7 +24868,7 @@ module.exports = [
     "tags": [
       "鲜",
       "肉",
-      "热食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -25045,7 +24898,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -25082,7 +24935,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -25098,7 +24952,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -25121,8 +24975,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "酥脆",
-      "热食"
+      "脆",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -25151,7 +25005,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -25213,7 +25067,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -25254,7 +25108,8 @@ module.exports = [
     "scenes": [
       "外卖",
       "自己做",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -25270,7 +25125,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -25307,7 +25162,8 @@ module.exports = [
     "scenes": [
       "堂食",
       "自己做",
-      "外卖"
+      "外卖",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -25323,7 +25179,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "高"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见",
@@ -25379,7 +25235,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -25441,7 +25297,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "食堂": "中"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -25493,7 +25349,7 @@ module.exports = [
       "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "食堂": "低"
+      "公司食堂": "低"
     },
     "aliases": [],
     "regionTags": [],
@@ -25502,7 +25358,10 @@ module.exports = [
       "雨天适合"
     ],
     "dietWarnings": [],
-    "allergenTags": []
+    "allergenTags": [],
+    "scenes": [
+      "堂食"
+    ]
   },
   {
     "_id": "4aa7669bf93f3d35",
@@ -25513,7 +25372,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25543,7 +25402,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25573,7 +25432,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25603,7 +25462,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25633,7 +25492,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25663,7 +25522,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25693,7 +25552,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25723,7 +25582,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25753,7 +25612,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25783,7 +25642,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25813,7 +25672,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25843,7 +25702,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25873,7 +25732,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25903,7 +25762,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25933,7 +25792,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25963,7 +25822,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -25993,7 +25852,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26023,7 +25882,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26053,7 +25912,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26083,7 +25942,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26113,7 +25972,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26143,7 +26002,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26173,7 +26032,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",
@@ -26203,7 +26062,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",
@@ -26233,7 +26092,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26263,7 +26122,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26293,7 +26152,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26323,7 +26182,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26353,7 +26212,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",
@@ -26383,7 +26242,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",
@@ -26413,7 +26272,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26444,7 +26303,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26474,7 +26333,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26504,7 +26363,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26534,7 +26393,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26564,7 +26423,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26594,7 +26453,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26624,7 +26483,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26654,7 +26513,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26684,7 +26543,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26714,7 +26573,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26744,7 +26603,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26774,7 +26633,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
@@ -26804,7 +26663,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "快",
@@ -26834,7 +26693,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "食堂"
+      "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",

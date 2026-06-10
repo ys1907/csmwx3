@@ -29,8 +29,9 @@
 - **`utils/foodLogic.js`** —— 纯决策引擎，全app的核心。筛选（`filterFoods`）、加权推荐
   （`foodWeight` / `weightedPick` —— 偏好只对随机结果做*温和加权*，绝不把任何选项清零，
   另有 10% ε-greedy 探索）、带保底的抽卡稀有度（`rollRarityWithPity` —— 纯演出层，与选菜
-  解耦）、场景词表桥接（`matchesScene` / `availabilityLevel`）与标签同义桥接
-  （`foodHasTag`，见下文）、口味画像（`buildTasteProfile`）、可解释推荐（`buildRichReason`）、决策连胜
+  解耦）、场景/标签匹配（`matchesScene` / `availabilityLevel` / `foodHasTag`，词表已全库
+  统一、按字面比较，见下文）、带回退的过滤（`filterFoodsWithFallback`，降级顺序是行为契约）、
+  口味画像（`buildTasteProfile`）、可解释推荐（`buildRichReason`）、决策连胜
   （`computeStreak`）、一桌好菜组合（`buildMealCombo`）。所有随机都经由可注入的 `rng`
   参数；时间相关逻辑接受可注入的 `now`（经 `ctx.now`）。
 - **`utils/util.js`** —— `uid`、`shuffleArray`（Fisher–Yates，可注入 rng）、`formatDate`
@@ -66,12 +67,14 @@
 - 加权推荐用的用户偏好在 `index.js#buildPrefs()` 里实时由收藏 + 历史推导
   （`favoriteSet`、`tasteCounts`、会话内的 `rejectedSet`），再喂给 `foodLogic`。
 
-### 场景词表桥接
+### 词表统一
 
-三套场景词表并存：UI 选项（`SCENE_OPTIONS`：外卖/堂食/自己做/公司食堂）、数据治理产出的
-菜品 `scenes` 数组（到店吃/食堂/…）、`availability` 映射的 key（食堂，而非公司食堂）。
-任何按场景的匹配**必须**走 `foodLogic.matchesScene` / `availabilityLevel`（内部按
-`SCENE_ALIASES` 展开）—— 直接字符串比较会让公司食堂/到店吃静默匹配不到任何菜。
+全库单一词表：UI 选项、菜品 `scenes`/`tags`、`availability` 的 key 用同一套措辞
+（外卖/堂食/自己做/公司食堂；肉/素/脆/热）。归一发生在两处：`scripts/normalizeVocab.js`
+一次性落盘 + `utils/util.js#migrateFood` 在数据入口兜底（旧版导出备份再导入也会被归一，
+且保证 `scenes` 非空——它是场景匹配的唯一权威）。引擎层（`matchesScene`/`foodHasTag`）
+按字面比较，没有别名桥。新增词表取值时同步三处：选项数组、数据本身、（如出现新旧措辞）
+`migrateFood` 的 `LEGACY_SCENE_MAP`/`LEGACY_TAG_MAP`。
 
 ### 揭晓动画时长
 
