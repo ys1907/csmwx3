@@ -2,9 +2,9 @@ const util = require('../../utils/util.js')
 const foodsData = require('../../data/foods.js')
 const { safeGet, safeSet } = require('../../utils/storage.js')
 const foodLogic = require('../../utils/foodLogic.js')
+const foodRepo = require('../../utils/foodRepo.js')
 const {
   APP_VERSION,
-  FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,
   BUDGET_OPTIONS,
@@ -82,15 +82,7 @@ Page({
   },
 
   loadData() {
-    const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
-    const localFoods = safeGet(STORAGE_KEYS.foods, null)
-    let foods = []
-    if (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0) {
-      foods = localFoods.map(util.migrateFood)
-    } else {
-      // 重播种时经 mergeSeedWithLocal 保留用户自建菜，不整库替换
-      foods = util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
-    }
+    const foods = foodRepo.loadFoods(foodsData)
 
     const history = safeGet(STORAGE_KEYS.history, [])
     const favorites = safeGet(STORAGE_KEYS.favorites, [])
@@ -159,11 +151,9 @@ Page({
     })
   },
 
-  // foods 的唯一持久化入口
+  // foods 的唯一持久化入口（三键协议收编在 utils/foodRepo.js）
   persistFoods(foods) {
-    safeSet(STORAGE_KEYS.foods, foods)
-    safeSet(STORAGE_KEYS.localVersion, FOODS_SEED_VERSION)
-    safeSet(STORAGE_KEYS.foodsRev, Date.now()) // 标记菜品库已变更，首页据此决定是否重建全量 foods
+    foodRepo.persistFoods(foods)
   },
 
   saveUserData() {

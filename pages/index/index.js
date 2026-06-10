@@ -3,8 +3,8 @@ const foodsData = require('../../data/foods.js')
 const { DING_SOUND } = require('../../data/sounds.js')
 const { safeGet, safeSet } = require('../../utils/storage.js')
 const foodLogic = require('../../utils/foodLogic.js')
+const foodRepo = require('../../utils/foodRepo.js')
 const {
-  FOODS_SEED_VERSION,
   STORAGE_KEYS,
   SCENE_OPTIONS,
   BUDGET_OPTIONS,
@@ -165,16 +165,11 @@ Page({
   // ========== 初始化 ==========
 
   initData() {
-    const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
-    const localFoods = safeGet(STORAGE_KEYS.foods, null)
-    // 重播种时经 mergeSeedWithLocal 保留用户自建菜，不整库替换
-    this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
-      ? localFoods.map(util.migrateFood)
-      : util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
+    this._foods = foodRepo.loadFoods(foodsData)
     this._filteredCache = null
     this._cacheKey = ''
     this._nameIndex = null
-    this._foodsRev = safeGet(STORAGE_KEYS.foodsRev, 0)
+    this._foodsRev = foodRepo.getFoodsRev()
 
     this._history = safeGet(STORAGE_KEYS.history, [])
     this._favorites = safeGet(STORAGE_KEYS.favorites, [])
@@ -203,13 +198,9 @@ Page({
   },
 
   refreshFromStorage() {
-    const rev = safeGet(STORAGE_KEYS.foodsRev, 0)
+    const rev = foodRepo.getFoodsRev()
     if (rev !== this._foodsRev) {
-      const localVersion = safeGet(STORAGE_KEYS.localVersion, '')
-      const localFoods = safeGet(STORAGE_KEYS.foods, null)
-      this._foods = (localVersion === FOODS_SEED_VERSION && Array.isArray(localFoods) && localFoods.length > 0)
-        ? localFoods.map(util.migrateFood)
-        : util.mergeSeedWithLocal(foodsData, localFoods).map(util.migrateFood)
+      this._foods = foodRepo.loadFoods(foodsData)
       this._nameIndex = null
       this._foodsRev = rev
     }
