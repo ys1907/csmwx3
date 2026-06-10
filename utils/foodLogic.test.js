@@ -1,7 +1,8 @@
 const test = require('node:test')
 const assert = require('node:assert')
 const {
-  filterFoods, matchesScene, availabilityLevel, foodHasTag,
+  filterFoods, filterFoodsWithFallback, inferMealPeriod,
+  matchesScene, availabilityLevel, foodHasTag,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
   computeStreak, buildMealCombo,
   buildRichReason, inferSeason, rollRarityWithPity
@@ -182,6 +183,69 @@ test('buildTasteProfile: 统计品类/标签/辣度占比', () => {
   assert.strictEqual(p.spicyCount, 1)                  // 仅麻辣烫含「辣」
   assert.ok(Math.abs(p.spicyRatio - 0.25) < 1e-9)
   assert.ok(p.headline.includes('4 餐'))
+})
+
+// ===== 回退阶梯与餐段推断（filterFoodsWithFallback / inferMealPeriod） =====
+
+const FB_BASE = { sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tasteIdx: 0, avoid: '', requireMeal: false }
+const fbFood = (name, weight, periods) => ({
+  name, scene: '自己做', budget: '💰', time: '快', tags: [],
+  defaultPoolWeight: weight, mealPeriods: periods,
+})
+
+test('回退阶梯①：时段命中且池命中 → 只返回池菜', () => {
+  const foods = [
+    fbFood('池内早餐', 0.5, ['早餐']),
+    fbFood('池外早餐', 0, ['早餐']),
+    fbFood('池内午餐', 0.5, ['午餐']),
+  ]
+  const r = filterFoodsWithFallback(foods, FB_BASE, '早餐', {})
+  assert.deepStrictEqual(r.map(f => f.name), ['池内早餐'])
+})
+
+test('回退阶梯②：时段命中但全在池外 → 时段匹配优先于池约束', () => {
+  const foods = [
+    fbFood('池外早餐', 0, ['早餐']),
+    fbFood('池内午餐', 0.5, ['午餐']), // 不应为了进池而放宽时段
+  ]
+  const r = filterFoodsWithFallback(foods, FB_BASE, '早餐', {})
+  assert.deepStrictEqual(r.map(f => f.name), ['池外早餐'])
+})
+
+test('回退阶梯③：时段无命中 → 放宽时段后池优先', () => {
+  const foods = [
+    fbFood('池内午餐', 0.5, ['午餐']),
+    fbFood('池外午餐', 0, ['午餐']),
+  ]
+  const r = filterFoodsWithFallback(foods, FB_BASE, '早餐', {})
+  assert.deepStrictEqual(r.map(f => f.name), ['池内午餐'])
+})
+
+test('回退阶梯③兜底：放宽时段后仍全在池外 → 返回非池菜', () => {
+  const foods = [fbFood('池外午餐', 0, ['午餐'])]
+  const r = filterFoodsWithFallback(foods, FB_BASE, '早餐', {})
+  assert.deepStrictEqual(r.map(f => f.name), ['池外午餐'])
+})
+
+test('回退阶梯：硬条件不满足时如实返回空（回退只放宽时段与池，不放宽筛选）', () => {
+  const foods = [fbFood('池内午餐', 0.5, ['午餐'])]
+  const r = filterFoodsWithFallback(foods, { ...FB_BASE, avoid: '辣 甜 酸' , budgetIdx: 3 }, '早餐', {})
+  assert.deepStrictEqual(r, [])
+})
+
+test('inferMealPeriod: 五个小时边界（5/10/14/17/22）', () => {
+  const at = h => new Date(2026, 5, 10, h, 0, 0).getTime()
+  assert.strictEqual(inferMealPeriod(at(4)), '夜宵')
+  assert.strictEqual(inferMealPeriod(at(5)), '早餐')   // 下界含
+  assert.strictEqual(inferMealPeriod(at(9)), '早餐')
+  assert.strictEqual(inferMealPeriod(at(10)), '午餐')  // 10 整点已是午餐
+  assert.strictEqual(inferMealPeriod(at(13)), '午餐')
+  assert.strictEqual(inferMealPeriod(at(14)), '加餐')
+  assert.strictEqual(inferMealPeriod(at(16)), '加餐')
+  assert.strictEqual(inferMealPeriod(at(17)), '晚餐')
+  assert.strictEqual(inferMealPeriod(at(21)), '晚餐')
+  assert.strictEqual(inferMealPeriod(at(22)), '夜宵')
+  assert.strictEqual(inferMealPeriod(at(0)), '夜宵')
 })
 
 // ===== 进化⑤：决策连胜 =====

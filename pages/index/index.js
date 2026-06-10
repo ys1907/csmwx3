@@ -236,27 +236,18 @@ Page({
     this._cacheKey = ''
   },
 
-  inferMealPeriod() {
-    const hour = new Date().getHours()
-    if (hour >= 5 && hour < 10) return '早餐'
-    if (hour >= 10 && hour < 14) return '午餐'
-    if (hour >= 14 && hour < 17) return '加餐'
-    if (hour >= 17 && hour < 22) return '晚餐'
-    return '夜宵'
-  },
-
-  // opts.requireMeal 可覆盖页面默认（凑一桌传 false 放行配菜/汤品）；缓存键含 r 字段，两种池互不串
+  // opts.requireMeal 可覆盖页面默认（凑一桌传 false 放行配菜/汤品）；缓存键含 r 字段，两种池互不串。
+  // 过滤与四级回退的决策逻辑在 foodLogic.filterFoodsWithFallback，这里只负责读 data、拼缓存键、查/存缓存。
   getFilteredFoods(opts) {
     const { filters, excludeRecent } = this.data
     const requireMeal = (opts && typeof opts.requireMeal === 'boolean') ? opts.requireMeal : this.data.requireMeal
     const history = this._history || []
     const now = Date.now()
-    const mealPeriod = this.inferMealPeriod()
+    const mealPeriod = foodLogic.inferMealPeriod(now)
     let recentPart = ''
     if (excludeRecent) {
-      const THREE_DAYS = 3 * 24 * 60 * 60 * 1000
       recentPart = history
-        .filter(h => { const d = new Date(h.date).getTime(); return !Number.isNaN(d) && now - d <= THREE_DAYS })
+        .filter(h => { const d = new Date(h.date).getTime(); return !Number.isNaN(d) && now - d <= foodLogic.THREE_DAYS })
         .map(h => h.name).join('\x00')
     }
     const key = JSON.stringify({ s: filters.sceneIdx, b: filters.budgetIdx, t: filters.timeIdx, ta: filters.tasteIdx, a: filters.avoid, e: excludeRecent, r: requireMeal, m: mealPeriod, h: recentPart })
@@ -265,23 +256,7 @@ Page({
     // 注入场景名以启用渠道硬过滤（剔除该场景下可得性为低/极低的菜）
     const sceneName = filters.sceneIdx > 0 ? SCENE_OPTIONS[filters.sceneIdx] : null
     const baseFilters = { ...filters, requireMeal, scene: sceneName }
-    let result = foodLogic.filterFoods(this._foods, { ...baseFilters, mealPeriod }, { excludeRecent, history, now })
-    // 默认只从 defaultPool 抽取（审查后进入首页池的条目）
-    const poolFiltered = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
-    if (poolFiltered.length > 0) result = poolFiltered
-    // 空集回退：放宽时段
-    if (result.length === 0 && mealPeriod) {
-      result = foodLogic.filterFoods(this._foods, baseFilters, { excludeRecent, history, now })
-      const pf2 = result.filter(f => (f.defaultPoolWeight || 0) > 0 && f.enabled !== false)
-      if (pf2.length > 0) result = pf2
-    }
-    // 二次回退：移除池限制
-    if (result.length === 0) {
-      result = foodLogic.filterFoods(this._foods, { ...baseFilters, mealPeriod }, { excludeRecent, history, now })
-      if (result.length === 0 && mealPeriod) {
-        result = foodLogic.filterFoods(this._foods, baseFilters, { excludeRecent, history, now })
-      }
-    }
+    const result = foodLogic.filterFoodsWithFallback(this._foods, baseFilters, mealPeriod, { excludeRecent, history, now })
     this._filteredCache = result
     this._cacheKey = key
     return result

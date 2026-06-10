@@ -105,6 +105,39 @@ function filterFoods(foods, filters, ctx) {
   })
 }
 
+// 默认池谓词：经审查进入首页池的条目（权重为正且未出池）
+function inDefaultPool(f) {
+  return (f.defaultPoolWeight || 0) > 0 && f.enabled !== false
+}
+
+// 带回退的过滤：尽量不让用户看到「无菜可抽」。降级顺序是行为契约，调换即语义变化：
+// ① 按时段过滤后收窄到默认池；② 时段命中但池为空 → 用时段命中的非池菜（时段匹配优先于池约束）；
+// ③ 时段无命中 → 放宽时段，同样池优先、非池兜底。
+// 注：池限制天然是「非空才生效」（poolFiltered 为空时保留原结果），所以不存在更低的「移除池限制」层级——
+// 旧实现的第三级回退重算的输入与前两级完全相同，是可证明的死分支，平移时已删。
+function filterFoodsWithFallback(foods, baseFilters, mealPeriod, ctx) {
+  let result = filterFoods(foods, { ...baseFilters, mealPeriod }, ctx)
+  const poolFiltered = result.filter(inDefaultPool)
+  if (poolFiltered.length > 0) result = poolFiltered
+  // 空集回退：放宽时段
+  if (result.length === 0 && mealPeriod) {
+    result = filterFoods(foods, baseFilters, ctx)
+    const pf2 = result.filter(inDefaultPool)
+    if (pf2.length > 0) result = pf2
+  }
+  return result
+}
+
+// 按小时推断当前餐段（喂给 filterFoods 的 mealPeriod 维度）。now 可注入便于测试。
+function inferMealPeriod(now) {
+  const hour = (now ? new Date(now) : new Date()).getHours()
+  if (hour >= 5 && hour < 10) return '早餐'
+  if (hour >= 10 && hour < 14) return '午餐'
+  if (hour >= 14 && hour < 17) return '加餐'
+  if (hour >= 17 && hour < 22) return '晚餐'
+  return '夜宵'
+}
+
 // ========== 进化①：加权推荐（学自美团/大众点评「猜你喜欢」） ==========
 // prefs: { favoriteSet:Set<name>, tasteCounts:{tag:count}, rejectedSet:Set<name>, cooldownFamilyPicks:{familyId:timestamp} }
 // ctx:   { scene, weatherTags, now }（now 可注入便于测试，缺省 Date.now()）
@@ -353,6 +386,9 @@ function rollRarityWithPity(ssrPity, rng) {
 
 module.exports = {
   filterFoods,
+  filterFoodsWithFallback,
+  inferMealPeriod,
+  THREE_DAYS,
   matchesScene,
   availabilityLevel,
   foodHasTag,
