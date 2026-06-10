@@ -268,8 +268,9 @@ Page({
     const favoriteSet = new Set(favorites.map(f => f.name))
     const tasteCounts = {}
     const bump = tags => (tags || []).forEach(t => { tasteCounts[t] = (tasteCounts[t] || 0) + 1 })
-    favorites.forEach(f => bump(f.tags))
     const nameIndex = this._nameIndex || (this._nameIndex = new Map(this._foods.map(f => [f.name, f])))
+    // 收藏是历史快照，tags 可能还是旧词表——优先按名字反查当前菜库的归一 tags，快照只作兜底
+    favorites.forEach(f => { const cur = nameIndex.get(f.name); bump((cur && cur.tags) || f.tags) })
     history.forEach(h => { const f = nameIndex.get(h.name); if (f) bump(f.tags) })
     return {
       favoriteSet,
