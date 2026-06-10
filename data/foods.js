@@ -28,87 +28,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炸藕盒/茄盒",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：炸藕盒/茄盒"
-    ],
-    "legacy": {
-      "name": "炸茄盒",
-      "emoji": "🍆",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -156,73 +77,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "客家咸鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "客家咸鸡",
-      "emoji": "🐔",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -272,83 +128,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "土豆泥",
-    "flavors": [
-      "奶香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "绵软"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "土豆泥",
-      "emoji": "🥔",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "绵",
-        "奶香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -395,77 +176,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海南鸡饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "清淡"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "海南鸡饭",
-      "emoji": "🐔",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -517,77 +229,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "炸鸡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆",
-      "肉食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "炸鸡",
-      "emoji": "🍗",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "脆",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -639,75 +282,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "关东煮",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：关东煮串 → 关东煮",
-      "分类重构：日韩 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "关东煮串",
-      "emoji": "🍲",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -760,80 +336,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "盐烤青花鱼",
-    "flavors": [
-      "鲜",
-      "咸"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "盐烤青花鱼",
-      "emoji": "🐟",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "咸",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -886,70 +390,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "卷饼",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，建议后续区分中式卷饼、墨西哥卷饼等。",
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "卷饼",
-      "emoji": "🌮",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1003,78 +445,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "玉米排骨汤",
-    "flavors": [
-      "甜",
-      "鲜"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "玉米排骨汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1126,73 +498,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "毛豆",
-    "flavors": [
-      "咸",
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "毛豆",
-      "emoji": "🫛",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "咸",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1240,73 +547,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：饭团"
-    ],
-    "legacy": {
-      "name": "烤饭团",
-      "emoji": "🍙",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "cooldownFamilyId": "饭团族",
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -1358,84 +600,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤虾",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤虾",
-      "emoji": "🦐",
-      "category": "火锅烧烤",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1489,87 +655,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "小葱拌豆腐",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "小葱拌豆腐",
-      "emoji": "🧈",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1620,78 +707,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "山药排骨汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "滋补",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "山药排骨汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "滋补"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1744,71 +761,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "绿豆饼",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物",
-      "绿豆"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "绿豆饼",
-      "emoji": "🥞",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1858,68 +812,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鸡爪",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -1969,66 +863,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烧饼",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "已加入去重分组：烧饼",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "油酥烧饼",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烧饼族",
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -2086,85 +922,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "大盘鸡拌面",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类"
-    ],
-    "legacy": {
-      "name": "大盘鸡拌面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2220,68 +979,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "臭干子",
-    "flavors": [
-      "发酵风味",
-      "香"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "臭干子",
-      "emoji": "🧈",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "臭",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2332,76 +1031,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "蒜泥白肉",
-    "flavors": [
-      "蒜香"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒜泥白肉",
-      "emoji": "🥓",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "蒜香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2451,85 +1082,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋炒饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蛋炒饭",
-      "emoji": "🥚",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2581,68 +1135,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "炸糕",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "炸糕",
-      "emoji": "🍩",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2690,76 +1184,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤培根",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 家常菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤培根",
-      "emoji": "🥓",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2810,84 +1236,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒸南瓜",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒸南瓜",
-      "emoji": "🎃",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -2932,68 +1282,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "麻团",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "麻团",
-      "emoji": "🍡",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3041,79 +1331,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "水煮肉片饭",
-    "flavors": [
-      "辣",
-      "麻辣"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 3,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "水煮肉片饭",
-      "emoji": "🌶️",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3168,76 +1387,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "珍珠丸子",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "珍珠丸子",
-      "emoji": "🍡",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3288,85 +1439,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋类小食",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "家常",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蛋类小食"
-    ],
-    "legacy": {
-      "name": "煎蛋",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3419,85 +1493,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "白灼菜心",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡"
-    ],
-    "cookingMethods": [
-      "白灼"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "白灼菜心",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3547,75 +1544,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "火锅",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "鱼胶",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含海鲜"
-    ],
-    "features": [
-      "滋补",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：火锅"
-    ],
-    "legacy": {
-      "name": "花胶鸡火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "滋补"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -3671,77 +1601,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "香菇滑鸡",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "嫩滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "香菇滑鸡",
-      "emoji": "🍄",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "嫩"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -3791,89 +1652,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤鱿鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "鱿鱼"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "酥脆",
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤鱿鱼"
-    ],
-    "legacy": {
-      "name": "炸鱿鱼",
-      "emoji": "🦑",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "cooldownFamilyId": "鱿鱼族",
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -3928,78 +1708,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "粉蒸肉",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "软糯",
-      "热食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "粉蒸肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4049,78 +1759,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "扬州炒饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：中式快餐 → 饭类套餐",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "扬州炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": []
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4170,67 +1810,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "热狗",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "热狗",
-      "emoji": "🌭",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4274,64 +1855,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "越南春卷",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "越南春卷",
-      "emoji": "🫔",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "清爽"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4382,74 +1907,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "河南烩面",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "烩煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "河南烩面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "热",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4502,68 +1961,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "松鼠鳜鱼",
-    "flavors": [
-      "酸甜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "松鼠鳜鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酸甜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4620,76 +2019,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炸酱面",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆",
-      "热食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "炸酱面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4747,87 +2078,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蘑菇汤",
-    "flavors": [
-      "奶香"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜",
-      "乳制品"
-    ],
-    "dietaryFlags": [
-      "含乳制品"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蘑菇汤"
-    ],
-    "legacy": {
-      "name": "奶油蘑菇汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "奶香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -4881,76 +2133,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：饭团"
-    ],
-    "legacy": {
-      "name": "粢饭团",
-      "emoji": "🍙",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "糯",
-        "咸"
-      ]
-    },
     "cooldownFamilyId": "饭团族",
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -5000,81 +2184,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "照烧鸡",
-    "flavors": [
-      "甜",
-      "酱香"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：照烧鸡"
-    ],
-    "legacy": {
-      "name": "照烧鸡饭",
-      "emoji": "🍗",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5129,77 +2240,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "红烧肉",
-    "flavors": [
-      "甜",
-      "酱香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "红烧"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "红烧肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "equivalentGroupId": "红烧肉_套餐族",
     "defaultPoolWeight": 0.95,
     "cooldownFamilyId": null,
@@ -5245,69 +2287,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烧饼",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "烧饼",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5358,65 +2339,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "披萨",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "口味不明确，可保留为通用西式选项。",
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "披萨",
-      "emoji": "🍕",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "芝士"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5466,79 +2390,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "京酱肉丝饭",
-    "flavors": [
-      "甜",
-      "酱香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "京酱肉丝饭",
-      "emoji": "🥓",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5589,75 +2442,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "盖浇饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称过于宽泛，建议后续拆分为具体浇头。",
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "盖浇饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5710,84 +2496,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 7,
-        "max": 25
-      },
-      "外卖": {
-        "min": 14,
-        "max": 47
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 31
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "燕麦碗",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "饱腹"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "燕麦碗",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "饱腹"
-      ]
-    },
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5836,80 +2546,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酿豆腐",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "豆制品",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含豆制品"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：酿豆腐"
-    ],
-    "legacy": {
-      "name": "客家酿豆腐",
-      "emoji": "🧈",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -5959,79 +2597,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海鲜盖饭",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "海鲜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "海鲜盖饭",
-      "emoji": "🍱",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -6086,77 +2653,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "莲藕排骨汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "莲藕排骨汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -6208,79 +2706,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "豆腐脑/豆花",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "豆制品",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：豆腐脑/豆花"
-    ],
-    "legacy": {
-      "name": "豆花饭",
-      "emoji": "🧈",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素"
-      ]
-    },
     "cooldownFamilyId": "豆花族",
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -6333,77 +2760,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "东坡肉饭",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "东坡肉饭",
-      "emoji": "🍖",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -6458,76 +2816,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "金边粉",
-    "flavors": [
-      "甜",
-      "酸"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "2026-06-01: 名称标准化 \"柬埔寨金边粉\""
-    ],
-    "legacy": {
-      "name": "金边粉",
-      "emoji": "🍝",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -6582,75 +2872,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "啤酒鸭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "啤酒鸭",
-      "emoji": "🦆",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -6704,76 +2927,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "川味火锅",
-    "flavors": [
-      "辣",
-      "麻辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：川味火锅"
-    ],
-    "legacy": {
-      "name": "四川火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -6830,69 +2985,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "猪排",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：猪排"
-    ],
-    "legacy": {
-      "name": "烤猪排",
-      "emoji": "🍖",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "cooldownFamilyId": "猪排族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -6941,74 +3035,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "和风炸酱面",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆",
-      "热食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "分类重构：日韩 → 面食粉类",
-      "2026-06-01: 需人工确认做法归属（日式/韩式）"
-    ],
-    "legacy": {
-      "name": "和风炸酱面",
-      "emoji": "🍜",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7066,75 +3094,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "煮花生",
-    "flavors": [
-      "咸",
-      "香"
-    ],
-    "ingredients": [
-      "坚果/种子"
-    ],
-    "dietaryFlags": [
-      "可能含坚果或种子"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "煮花生",
-      "emoji": "🥜",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "咸",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7185,76 +3146,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "番茄牛腩",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "牛肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "番茄牛腩",
-      "emoji": "🍅",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7303,78 +3196,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤三文鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "清爽少负担",
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "烤三文鱼",
-      "emoji": "🐟",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "健康",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7424,73 +3247,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "炸春卷",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心"
-    ],
-    "legacy": {
-      "name": "炸春卷",
-      "emoji": "🫔",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7543,75 +3301,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "回锅肉",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "回锅肉",
-      "emoji": "🥓",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "equivalentGroupId": "回锅肉_套餐族",
     "defaultPoolWeight": 0.85,
     "cooldownFamilyId": null,
@@ -7665,67 +3356,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "咸味可丽饼",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "法式风格"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "2026-06-01: 名称标准化 \"咸味法式可丽饼\""
-    ],
-    "legacy": {
-      "name": "咸味可丽饼",
-      "emoji": "🥞",
-      "category": "西式",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "咸",
-        "法"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7777,77 +3409,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "肉丸汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "肉丸汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -7900,72 +3463,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 45,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 50,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "自助烧烤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "属于用餐方式，不是单一菜品；保留为聚餐选项。",
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "自助烧烤",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "社交"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
@@ -8013,66 +3512,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "冒菜",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "煮制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "冒菜",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8128,76 +3569,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "重庆小面",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "重庆小面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8259,77 +3632,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "乌冬面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食",
-      "爽滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "乌冬面",
-      "emoji": "🍜",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "热",
-        "滑"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8385,82 +3689,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "泡菜炒饭",
-    "flavors": [
-      "酸辣",
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "泡菜炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "酸辣"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8517,74 +3747,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "火锅",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "滋补",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）",
-      "已加入去重分组：火锅"
-    ],
-    "legacy": {
-      "name": "猪肚鸡火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "滋补"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -8637,67 +3801,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鸭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "烤鸭",
-      "emoji": "🦆",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8746,79 +3851,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "豆腐汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含海鲜",
-      "含豆制品"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "耗时复核：快 → 慢（按首选场景估算）",
-      "已加入去重分组：豆腐汤",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "鱼头豆腐汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -8878,87 +3912,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 22
-      },
-      "食堂": {
-        "min": 4,
-        "max": 15
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "小米粥",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食",
-      "易消化"
-    ],
-    "cookingMethods": [
-      "熬煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "小米粥",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "热"
-      ]
-    },
     "cooldownFamilyId": "粥族",
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
@@ -9010,77 +3965,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "蒜蓉蒸虾",
-    "flavors": [
-      "鲜",
-      "蒜香"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉蒸虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "蒜香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9134,82 +4020,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 7,
-        "max": 25
-      },
-      "外卖": {
-        "min": 14,
-        "max": 47
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 31
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "三明治",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "含蛋",
-      "清爽少负担"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "三明治",
-      "emoji": "🥚",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "蛋",
-        "健康"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9257,78 +4069,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "生鱼片",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🦈 → 🍣",
-      "分类重构：日韩 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "生鱼片",
-      "emoji": "🦈",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "rawFood": true,
     "safetyNotice": "含生食或生腌食材，请根据个人情况谨慎选择",
     "defaultPoolWeight": 0,
@@ -9383,71 +4125,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 45,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 50,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "东北烧烤",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "属于烧烤风格，建议后续拆分代表性菜品。",
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "东北烧烤",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -9496,69 +4175,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "油条",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "油条",
-      "emoji": "🥖",
-      "category": "街边小吃",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9615,75 +4233,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炒河粉",
-    "flavors": [
-      "甜",
-      "酸"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "炒河粉",
-      "emoji": "🍝",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9739,80 +4290,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "番茄牛腩",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "牛肉",
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：番茄牛腩"
-    ],
-    "legacy": {
-      "name": "番茄牛腩饭",
-      "emoji": "🍅",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9864,77 +4343,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "鱼香茄子",
-    "flavors": [
-      "甜辣"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鱼香茄子",
-      "emoji": "🍆",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "甜辣"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -9985,76 +4395,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "肉末茄子",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "肉末茄子",
-      "emoji": "🍆",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10104,85 +4446,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "玉米",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：玉米"
-    ],
-    "legacy": {
-      "name": "烤玉米",
-      "emoji": "🌽",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10229,84 +4494,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤扇贝",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "贝类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "烤扇贝",
-      "emoji": "🐚",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10359,84 +4548,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤红薯",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "已加入去重分组：烤红薯"
-    ],
-    "legacy": {
-      "name": "蒸红薯",
-      "emoji": "🍠",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "素"
-      ]
-    },
     "cooldownFamilyId": "红薯族",
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
@@ -10486,78 +4599,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "羊肉粉",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "羊肉",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "羊肉粉",
-      "emoji": "🐑",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10614,72 +4657,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "美蛙鱼头",
-    "flavors": [
-      "辣",
-      "鲜",
-      "麻辣"
-    ],
-    "ingredients": [
-      "鱼类",
-      "蛙肉"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含海鲜"
-    ],
-    "features": [
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 3,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "美蛙鱼头",
-      "emoji": "🐸",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10738,81 +4717,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "红烧肉",
-    "flavors": [
-      "香",
-      "酱香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "红烧"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：红烧肉"
-    ],
-    "legacy": {
-      "name": "红烧肉盖饭",
-      "emoji": "🍖",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "equivalentGroupId": "红烧肉_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -10866,80 +4772,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "意式肉酱面",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "意式肉酱面",
-      "emoji": "🍝",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "番茄"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -10995,78 +4829,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "板栗烧鸡",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "坚果/种子"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "可能含坚果或种子"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "板栗烧鸡",
-      "emoji": "🐔",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11118,78 +4882,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "椰子鸡汤",
-    "flavors": [
-      "鲜",
-      "甜"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "椰子鸡汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11240,80 +4934,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "咖喱饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "咖喱饭",
-      "emoji": "🍛",
-      "category": "日韩",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11366,78 +4988,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "叻沙",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：叻沙",
-      "2026-06-01: 合并 \"咖喱叻沙\" + \"叻沙\" → \"叻沙米粉\""
-    ],
-    "legacy": {
-      "name": "咖喱叻沙",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11494,86 +5046,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤鱿鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "鱿鱼"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤鱿鱼",
-      "emoji": "🦑",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "cooldownFamilyId": "鱿鱼族",
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -11624,68 +5098,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "麻团",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：麻团"
-    ],
-    "legacy": {
-      "name": "炸麻球",
-      "emoji": "🍡",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": "麻团_合并组",
     "cooldownFamilyId": null,
@@ -11733,72 +5147,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "辣椒船",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称不常见，建议确认具体菜品或补充别名。",
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 暂停启用（名称/质量问题）"
-    ],
-    "legacy": {
-      "name": "辣椒船",
-      "emoji": "🌮",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11848,68 +5198,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤肠",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：烤肠"
-    ],
-    "legacy": {
-      "name": "香肠",
-      "emoji": "🌭",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -11961,74 +5251,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "大阪煎饼",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 名称标准化 \"大阪烧（御好烧）\""
-    ],
-    "legacy": {
-      "name": "大阪煎饼",
-      "emoji": "🥞",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12080,75 +5304,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "过桥米线",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "过桥米线",
-      "emoji": "🍲",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12205,77 +5362,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "水煮鱼",
-    "flavors": [
-      "辣",
-      "鲜",
-      "麻辣"
-    ],
-    "ingredients": [
-      "鱼类",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "已加入去重分组：水煮鱼"
-    ],
-    "legacy": {
-      "name": "水煮鱼饭",
-      "emoji": "🐟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12333,78 +5421,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酸菜鱼",
-    "flavors": [
-      "辣",
-      "鲜",
-      "酸"
-    ],
-    "ingredients": [
-      "鱼类",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🥬 → 🐟",
-      "分类重构：中式快餐 → 家常菜",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "酸菜鱼",
-      "emoji": "🥬",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12462,86 +5480,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炸蘑菇",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "酥脆",
-      "素食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "炸蘑菇",
-      "emoji": "🍄",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12588,66 +5528,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "糖葫芦",
-    "flavors": [
-      "甜",
-      "酸"
-    ],
-    "ingredients": [
-      "水果"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "糖葫芦",
-      "emoji": "🍬",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12694,73 +5576,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "拌饭",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "拌饭",
-      "emoji": "🍚",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12815,71 +5632,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤肉",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，可作为日韩烤肉聚餐选项。",
-      "分类重构：日韩 → 烧烤",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤肉",
-      "emoji": "🥓",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -12930,77 +5684,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "叉烧饭",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "叉烧饭",
-      "emoji": "🍖",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13050,77 +5735,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "豉油鸡",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：豉油鸡"
-    ],
-    "legacy": {
-      "name": "豉油鸡饭",
-      "emoji": "🍗",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13172,75 +5788,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "地三鲜",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "地三鲜",
-      "emoji": "🥔",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13290,77 +5839,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "卤肉饭",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "卤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "卤肉饭",
-      "emoji": "🥓",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13411,76 +5891,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "干锅花菜",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "干锅花菜",
-      "emoji": "🥦",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13535,75 +5947,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "阳春面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "阳春面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13657,68 +6002,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸭锁骨",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鸭锁骨",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13771,73 +6056,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "炒乌冬",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "炒乌冬",
-      "emoji": "🍝",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -13887,85 +6107,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "腊肉炒饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "腊肉炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14017,74 +6160,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "山西刀削面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "山西刀削面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": []
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14139,83 +6216,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 7,
-        "max": 25
-      },
-      "外卖": {
-        "min": 14,
-        "max": 47
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 31
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "吐司",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合早午餐"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 轻食",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "吐司",
-      "emoji": "🍞",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "早午餐"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14270,82 +6272,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炒面",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "风格不明确，可保留为通用选项。",
-      "分类重构：日韩 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "炒面",
-      "emoji": "🍝",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": "家常炒面_合并组",
     "cooldownFamilyId": null,
@@ -14405,67 +6333,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "龙抄手",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14523,73 +6392,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "牛肉火锅",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "牛肉",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：牛肉火锅"
-    ],
-    "legacy": {
-      "name": "潮汕牛肉火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -14643,67 +6447,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "煎饼果子",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "煎饼果子",
-      "emoji": "🌯",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "脆"
-      ]
-    },
     "cooldownFamilyId": "煎饼族",
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
@@ -14756,75 +6501,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "咖喱鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "咖喱鸡",
-      "emoji": "🐔",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14876,77 +6554,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "糖拌西红柿",
-    "flavors": [
-      "甜",
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：糖拌西红柚 → 糖拌西红柿",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "糖拌西红柚",
-      "emoji": "🍅",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -14996,76 +6605,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "凉皮",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "凉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "凉皮",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "凉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -15122,68 +6663,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸭头",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鸭头",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -15238,75 +6719,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "打卤面",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "家常",
-      "热食"
-    ],
-    "cookingMethods": [
-      "卤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "打卤面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -15361,77 +6775,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "猪蹄",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "猪蹄",
-      "emoji": "🐷",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -15479,79 +6824,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 7
-      },
-      "外卖": {
-        "min": 5,
-        "max": 13
-      },
-      "到店吃": {
-        "min": 3,
-        "max": 12
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "咸豆浆",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "咸豆浆",
-      "emoji": "🧋",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "咸",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -15606,84 +6880,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 22
-      },
-      "食堂": {
-        "min": 4,
-        "max": 15
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "绿豆粥",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食",
-      "易消化"
-    ],
-    "cookingMethods": [
-      "熬煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品"
-    ],
-    "legacy": {
-      "name": "绿豆粥",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素"
-      ]
-    },
     "cooldownFamilyId": "粥族",
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
@@ -15742,88 +6940,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒸蛋",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "嫩滑",
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蒸蛋"
-    ],
-    "legacy": {
-      "name": "水蒸蛋",
-      "emoji": "🥚",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "嫩",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": "蒸蛋羹_合并组",
     "cooldownFamilyId": null,
@@ -15874,86 +6992,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "玉米",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：玉米"
-    ],
-    "legacy": {
-      "name": "煮玉米",
-      "emoji": "🌽",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16003,86 +7043,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "虎皮青椒",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "虎皮青椒",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16136,81 +7098,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "螺蛳粉",
-    "flavors": [
-      "辣",
-      "发酵风味"
-    ],
-    "ingredients": [
-      "螺类",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "螺蛳粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "臭",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16269,69 +7158,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤肉串",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "羊肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：烤肉串"
-    ],
-    "legacy": {
-      "name": "烤羊肉串",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
@@ -16381,76 +7209,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "羊肉泡馍",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "羊肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 家常菜"
-    ],
-    "legacy": {
-      "name": "羊肉泡馍",
-      "emoji": "🐑",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16505,85 +7265,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "黄瓜凉菜",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "凉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：黄瓜凉菜"
-    ],
-    "legacy": {
-      "name": "拍黄瓜",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16638,81 +7321,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "牛肉火锅",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "牛肉",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "风格不明确，建议确认潮汕、川味或其他版本。",
-      "分类重构：日韩 → 火锅冒菜",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "牛肉火锅",
-      "emoji": "🍲",
-      "category": "日韩",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16765,71 +7375,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "鱼肉汉堡",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：鱼堡 → 鱼肉汉堡",
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 名称标准化 \"鱼排汉堡\""
-    ],
-    "legacy": {
-      "name": "鱼堡",
-      "emoji": "🐟",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -16882,79 +7429,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：饭团"
-    ],
-    "legacy": {
-      "name": "金枪鱼饭团",
-      "emoji": "🍙",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17009,68 +7485,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤鸡心",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤鸡心",
-      "emoji": "🐔",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
@@ -17119,69 +7535,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤肉串",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "牛肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤肉串"
-    ],
-    "legacy": {
-      "name": "烤牛肉串",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
@@ -17232,78 +7587,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "回锅肉",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：回锅肉"
-    ],
-    "legacy": {
-      "name": "回锅肉饭",
-      "emoji": "🥓",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "equivalentGroupId": "回锅肉_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -17357,73 +7642,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "手抓饼",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "手抓饼",
-      "emoji": "🫓",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17476,67 +7696,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "锅盔",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "锅盔",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "脆",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17588,74 +7749,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "砂锅米线",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "砂锅米线",
-      "emoji": "🍲",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "热",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17710,67 +7805,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "麻辣烫",
-    "flavors": [
-      "辣",
-      "麻辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "煮制"
-    ],
     "spicyLevel": 3,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "麻辣烫",
-      "emoji": "🍲",
-      "category": "火锅烧烤",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17830,90 +7866,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蛋花汤"
-    ],
-    "legacy": {
-      "name": "黄瓜蛋汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -17968,87 +7922,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤香菇",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤香菇",
-      "emoji": "🍄",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18093,76 +7968,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：饭团"
-    ],
-    "legacy": {
-      "name": "温州糯米饭",
-      "emoji": "🫔",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "糯",
-        "咸"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18217,67 +8024,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "馄饨",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18332,83 +8080,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "胡辣汤",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "胡辣汤",
-      "emoji": "🍲",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18466,80 +8139,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "亲子盖饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋",
-      "米饭/谷物",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含蛋"
-    ],
-    "features": [
-      "肉食",
-      "含蛋"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "亲子盖饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "蛋"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18593,77 +8194,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "清蒸鲈鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "清淡",
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "清蒸鲈鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "清淡",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18718,84 +8250,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 7,
-        "max": 25
-      },
-      "外卖": {
-        "min": 14,
-        "max": 47
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 31
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蔬菜沙拉",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清爽少负担"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "蔬菜沙拉",
-      "emoji": "🥗",
-      "category": "轻食",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "健康"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18847,87 +8303,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "冬瓜丸子汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "冬瓜丸子汤",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -18980,79 +8357,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "猪排",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆",
-      "肉食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：猪排"
-    ],
-    "legacy": {
-      "name": "炸猪排",
-      "emoji": "🥩",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "脆",
-        "肉"
-      ]
-    },
     "cooldownFamilyId": "猪排族",
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
@@ -19101,68 +8407,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "驴打滚",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "米饭/谷物",
-      "豆沙"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "驴打滚",
-      "emoji": "🍰",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -19209,85 +8455,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤生蚝",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "贝类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤生蚝",
-      "emoji": "🦪",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -19340,74 +8509,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "白切鸡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "清淡"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "白切鸡",
-      "emoji": "🐓",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "清淡"
-      ]
-    },
     "equivalentGroupId": "白切鸡_套餐族",
     "defaultPoolWeight": 0.7,
     "cooldownFamilyId": null,
@@ -19457,73 +8560,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "裤带面",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "裤带面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -19577,65 +8615,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烧饼",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烧饼"
-    ],
-    "legacy": {
-      "name": "糖火烧",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜"
-      ]
-    },
     "cooldownFamilyId": "烧饼族",
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -19683,65 +8664,8 @@ module.exports = [
       "堂食",
       "自己做"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "生煎包",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心"
-    ],
-    "legacy": {
-      "name": "生煎包",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "脆",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -19794,65 +8718,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "钟水饺",
-    "flavors": [
-      "甜辣"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "钟水饺",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜辣"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -19905,76 +8772,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "鱼香肉丝",
-    "flavors": [
-      "甜辣"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐟 → 🥩",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鱼香肉丝",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜辣"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20027,82 +8826,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸汤面",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "酸汤面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酸",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20156,72 +8881,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "口味不明确，可保留为通用早餐或便利店选项。",
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：日韩 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "饭团",
-      "emoji": "🍙",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": []
-    },
     "cooldownFamilyId": "饭团族",
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -20274,85 +8935,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "南瓜汤",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "绵软",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "南瓜汤",
-      "emoji": "🎃",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "绵"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20404,77 +8988,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "香辣虾",
-    "flavors": [
-      "辣",
-      "鲜"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "香辣虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20533,86 +9048,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蛋花汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "清淡",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20665,72 +9102,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鱼",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐠 → 🐟",
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：烤鱼"
-    ],
-    "legacy": {
-      "name": "万州烤鱼",
-      "emoji": "🐠",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烤鱼族",
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
@@ -20786,71 +9159,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "土豆饼",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "土豆饼",
-      "emoji": "🥔",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -20902,74 +9212,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 14
-      },
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "华夫饼",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合早午餐"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 甜品饮品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "华夫饼",
-      "emoji": "🧇",
-      "category": "西式",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "早午餐"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21019,76 +9263,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "盐焗鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：盐焗鸡"
-    ],
-    "legacy": {
-      "name": "盐焗鸡饭",
-      "emoji": "🍗",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "equivalentGroupId": "盐焗鸡_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -21140,76 +9316,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "云吞面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21266,85 +9374,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "萝卜丸子",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "萝卜丸子",
-      "emoji": "🍡",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21390,77 +9421,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "炒年糕",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "面食/谷物",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "炒年糕",
-      "emoji": "🍡",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21512,70 +9474,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "芸豆卷",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "绵软"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "芸豆卷",
-      "emoji": "🍰",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "绵"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21623,72 +9523,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "玉米卷饼",
-    "flavors": [
-      "辣",
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "肉类（具体食材需确认）",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "玉米卷饼",
-      "emoji": "🌮",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21741,78 +9577,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烧鹅饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鹅肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烧鹅饭",
-      "emoji": "🦆",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21864,76 +9630,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "蛋类小食",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "已加入去重分组：蛋类小食"
-    ],
-    "legacy": {
-      "name": "炸蛋",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -21988,84 +9686,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "手撕包菜",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜"
-    ],
-    "legacy": {
-      "name": "手撕包菜",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -22116,71 +9738,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "铁板烧",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称过于宽泛，建议后续拆分为具体食材。",
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "铁板烧",
-      "emoji": "🥩",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -22229,72 +9788,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "章鱼小丸子",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "鱼类",
-      "章鱼"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：章鱼小丸子"
-    ],
-    "legacy": {
-      "name": "章鱼丸子",
-      "emoji": "🐙",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "酱香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": "章鱼小丸子_合并组",
     "cooldownFamilyId": null,
@@ -22350,80 +9845,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "梅菜扣肉",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：梅菜扣肉"
-    ],
-    "legacy": {
-      "name": "梅菜扣肉饭",
-      "emoji": "🍖",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "咸"
-      ]
-    },
     "equivalentGroupId": "梅菜扣肉_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -22475,71 +9898,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "鸡蛋灌饼",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "蛋",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含蛋"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "鸡蛋灌饼",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆"
-      ]
-    },
     "cooldownFamilyId": "煎饼族",
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -22594,86 +9954,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤豆腐",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤豆腐",
-      "emoji": "🧈",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -22724,75 +10006,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "油泼面",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "油泼面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -22850,75 +10065,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "豚骨拉面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "豚骨拉面",
-      "emoji": "🍜",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -22974,71 +10122,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "豆腐脑/豆花",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "嫩滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：豆腐脑/豆花",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "豆腐脑",
-      "emoji": "🧈",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "嫩",
-        "咸"
-      ]
-    },
     "cooldownFamilyId": "豆花族",
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
@@ -23088,79 +10173,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "三文鱼饭",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐟 → 🍱",
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "三文鱼饭",
-      "emoji": "🐟",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23216,84 +10230,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "醋溜土豆丝",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "醋溜土豆丝",
-      "emoji": "🥔",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23344,87 +10282,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "黄瓜凉菜",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "凉食",
-      "素食"
-    ],
-    "cookingMethods": [
-      "拌制",
-      "凉拌"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：黄瓜凉菜"
-    ],
-    "legacy": {
-      "name": "凉拌黄瓜",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23471,81 +10330,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "印尼炒饭",
-    "flavors": [
-      "香",
-      "辣"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "印尼炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23603,88 +10389,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "凉拌木耳",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "凉食",
-      "素食"
-    ],
-    "cookingMethods": [
-      "拌制",
-      "凉拌"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "凉拌木耳",
-      "emoji": "🍄",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23733,78 +10439,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "白切鸡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "清淡"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：白切鸡"
-    ],
-    "legacy": {
-      "name": "白切鸡饭",
-      "emoji": "🐓",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "清淡"
-      ]
-    },
     "equivalentGroupId": "白切鸡_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -23855,70 +10491,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤肠",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆",
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤肠"
-    ],
-    "legacy": {
-      "name": "脆皮烤肠",
-      "emoji": "🌭",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -23970,75 +10544,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炒河粉",
-    "flavors": [
-      "香",
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：炒河粉"
-    ],
-    "legacy": {
-      "name": "炒粿条",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24094,79 +10601,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "沙嗲",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，建议确认是沙嗲串、沙嗲火锅还是配饭。",
-      "分类重构：中式快餐 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "沙嗲",
-      "emoji": "🍢",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24215,73 +10651,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "糖醋鱼",
-    "flavors": [
-      "酸甜",
-      "甜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "糖醋鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24336,81 +10707,8 @@ module.exports = [
       "到店吃",
       "堂食"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "鸡蛋饼",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "蛋",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含蛋"
-    ],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "鸡蛋饼",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "cooldownFamilyId": "煎饼族",
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -24465,76 +10763,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "部队火锅",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合聚餐",
-      "热食"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "2026-06-01: 名称标准化 \"韩式部队锅\""
-    ],
-    "legacy": {
-      "name": "部队火锅",
-      "emoji": "🥘",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "社交"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -24587,69 +10817,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "长沙臭豆腐",
-    "flavors": [
-      "发酵风味",
-      "辣"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "长沙臭豆腐",
-      "emoji": "🧈",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "臭",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24706,76 +10875,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "锅包肉",
-    "flavors": [
-      "酸甜"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "锅包肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24825,69 +10926,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 72,
-        "max": 231
-      },
-      "到店吃": {
-        "min": 80,
-        "max": 220
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤乳猪",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤乳猪",
-      "emoji": "🐷",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -24936,69 +10976,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "火烧",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "火烧",
-      "emoji": "🫓",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25045,66 +11024,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "糖糕",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "糖糕",
-      "emoji": "🍩",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25154,84 +11075,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 7,
-        "max": 25
-      },
-      "外卖": {
-        "min": 14,
-        "max": 47
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 31
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸奶碗",
-    "flavors": [
-      "甜",
-      "酸"
-    ],
-    "ingredients": [
-      "乳制品"
-    ],
-    "dietaryFlags": [
-      "含乳制品"
-    ],
-    "features": [
-      "清爽少负担"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "酸奶碗",
-      "emoji": "🥗",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "健康"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25284,84 +11129,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸辣汤",
-    "flavors": [
-      "酸辣",
-      "辣",
-      "酸"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "酸辣汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酸辣",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25417,76 +11186,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "荷叶粉蒸肉",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "荷叶粉蒸肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25536,70 +11237,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "火烧",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：火烧"
-    ],
-    "legacy": {
-      "name": "驴肉火烧",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25654,76 +11293,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "冷面",
-    "flavors": [
-      "酸甜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "凉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "冷面",
-      "emoji": "🍜",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -25778,67 +11349,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "粽子",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "粽子",
-      "emoji": "🫔",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "糯",
-        "咸"
-      ]
-    },
     "festivalTags": [
       "端午节"
     ],
@@ -25891,79 +11403,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "麻婆豆腐",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "麻婆豆腐",
-      "emoji": "🧈",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "素"
-      ]
-    },
     "equivalentGroupId": "麻婆豆腐_套餐族",
     "defaultPoolWeight": 0.75,
     "cooldownFamilyId": null,
@@ -26021,89 +11462,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "白菜豆腐汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "豆制品",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "白菜豆腐汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26157,78 +11517,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "豆腐汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含海鲜",
-      "含豆制品"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "耗时复核：快 → 慢（按首选场景估算）",
-      "已加入去重分组：豆腐汤"
-    ],
-    "legacy": {
-      "name": "豆腐鱼汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26284,67 +11574,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "臭豆腐",
-    "flavors": [
-      "发酵风味",
-      "香"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心"
-    ],
-    "legacy": {
-      "name": "臭豆腐",
-      "emoji": "🧈",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "臭",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26401,88 +11632,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒸蛋",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "嫩滑",
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蒸蛋"
-    ],
-    "legacy": {
-      "name": "蒸蛋羹",
-      "emoji": "🥚",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "嫩",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26531,70 +11682,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤羊腿",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "羊肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤羊腿",
-      "emoji": "🍖",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -26642,65 +11731,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "酱香饼",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心"
-    ],
-    "legacy": {
-      "name": "酱香饼",
-      "emoji": "🫓",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酱香",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26753,78 +11785,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤秋刀鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🦑 → 🐟",
-      "分类重构：日韩 → 家常菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤秋刀鱼",
-      "emoji": "🦑",
-      "category": "日韩",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26876,66 +11838,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤肠",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤肠"
-    ],
-    "legacy": {
-      "name": "淀粉肠",
-      "emoji": "🌭",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": []
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -26992,86 +11896,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      },
-      "食堂": {
-        "min": 12,
-        "max": 38
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "番茄炒蛋",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "家常"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "番茄炒蛋",
-      "emoji": "🥚",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27124,88 +11950,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炸藕盒/茄盒",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：炸藕盒/茄盒"
-    ],
-    "legacy": {
-      "name": "炸藕盒",
-      "emoji": "🪷",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27253,67 +11999,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "梅干菜锅盔",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "梅干菜锅盔",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "咸",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27364,77 +12051,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "糖醋里脊",
-    "flavors": [
-      "酸甜",
-      "甜"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：糖醋里脊"
-    ],
-    "legacy": {
-      "name": "糖醋里脊饭",
-      "emoji": "🍖",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27485,76 +12103,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "可乐鸡翅",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "可乐鸡翅",
-      "emoji": "🐔",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27603,80 +12153,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鱼香肉丝",
-    "flavors": [
-      "甜辣"
-    ],
-    "ingredients": [
-      "米饭/谷物",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐟 → 🍛",
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：鱼香肉丝"
-    ],
-    "legacy": {
-      "name": "鱼香肉丝饭",
-      "emoji": "🐟",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜辣"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27728,79 +12206,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鳗鱼",
-    "flavors": [
-      "甜",
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 日韩料理",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤鳗鱼",
-      "emoji": "🐟",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27853,77 +12260,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烧鸭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸭肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烧鸭"
-    ],
-    "legacy": {
-      "name": "烧鸭饭",
-      "emoji": "🦆",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -27977,85 +12315,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 22
-      },
-      "食堂": {
-        "min": 4,
-        "max": 15
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "红豆薏米粥",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食",
-      "易消化"
-    ],
-    "cookingMethods": [
-      "熬煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "红豆薏米粥",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28106,78 +12367,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "青椒肉丝饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "青椒肉丝饭",
-      "emoji": "🥒",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28228,81 +12419,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "饭团",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐟 → 🍙",
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：饭团"
-    ],
-    "legacy": {
-      "name": "三文鱼饭团",
-      "emoji": "🐟",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28358,73 +12476,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "宫保鸡丁",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "宫保鸡丁",
-      "emoji": "🐔",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣"
-      ]
-    },
     "equivalentGroupId": "宫保鸡丁_套餐族",
     "defaultPoolWeight": 0.8,
     "cooldownFamilyId": null,
@@ -28481,85 +12534,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "香炒面",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，建议确认地区风格。",
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 名称标准化 \"家常炒面\""
-    ],
-    "legacy": {
-      "name": "香炒面",
-      "emoji": "🍝",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28614,75 +12590,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "溜肉段",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "溜肉段",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28729,67 +12638,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "桂花糕",
-    "flavors": [
-      "甜",
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "桂花糕",
-      "emoji": "🍰",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -28840,80 +12690,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "猪排",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：猪排"
-    ],
-    "legacy": {
-      "name": "猪排饭",
-      "emoji": "🥩",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "脆"
-      ]
-    },
     "cooldownFamilyId": "猪排族",
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
@@ -28968,85 +12746,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "清炒时蔬",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "清炒时蔬",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29094,70 +12795,8 @@ module.exports = [
       "堂食",
       "自己做"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "锅贴",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "锅贴",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29210,85 +12849,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "玉米",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：玉米"
-    ],
-    "legacy": {
-      "name": "蒸玉米",
-      "emoji": "🌽",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29334,70 +12896,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "葱姜炒蟹",
-    "flavors": [
-      "鲜",
-      "香"
-    ],
-    "ingredients": [
-      "蟹"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "葱姜炒蟹",
-      "emoji": "🦀",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29448,64 +12948,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "叫花鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "叫花鸡",
-      "emoji": "🍗",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29553,71 +12997,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：烤鸡"
-    ],
-    "legacy": {
-      "name": "烤春鸡",
-      "emoji": "🍗",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29665,77 +13046,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "干炸丸子",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "干炸丸子",
-      "emoji": "🍡",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29786,85 +13098,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋类小食",
-    "flavors": [
-      "咸",
-      "香"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蛋类小食"
-    ],
-    "legacy": {
-      "name": "茶叶蛋",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "咸",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -29915,86 +13150,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：蛋花汤"
-    ],
-    "legacy": {
-      "name": "番茄蛋汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酸",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30050,76 +13207,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "椰浆饭",
-    "flavors": [
-      "香",
-      "辣"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 名称标准化 \"马来西亚椰浆饭\""
-    ],
-    "legacy": {
-      "name": "椰浆饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "香",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30175,76 +13264,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "小锅米线",
-    "flavors": [
-      "辣",
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "小锅米线",
-      "emoji": "🍲",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30300,75 +13321,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "姜母鸭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "滋补"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "姜母鸭",
-      "emoji": "🦆",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "滋补"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30418,72 +13372,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "老北京涮羊肉",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "羊肉",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "清淡",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "老北京涮羊肉",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "清淡"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -30533,80 +13423,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烧肉",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，建议明确广式烧肉、日式烧肉或其他做法。",
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烧肉",
-      "emoji": "🥓",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30657,84 +13475,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒸紫薯",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒸紫薯",
-      "emoji": "🍠",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30782,73 +13524,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "麻辣香锅",
-    "flavors": [
-      "辣",
-      "香",
-      "麻辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "煮制"
-    ],
     "spicyLevel": 3,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜"
-    ],
-    "legacy": {
-      "name": "麻辣香锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -30903,74 +13580,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "椒麻鸡",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "凉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "椒麻鸡",
-      "emoji": "🐓",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "凉"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31023,75 +13634,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "手撕鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "凉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "手撕鸡",
-      "emoji": "🐓",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "凉"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31140,77 +13684,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "油焖大虾",
-    "flavors": [
-      "鲜",
-      "酱香"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "焖制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "油焖大虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "酱香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31263,72 +13738,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "三杯鸡",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "三杯鸡",
-      "emoji": "🍗",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31380,80 +13791,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "菌菇火锅",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "菌菇",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "菌菇火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "素"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
@@ -31506,77 +13845,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "糖醋里脊",
-    "flavors": [
-      "酸甜",
-      "甜"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "糖醋里脊",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31628,80 +13898,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "猪排",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆",
-      "肉食"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：猪排"
-    ],
-    "legacy": {
-      "name": "炸猪排饭",
-      "emoji": "🥩",
-      "category": "日韩",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "脆",
-        "肉"
-      ]
-    },
     "cooldownFamilyId": "猪排族",
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -31756,84 +13954,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋类小食",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "嫩滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蛋类小食"
-    ],
-    "legacy": {
-      "name": "溏心蛋",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "嫩"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -31885,77 +14007,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "牛肉粉",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "牛肉",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类"
-    ],
-    "legacy": {
-      "name": "牛肉粉",
-      "emoji": "🐂",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32009,79 +14062,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "咖喱炒饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "咖喱炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32135,78 +14117,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "梅菜扣肉",
-    "flavors": [
-      "咸"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "梅菜扣肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "咸"
-      ]
-    },
     "equivalentGroupId": "梅菜扣肉_套餐族",
     "defaultPoolWeight": 0.8,
     "cooldownFamilyId": null,
@@ -32261,90 +14173,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "皮蛋豆腐",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋",
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "凉食",
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "皮蛋豆腐",
-      "emoji": "🥚",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32397,78 +14227,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "猪脚饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "猪脚饭",
-      "emoji": "🐷",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32521,73 +14281,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "火锅",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "清淡",
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：火锅"
-    ],
-    "legacy": {
-      "name": "椰子鸡火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "清淡"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -32638,79 +14333,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "土豆肉丝饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "土豆肉丝饭",
-      "emoji": "🥔",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32761,78 +14385,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "干煸豆角饭",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "豆制品",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐"
-    ],
-    "legacy": {
-      "name": "干煸豆角饭",
-      "emoji": "🫛",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -32887,76 +14441,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "木须肉饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "家常"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "木须肉饭",
-      "emoji": "🥚",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33010,86 +14496,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒸山药",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "滋补"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蒸山药",
-      "emoji": "🍠",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "滋补"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33137,75 +14545,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "软炸里脊",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "软炸里脊",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33257,75 +14598,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "宫保鸡丁",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：宫保鸡丁"
-    ],
-    "legacy": {
-      "name": "宫保鸡丁饭",
-      "emoji": "🐔",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "辣"
-      ]
-    },
     "equivalentGroupId": "宫保鸡丁_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -33384,77 +14658,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "川味火锅",
-    "flavors": [
-      "辣",
-      "麻辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合聚餐",
-      "热食"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：川味火锅"
-    ],
-    "legacy": {
-      "name": "重庆火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "社交"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -33511,77 +14716,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "黄焖鸡",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "焖制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "已加入去重分组：黄焖鸡"
-    ],
-    "legacy": {
-      "name": "黄焖鸡米饭",
-      "emoji": "🍗",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "辣"
-      ]
-    },
     "equivalentGroupId": "黄焖鸡_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -33635,76 +14771,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "清蒸鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "清淡"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "鱼种不明确，可保留为家常选项。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "清蒸鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33756,74 +14824,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "盐水鸭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "盐水鸭",
-      "emoji": "🦆",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33872,71 +14874,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "虾饺",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "虾",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "虾饺",
-      "emoji": "🦐",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -33988,71 +14927,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：鸡爪"
-    ],
-    "legacy": {
-      "name": "烤鸡爪",
-      "emoji": "🍗",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34099,73 +14975,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "寿司",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "寿司",
-      "emoji": "🍣",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34216,69 +15027,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "避风塘炒蟹",
-    "flavors": [
-      "香",
-      "鲜"
-    ],
-    "ingredients": [
-      "蟹"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "避风塘炒蟹",
-      "emoji": "🦀",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34332,79 +15082,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "辣子鸡丁饭",
-    "flavors": [
-      "辣",
-      "香",
-      "麻辣"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 3,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "辣子鸡丁饭",
-      "emoji": "🐔",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34459,72 +15138,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 45,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 50,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "户外烧烤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "属于用餐方式，不是单一菜品；保留为聚餐选项。",
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "户外烧烤",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "社交"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34571,69 +15186,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 72,
-        "max": 231
-      },
-      "到店吃": {
-        "min": 80,
-        "max": 220
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "清蒸大闸蟹",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "蟹"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "清蒸大闸蟹",
-      "emoji": "🦀",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "seasonTags": [
       "秋季"
     ],
@@ -34687,68 +15241,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸭脖",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鸭脖",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34803,76 +15297,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸辣粉",
-    "flavors": [
-      "酸",
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "酸辣粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "酸",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -34928,68 +15354,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "串串香",
-    "flavors": [
-      "辣",
-      "麻辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "煮制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "串串香",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "社交"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -35046,80 +15412,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "麻婆豆腐",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "豆制品",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：麻婆豆腐"
-    ],
-    "legacy": {
-      "name": "麻婆豆腐饭",
-      "emoji": "🧈",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "素"
-      ]
-    },
     "equivalentGroupId": "麻婆豆腐_套餐族",
     "defaultPoolWeight": 1,
     "cooldownFamilyId": null,
@@ -35176,75 +15470,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "宜宾燃面",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "宜宾燃面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -35302,70 +15529,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "双层牛肉堡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "牛肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "饱腹"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "双层牛肉堡",
-      "emoji": "🍔",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "饱腹"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -35413,84 +15578,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤土豆",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤土豆",
-      "emoji": "🥔",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -35538,85 +15627,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤红薯",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤红薯",
-      "emoji": "🍠",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "热"
-      ]
-    },
     "cooldownFamilyId": "红薯族",
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -35667,75 +15679,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海南鸡饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：海南鸡饭",
-      "2026-06-01: 名称标准化 \"海南鸡饭（新加坡式）\""
-    ],
-    "legacy": {
-      "name": "新加坡鸡饭",
-      "emoji": "🐔",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": []
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -35785,69 +15730,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "豌豆黄",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "绵软"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "豌豆黄",
-      "emoji": "🍰",
-      "category": "街边小吃",
-      "scene": "公司食堂",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "绵"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -35896,76 +15780,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "凉皮",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "凉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：凉皮"
-    ],
-    "legacy": {
-      "name": "擀面皮",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "凉"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36020,75 +15836,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酿苦瓜",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "酿苦瓜",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36134,71 +15883,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烧饼",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "坚果/种子",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "可能含坚果或种子"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烧饼",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "芝麻烧饼",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香",
-        "脆"
-      ]
-    },
     "cooldownFamilyId": "烧饼族",
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -36258,68 +15944,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "红油抄手",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36374,68 +16000,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "汤包",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：汤包"
-    ],
-    "legacy": {
-      "name": "小笼包",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "热"
-      ]
-    },
     "cooldownFamilyId": "包子族",
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -36489,81 +16055,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "香煎鳕鱼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "嫩滑",
-      "海鲜",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "香煎鳕鱼",
-      "emoji": "🐟",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "嫩",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36616,85 +16109,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤茄子",
-    "flavors": [
-      "蒜香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤茄子",
-      "emoji": "🍆",
-      "category": "火锅烧烤",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "蒜香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36741,76 +16157,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "猪肉盖饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "猪肉盖饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36860,68 +16208,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸭掌",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "鸭掌",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -36974,70 +16262,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤肠",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：烤肠"
-    ],
-    "legacy": {
-      "name": "烤香肠",
-      "emoji": "🌭",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37089,83 +16315,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "卤味",
-    "flavors": [
-      "香",
-      "咸",
-      "酱香"
-    ],
-    "ingredients": [
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "卤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称过于宽泛，建议后续拆分鸭脖、鸡爪等具体品类。",
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "卤味",
-      "emoji": "🥓",
-      "category": "街边小吃",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香",
-        "咸"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37212,78 +16363,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "孜然羊肉饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "羊肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "孜然羊肉饭",
-      "emoji": "🐑",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37334,77 +16415,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酿豆腐",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "豆制品",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉",
-      "含豆制品"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "酿豆腐",
-      "emoji": "🧈",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37456,69 +16468,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 72,
-        "max": 231
-      },
-      "到店吃": {
-        "min": 80,
-        "max": 220
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤全羊",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "羊肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤全羊",
-      "emoji": "🐑",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37567,70 +16518,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤羊排",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "羊肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤羊排",
-      "emoji": "🍖",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37678,69 +16567,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "酸",
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：鸡爪"
-    ],
-    "legacy": {
-      "name": "柠檬凤爪",
-      "emoji": "🐔",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "酸",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37797,88 +16625,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "新疆拌面",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "新疆拌面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -37936,82 +16684,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "泡菜饼",
-    "flavors": [
-      "辣",
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "泡菜饼",
-      "emoji": "🥬",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38068,77 +16742,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸菜炖粉条",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食",
-      "家常"
-    ],
-    "cookingMethods": [
-      "炖煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "酸菜炖粉条",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "热",
-        "家常"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38194,72 +16799,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "煎饼",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，建议确认山东煎饼或杂粮煎饼。",
-      "分类重构：日韩 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "煎饼",
-      "emoji": "🌯",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38315,87 +16856,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蔬菜汤",
-    "flavors": [
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蔬菜汤"
-    ],
-    "legacy": {
-      "name": "番茄蔬菜汤",
-      "emoji": "🍲",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38446,69 +16908,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "辣",
-      "酸"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：鸡爪"
-    ],
-    "legacy": {
-      "name": "泡椒凤爪",
-      "emoji": "🐔",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "酸"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38561,74 +16962,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "红烧鱼",
-    "flavors": [
-      "鲜",
-      "酱香"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "红烧"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "红烧鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38683,87 +17018,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "小酥肉",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "小酥肉",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38812,75 +17068,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "口水鸡",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "凉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "口水鸡",
-      "emoji": "🐓",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "凉"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -38932,70 +17121,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "玉米片",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "玉米"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 小吃点心",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "玉米片",
-      "emoji": "🌽",
-      "category": "西式",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "芝士",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -39048,79 +17175,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "生牛肉拌饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "牛肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 名称标准化 \"韩式生拌牛肉饭\""
-    ],
-    "legacy": {
-      "name": "生牛肉拌饭",
-      "emoji": "🍚",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "rawFood": true,
     "safetyNotice": "含生食或生腌食材，请根据个人情况谨慎选择",
     "defaultPoolWeight": 0,
@@ -39174,87 +17230,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉开边虾",
-    "flavors": [
-      "鲜",
-      "蒜香"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉开边虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "蒜香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -39302,66 +17279,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "汤包",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：汤包"
-    ],
-    "legacy": {
-      "name": "灌汤包",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜"
-      ]
-    },
     "cooldownFamilyId": "包子族",
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -39412,77 +17331,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "葱油饼",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "葱油饼",
-      "emoji": "🫓",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -39535,72 +17385,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "香",
-      "酱香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "卤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：鸡爪"
-    ],
-    "legacy": {
-      "name": "卤鸡爪",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -39652,77 +17438,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "肉骨茶饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "滋补"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 汤粥炖品",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "2026-06-01: 名称标准化 \"肉骨茶套餐\""
-    ],
-    "legacy": {
-      "name": "肉骨茶饭",
-      "emoji": "🧋",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "滋补"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -39774,73 +17491,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "盐焗鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "盐焗鸡",
-      "emoji": "🍗",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香"
-      ]
-    },
     "equivalentGroupId": "盐焗鸡_套餐族",
     "defaultPoolWeight": 0.7,
     "cooldownFamilyId": null,
@@ -39887,75 +17539,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 14
-      },
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "水果碗",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "水果"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "水果碗",
-      "emoji": "🫐",
-      "category": "轻食",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "清爽"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40002,79 +17587,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 2,
-        "max": 7
-      },
-      "外卖": {
-        "min": 5,
-        "max": 13
-      },
-      "到店吃": {
-        "min": 3,
-        "max": 12
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "豆浆",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "热食",
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "豆浆",
-      "emoji": "🧋",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "热",
-        "素"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40126,68 +17640,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤五花肉",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "烤五花肉",
-      "emoji": "🍖",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40238,78 +17692,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "虫草花鸡汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "滋补",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 慢（按首选场景估算）",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "虫草花鸡汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "滋补"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40360,70 +17744,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "火烧",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：火烧"
-    ],
-    "legacy": {
-      "name": "肉火烧",
-      "emoji": "🥯",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40479,70 +17801,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "爽滑",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "云吞",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "滑"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40599,78 +17859,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "萝卜牛腩汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "牛肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "萝卜牛腩汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40725,87 +17915,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 22
-      },
-      "食堂": {
-        "min": 4,
-        "max": 15
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "燕麦粥",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食",
-      "易消化"
-    ],
-    "cookingMethods": [
-      "熬煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "燕麦粥",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "热"
-      ]
-    },
     "cooldownFamilyId": "粥族",
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
@@ -40857,80 +17968,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "地三鲜",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：地三鲜"
-    ],
-    "legacy": {
-      "name": "地三鲜饭",
-      "emoji": "🥔",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -40982,71 +18021,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤馒头片",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "烤馒头片",
-      "emoji": "🍞",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41097,76 +18073,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酿青椒",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "酿青椒",
-      "emoji": "🥒",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41215,67 +18123,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤冷面",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食",
-      "凉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "烤冷面",
-      "emoji": "🍜",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41329,75 +18178,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 14
-      },
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "可丽饼",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "法式风格"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "可丽饼",
-      "emoji": "🥞",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "法"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41450,77 +18232,8 @@ module.exports = [
       "到店吃",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "冬瓜排骨汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "猪肉",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "冬瓜排骨汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41575,85 +18288,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蘑菇汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品"
-    ],
-    "legacy": {
-      "name": "蘑菇汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41708,87 +18344,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酸辣白菜",
-    "flavors": [
-      "酸辣",
-      "辣",
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "酸辣白菜",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "酸辣"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41840,87 +18397,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海鲜葱饼",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "海鲜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "海鲜葱饼",
-      "emoji": "🥞",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -41973,87 +18451,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "白灼虾",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "清淡",
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "白灼"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "白灼虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "清淡",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42104,75 +18503,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "糖醋排骨",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "糖醋排骨",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42222,72 +18554,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "黄焖鸡",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "焖制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "黄焖鸡",
-      "emoji": "🍗",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酱香"
-      ]
-    },
     "equivalentGroupId": "黄焖鸡_套餐族",
     "defaultPoolWeight": 0.85,
     "cooldownFamilyId": null,
@@ -42337,86 +18605,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "干煸四季豆",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食",
-      "餐馆做法可能含动物性配料，需确认"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "干煸四季豆",
-      "emoji": "🫛",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42471,74 +18661,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "兰州拉面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "兰州拉面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "热"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42598,82 +18722,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "葱油拌面",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "葱油拌面",
-      "emoji": "🍜",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42735,88 +18785,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蛋花汤"
-    ],
-    "legacy": {
-      "name": "丝瓜蛋汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42871,76 +18841,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "水煮鱼",
-    "flavors": [
-      "辣",
-      "鲜",
-      "麻辣"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "水煮"
-    ],
     "spicyLevel": 3,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "水煮鱼",
-      "emoji": "🐟",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -42998,77 +18900,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "猪脏粉",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "猪肉",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "猪脏粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43121,73 +18954,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "石锅拌饭",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "拌制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "石锅拌饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43244,77 +19012,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "担担面",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "担担面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43369,72 +19068,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "樟茶鸭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🧋 → 🦆",
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "樟茶鸭",
-      "emoji": "🧋",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": []
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43484,74 +19119,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "武汉热干面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "武汉热干面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": []
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43612,89 +19181,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蛋花汤"
-    ],
-    "legacy": {
-      "name": "青菜蛋汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43749,76 +19237,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "香煎牛排",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "牛肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "煎制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 西式简餐",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "香煎牛排",
-      "emoji": "🥩",
-      "category": "西式",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43867,74 +19287,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "四喜丸子",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "四喜丸子",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -43985,86 +19339,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 12
-      },
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 22
-      },
-      "食堂": {
-        "min": 4,
-        "max": 15
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "紫薯粥",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "热食",
-      "易消化"
-    ],
-    "cookingMethods": [
-      "熬煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "紫薯粥",
-      "emoji": "🥣",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "热"
-      ]
-    },
     "cooldownFamilyId": "粥族",
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
@@ -44116,76 +19392,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "酱肘子",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "酱肘子",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44232,69 +19440,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "章鱼小丸子",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "章鱼"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "章鱼小丸子",
-      "emoji": "🐙",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44346,66 +19493,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "天妇罗",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "天妇罗",
-      "emoji": "🍤",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44458,79 +19547,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤猪蹄",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "软糯"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤猪蹄",
-      "emoji": "🐷",
-      "category": "火锅烧烤",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44579,81 +19597,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "酱油炒饭",
-    "flavors": [
-      "香",
-      "酱香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "酱油炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44704,67 +19649,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸭翅",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "鸭翅",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44819,89 +19705,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海鲜泡菜饼",
-    "flavors": [
-      "鲜",
-      "辣"
-    ],
-    "ingredients": [
-      "海鲜",
-      "蔬菜",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "海鲜泡菜饼",
-      "emoji": "🥬",
-      "category": "日韩",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "辣",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -44962,87 +19767,8 @@ module.exports = [
       "食堂",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋花汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "蛋",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：蛋花汤"
-    ],
-    "legacy": {
-      "name": "紫菜蛋花汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "热"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45098,84 +19824,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "玉米浓汤",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "玉米浓汤",
-      "emoji": "🌽",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45228,80 +19878,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鸡排饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "酥脆",
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "鸡排饭",
-      "emoji": "🍗",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "脆",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45356,88 +19934,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉粉丝蒸虾",
-    "flavors": [
-      "鲜",
-      "蒜香"
-    ],
-    "ingredients": [
-      "虾",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜",
-      "热食"
-    ],
-    "cookingMethods": [
-      "蒸制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉粉丝蒸虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "蒜香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45490,77 +19988,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炸虾盖饭",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "虾",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "油炸"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "炸虾盖饭",
-      "emoji": "🍤",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45616,77 +20045,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "香辣蟹",
-    "flavors": [
-      "辣",
-      "鲜"
-    ],
-    "ingredients": [
-      "蟹"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "香辣蟹",
-      "emoji": "🦀",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45742,78 +20102,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鸡",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤鸡"
-    ],
-    "legacy": {
-      "name": "烤鸡翅",
-      "emoji": "🍗",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45866,69 +20156,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "馄饨/云吞/抄手",
-    "flavors": [
-      "辣",
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类",
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：馄饨/云吞/抄手"
-    ],
-    "legacy": {
-      "name": "抄手",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -45987,85 +20216,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "罗宋汤",
-    "flavors": [
-      "酸甜",
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "罗宋汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "酸甜"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46118,67 +20270,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "肉夹馍",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "肉夹馍",
-      "emoji": "🥙",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46232,78 +20325,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "番茄火锅",
-    "flavors": [
-      "酸甜",
-      "酸"
-    ],
-    "ingredients": [
-      "蔬菜",
-      "综合食材"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "番茄火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酸甜"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -46355,79 +20378,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鳗鱼饭",
-    "flavors": [
-      "甜",
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "鳗鱼饭",
-      "emoji": "🍱",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46485,85 +20437,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉西兰花",
-    "flavors": [
-      "蒜香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清爽少负担"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉西兰花",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "健康"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46613,89 +20488,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      },
-      "食堂": {
-        "min": 23,
-        "max": 77
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉粉丝扇贝",
-    "flavors": [
-      "鲜",
-      "蒜香"
-    ],
-    "ingredients": [
-      "贝类",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉粉丝扇贝",
-      "emoji": "🐚",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "蒜香",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46748,77 +20542,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鸡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：烤鸡"
-    ],
-    "legacy": {
-      "name": "烤鸡腿",
-      "emoji": "🍗",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46870,80 +20595,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "肥肠粉",
-    "flavors": [
-      "辣",
-      "香"
-    ],
-    "ingredients": [
-      "猪肉",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "肥肠粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "辣",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -46999,67 +20652,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "汤圆糯点",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：汤圆糯点"
-    ],
-    "legacy": {
-      "name": "糯米糕",
-      "emoji": "🫔",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47105,75 +20699,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤年糕",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 日韩料理",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤年糕",
-      "emoji": "🍡",
-      "category": "火锅烧烤",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "糯",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47227,88 +20754,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "清汤面",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "清汤面",
-      "emoji": "🍲",
-      "category": "轻食",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47363,71 +20810,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "鸡爪",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）",
-      "已加入去重分组：鸡爪"
-    ],
-    "legacy": {
-      "name": "虎皮鸡爪",
-      "emoji": "🍗",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47475,72 +20859,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "韭菜盒子",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：韩菜盒子 → 韭菜盒子",
-      "Emoji 校正：🥬 → 🥟",
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "2026-06-01: 归为小吃/饮品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "韩菜盒子",
-      "emoji": "🥬",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47591,76 +20911,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "越南河粉",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "越南河粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "清淡",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47719,74 +20971,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "炒河粉",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：炒河粉"
-    ],
-    "legacy": {
-      "name": "香炒河粉",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": "炒河粉_合并组",
     "cooldownFamilyId": null,
@@ -47842,76 +21028,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 14
-      },
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "松饼",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "面食/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "适合早午餐"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "松饼",
-      "emoji": "🥞",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "甜",
-        "早午餐"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -47959,71 +21077,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "葱油鸡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "鸡肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "原始标签为空，已依据菜名和常见用餐方式补充结构化标签。",
-      "场景复核：原场景“公司食堂”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "葱油鸡",
-      "emoji": "🍗",
-      "category": "家常菜",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "慢",
-      "tags": []
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48077,85 +21132,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蛋类小食",
-    "flavors": [
-      "咸",
-      "香",
-      "酱香"
-    ],
-    "ingredients": [
-      "蛋"
-    ],
-    "dietaryFlags": [
-      "含蛋"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "卤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：蛋类小食"
-    ],
-    "legacy": {
-      "name": "卤蛋",
-      "emoji": "🥚",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "咸",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48204,69 +21182,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 94
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 90
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "烤牛肉",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "牛肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 慢（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤牛肉",
-      "emoji": "🍢",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48314,75 +21231,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "咖喱牛腩",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "牛肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：咖喱牛腩"
-    ],
-    "legacy": {
-      "name": "咖喱牛腩饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48434,75 +21284,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "红烧茄子",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "红烧"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "红烧茄子",
-      "emoji": "🍆",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "酱香"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48552,72 +21335,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 45,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 50,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 55
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 100
-      }
-    },
-    "groupId": "新疆烧烤",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）",
-      "具体食材需确认"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "属于烧烤风格，建议后续拆分代表性菜品。",
-      "分类重构：火锅烧烤 → 烧烤",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "新疆烧烤",
-      "emoji": "🍢",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
@@ -48669,84 +21388,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉茄子",
-    "flavors": [
-      "蒜香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蒜蓉茄子",
-      "emoji": "🍆",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "蒜香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48793,79 +21436,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "黑椒牛柳饭",
-    "flavors": [
-      "辣"
-    ],
-    "ingredients": [
-      "牛肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "黑椒牛柳饭",
-      "emoji": "🥩",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "辣"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -48917,69 +21489,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 72,
-        "max": 231
-      },
-      "到店吃": {
-        "min": 80,
-        "max": 220
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "醉蟹",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "蟹"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "醉蟹",
-      "emoji": "🦀",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "rawFood": true,
     "safetyNotice": "含生食或生腌食材，请根据个人情况谨慎选择",
     "seasonTags": [
@@ -49035,86 +21546,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "海鲜炒饭",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "海鲜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "炒制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "海鲜炒饭",
-      "emoji": "🍛",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49169,76 +21602,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "凉皮",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "凉食",
-      "爽滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：凉皮"
-    ],
-    "legacy": {
-      "name": "米皮",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "凉",
-        "滑"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49290,76 +21655,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "天妇罗",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：日韩 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）",
-      "已加入去重分组：天妇罗"
-    ],
-    "legacy": {
-      "name": "天妇罗盖饭",
-      "emoji": "🍤",
-      "category": "日韩",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49412,76 +21709,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烧鸭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "鸭肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烧鸭",
-      "emoji": "🦆",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49529,74 +21758,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 14
-      },
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "爆米花",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "玉米"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "酥脆"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "爆米花",
-      "emoji": "🌽",
-      "category": "街边小吃",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "脆"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49642,64 +21805,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "棉花糖",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "糖类"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "棉花糖",
-      "emoji": "🍬",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "甜"
-      ]
-    },
     "defaultPoolWeight": 0.1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -49749,83 +21856,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 20,
-        "max": 72
-      },
-      "外卖": {
-        "min": 40,
-        "max": 136
-      },
-      "到店吃": {
-        "min": 45,
-        "max": 130
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 35,
-        "max": 60
-      },
-      "到店吃": {
-        "min": 60,
-        "max": 120
-      }
-    },
-    "groupId": "酸菜鱼",
-    "flavors": [
-      "酸",
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "蔬菜",
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "热食",
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "涮煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 火锅冒菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 慢（按首选场景估算）",
-      "已加入去重分组：酸菜鱼"
-    ],
-    "legacy": {
-      "name": "酸菜鱼火锅",
-      "emoji": "🥘",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "酸",
-        "鲜"
-      ]
-    },
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
@@ -49882,81 +21914,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 26
-      },
-      "外卖": {
-        "min": 11,
-        "max": 50
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 48
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "豆腐汤",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类",
-      "豆制品"
-    ],
-    "dietaryFlags": [
-      "含海鲜",
-      "含豆制品"
-    ],
-    "features": [
-      "海鲜",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "已加入去重分组：豆腐汤",
-      "2026-06-01: 归为汤品，不作为单独正餐推荐"
-    ],
-    "legacy": {
-      "name": "鲫鱼豆腐汤",
-      "emoji": "🍲",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50011,73 +21970,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "煲仔饭",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "煲仔饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50132,88 +22026,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "味噌蔬菜汤",
-    "flavors": [
-      "酱香"
-    ],
-    "ingredients": [
-      "豆制品",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "含豆制品",
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "味噌蔬菜汤",
-      "emoji": "🍲",
-      "category": "轻食",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50266,67 +22080,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 26
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "艾窝窝",
-    "flavors": [
-      "甜"
-    ],
-    "ingredients": [
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 甜品饮品",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "艾窝窝",
-      "emoji": "🍰",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "甜",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50372,71 +22127,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烤鱼",
-    "flavors": [
-      "辣",
-      "鲜"
-    ],
-    "ingredients": [
-      "鱼类"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "适合聚餐"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🐠 → 🐟",
-      "分类重构：火锅烧烤 → 家常菜",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "已加入去重分组：烤鱼"
-    ],
-    "legacy": {
-      "name": "纸上烤鱼",
-      "emoji": "🐠",
-      "category": "火锅烧烤",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "辣",
-        "鲜"
-      ]
-    },
     "cooldownFamilyId": "烤鱼族",
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
@@ -50492,78 +22184,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "牛肉盖饭",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "牛肉",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 饭类套餐",
-      "场景复核：原场景“自己做”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "牛肉盖饭",
-      "emoji": "🍚",
-      "category": "中式快餐",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50617,75 +22239,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "油泼扯面（biángbiáng面）",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：Biangbiang面 → 油泼扯面（biángbiáng面）",
-      "分类重构：中式快餐 → 面食粉类",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "Biangbiang面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50743,83 +22298,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 16,
-        "max": 61
-      },
-      "外卖": {
-        "min": 32,
-        "max": 116
-      },
-      "到店吃": {
-        "min": 35,
-        "max": 110
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "蟹粉豆腐",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "蟹",
-      "豆制品",
-      "面食/粉类"
-    ],
-    "dietaryFlags": [
-      "含海鲜",
-      "含豆制品"
-    ],
-    "features": [
-      "嫩滑",
-      "海鲜",
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "Emoji 校正：🧈 → 🦀",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "蟹粉豆腐",
-      "emoji": "🧈",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "鲜",
-        "嫩",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -50876,87 +22356,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "椒盐虾",
-    "flavors": [
-      "香",
-      "鲜"
-    ],
-    "ingredients": [
-      "虾"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "椒盐虾",
-      "emoji": "🦐",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰💰",
-      "time": "慢",
-      "tags": [
-        "香",
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51009,77 +22410,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "臊子面",
-    "flavors": [
-      "酸辣",
-      "辣"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "名称规范化：臬子面 → 臊子面",
-      "分类重构：中式快餐 → 面食粉类",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "臬子面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "酸辣"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51134,68 +22466,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 22,
-        "max": 89
-      },
-      "到店吃": {
-        "min": 25,
-        "max": 85
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "汉堡",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "名称较宽泛，可保留为随机选项。",
-      "分类重构：西式 → 西式简餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "汉堡",
-      "emoji": "🍔",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51249,85 +22521,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 5,
-        "max": 21
-      },
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 50,
-        "max": 120
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "冬阴功汤面",
-    "flavors": [
-      "酸辣",
-      "鲜",
-      "辣",
-      "酸"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 2,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 面食粉类",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "冬阴功汤面",
-      "emoji": "🍲",
-      "category": "中式快餐",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "酸辣",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51388,85 +22583,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蚝油生菜",
-    "flavors": [
-      "鲜",
-      "酱香"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：家常菜 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蚝油生菜",
-      "emoji": "🥬",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "鲜"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51514,77 +22632,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "西班牙海鲜饭",
-    "flavors": [
-      "鲜"
-    ],
-    "ingredients": [
-      "海鲜",
-      "米饭/谷物"
-    ],
-    "dietaryFlags": [
-      "含海鲜"
-    ],
-    "features": [
-      "海鲜"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": false,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：西式 → 饭类套餐",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。"
-    ],
-    "legacy": {
-      "name": "西班牙海鲜饭",
-      "emoji": "🍚",
-      "category": "西式",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "海鲜"
-      ]
-    },
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51642,86 +22691,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蔬菜汤",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食",
-      "清淡",
-      "热食"
-    ],
-    "cookingMethods": [
-      "汤煮"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：轻食 → 汤粥炖品",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "蔬菜汤",
-      "emoji": "🍲",
-      "category": "轻食",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "素",
-        "清淡"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51773,69 +22744,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "东坡肘子",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "预算复核：💰 → 💰💰（按中国城市常见消费区间估算）",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "东坡肘子",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "外卖",
-      "budget": "💰",
-      "time": "快",
-      "tags": [
-        "肉",
-        "糯"
-      ]
-    },
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -51885,76 +22795,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 8,
-        "max": 30
-      },
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 25,
-        "max": 50
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "狮子头",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食",
-      "嫩滑"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "已逐条复核，未发现需要单独标注的问题。"
-    ],
-    "legacy": {
-      "name": "狮子头",
-      "emoji": "🍖",
-      "category": "家常菜",
-      "scene": "自己做",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "肉",
-        "嫩"
-      ]
-    },
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -52002,68 +22844,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 5,
-        "max": 23
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 22
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 5,
-        "max": 20
-      }
-    },
-    "groupId": "烤肠",
-    "flavors": [
-      "家常"
-    ],
-    "ingredients": [
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "肉食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：街边小吃 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）"
-    ],
-    "legacy": {
-      "name": "烤肠",
-      "emoji": "🌭",
-      "category": "街边小吃",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "肉"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -52115,86 +22897,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 15
-      },
-      "外卖": {
-        "min": 5,
-        "max": 29
-      },
-      "到店吃": {
-        "min": 6,
-        "max": 28
-      },
-      "食堂": {
-        "min": 4,
-        "max": 20
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      },
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤金针菇",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "菌菇",
-      "蔬菜"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [
-      "素食"
-    ],
-    "cookingMethods": [
-      "烧烤/烤制"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：火锅烧烤 → 配菜",
-      "预算复核：💰💰 → 💰（按中国城市常见消费区间估算）",
-      "耗时复核：慢 → 快（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烤金针菇",
-      "emoji": "🍄",
-      "category": "火锅烧烤",
-      "scene": "外卖",
-      "budget": "💰💰",
-      "time": "慢",
-      "tags": [
-        "素",
-        "香"
-      ]
-    },
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -52239,70 +22943,8 @@ module.exports = [
       "外卖",
       "到店吃"
     ],
-    "primaryScene": "到店吃",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 16,
-        "max": 58
-      },
-      "到店吃": {
-        "min": 18,
-        "max": 55
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      }
-    },
-    "groupId": "烧麦",
-    "flavors": [
-      "香"
-    ],
-    "ingredients": [
-      "面食/谷物",
-      "肉类（具体食材需确认）"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [
-      "软糯"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "分类重构：中式快餐 → 小吃点心",
-      "场景复核：原场景“堂食”未保留，改为更常见的中国用户场景。",
-      "耗时复核：快 → 一般（按首选场景估算）"
-    ],
-    "legacy": {
-      "name": "烧麦",
-      "emoji": "🥟",
-      "category": "中式快餐",
-      "scene": "堂食",
-      "budget": "💰💰",
-      "time": "快",
-      "tags": [
-        "糯",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "包子族",
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -52358,74 +23000,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "福建炒面",
-    "flavors": [
-      "鲜",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "2026-06-01: 从\"福建面\"拆分"
-    ],
-    "legacy": {
-      "name": "福建面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "面食族",
     "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
@@ -52484,74 +23060,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "厦门炒面线",
-    "flavors": [
-      "鲜",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "2026-06-01: 从\"福建面\"拆分"
-    ],
-    "legacy": {
-      "name": "福建面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "面食族",
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
@@ -52609,74 +23119,8 @@ module.exports = [
       "到店吃",
       "食堂"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 11,
-        "max": 40
-      },
-      "到店吃": {
-        "min": 12,
-        "max": 38
-      },
-      "食堂": {
-        "min": 8,
-        "max": 27
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算，实际价格受城市、份量和商家影响",
-    "timeLevel": "一般",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 25,
-        "max": 45
-      },
-      "到店吃": {
-        "min": 15,
-        "max": 45
-      },
-      "食堂": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "福州拌面",
-    "flavors": [
-      "鲜",
-      "香"
-    ],
-    "ingredients": [
-      "面食/粉类"
-    ],
-    "dietaryFlags": [],
-    "features": [
-      "热食"
-    ],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "需人工确认",
-    "reviewNotes": [
-      "2026-06-01: 从\"福建面\"拆分"
-    ],
-    "legacy": {
-      "name": "福建面",
-      "emoji": "🍜",
-      "category": "中式快餐",
-      "scene": "公司食堂",
-      "budget": "💰",
-      "time": "慢",
-      "tags": [
-        "鲜",
-        "香"
-      ]
-    },
     "cooldownFamilyId": "面食族",
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
@@ -52735,56 +23179,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "水饺",
-    "flavors": [
-      "家常",
-      "饱腹",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -52843,60 +23239,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "牛肉面",
-    "flavors": [
-      "鲜",
-      "香",
-      "辣"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -52954,56 +23298,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "西红柿鸡蛋面",
-    "flavors": [
-      "家常",
-      "鲜",
-      "素食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53060,60 +23356,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 30,
-        "max": 60
-      },
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "鸡公煲",
-    "flavors": [
-      "辣",
-      "香",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.38,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53165,60 +23409,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "烤肉拌饭",
-    "flavors": [
-      "香",
-      "肉",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53271,60 +23463,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鸡腿饭",
-    "flavors": [
-      "肉",
-      "酥脆",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53377,60 +23517,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "红烧排骨饭",
-    "flavors": [
-      "甜",
-      "酱香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53481,60 +23569,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "土豆烧牛肉饭",
-    "flavors": [
-      "家常",
-      "肉",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53586,60 +23622,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "青椒炒肉饭",
-    "flavors": [
-      "辣",
-      "香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.9,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53694,60 +23678,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "农家小炒肉饭",
-    "flavors": [
-      "辣",
-      "香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.9,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53801,60 +23733,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "自选中式快餐",
-    "flavors": [
-      "家常",
-      "饱腹",
-      "适合聚餐"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -53904,59 +23784,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "两荤一素盒饭",
-    "flavors": [
-      "家常",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54008,56 +23837,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "青椒炒肉",
-    "flavors": [
-      "辣",
-      "香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54111,56 +23892,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "农家小炒肉",
-    "flavors": [
-      "辣",
-      "香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54214,56 +23947,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "红烧排骨",
-    "flavors": [
-      "甜",
-      "酱香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54312,56 +23997,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "土豆烧牛肉",
-    "flavors": [
-      "家常",
-      "肉",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54410,56 +24047,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "红烧鸡块",
-    "flavors": [
-      "酱香",
-      "肉",
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54508,56 +24097,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜薹炒肉",
-    "flavors": [
-      "香",
-      "肉",
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54607,56 +24148,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "青椒土豆丝",
-    "flavors": [
-      "酸辣",
-      "素食",
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54705,56 +24198,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "蒜蓉油麦菜",
-    "flavors": [
-      "素",
-      "清淡",
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54805,56 +24250,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "清炒上海青",
-    "flavors": [
-      "素",
-      "清淡",
-      "家常"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -54906,56 +24303,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "清炒西兰花",
-    "flavors": [
-      "素",
-      "清淡",
-      "健康"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.18,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55005,56 +24354,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "西红柿鸡蛋汤",
-    "flavors": [
-      "鲜",
-      "酸",
-      "清淡"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55108,60 +24409,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "鲜肉包",
-    "flavors": [
-      "肉",
-      "家常",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55213,60 +24462,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "菜包",
-    "flavors": [
-      "素",
-      "家常",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "可作为素食"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55317,55 +24514,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "馒头",
-    "flavors": [
-      "家常",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55416,55 +24566,8 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "primaryScene": "自己做",
-    "budgetCnyByScene": {
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "花卷",
-    "flavors": [
-      "家常",
-      "香"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55514,60 +24617,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "皮蛋瘦肉粥",
-    "flavors": [
-      "鲜",
-      "咸",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55623,60 +24674,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "肠粉",
-    "flavors": [
-      "鲜",
-      "滑嫩",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55733,60 +24732,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "豆浆油条套餐",
-    "flavors": [
-      "家常",
-      "酥脆",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55844,60 +24791,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "杂粮煎饼",
-    "flavors": [
-      "香",
-      "酥脆",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -55956,60 +24851,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "桂林米粉",
-    "flavors": [
-      "酸辣",
-      "香",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 1,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56068,60 +24911,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "常德米粉",
-    "flavors": [
-      "辣",
-      "香",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56181,60 +24972,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "沙县拌面",
-    "flavors": [
-      "酱香",
-      "香",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56292,60 +25031,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "扁肉",
-    "flavors": [
-      "鲜",
-      "肉",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56397,60 +25084,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "广式烧腊双拼饭",
-    "flavors": [
-      "肉",
-      "香",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56502,60 +25137,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "武汉豆皮",
-    "flavors": [
-      "香",
-      "酥脆",
-      "热食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56616,60 +25199,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "长沙米粉",
-    "flavors": [
-      "辣",
-      "香",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56725,59 +25256,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "东北盒饭",
-    "flavors": [
-      "家常",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56829,60 +25309,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "慢",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 30,
-        "max": 60
-      },
-      "自己做": {
-        "min": 30,
-        "max": 60
-      }
-    },
-    "groupId": "新疆抓饭",
-    "flavors": [
-      "香",
-      "肉",
-      "饱腹"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -56937,60 +25365,8 @@ module.exports = [
       "自己做",
       "外卖"
     ],
-    "primaryScene": "堂食",
-    "budgetCnyByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 40
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "外卖": {
-        "min": 8,
-        "max": 35
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "堂食": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "云南饵丝",
-    "flavors": [
-      "鲜",
-      "香",
-      "面食"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 0,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
@@ -57051,60 +25427,8 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "primaryScene": "外卖",
-    "budgetCnyByScene": {
-      "外卖": {
-        "min": 8,
-        "max": 35
-      },
-      "自己做": {
-        "min": 3,
-        "max": 20
-      },
-      "堂食": {
-        "min": 10,
-        "max": 40
-      }
-    },
-    "budgetBasis": "中国城市常见消费估算",
-    "timeLevel": "快",
-    "timeMinutesByScene": {
-      "外卖": {
-        "min": 10,
-        "max": 25
-      },
-      "自己做": {
-        "min": 10,
-        "max": 25
-      }
-    },
-    "groupId": "贵州羊肉粉",
-    "flavors": [
-      "辣",
-      "香",
-      "肉"
-    ],
-    "ingredients": [
-      "综合食材"
-    ],
-    "dietaryFlags": [
-      "含肉"
-    ],
-    "features": [],
-    "cookingMethods": [
-      "常规制作"
-    ],
     "spicyLevel": 2,
     "enabled": true,
-    "pickCount": 0,
-    "lastPickedAt": null,
-    "cooldownDays": 3,
-    "favorite": false,
-    "reviewStatus": "已审查",
-    "reviewNotes": [
-      "2026-06-01: 新增高频菜品"
-    ],
-    "legacy": null,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
