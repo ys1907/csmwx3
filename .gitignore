@@ -21,3 +21,6 @@ Thumbs.db
 
 # 设计过程产物（brainstorming visual companion mockup 等）
 .superpowers/
+
+# ChatGPT 生成的设计草图（根目录，未参与打包，避免误传与超 2MB 主包）
+ChatGPT Image*.png

@@ -3,7 +3,11 @@
   "packOptions": {
     "ignore": [
       { "type": "glob", "value": "**/*.test.js" },
-      { "type": "suffix", "value": ".md" }
+      { "type": "suffix", "value": ".md" },
+      { "type": "prefix", "value": "ChatGPT Image" },
+      { "type": "folder", "value": "scripts" },
+      { "type": "folder", "value": ".superpowers" },
+      { "type": "folder", "value": ".claude" }
     ],
     "include": []
   },
