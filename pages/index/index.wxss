@@ -257,7 +257,8 @@
 .toggle::after { content: ''; position: absolute; top: 4rpx; left: 4rpx; width: 44rpx; height: 44rpx; border-radius: 50%; background: #fff; box-shadow: var(--shadow-card); transition: transform var(--transition-base); }
 .toggle.on { background: var(--primary); }
 .toggle.on::after { transform: translateX(36rpx); }
-.sheet-apply { width: 100%; margin-top: 32rpx; }
+/* box-sizing 必须 border-box：btn-eat 自带 108rpx 横向内边距，content-box 下 width:100% 会右溢出 Sheet */
+.sheet-apply { width: 100%; box-sizing: border-box; margin-top: 32rpx; }
 .picker-list { margin-top: 16rpx; }
 .picker-item { display: flex; justify-content: space-between; align-items: center; padding: 28rpx 8rpx; font-size: 30rpx; color: var(--text-primary); border-bottom: 1rpx solid var(--separator); }
 .picker-item.active { color: var(--primary); font-weight: 600; }

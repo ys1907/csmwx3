@@ -122,10 +122,73 @@ Page({
 
   onShareAppMessage() {
     const { currentResult } = this.data
-    if (currentResult) {
-      return { title: `今天推荐：${currentResult.emoji} ${currentResult.name}`, path: '/pages/index/index' }
+    const title = currentResult ? `到底该吃啥？我抽到了「${currentResult.name}」` : '到底该吃啥'
+    const fallback = { title, path: '/pages/index/index' }
+    // 不传 imageUrl 时微信默认截当前页面顶部 5:4 当分享图（效果差）；
+    // 用离屏 canvas 现画一张定制封面，3 秒内完成即生效，失败/超时自动回退 fallback
+    return {
+      ...fallback,
+      promise: this.buildShareCover(currentResult)
+        .then(imageUrl => ({ ...fallback, imageUrl }))
+        .catch(() => fallback),
     }
-    return { title: '到底吃点啥 · 情侣版', path: '/pages/index/index' }
+  },
+
+  // 绘制 5:4 分享封面（500×400）：奶油底 + 白卡 + 大 emoji + 文案。复用按需挂载的 #shareCanvas。
+  buildShareCover(food) {
+    return new Promise((resolve, reject) => {
+      if (this._shareBusy) { reject(new Error('share canvas busy')); return }
+      this._shareRequestId = (this._shareRequestId || 0) + 1
+      this.setData({ shareCanvasMounted: true }, () => {
+        const start = () => {
+          const query = wx.createSelectorQuery()
+          query.select('#shareCanvas').fields({ node: true }).exec((res) => {
+            if (!res[0] || !res[0].node) { this.releaseShareCanvas(); reject(new Error('no canvas')); return }
+            try {
+              const canvas = res[0].node
+              this._shareCanvasNode = canvas
+              const ctx = canvas.getContext('2d')
+              const dpr = (wx.getWindowInfo && wx.getWindowInfo().pixelRatio) || 2
+              const w = 500, h = 400
+              canvas.width = w * dpr
+              canvas.height = h * dpr
+              ctx.scale(dpr, dpr)
+              ctx.fillStyle = '#FCF7F1'
+              ctx.fillRect(0, 0, w, h)
+              // 白色圆角卡
+              const x = 28, y = 28, rw = w - 56, rh = h - 56, r = 28
+              ctx.fillStyle = '#FFFFFF'
+              ctx.beginPath()
+              ctx.moveTo(x + r, y)
+              ctx.lineTo(x + rw - r, y); ctx.arcTo(x + rw, y, x + rw, y + rh, r)
+              ctx.lineTo(x + rw, y + rh - r); ctx.arcTo(x + rw, y + rh, x, y + rh, r)
+              ctx.lineTo(x + r, y + rh); ctx.arcTo(x, y + rh, x, y, r)
+              ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + rw, y, r)
+              ctx.closePath(); ctx.fill()
+              ctx.textAlign = 'center'
+              ctx.font = '130px sans-serif'
+              ctx.fillText(food ? food.emoji : '🎁', w / 2, 195)
+              ctx.fillStyle = '#4A3F3A'
+              ctx.font = 'bold 42px sans-serif'
+              ctx.fillText(food ? food.name : '到底该吃啥', w / 2, 280)
+              ctx.fillStyle = '#FF9466'
+              ctx.font = '24px sans-serif'
+              ctx.fillText(food ? '今天就吃这个！' : '轻触揭晓今天的命运', w / 2, 326)
+              wx.canvasToTempFilePath({
+                canvas,
+                success: (r2) => { this.releaseShareCanvas(); resolve(r2.tempFilePath) },
+                fail: (err) => { this.releaseShareCanvas(); reject(err) },
+              })
+            } catch (e) {
+              this.releaseShareCanvas()
+              reject(e)
+            }
+          })
+        }
+        if (wx.nextTick) wx.nextTick(start)
+        else setTimeout(start, 0)
+      })
+    })
   },
 
   clearTimer(name) {

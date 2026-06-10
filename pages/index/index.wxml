@@ -61,8 +61,8 @@
         <text class="share-link" hover-class="share-link-hover" hover-stay-time="70" bindtap="onShareResult">📤 生成分享卡片</text>
       </block>
 
-      <!-- 凑一桌入口（仅待揭晓态显示） -->
-      <view wx:if="{{boxPhase === 'idle'}}" class="combo-entry" hover-class="combo-entry-hover" hover-stay-time="70" bindtap="buildCombo">🍱 两个人？帮你们凑一桌</view>
+      <!-- 凑一桌入口：按用户要求暂时隐藏（buildCombo 与凑一桌 Sheet 的代码保留，恢复时取消注释即可） -->
+      <!-- <view wx:if="{{boxPhase === 'idle'}}" class="combo-entry" hover-class="combo-entry-hover" hover-stay-time="70" bindtap="buildCombo">🍱 两个人？帮你们凑一桌</view> -->
     </view>
   </view>
 
