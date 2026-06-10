@@ -18,9 +18,12 @@
 .intro-title-glass { margin-top: 36rpx; font-size: 44rpx; font-weight: 700; color: var(--text-primary); }
 .intro-sub-glass { margin-top: 12rpx; font-size: 26rpx; color: var(--text-secondary); }
 
-/* ===== 推荐 tab ===== */
-.home { display: flex; flex-direction: column; min-height: 100vh; padding-bottom: calc(124rpx + env(safe-area-inset-bottom)); }
-.topbar { display: flex; justify-content: space-between; align-items: center; padding: calc(env(safe-area-inset-top) + 150rpx) 44rpx 8rpx; }
+/* ===== 推荐 tab =====
+   单屏布局：height 精确 100vh（border-box 含底部 tabbar 留白）+ overflow hidden，推荐页不滚动；
+   竖向尺寸不用 rpx 定死（rpx 随屏宽膨胀，宽矮屏会把 720rpx 卡片撑出视口），改用 flex 分配 + max 封顶。 */
+.home { display: flex; flex-direction: column; height: 100vh; box-sizing: border-box; overflow: hidden; padding-bottom: calc(124rpx + env(safe-area-inset-bottom)); }
+/* 顶部留白用 px：微信胶囊是 px 定位，rpx 常量在宽屏上会虚高 */
+.topbar { flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; padding: calc(env(safe-area-inset-top) + 60px) 44rpx 8rpx; }
 .app-title { font-size: 44rpx; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5rpx; }
 .app-date { display: block; font-size: 24rpx; color: var(--text-secondary); margin-top: 6rpx; }
 .gear {
@@ -30,7 +33,7 @@
 }
 .gear-dot { position: absolute; top: 14rpx; right: 14rpx; width: 14rpx; height: 14rpx; border-radius: 50%; background: var(--primary); }
 
-.stage { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 80rpx 64rpx 40rpx; gap: 40rpx; }
+.stage { position: relative; flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24rpx 64rpx 32rpx; gap: 28rpx; }
 .stage.aura-SSR::before {
   content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background: radial-gradient(circle at 50% 42%, rgba(255,236,200,0) 26%, rgba(255,206,150,0.42) 60%, rgba(235,169,196,0.42) 86%, rgba(201,139,255,0.30) 100%);
@@ -40,7 +43,9 @@
 
 /* ===== 盲盒卡 ===== */
 .boxcard {
-  position: relative; z-index: 1; width: 100%; height: 720rpx; border-radius: 56rpx;
+  position: relative; z-index: 1; width: 100%; border-radius: 56rpx;
+  /* 高度随可用空间伸缩：360rpx 保底（容纳 emoji+文案+点），720rpx 封顶（窄长屏的设计稿尺寸） */
+  flex: 1 1 auto; min-height: 360rpx; max-height: 720rpx;
   background: var(--card-bg); box-shadow: var(--shadow-soft);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24rpx;
   animation: boxFloat 3.4s ease-in-out infinite;
@@ -92,8 +97,10 @@
 
 /* ===== 揭晓菜卡 ===== */
 .dishcard {
-  position: relative; z-index: 1; width: 100%; min-height: 720rpx; box-sizing: border-box;
-  background: var(--card-bg); border-radius: 56rpx; padding: 72rpx 44rpx 64rpx;
+  position: relative; z-index: 1; width: 100%; box-sizing: border-box;
+  /* 高度随可用空间伸缩、720rpx 封顶；不设 min-height:0，flex 的 auto 下限保证卡片永远 ≥ 内容高 */
+  flex: 1 1 auto; max-height: 720rpx;
+  background: var(--card-bg); border-radius: 56rpx; padding: 48rpx 44rpx;
   box-shadow: var(--shadow-soft); text-align: center;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
@@ -169,7 +176,7 @@
 }
 
 /* ===== 卡外操作 ===== */
-.dish-actions { display: flex; flex-direction: column; align-items: center; gap: 12rpx; }
+.dish-actions { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 12rpx; }
 .btn-eat {
   display: inline-flex; align-items: center; justify-content: center; min-height: 96rpx; padding: 0 108rpx;
   border-radius: 48rpx; font-size: 32rpx; font-weight: 700; color: #fff;
@@ -199,7 +206,7 @@
 .tab.on { color: var(--primary); font-weight: 600; }
 
 /* ===== 我的 tab ===== */
-.mine { padding: calc(env(safe-area-inset-top) + 150rpx) 44rpx calc(160rpx + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 24rpx; }
+.mine { padding: calc(env(safe-area-inset-top) + 60px) 44rpx calc(160rpx + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 24rpx; }
 .mine-header .app-title { font-size: 44rpx; font-weight: 700; }
 .mine-card { background: var(--card-bg); border-radius: 36rpx; padding: 36rpx; box-shadow: var(--shadow-card); }
 .streak-card { display: flex; align-items: baseline; gap: 14rpx; }
