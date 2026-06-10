@@ -3,10 +3,38 @@ const { SCENE_OPTIONS, BUDGET_OPTIONS, TIME_OPTIONS, TASTE_OPTIONS } = require('
 const { shuffleArray } = require('./util.js')
 
 const THREE_DAYS = 3 * 24 * 60 * 60 * 1000
-// 转盘固定 8 个扇区，每扇 45°，emoji 居中偏移 22.5°
-const WHEEL_SECTORS = 8
-const SECTOR_DEG = 360 / WHEEL_SECTORS
-const SECTOR_OFFSET = SECTOR_DEG / 2
+
+// 三套场景词表的对齐桥：UI 选项（SCENE_OPTIONS）↔ 数据词表（f.scene / f.scenes 的取值、availability 的 key）。
+// 数据治理后 scenes 数组用「到店吃」、availability 用「食堂」，与 UI 的「堂食」「公司食堂」措辞不同，
+// 所有按场景的匹配必须经 sceneAliases 展开，否则会静默匹配不到。
+const SCENE_ALIASES = {
+  '外卖': ['外卖'],
+  '堂食': ['堂食', '到店吃'],
+  '自己做': ['自己做'],
+  '公司食堂': ['公司食堂', '食堂'],
+}
+
+function sceneAliases(sceneValue) {
+  return SCENE_ALIASES[sceneValue] || [sceneValue]
+}
+
+// 菜品是否匹配某个 UI 场景：优先看治理后的 scenes 数组（多渠道），缺失时回退顶层 scene（单值）
+function matchesScene(food, sceneValue) {
+  const accepted = sceneAliases(sceneValue)
+  if (Array.isArray(food.scenes) && food.scenes.length > 0) {
+    return food.scenes.some(s => accepted.includes(s))
+  }
+  return accepted.includes(food.scene)
+}
+
+// 取菜品在某个 UI 场景下的渠道适配度（'高'|'中'|'低'|'极低'），找不到返回 undefined
+function availabilityLevel(food, sceneValue) {
+  if (!food.availability) return undefined
+  for (const key of sceneAliases(sceneValue)) {
+    if (food.availability[key] !== undefined) return food.availability[key]
+  }
+  return undefined
+}
 
 // 根据筛选条件过滤食物。ctx: { excludeRecent, history, now }
 function filterFoods(foods, filters, ctx) {
@@ -30,7 +58,7 @@ function filterFoods(foods, filters, ctx) {
 
   return foods.filter(f => {
     if (f.enabled === false) return false
-    if (filters.sceneIdx > 0 && f.scene !== sceneValue) return false
+    if (filters.sceneIdx > 0 && !matchesScene(f, sceneValue)) return false
     if (filters.budgetIdx > 0 && f.budget !== budgetValue) return false
     if (filters.timeIdx > 0 && f.time !== timeValue) return false
     if (filters.tasteIdx > 0 && !(f.tags || []).includes(tasteValue)) return false
@@ -46,7 +74,7 @@ function filterFoods(foods, filters, ctx) {
     }
     // NEW: 渠道过滤（根据当前场景，只保留渠道权重≥低的条目）
     if (filters.scene && f.availability) {
-      const level = f.availability[filters.scene]
+      const level = availabilityLevel(f, filters.scene)
       if (level === '极低' || level === '低') return false
     }
     if (excludeRecent && recentNames.has(f.name)) return false
@@ -58,45 +86,9 @@ function filterFoods(foods, filters, ctx) {
   })
 }
 
-// 构造 8 格转盘池：不足 8 个时循环复用，保证每个扇区都有内容、落点不取到 undefined
-// NEW: 等价组去重——同一 equivalentGroupId 不出现在同一轮 8 格中
-function buildWheelPool(filtered, size, rng) {
-  const n = size || WHEEL_SECTORS
-  if (!filtered || filtered.length === 0) return []
-  const sample = filtered.length <= n ? filtered : shuffleArray(filtered, rng).slice(0, n)
-  const pool = []
-  const seenGroups = new Set()
-  for (let i = 0; i < n; i++) {
-    let item = sample[i % sample.length]
-    // 若当前 item 的 equivalentGroupId 已出现在本轮，尝试找不冲突的替换
-    if (item.equivalentGroupId && seenGroups.has(item.equivalentGroupId)) {
-      const replacement = sample.find(r =>
-        r !== item && (!r.equivalentGroupId || !seenGroups.has(r.equivalentGroupId))
-      )
-      if (replacement) item = replacement
-    }
-    if (item.equivalentGroupId) seenGroups.add(item.equivalentGroupId)
-    pool.push(item)
-  }
-  return pool
-}
-
-// 先随机选中奖扇区，再算出让该扇区停到指针正上方所需的目标角度（mod 360）
-// 给定中奖扇区，算出让它停到指针正上方所需的目标角度（mod 360）
-// 不变量：(winnerIdx * SECTOR_DEG + SECTOR_OFFSET + angleForWinner(winnerIdx)) % 360 === 0
-function angleForWinner(winnerIdx) {
-  return (360 - (winnerIdx * SECTOR_DEG + SECTOR_OFFSET) + 360) % 360
-}
-
-function resolveWheelWinner(poolLen, rng) {
-  const random = rng || Math.random
-  const winnerIdx = Math.floor(random() * poolLen)
-  return { winnerIdx, targetMod: angleForWinner(winnerIdx) }
-}
-
 // ========== 进化①：加权推荐（学自美团/大众点评「猜你喜欢」） ==========
 // prefs: { favoriteSet:Set<name>, tasteCounts:{tag:count}, rejectedSet:Set<name>, cooldownFamilyPicks:{familyId:timestamp} }
-// ctx:   { scene, weatherTags }
+// ctx:   { scene, weatherTags, now }（now 可注入便于测试，缺省 Date.now()）
 // 设计目标：在均匀随机之上叠加温和偏好信号，绝不把任何选项权重归零（保留惊喜）。
 function foodWeight(food, prefs, ctx) {
   const p = prefs || {}
@@ -115,14 +107,15 @@ function foodWeight(food, prefs, ctx) {
   // NEW: 冷却族降权（同类食物 3 天内抽中过 → 权重 ×0.2）
   if (p.cooldownFamilyPicks && food.cooldownFamilyId) {
     const lastPick = p.cooldownFamilyPicks[food.cooldownFamilyId]
-    if (lastPick && (Date.now() - lastPick) <= THREE_DAYS) {
+    const nowTs = ctx?.now ?? Date.now()
+    if (lastPick && (nowTs - lastPick) <= THREE_DAYS) {
       w *= 0.2
     }
   }
 
   // NEW: 渠道匹配（当前场景与菜品渠道适配度）
   if (ctx?.scene && food.availability) {
-    const level = food.availability[ctx.scene] // '高'|'中'|'低'|'极低'
+    const level = availabilityLevel(food, ctx.scene) // '高'|'中'|'低'|'极低'
     const multipliers = { '高': 1.2, '中': 1.0, '低': 0.6, '极低': 0.1 }
     w *= (multipliers[level] ?? 1.0)
   }
@@ -234,7 +227,7 @@ function buildRichReason(food, ctx) {
   else if (food.budget === '💰💰💰') parts.push('高预算')
   // 渠道
   if (ctx?.scene && food.availability) {
-    const level = food.availability[ctx.scene]
+    const level = availabilityLevel(food, ctx.scene)
     if (level === '高') parts.push(`适合${ctx.scene}`)
   }
   // 辣度
@@ -383,9 +376,8 @@ function rollRarityWithPity(ssrPity, rng) {
 
 module.exports = {
   filterFoods,
-  buildWheelPool,
-  resolveWheelWinner,
-  angleForWinner,
+  matchesScene,
+  availabilityLevel,
   foodWeight,
   weightedPick,
   weightedPickIndex,
@@ -396,8 +388,5 @@ module.exports = {
   computeStreak,
   buildMealCombo,
   inferSeason,
-  rollRarityWithPity,
-  WHEEL_SECTORS,
-  SECTOR_DEG,
-  SECTOR_OFFSET
+  rollRarityWithPity
 }

@@ -26,40 +26,54 @@
 
 分层：
 
-- **`utils/foodLogic.js`** —— 纯决策引擎，全app的核心。筛选（`filterFoods`）、8 扇区转盘
-  数学（`buildWheelPool` / `resolveWheelWinner` / `angleForWinner`）、加权推荐
-  （`foodWeight` / `weightedPick` —— 偏好只对随机结果做*温和加权*，绝不把任何选项清零）、
-  口味画像（`buildTasteProfile`）、可解释推荐（`explainPick`）、决策连胜（`computeStreak`）、
-  一桌好菜组合（`buildMealCombo`）。所有随机都经由可注入的 `rng` 参数。
+- **`utils/foodLogic.js`** —— 纯决策引擎，全app的核心。筛选（`filterFoods`）、加权推荐
+  （`foodWeight` / `weightedPick` —— 偏好只对随机结果做*温和加权*，绝不把任何选项清零，
+  另有 10% ε-greedy 探索）、带保底的抽卡稀有度（`rollRarityWithPity` —— 纯演出层，与选菜
+  解耦）、场景词表桥接（`matchesScene` / `availabilityLevel`，见下文）、口味画像
+  （`buildTasteProfile`）、可解释推荐（`explainPick` / `buildRichReason`）、决策连胜
+  （`computeStreak`）、一桌好菜组合（`buildMealCombo`）。所有随机都经由可注入的 `rng`
+  参数；时间相关逻辑接受可注入的 `now`（经 `ctx.now`）。
 - **`utils/util.js`** —— `uid`、`shuffleArray`（Fisher–Yates，可注入 rng）、`formatDate`
   （手写实现 —— `toLocaleDateString` 在部分小程序运行时不稳定）、`migrateFood`
-  （把食物记录归一化为当前结构并补默认值）。
+  （把食物记录归一化为当前结构并补默认值 —— 新增菜品字段必须在这里加默认值）。
 - **`utils/storage.js`** —— `safeGet` / `safeSet` 用 try/catch 包装 `wx.*StorageSync`，
   让配额超限时弹 toast 而非中断业务流程。读写存储一律走这两个函数，不要直接用
   `wx.*StorageSync`。
-- **`data/options.js`** —— 共享常量的唯一来源：`STORAGE_KEYS`、`APP_VERSION` 以及所有
-  选项列表（`SCENE_OPTIONS`、`BUDGET_OPTIONS`、`TASTE_OPTIONS`、`WEEK_THEMES`、
-  `WEEK_THEME_TAGS` 等）。两个页面都从这里 import —— 不要在页面里重复定义这些常量。
-- **`data/foods.js`** —— 内置约 500 条的菜品数据库（记录数组：
-  `name/emoji/category/scene/budget/time/tags/_id`）。`data/sounds.js` 存放 base64 内嵌的
-  转盘 tick / 揭晓音效。
-- **`pages/index/`** —— 全部核心玩法（转盘、塔罗、默契 PK、盲盒、每周推荐）。这是把
-  `foodLogic` 接到 UI 上的大型编排层。
-- **`pages/manage/`** —— 增删改菜品的 CRUD 页面。
+- **`utils/migrations.js`** —— 存储 schema 迁移框架（`SCHEMA_VERSION` + 增量 `MIGRATIONS`），
+  在 `app.js#onLaunch` 同步执行、先于任何页面读存储。要改用户数据的结构 / key：bump
+  `SCHEMA_VERSION` 并追加一条迁移。
+- **`data/options.js`** —— 共享常量的唯一来源：`STORAGE_KEYS`、`FOODS_SEED_VERSION`、
+  `APP_VERSION`（仅作导出 payload 的格式标记 —— 绝不进 storage key）以及各选项列表
+  （`SCENE_OPTIONS`、`BUDGET_OPTIONS`、`TASTE_OPTIONS` 等）。两个页面都从这里 import ——
+  不要在页面里重复定义这些常量。
+- **`data/foods.js`** —— 内置 524 条的菜品数据库（治理后的富 schema：
+  `scenes`/`availability`/`mealPeriods`/`defaultPoolWeight`/`enabled` 等）。`data/sounds.js`
+  存放 base64 内嵌的揭晓音效。
+- **`pages/index/`** —— 核心玩法：盲盒揭晓（R/SR/SSR 稀有度 + SSR 图鉴）、凑一桌、筛选
+  Sheet、「我的」tab（画像/连胜/历史/收藏）、分享卡片。这是把 `foodLogic` 接到 UI 上的
+  编排层。
+- **`pages/manage/`** —— 增删改菜品的 CRUD 页面；通过 `foodsRev` 存储 key 与首页同步
+  （无事件总线 —— 首页在 `onShow` 重读）。
 
 ### 数据 / 存储约定
 
-- 存储键带 `APP_VERSION`（当前为 `v3`）版本前缀，如 `wtec_foods_v3`。仅当
-  `localVersion === APP_VERSION` 时才从本地存储加载菜品，否则从 `data/foods.js` 重新播种。
-  每条加载的菜品都会过一遍 `migrateFood`，因此修改菜品结构时需要同步更新 `migrateFood`，
-  并（通常）提升 `APP_VERSION`。
+- 存储键**稳定且不带版本号**（`wtec_foods`、`wtec_history` 等），`APP_VERSION` 绝不出现在
+  key 里。存在两个正交的版本闸门：`FOODS_SEED_VERSION`（bump → 下次启动从 `data/foods.js`
+  重播种菜品库，用户数据不受影响）与 `utils/migrations.js` 的 `SCHEMA_VERSION`（bump +
+  加迁移 → 原地迁移用户数据）。每条加载的菜品都会过一遍 `migrateFood`。
 - 完整菜品集与筛选缓存保存在**页面实例属性**（`this._foods` 等）上，而非 `data` 里，以避免
   每次 `setData` 都把大数组跨渲染层序列化。
 - 加权推荐用的用户偏好在 `index.js#buildPrefs()` 里实时由收藏 + 历史推导
   （`favoriteSet`、`tasteCounts`、会话内的 `rejectedSet`），再喂给 `foodLogic`。
 
-### 转盘不变量
+### 场景词表桥接
 
-转盘固定 8 个 45° 扇区。核心不变量（见 `angleForWinner`）：
-`(winnerIdx * SECTOR_DEG + SECTOR_OFFSET + angleForWinner(winnerIdx)) % 360 === 0`。
-先选出中奖扇区，再算出让它停到指针正下方的目标角度。改动转盘时，请保持该不变量及其测试通过。
+三套场景词表并存：UI 选项（`SCENE_OPTIONS`：外卖/堂食/自己做/公司食堂）、数据治理产出的
+菜品 `scenes` 数组（到店吃/食堂/…）、`availability` 映射的 key（食堂，而非公司食堂）。
+任何按场景的匹配**必须**走 `foodLogic.matchesScene` / `availabilityLevel`（内部按
+`SCENE_ALIASES` 展开）—— 直接字符串比较会让公司食堂/到店吃静默匹配不到任何菜。
+
+### 揭晓动画时长
+
+`pages/index/index.js` 里的 `REVEAL_DURATION` 必须与 `pages/index/index.wxss` 中对应
+`@keyframes` 的总时长保持一致（R/SR/SSR 三档）。

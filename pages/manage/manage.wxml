@@ -151,19 +151,19 @@
           <input class="form-input" style="flex:0.5;" maxlength="2" placeholder="Emoji" placeholder-class="filter-input-placeholder" value="{{foodForm.emoji}}" bindinput="onFormEmoji" />
         </view>
         <view class="form-row">
-          <picker bindchange="onFormCategory" value="{{foodForm.categoryIdx}}" range="{{categoryOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">分类</text><text class="form-picker-value">{{categoryOptions[foodForm.categoryIdx]}}</text><text class="form-picker-chevron">›</text></view>
+          <picker bindchange="onFormCategory" value="{{foodForm.categoryIdx}}" range="{{formCategoryOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">分类</text><text class="form-picker-value">{{formCategoryOptions[foodForm.categoryIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
-          <picker bindchange="onFormScene" value="{{foodForm.sceneIdx}}" range="{{sceneOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">场景</text><text class="form-picker-value">{{sceneOptions[foodForm.sceneIdx]}}</text><text class="form-picker-chevron">›</text></view>
+          <picker bindchange="onFormScene" value="{{foodForm.sceneIdx}}" range="{{formSceneOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">场景</text><text class="form-picker-value">{{formSceneOptions[foodForm.sceneIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
         </view>
         <view class="form-row">
-          <picker bindchange="onFormBudget" value="{{foodForm.budgetIdx}}" range="{{budgetOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">预算</text><text class="form-picker-value">{{budgetOptions[foodForm.budgetIdx]}}</text><text class="form-picker-chevron">›</text></view>
+          <picker bindchange="onFormBudget" value="{{foodForm.budgetIdx}}" range="{{formBudgetOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">预算</text><text class="form-picker-value">{{formBudgetOptions[foodForm.budgetIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
-          <picker bindchange="onFormTime" value="{{foodForm.timeIdx}}" range="{{timeOptions}}" style="flex:1;">
-            <view class="form-picker"><text class="form-picker-label">时间</text><text class="form-picker-value">{{timeOptions[foodForm.timeIdx]}}</text><text class="form-picker-chevron">›</text></view>
+          <picker bindchange="onFormTime" value="{{foodForm.timeIdx}}" range="{{formTimeOptions}}" style="flex:1;">
+            <view class="form-picker"><text class="form-picker-label">时间</text><text class="form-picker-value">{{formTimeOptions[foodForm.timeIdx]}}</text><text class="form-picker-chevron">›</text></view>
           </picker>
         </view>
         <view class="form-row">

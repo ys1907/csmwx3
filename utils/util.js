@@ -67,6 +67,7 @@ function migrateFood(food) {
     emoji: food.emoji || '🍽️',
     category,
     scene: food.scene || '堂食',
+    scenes: Array.isArray(food.scenes) ? food.scenes : [], // 治理后的多渠道场景（到店吃/食堂等），场景匹配优先用它
     budget: food.budget || '💰',
     time: food.time || '快',
     tags: Array.isArray(food.tags) ? food.tags : [],

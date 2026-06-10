@@ -30,6 +30,13 @@ test('migrateFood: tags 非数组归一为空数组、保留已有 _id', () => {
   assert.strictEqual(m._id, 'fixed-id')
 })
 
+test('migrateFood: 保留治理后的 scenes 多渠道数组（场景匹配依赖它）', () => {
+  const m = migrateFood({ name: '木须肉', scenes: ['到店吃', '食堂'] })
+  assert.deepStrictEqual(m.scenes, ['到店吃', '食堂'])
+  assert.deepStrictEqual(migrateFood({ name: 'x' }).scenes, [])
+  assert.deepStrictEqual(migrateFood({ name: 'x', scenes: '到店吃' }).scenes, [])
+})
+
 test('formatDate: 带/不带星期', () => {
   const d = new Date(2024, 4, 31) // 2024-05-31 本地时间
   assert.strictEqual(formatDate(d, false), '5月31日')

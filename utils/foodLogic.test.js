@@ -1,7 +1,7 @@
 const test = require('node:test')
 const assert = require('node:assert')
 const {
-  filterFoods, buildWheelPool, resolveWheelWinner, SECTOR_DEG, SECTOR_OFFSET,
+  filterFoods, matchesScene, availabilityLevel,
   foodWeight, weightedPick, weightedPickIndex, buildTasteProfile,
   explainPick, computeStreak, buildMealCombo,
   buildRichReason, pickAlternatives, inferSeason, rollRarityWithPity
@@ -53,31 +53,47 @@ test('filterFoods: 组合条件可得空集', () => {
   assert.strictEqual(r.length, 0)
 })
 
-test('buildWheelPool: 空集返回空数组', () => {
-  assert.deepStrictEqual(buildWheelPool([]), [])
+test('filterFoods: 口味维度按 tags 过滤', () => {
+  // TASTE_OPTIONS = ['全部口味', '辣', '甜', '酸', '鲜']
+  const spicy = filterFoods(FOODS, { ...NO_FILTER, tasteIdx: 1 }, { excludeRecent: false })
+  assert.deepStrictEqual(spicy.map(f => f.name), ['麻辣烫'])
+  const sweet = filterFoods(FOODS, { ...NO_FILTER, tasteIdx: 2 }, { excludeRecent: false })
+  assert.deepStrictEqual(sweet.map(f => f.name), ['红烧肉'])
 })
 
-test('buildWheelPool: 不足 8 个时长度恒为 8 且无 undefined', () => {
-  const pool = buildWheelPool(FOODS, 8, () => 0)
-  assert.strictEqual(pool.length, 8)
-  assert.ok(pool.every(x => x !== undefined && x !== null))
+// ===== 场景词表对齐（scene / scenes / availability 三套措辞的桥接） =====
+
+test('matchesScene: scenes 数组优先，「到店吃」算「堂食」、「食堂」算「公司食堂」', () => {
+  const food = { scene: '外卖', scenes: ['外卖', '到店吃', '食堂'] }
+  assert.strictEqual(matchesScene(food, '堂食'), true)      // 到店吃 → 堂食
+  assert.strictEqual(matchesScene(food, '公司食堂'), true)  // 食堂 → 公司食堂
+  assert.strictEqual(matchesScene(food, '外卖'), true)
+  assert.strictEqual(matchesScene(food, '自己做'), false)
 })
 
-test('buildWheelPool: 充足时 8 格无 undefined', () => {
-  const many = Array.from({ length: 20 }, (_, i) => ({ name: 'f' + i }))
-  const pool = buildWheelPool(many)
-  assert.strictEqual(pool.length, 8)
-  assert.ok(pool.every(x => x && typeof x.name === 'string'))
+test('matchesScene: 无 scenes 数组时回退顶层 scene', () => {
+  assert.strictEqual(matchesScene({ scene: '堂食' }, '堂食'), true)
+  assert.strictEqual(matchesScene({ scene: '堂食', scenes: [] }, '堂食'), true)
+  assert.strictEqual(matchesScene({ scene: '自己做' }, '外卖'), false)
 })
 
-test('resolveWheelWinner: 落点不变量 —— 中奖扇区停到指针正上方', () => {
-  for (let idx = 0; idx < 8; idx++) {
-    const rng = () => (idx + 0.5) / 8 // 确保 floor(rng*8) === idx
-    const { winnerIdx, targetMod } = resolveWheelWinner(8, rng)
-    assert.strictEqual(winnerIdx, idx)
-    const landed = (winnerIdx * SECTOR_DEG + SECTOR_OFFSET + targetMod) % 360
-    assert.ok(Math.abs(landed) < 1e-9, `idx=${idx} landed=${landed}`)
-  }
+test('filterFoods: 场景过滤经词表桥接，公司食堂可命中 scenes 含「食堂」的菜', () => {
+  const foods = [
+    { name: '木须肉套餐', scene: '堂食', scenes: ['到店吃', '食堂'], budget: '💰', time: '快', tags: [] },
+    { name: '红烧肉', scene: '自己做', budget: '💰💰', time: '快', tags: [] },
+  ]
+  // SCENE_OPTIONS = ['全部场景', '外卖', '堂食', '自己做', '公司食堂']
+  const canteen = filterFoods(foods, { ...NO_FILTER, sceneIdx: 4 }, { excludeRecent: false })
+  assert.deepStrictEqual(canteen.map(f => f.name), ['木须肉套餐'])
+  const dineIn = filterFoods(foods, { ...NO_FILTER, sceneIdx: 2 }, { excludeRecent: false })
+  assert.deepStrictEqual(dineIn.map(f => f.name), ['木须肉套餐'])
+})
+
+test('availabilityLevel: 「公司食堂」读 availability 的「食堂」key', () => {
+  const food = { availability: { 外卖: '高', 堂食: '中', 自己做: '低', 食堂: '极低' } }
+  assert.strictEqual(availabilityLevel(food, '公司食堂'), '极低')
+  assert.strictEqual(availabilityLevel(food, '堂食'), '中')
+  assert.strictEqual(availabilityLevel({}, '外卖'), undefined)
 })
 
 // ===== 进化①②：加权推荐 + 负反馈降权 =====
@@ -286,27 +302,15 @@ test('foodWeight: 冷却族 3 天内降权', () => {
   assert.ok(wCold < wHot, '3 天内同类应降权')
 })
 
-test('buildWheelPool: 等价组去重不冲突', () => {
-  const foods = [
-    { name: '红烧肉', equivalentGroupId: '红烧肉_套餐族' },
-    { name: '红烧肉盖饭', equivalentGroupId: '红烧肉_套餐族' },
-    { name: '白灼菜心' },
-    { name: '麻婆豆腐', equivalentGroupId: '麻婆豆腐_套餐族' },
-    { name: '麻婆豆腐饭', equivalentGroupId: '麻婆豆腐_套餐族' },
-    { name: '回锅肉', equivalentGroupId: '回锅肉_套餐族' },
-    { name: '回锅肉饭', equivalentGroupId: '回锅肉_套餐族' },
-    { name: '宫保鸡丁', equivalentGroupId: '宫保鸡丁_套餐族' },
-    { name: '宫保鸡丁饭', equivalentGroupId: '宫保鸡丁_套餐族' },
-    { name: '番茄蛋汤' },
-  ]
-  const pool = buildWheelPool(foods, 8, () => 0.1) // 固定 rng 保证可测
-  const groups = new Set()
-  for (const item of pool) {
-    if (item.equivalentGroupId) {
-      assert.ok(!groups.has(item.equivalentGroupId), `等价组 ${item.equivalentGroupId} 不应重复出现在 8 格中`)
-      groups.add(item.equivalentGroupId)
-    }
-  }
+test('foodWeight: 冷却时间源可经 ctx.now 注入（时间旅行确定性）', () => {
+  const pickedAt = new Date(2026, 0, 1).getTime()
+  const food = { name: '四川火锅', cooldownFamilyId: '火锅族', tags: [] }
+  const prefs = { cooldownFamilyPicks: { '火锅族': pickedAt } }
+  const day = 24 * 60 * 60 * 1000
+  const wWithin = foodWeight(food, prefs, { now: pickedAt + 2 * day })  // 2 天后：冷却中
+  const wAfter = foodWeight(food, prefs, { now: pickedAt + 4 * day })   // 4 天后：冷却结束
+  assert.ok(wWithin < wAfter, 'ctx.now 应驱动冷却判定')
+  assert.strictEqual(wAfter, 1)
 })
 
 // ===== 进化⑧：数据字段扩充 + 受约束随机 =====
@@ -334,7 +338,7 @@ test('filterFoods: availability 渠道过滤', () => {
 
 test('foodWeight: 渠道匹配权重', () => {
   const foodHigh = { name: 'a', defaultPoolWeight: 1.0, availability: { 外卖: '高', 堂食: '中', 自己做: '低', 食堂: '中' }, tags: [] }
-  const foodLow = { name: 'b', defaultPoolWeight: 1.0, availability: { 外卖: '低', 堂食: '中', 我自己做: '低', 食堂: '中' }, tags: [] }
+  const foodLow = { name: 'b', defaultPoolWeight: 1.0, availability: { 外卖: '低', 堂食: '中', 自己做: '低', 食堂: '中' }, tags: [] }
   const wHigh = foodWeight(foodHigh, {}, { scene: '外卖' })
   const wLow = foodWeight(foodLow, {}, { scene: '外卖' })
   assert.ok(wHigh > wLow, '渠道高匹配权重大于低匹配')
@@ -354,7 +358,23 @@ test('buildRichReason: 生成结构化推荐理由', () => {
   assert.ok(reason.includes('30元以内'), '应包含预算')
   assert.ok(reason.includes('适合外卖'), '应包含渠道')
   assert.ok(reason.includes('微辣'), '应包含辣度')
+  assert.ok(reason.includes('适合慢慢吃'), '应包含时间')
   assert.ok(reason.includes('完整一餐'), '应包含粒度')
+})
+
+test('buildRichReason: 不辣/含辣警示/较快/家常小炒 分支', () => {
+  const mild = buildRichReason({ name: '白灼菜心', budget: '💰', time: '快', spicyLevel: 0, itemLevel: '单道菜' }, {})
+  assert.ok(mild.includes('不辣'), 'spicyLevel=0 应标不辣')
+  assert.ok(mild.includes('预计较快'), 'time=快 应标预计较快')
+  assert.ok(mild.includes('家常小炒'), 'itemLevel=单道菜 应标家常小炒')
+  // 无 spicyLevel 但 dietWarnings 含辣 → 微辣
+  const warned = buildRichReason({ name: '香锅', budget: '💰💰', time: '慢', spicyLevel: 0, dietWarnings: ['含辣'] }, {})
+  assert.ok(warned.includes('微辣'), 'dietWarnings 含辣应标微辣')
+  // 重辣分支
+  const hot = buildRichReason({ name: '变态辣烤翅', budget: '💰', time: '快', spicyLevel: 3 }, {})
+  assert.ok(hot.includes('重辣'), 'spicyLevel>=3 应标重辣')
+  // 空食物兜底
+  assert.strictEqual(buildRichReason(null, {}), '')
 })
 
 test('pickAlternatives: 排除同组同族', () => {
@@ -370,6 +390,20 @@ test('pickAlternatives: 排除同组同族', () => {
   assert.strictEqual(alts.length, 2)
   assert.ok(!alts.some(a => a.name === '红烧肉盖饭'), '不应出现同等价组')
   assert.ok(!alts.some(a => a.name === '红烧肉'), '不应出现主推荐')
+})
+
+test('pickAlternatives: 排除主推荐的同冷却族', () => {
+  const foods = [
+    { name: '四川火锅', cooldownFamilyId: '火锅族' },
+    { name: '潮汕牛肉锅', cooldownFamilyId: '火锅族' },
+    { name: '麻辣香锅', cooldownFamilyId: '火锅族' },
+    { name: '白灼菜心' },
+    { name: '番茄炒蛋' },
+  ]
+  const alts = pickAlternatives(foods, foods[0], 2, {}, () => 0.1, {})
+  assert.strictEqual(alts.length, 2)
+  assert.ok(!alts.some(a => a.cooldownFamilyId === '火锅族'), '备选不应出现主推荐的同冷却族')
+  assert.deepStrictEqual(alts.map(a => a.name).sort(), ['番茄炒蛋', '白灼菜心'].sort())
 })
 
 test('inferSeason: 夏→炎热适合、冬→降温适合、春秋→空', () => {

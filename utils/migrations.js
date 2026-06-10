@@ -4,7 +4,7 @@
 // store 可注入（默认走 storage.js），便于单测。
 const { safeGet, safeSet, safeRemove } = require('./storage.js')
 
-const SCHEMA_VERSION = 1
+const SCHEMA_VERSION = 2
 const SCHEMA_KEY = 'wtec_schema_version'
 
 const MIGRATIONS = [
@@ -25,6 +25,13 @@ const MIGRATIONS = [
         s.remove(o)
       }
       s.remove('wtec_foods_v3') // foods 不搬：由 FOODS_SEED_VERSION 从 data/foods.js 重播种
+    },
+  },
+  {
+    v: 2, // v1→v2：清理「每周推荐」玩法（已下线）留下的孤儿 key
+    run: (s) => {
+      s.remove('wtec_week_food')
+      s.remove('wtec_week_food_date')
     },
   },
 ]

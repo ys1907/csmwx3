@@ -14,6 +14,16 @@ const {
 
 const MANAGE_PAGE_SIZE = 40 // 菜品列表单批渲染数量（分批渲染，避免一次性把数百道菜全部塞进渲染层）
 
+// 表单用选项：去掉首位「全部X」哨兵项（那是筛选语义，不是合法的菜品字段值）
+const FORM_SCENE_OPTIONS = SCENE_OPTIONS.slice(1)
+const FORM_BUDGET_OPTIONS = BUDGET_OPTIONS.slice(1)
+const FORM_TIME_OPTIONS = TIME_OPTIONS.slice(1)
+
+// 编辑时菜品当前值不在选项里 → 把它追加进选项，让 picker 如实显示并在保存时原样保留（绝不静默改写）
+function withCurrentValue(options, value) {
+  return (value && !options.includes(value)) ? [...options, value] : options
+}
+
 Page({
   data: {
     displayFoods: [],            // 当前渲染切片（全量在 this._foods 实例上，不进 data）
@@ -22,17 +32,17 @@ Page({
     historyDisplay: [],
     favorites: [],
     foodCount: 0,
-    sceneOptions: SCENE_OPTIONS,
-    budgetOptions: BUDGET_OPTIONS,
-    timeOptions: TIME_OPTIONS,
-    categoryOptions: CATEGORY_OPTIONS,
+    formSceneOptions: FORM_SCENE_OPTIONS,
+    formBudgetOptions: FORM_BUDGET_OPTIONS,
+    formTimeOptions: FORM_TIME_OPTIONS,
+    formCategoryOptions: CATEGORY_OPTIONS,
     categoryFilterOptions: ['全部', ...CATEGORY_OPTIONS],
     categoryFilterIdx: 0,
     searchText: '',
     // 新增/编辑 Sheet
     showFoodSheet: false,
     editingId: null,             // null=新增，否则编辑该 _id
-    foodForm: { name: '', emoji: '', categoryIdx: 0, sceneIdx: 1, budgetIdx: 1, timeIdx: 1, tags: '' },
+    foodForm: { name: '', emoji: '', categoryIdx: 0, sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tags: '' },
     statusBarHeight: 44,
   },
 
@@ -41,8 +51,8 @@ Page({
     const win = (wx.getWindowInfo && wx.getWindowInfo()) || {}
     this.setData({ statusBarHeight: win.statusBarHeight || 44 })
     // 暗黑模式系统跟随
-    const sysInfo = wx.getSystemInfoSync()
-    this.setData({ darkMode: sysInfo.theme === 'dark' })
+    const baseInfo = (wx.getAppBaseInfo && wx.getAppBaseInfo()) || {}
+    this.setData({ darkMode: baseInfo.theme === 'dark' })
     this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
       const darkMode = res.theme === 'dark'
       if (this._isPageVisible) this.setData({ darkMode })
@@ -174,7 +184,11 @@ Page({
     this.setData({
       showFoodSheet: true,
       editingId: null,
-      foodForm: { name: '', emoji: '', categoryIdx: 0, sceneIdx: 1, budgetIdx: 1, timeIdx: 1, tags: '' }
+      formSceneOptions: FORM_SCENE_OPTIONS,
+      formBudgetOptions: FORM_BUDGET_OPTIONS,
+      formTimeOptions: FORM_TIME_OPTIONS,
+      formCategoryOptions: CATEGORY_OPTIONS,
+      foodForm: { name: '', emoji: '', categoryIdx: 0, sceneIdx: 0, budgetIdx: 0, timeIdx: 0, tags: '' }
     })
   },
 
@@ -182,20 +196,25 @@ Page({
     const id = e.currentTarget.dataset.id
     const food = (this._foods || []).find(f => f._id === id)
     if (!food) return
-    const sIdx = SCENE_OPTIONS.indexOf(food.scene)
-    const bIdx = BUDGET_OPTIONS.indexOf(food.budget)
-    const tIdx = TIME_OPTIONS.indexOf(food.time)
-    const cIdx = CATEGORY_OPTIONS.indexOf(food.category)
+    // 当前值不在标准选项里时追加为可选项，保证反查下标必命中、保存不改写原值
+    const sceneOptions = withCurrentValue(FORM_SCENE_OPTIONS, food.scene)
+    const budgetOptions = withCurrentValue(FORM_BUDGET_OPTIONS, food.budget)
+    const timeOptions = withCurrentValue(FORM_TIME_OPTIONS, food.time)
+    const categoryOptions = withCurrentValue(CATEGORY_OPTIONS, food.category)
     this.setData({
       showFoodSheet: true,
       editingId: id,
+      formSceneOptions: sceneOptions,
+      formBudgetOptions: budgetOptions,
+      formTimeOptions: timeOptions,
+      formCategoryOptions: categoryOptions,
       foodForm: {
         name: food.name,
         emoji: food.emoji,
-        categoryIdx: cIdx >= 0 ? cIdx : 0,
-        sceneIdx: sIdx > 0 ? sIdx : 1,
-        budgetIdx: bIdx > 0 ? bIdx : 1,
-        timeIdx: tIdx > 0 ? tIdx : 1,
+        categoryIdx: Math.max(0, categoryOptions.indexOf(food.category)),
+        sceneIdx: Math.max(0, sceneOptions.indexOf(food.scene)),
+        budgetIdx: Math.max(0, budgetOptions.indexOf(food.budget)),
+        timeIdx: Math.max(0, timeOptions.indexOf(food.time)),
         tags: (food.tags || []).join(',')
       }
     })
@@ -233,10 +252,10 @@ Page({
     const tags = (foodForm.tags || '').split(/[,，\s]+/).filter(Boolean)
     const fields = {
       name, emoji,
-      category: CATEGORY_OPTIONS[foodForm.categoryIdx],
-      scene: SCENE_OPTIONS[foodForm.sceneIdx],
-      budget: BUDGET_OPTIONS[foodForm.budgetIdx],
-      time: TIME_OPTIONS[foodForm.timeIdx],
+      category: this.data.formCategoryOptions[foodForm.categoryIdx],
+      scene: this.data.formSceneOptions[foodForm.sceneIdx],
+      budget: this.data.formBudgetOptions[foodForm.budgetIdx],
+      time: this.data.formTimeOptions[foodForm.timeIdx],
       tags
     }
     let newFoods

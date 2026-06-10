@@ -74,7 +74,7 @@ function withIndexPage(run) {
   global.wx = {
     getStorageSync: key => { storageReads.push(key); return storage.has(key) ? storage.get(key) : '' },
     setStorageSync: (key, value) => { storageWrites.push(key); storage.set(key, value) },
-    getSystemInfoSync: () => ({ theme: 'light' }),
+    getAppBaseInfo: () => ({ theme: 'light' }),
     onThemeChange: fn => { themeHandler = fn; return () => { themeHandler = null } },
     createInnerAudioContext: () => {
       const audio = {

@@ -71,8 +71,8 @@ Page({
     this._isPageVisible = true
     this._introStartTs = Date.now()
     this.initData()
-    const sysInfo = wx.getSystemInfoSync()
-    this.setData({ darkMode: sysInfo.theme === 'dark' })
+    const baseInfo = (wx.getAppBaseInfo && wx.getAppBaseInfo()) || {}
+    this.setData({ darkMode: baseInfo.theme === 'dark' })
     this._offThemeChange = wx.onThemeChange && wx.onThemeChange((res) => {
       const darkMode = res.theme === 'dark'
       if (this._isPageVisible) this.setData({ darkMode })
@@ -309,7 +309,7 @@ Page({
     const scene = filters.sceneIdx > 0 ? SCENE_OPTIONS[filters.sceneIdx] : null
     // 季节弱信号：按当前月份注入 weatherTags（纯本地，零依赖）
     const weatherTags = foodLogic.inferSeason()
-    return { scene, weatherTags }
+    return { scene, weatherTags, now: Date.now() }
   },
 
   noteRejected(food) {
