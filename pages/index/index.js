@@ -107,6 +107,7 @@ Page({
     this._isPageVisible = false
     this.flushPendingWrites()
     this.clearTimer('_revealTimer')
+    this.clearTimer('_hapticTimer')
     this.clearTimer('_introDelayTimer')
     this.clearTimer('_introMaxTimer')
     this.clearTimer('_introFadeTimer')
@@ -211,10 +212,34 @@ Page({
 
   // 揭晓动画途中切后台：记住待揭晓内容并暂停定时器，回前台直接揭晓
   pauseActiveTasks() {
+    this.stopRevealHaptics()
     if (this.data.boxPhase === 'revealing' && this._pendingReveal) {
       this._pausedReveal = this._pendingReveal
       this.clearTimer('_revealTimer')
     }
+  },
+
+  // 摇晃蓄力期间的连续震动脉冲（与 charge/charge2 动画时长对齐）；R 档动画太快不脉冲。
+  // 用 setTimeout 链而非 setInterval，统一走 _xxxTimer + clearTimer 约定，便于暂停/卸载清理。
+  startRevealHaptics(rarity) {
+    this.stopRevealHaptics()
+    if (!wx.vibrateShort) return
+    const plan = rarity === 'SSR' ? { interval: 260, until: 2000 }
+      : rarity === 'SR' ? { interval: 280, until: 1100 }
+      : null
+    if (!plan) return
+    const startTs = Date.now()
+    const tick = () => {
+      this._hapticTimer = null
+      if (Date.now() - startTs >= plan.until) return
+      wx.vibrateShort({ type: 'light' })
+      this._hapticTimer = setTimeout(tick, plan.interval)
+    }
+    this._hapticTimer = setTimeout(tick, plan.interval)
+  },
+
+  stopRevealHaptics() {
+    this.clearTimer('_hapticTimer')
   },
 
   resumePausedTasks() {
@@ -385,7 +410,8 @@ Page({
     const resultReason = foodLogic.buildRichReason(food, this.buildCtx())
     this._pendingReveal = { food, rarity, isFav, resultReason, pityAfter: roll.ssrPity }
     this.setData({ boxPhase: 'revealing', revealRarity: rarity, auraClass: rarity === 'SSR' ? 'aura-SSR' : '' })
-    if (wx.vibrateShort) wx.vibrateShort({ type: 'light' })
+    if (wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
+    this.startRevealHaptics(rarity)
     this.clearTimer('_revealTimer')
     this._revealTimer = setTimeout(() => {
       this._revealTimer = null
@@ -397,10 +423,15 @@ Page({
     const p = this._pendingReveal
     if (!p) return
     this._pendingReveal = null
+    this.stopRevealHaptics()
     this._ssrPity = p.pityAfter
     this.queueStorageWrite(STORAGE_KEYS.ssrPity, p.pityAfter)
     this.playDing()
-    if (p.rarity !== 'R' && wx.vibrateShort) wx.vibrateShort({ type: 'medium' })
+    // 揭晓瞬间按稀有度给力度：SSR 重击 / SR 中击 / R 不加（点盒时已有反馈）
+    if (wx.vibrateShort) {
+      if (p.rarity === 'SSR') wx.vibrateShort({ type: 'heavy' })
+      else if (p.rarity === 'SR') wx.vibrateShort({ type: 'medium' })
+    }
     this.setData({
       boxPhase: 'revealed',
       currentResult: p.food,
@@ -415,6 +446,7 @@ Page({
   onRetry() {
     this.noteRejected(this.data.currentResult)
     this.clearTimer('_revealTimer')
+    this.stopRevealHaptics()
     this._pendingReveal = null
     this.setData({ boxPhase: 'idle', currentResult: null, revealRarity: '', auraClass: '' })
     const restart = () => this.onTapBox()
@@ -536,6 +568,7 @@ Page({
     // 换筛选 = 新语境，回到盲盒待揭晓
     if (this.data.boxPhase !== 'idle') {
       this.clearTimer('_revealTimer')
+      this.stopRevealHaptics()
       this._pendingReveal = null
       this.setData({ boxPhase: 'idle', currentResult: null, revealRarity: '', auraClass: '' })
     }
