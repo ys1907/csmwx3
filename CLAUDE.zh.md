@@ -47,7 +47,7 @@
   `APP_VERSION`（仅作导出 payload 的格式标记 —— 绝不进 storage key）以及各选项列表
   （`SCENE_OPTIONS`、`BUDGET_OPTIONS`、`TASTE_OPTIONS` 等）。两个页面都从这里 import ——
   不要在页面里重复定义这些常量。
-- **`data/foods.js`** —— 内置 519 条的菜品数据库（治理后的富 schema：
+- **`data/foods.js`** —— 内置 517 条的菜品数据库（治理后的富 schema：
   `scenes`/`availability`/`mealPeriods`/`defaultPoolWeight`/`enabled` 等）。`data/sounds.js`
   存放 base64 内嵌的揭晓音效。
 - **`pages/index/`** —— 核心玩法：盲盒揭晓（R/SR/SSR 稀有度 + SSR 图鉴）、凑一桌、筛选

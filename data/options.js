@@ -8,7 +8,8 @@ const APP_VERSION = 'v3'
 // 用户自建菜经 util.mergeSeedWithLocal 保留（对内置菜的编辑会被新种子覆盖）。
 // v5: 同名菜去重 524→519（scripts/dedupeFoods.js）
 // v6: 词表归一——scenes/availability/tags 对齐 UI 措辞（scripts/normalizeVocab.js）
-const FOODS_SEED_VERSION = 'v6'
+// v7: 全库重审 519→517——删 42 道猎奇/异国/重复、出池 56、校正 453 道的价格/辣度/场景、新增 40 道国民菜（scripts/applyRebuild.js）
+const FOODS_SEED_VERSION = 'v7'
 
 // 所有 key 稳定、与版本号解耦：版本变更永不误删用户数据。数据结构变更走 utils/migrations.js。
 const STORAGE_KEYS = {

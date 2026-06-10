@@ -7,7 +7,7 @@ module.exports = [
     "category": "配菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "家常",
       "肉",
@@ -23,7 +23,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -39,7 +38,7 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -56,9 +55,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🐔",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -72,13 +71,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -87,10 +85,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -109,9 +107,10 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "奶香",
-      "绵软",
-      "清淡"
+      "素",
+      "清淡",
+      "糯",
+      "家常"
     ],
     "cuisine": "西式料理",
     "foodType": "配菜",
@@ -123,8 +122,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -156,7 +153,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "清淡",
@@ -172,8 +169,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -186,10 +182,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -205,14 +201,14 @@ module.exports = [
     "name": "炸鸡",
     "aliases": [],
     "emoji": "🍗",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "category": "西式简餐",
+    "scene": "外卖",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
-      "家常",
       "脆",
-      "肉"
+      "肉",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -220,10 +216,10 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -238,10 +234,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -261,7 +257,7 @@ module.exports = [
     "category": "汤粥炖品",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "热",
@@ -273,7 +269,8 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
       "自己做",
@@ -292,9 +289,9 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "中",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -330,7 +327,6 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -369,7 +365,7 @@ module.exports = [
     "category": "西式简餐",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "肉"
@@ -388,8 +384,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 1,
-    "enabled": true,
-    "defaultPoolWeight": 0.35,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -439,8 +435,7 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -508,7 +503,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -519,66 +514,14 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "028c86671515ad9b",
-    "name": "烤饭团",
-    "aliases": [],
-    "emoji": "🍙",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "香"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "cooldownFamilyId": "饭团族",
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高碳水"
-    ],
-    "allergenTags": []
-  },
-  {
     "_id": "fdbab8c51b4139be",
     "name": "烤虾",
     "aliases": [],
     "emoji": "🦐",
     "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "慢",
     "tags": [
       "鲜",
       "海鲜"
@@ -592,10 +535,9 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -608,10 +550,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -647,8 +589,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -685,10 +625,10 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "滋补",
       "热",
       "肉",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -700,8 +640,7 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -792,7 +731,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "软糯",
+      "糯",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -807,9 +746,9 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 2,
-    "enabled": true,
-    "defaultPoolWeight": 0.25,
+    "spicyLevel": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -859,9 +798,9 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0.5,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -905,13 +844,11 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
       "公司食堂"
@@ -929,7 +866,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -949,67 +886,18 @@ module.exports = [
     ]
   },
   {
-    "_id": "709a38cbd4ee4610",
-    "name": "臭干子",
-    "aliases": [],
-    "emoji": "🧈",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "发酵风味",
-      "香"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "小吃",
-    "mealRole": "小吃",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": [
-      "大豆"
-    ]
-  },
-  {
     "_id": "c5fbfd6f1d846e07",
     "name": "蒜泥白肉",
     "aliases": [],
     "emoji": "🥓",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "蒜香",
-      "肉"
+      "香",
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1024,7 +912,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -1035,10 +923,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -1055,7 +943,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "蛋"
@@ -1088,7 +976,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "低",
+      "自己做": "高",
       "公司食堂": "高"
     },
     "regionTags": [
@@ -1113,7 +1001,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "软糯",
+      "糯",
       "脆"
     ],
     "cuisine": "中式料理",
@@ -1121,7 +1009,7 @@ module.exports = [
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
+      "早餐",
       "加餐"
     ],
     "scenes": [
@@ -1156,13 +1044,13 @@ module.exports = [
     "name": "烤培根",
     "aliases": [],
     "emoji": "🥓",
-    "category": "家常菜",
+    "category": "配菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "咸"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1172,13 +1060,11 @@ module.exports = [
       "早餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.3,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1187,10 +1073,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
+      "外卖": "极低",
+      "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -1223,8 +1109,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -1259,14 +1143,14 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
+      "早餐",
       "加餐"
     ],
     "scenes": [
@@ -1302,10 +1186,9 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "麻辣",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -1361,7 +1244,7 @@ module.exports = [
     "tags": [
       "家常",
       "肉",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1373,12 +1256,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1424,8 +1306,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -1477,7 +1357,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -1493,7 +1372,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -1513,9 +1392,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "滋补",
       "热",
-      "适合聚餐",
       "肉",
       "海鲜"
     ],
@@ -1529,7 +1406,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -1573,7 +1449,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "嫩滑",
+      "嫩",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -1586,7 +1462,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -1617,30 +1492,29 @@ module.exports = [
     "name": "炸鱿鱼",
     "aliases": [],
     "emoji": "🦑",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "小吃点心",
+    "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
       "鲜",
       "脆",
-      "海鲜"
+      "海鲜",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
-    "mealRole": "配菜",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "夜宵",
+      "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "鱿鱼族",
     "defaultPoolWeight": 0.2,
@@ -1651,10 +1525,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -1678,7 +1552,7 @@ module.exports = [
     "tags": [
       "家常",
       "肉",
-      "软糯",
+      "糯",
       "热"
     ],
     "cuisine": "中式料理",
@@ -1686,13 +1560,11 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -1728,9 +1600,10 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常"
+      "家常",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -1759,7 +1632,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "高"
     },
     "regionTags": [
@@ -1778,64 +1651,18 @@ module.exports = [
     "emoji": "🌭",
     "category": "西式简餐",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
-      "家常",
       "肉"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.35,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
-    "_id": "671a82506c2e8913",
-    "name": "越南春卷",
-    "aliases": [],
-    "emoji": "🫔",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "家常"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "小吃",
     "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
-      "加餐"
+      "加餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -1850,17 +1677,14 @@ module.exports = [
     "safetyNotice": "",
     "seasonTags": [],
     "festivalTags": [],
-    "itemLevel": "小吃",
+    "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
     },
-    "regionTags": [
-      "全国常见",
-      "东南亚"
-    ],
+    "regionTags": [],
     "weatherTags": [],
     "dietWarnings": [],
     "allergenTags": []
@@ -1873,17 +1697,17 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
-      "热"
+      "热",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
@@ -1928,12 +1752,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🐟",
     "category": "家常菜",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "酸甜",
-      "海鲜"
+      "酸",
+      "甜",
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -1944,13 +1769,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -1961,8 +1784,8 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "极低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -1985,10 +1808,10 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酱香",
-      "脆",
+      "肉",
       "热"
     ],
     "cuisine": "中式料理",
@@ -1996,7 +1819,6 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
@@ -2004,6 +1826,7 @@ module.exports = [
     "scenes": [
       "外卖",
       "堂食",
+      "自己做",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -2043,31 +1866,29 @@ module.exports = [
     "aliases": [],
     "emoji": "🍲",
     "category": "汤粥炖品",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "奶香",
-      "热",
-      "清淡"
+      "香",
+      "鲜",
+      "热"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2077,9 +1898,9 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -2100,13 +1921,13 @@ module.exports = [
     "name": "粢饭团",
     "aliases": [],
     "emoji": "🍙",
-    "category": "饭类套餐",
+    "category": "小吃点心",
     "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "咸",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -2117,8 +1938,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -2151,7 +1971,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
       "酱香",
@@ -2222,8 +2042,8 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2307,10 +2127,12 @@ module.exports = [
     "emoji": "🍕",
     "category": "西式简餐",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰💰💰",
+    "time": "快",
     "tags": [
-      "家常"
+      "香",
+      "咸",
+      "饱腹"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -2355,7 +2177,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
       "酱香",
@@ -2409,7 +2231,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常"
     ],
@@ -2476,8 +2298,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -2492,7 +2313,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "中",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [],
@@ -2508,8 +2329,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🧈",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "香",
@@ -2524,13 +2345,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2539,10 +2359,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -2559,7 +2379,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🍱",
     "category": "饭类套餐",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
@@ -2575,13 +2395,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.45,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2590,7 +2408,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
       "自己做": "极低",
       "公司食堂": "极低"
@@ -2615,7 +2433,7 @@ module.exports = [
     "emoji": "🍲",
     "category": "汤粥炖品",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -2624,7 +2442,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "正餐",
+    "mealRole": "汤品",
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
@@ -2667,12 +2485,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🧈",
     "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "scene": "堂食",
+    "budget": "💰",
     "time": "慢",
     "tags": [
       "家常",
-      "素"
+      "素",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -2683,11 +2502,10 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": false,
     "cooldownFamilyId": "豆花族",
     "defaultPoolWeight": 0,
@@ -2698,10 +2516,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "中",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -2722,7 +2540,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
       "肉"
@@ -2741,8 +2559,8 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.45,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -2766,77 +2584,18 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "851624e201821c5b",
-    "name": "柬埔寨金边粉",
-    "aliases": [
-      "金边粉"
-    ],
-    "emoji": "🍝",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "甜",
-      "酸",
-      "热"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
-  },
-  {
     "_id": "37cdfc4a94760054",
     "name": "啤酒鸭",
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "香",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -2848,10 +2607,9 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.75,
     "equivalentGroupId": null,
@@ -2888,9 +2646,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "麻辣",
       "热",
-      "适合聚餐"
+      "鲜",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -2902,14 +2660,13 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "火锅族",
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -2917,9 +2674,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -2948,7 +2705,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
+      "香",
       "肉"
     ],
     "cuisine": "西式料理",
@@ -2964,9 +2721,9 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0.4,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -2974,7 +2731,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
@@ -2983,67 +2740,6 @@ module.exports = [
     "weatherTags": [],
     "dietWarnings": [],
     "allergenTags": []
-  },
-  {
-    "_id": "40ef25fbcb27dd36",
-    "name": "和风炸酱面",
-    "aliases": [],
-    "emoji": "🍜",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "酱香",
-      "脆",
-      "热"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见",
-      "华北",
-      "日韩"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高油",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
   },
   {
     "_id": "c47224467471c458",
@@ -3083,9 +2779,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -3104,7 +2800,7 @@ module.exports = [
     "emoji": "🍅",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "酸",
@@ -3120,8 +2816,8 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3157,8 +2853,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "清爽少负担",
-      "海鲜"
+      "海鲜",
+      "清淡",
+      "健康"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -3169,9 +2866,8 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3184,9 +2880,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [],
@@ -3220,7 +2916,6 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -3276,7 +2971,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -3289,8 +2985,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
+      "外卖": "高",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -3304,59 +3000,6 @@ module.exports = [
       "含辣"
     ],
     "allergenTags": []
-  },
-  {
-    "_id": "d83bd78247c9ed8c",
-    "name": "咸味法式可丽饼",
-    "aliases": [
-      "咸味可丽饼"
-    ],
-    "emoji": "🥞",
-    "category": "西式简餐",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "咸",
-      "法式风格"
-    ],
-    "cuisine": "西式料理",
-    "foodType": "西式主食",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "西式"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": [
-      "麸质"
-    ]
   },
   {
     "_id": "ec605647fb66686b",
@@ -3382,8 +3025,7 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3421,9 +3063,9 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
-      "适合聚餐"
+      "香",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -3435,7 +3077,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -3469,7 +3110,7 @@ module.exports = [
     "category": "火锅冒菜",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "热"
@@ -3523,7 +3164,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -3586,11 +3227,11 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
+      "鲜",
       "热",
-      "爽滑"
+      "清淡"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
@@ -3605,7 +3246,7 @@ module.exports = [
     "scenes": [
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -3621,7 +3262,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -3645,10 +3286,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "酸辣",
-      "辣"
+      "辣",
+      "酸",
+      "香"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -3659,12 +3301,10 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
@@ -3678,7 +3318,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -3704,10 +3344,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "滋补",
       "热",
-      "适合聚餐",
-      "肉"
+      "肉",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -3719,7 +3358,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -3756,7 +3394,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰",
     "time": "慢",
     "tags": [
@@ -3772,13 +3410,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "自己做"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.8,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3787,10 +3424,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "极低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -3823,7 +3460,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -3838,7 +3474,7 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -3870,15 +3506,16 @@ module.exports = [
       "家常",
       "素",
       "热",
-      "易消化",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
     "mealRole": "小吃",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "晚餐"
     ],
     "scenes": [
       "自己做",
@@ -3897,10 +3534,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -3919,11 +3556,11 @@ module.exports = [
     "emoji": "🦐",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香",
+      "香",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -3936,12 +3573,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -3951,9 +3587,9 @@ module.exports = [
     "itemLevel": "单道菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -3976,23 +3612,23 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "家常",
-      "含蛋",
-      "清爽少负担",
-      "清淡"
+      "蛋",
+      "清淡",
+      "健康",
+      "家常"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
     "mealRole": "小吃",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4006,8 +3642,8 @@ module.exports = [
     "itemLevel": "早餐单品",
     "availability": {
       "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [],
@@ -4016,60 +3652,6 @@ module.exports = [
     ],
     "dietWarnings": [],
     "allergenTags": []
-  },
-  {
-    "_id": "3739190b9071a05a",
-    "name": "生鱼片",
-    "aliases": [],
-    "emoji": "🍣",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "rawFood": true,
-    "safetyNotice": "含生食或生腌食材，请根据个人情况谨慎选择",
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "单道菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "含生食"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
   },
   {
     "_id": "9b99391cc0fb23a8",
@@ -4083,14 +3665,13 @@ module.exports = [
     "tags": [
       "香",
       "肉",
-      "适合聚餐"
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "午餐",
       "晚餐",
       "夜宵"
     ],
@@ -4098,7 +3679,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.4,
@@ -4109,7 +3690,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "高",
       "堂食": "高",
       "自己做": "极低",
       "公司食堂": "极低"
@@ -4183,13 +3764,13 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "甜",
-      "酸",
-      "热",
       "香",
-      "鲜"
+      "咸",
+      "酱香",
+      "热",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -4244,7 +3825,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酸",
       "肉"
@@ -4297,9 +3878,10 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "甜辣",
+      "辣",
+      "甜",
       "素",
-      "辣"
+      "家常"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -4325,7 +3907,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "高",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -4350,7 +3932,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉"
+      "肉",
+      "家常"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -4376,7 +3959,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -4393,8 +3976,8 @@ module.exports = [
     "name": "烤玉米",
     "aliases": [],
     "emoji": "🌽",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
@@ -4403,17 +3986,16 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
-    "mealRole": "配菜",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵",
+      "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4426,10 +4008,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -4441,31 +4023,30 @@ module.exports = [
     "name": "烤扇贝",
     "aliases": [],
     "emoji": "🐚",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "鲜",
-      "海鲜"
+      "海鲜",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4474,10 +4055,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -4507,13 +4088,12 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
+      "早餐",
       "午餐",
-      "晚餐"
+      "加餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -4543,13 +4123,14 @@ module.exports = [
     "aliases": [],
     "emoji": "🐑",
     "category": "面食粉类",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "肉",
-      "热"
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -4562,13 +4143,12 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "spicyLevel": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4577,10 +4157,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -4602,15 +4182,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🐸",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰",
     "time": "慢",
     "tags": [
       "辣",
       "鲜",
-      "麻辣",
-      "肉",
-      "海鲜"
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -4621,7 +4199,6 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 3,
@@ -4635,10 +4212,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
       "自己做": "极低",
-      "公司食堂": "中"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -4664,7 +4241,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "酱香",
@@ -4716,7 +4293,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酱香",
       "肉",
@@ -4727,15 +4304,13 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -4751,7 +4326,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -4790,12 +4365,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -4843,7 +4417,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -4858,9 +4431,9 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -4880,9 +4453,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "香"
+      "香",
+      "肉",
+      "饱腹"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -4911,7 +4486,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "低",
+      "自己做": "高",
       "公司食堂": "高"
     },
     "regionTags": [
@@ -4926,91 +4501,33 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "dfc71ba9846a989f",
-    "name": "叻沙米粉",
-    "aliases": [],
-    "emoji": "🍜",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "香"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 2,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见",
-      "华中"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含辣",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
-  },
-  {
     "_id": "3857bffec931ab4c",
     "name": "烤鱿鱼",
     "aliases": [],
     "emoji": "🦑",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
       "鲜",
-      "海鲜"
+      "海鲜",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
-    "mealRole": "配菜",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵",
+      "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "鱿鱼族",
     "defaultPoolWeight": 0.2,
@@ -5021,10 +4538,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -5036,155 +4553,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "ecda68e99d6216a0",
-    "name": "炸麻球",
-    "aliases": [
-      "麻团"
-    ],
-    "emoji": "🍡",
-    "category": "甜品饮品",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜",
-      "脆"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "甜品",
-    "mealRole": "甜品",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": "麻团_合并组",
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "甜品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高油"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "4327f18dbac022f3",
-    "name": "辣椒船",
-    "aliases": [],
-    "emoji": "🌮",
-    "category": "西式简餐",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "肉"
-    ],
-    "cuisine": "西式料理",
-    "foodType": "西式主食",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 2,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含辣"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "88301e428aae14a7",
-    "name": "香肠",
-    "aliases": [],
-    "emoji": "🌭",
-    "category": "西式简餐",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "家常",
-      "肉"
-    ],
-    "cuisine": "西式料理",
-    "foodType": "西式主食",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "配菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含内脏"
-    ],
-    "allergenTags": []
-  },
-  {
     "_id": "e4157a5473626ddd",
     "name": "大阪烧（御好烧）",
     "aliases": [
@@ -5193,8 +4561,8 @@ module.exports = [
     ],
     "emoji": "🥞",
     "category": "日韩料理",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "酱香",
@@ -5205,18 +4573,16 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.4,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5226,9 +4592,9 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "中",
-      "堂食": "高",
+      "堂食": "中",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "日韩"
@@ -5247,7 +4613,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "热"
@@ -5257,10 +4623,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
       "外卖",
@@ -5280,7 +4644,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -5305,11 +4669,10 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "鲜",
-      "麻辣",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -5339,7 +4702,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -5362,8 +4725,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🐟",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
@@ -5380,11 +4743,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "自己做"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
@@ -5395,10 +4758,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -5438,7 +4801,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -5454,7 +4816,7 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -5521,7 +4883,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣"
     ],
@@ -5538,9 +4900,9 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "spicyLevel": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5552,7 +4914,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -5574,7 +4936,7 @@ module.exports = [
     "emoji": "🥓",
     "category": "烧烤",
     "scene": "堂食",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "香",
@@ -5590,7 +4952,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -5604,7 +4965,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "中",
+      "外卖": "低",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
@@ -5626,7 +4987,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
       "肉"
@@ -5646,7 +5007,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5658,7 +5019,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -5677,7 +5038,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酱香",
       "肉"
@@ -5692,12 +5053,11 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5706,10 +5066,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -5758,7 +5118,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -5779,7 +5139,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酱香",
       "肉"
@@ -5830,7 +5190,7 @@ module.exports = [
     "category": "家常菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "素"
@@ -5859,7 +5219,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -5881,9 +5241,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🍜",
     "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "清淡",
@@ -5900,9 +5260,8 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -5915,9 +5274,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -5960,8 +5319,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 2,
-    "enabled": true,
-    "defaultPoolWeight": 0.25,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -5994,9 +5353,9 @@ module.exports = [
     ],
     "emoji": "🍝",
     "category": "日韩料理",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "酱香"
     ],
@@ -6026,7 +5385,7 @@ module.exports = [
     "availability": {
       "外卖": "中",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -6044,7 +5403,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -6058,14 +5417,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6077,7 +5434,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6094,9 +5451,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🍜",
     "category": "面食粉类",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "热"
@@ -6106,7 +5463,6 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
@@ -6129,7 +5485,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -6156,7 +5512,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "适合早午餐",
       "清淡"
     ],
     "cuisine": "西式料理",
@@ -6169,8 +5524,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -6183,9 +5537,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [],
@@ -6194,69 +5548,6 @@ module.exports = [
     ],
     "dietWarnings": [],
     "allergenTags": []
-  },
-  {
-    "_id": "0f8064ed7f26666f",
-    "name": "炒面",
-    "aliases": [
-      "福建炒面",
-      "家常炒面",
-      "香炒面"
-    ],
-    "emoji": "🍝",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "酱香",
-      "热"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": "家常炒面_合并组",
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
   },
   {
     "_id": "9e3328479bb6a556",
@@ -6270,10 +5561,11 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
-      "热"
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -6290,9 +5582,9 @@ module.exports = [
       "堂食",
       "自己做"
     ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "spicyLevel": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6302,8 +5594,8 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
-      "自己做": "高",
+      "堂食": "高",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -6332,8 +5624,7 @@ module.exports = [
     "tags": [
       "鲜",
       "肉",
-      "热",
-      "适合聚餐"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -6345,7 +5636,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -6386,8 +5676,8 @@ module.exports = [
     "emoji": "🌯",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "脆"
@@ -6467,7 +5757,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -6488,7 +5778,7 @@ module.exports = [
     "category": "家常菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
       "酸",
@@ -6505,7 +5795,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -6539,11 +5828,11 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "凉食",
-      "凉"
+      "凉",
+      "素"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -6650,7 +5939,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🍜",
     "category": "面食粉类",
-    "scene": "外卖",
+    "scene": "自己做",
     "budget": "💰💰",
     "time": "慢",
     "tags": [
@@ -6663,19 +5952,18 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
+      "自己做",
       "外卖",
       "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6684,9 +5972,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -6709,7 +5997,7 @@ module.exports = [
     "emoji": "🐷",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "香",
@@ -6730,7 +6018,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -6739,10 +6027,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -6773,7 +6061,6 @@ module.exports = [
       "早餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -6788,8 +6075,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -6816,7 +6103,6 @@ module.exports = [
       "家常",
       "素",
       "热",
-      "易消化",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -6843,10 +6129,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -6871,7 +6157,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "嫩滑",
+      "嫩",
       "素",
       "蛋",
       "清淡"
@@ -6887,7 +6173,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -6903,7 +6188,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -6934,13 +6219,11 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "早餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -7004,8 +6287,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -7026,12 +6309,12 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "发酵风味",
       "海鲜",
-      "热"
+      "热",
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -7046,6 +6329,7 @@ module.exports = [
     "scenes": [
       "外卖",
       "堂食",
+      "自己做",
       "公司食堂"
     ],
     "spicyLevel": 2,
@@ -7061,7 +6345,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -7092,23 +6376,22 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
       "晚餐",
       "夜宵"
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.18,
@@ -7119,10 +6402,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7137,8 +6420,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🐑",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "家常",
@@ -7154,9 +6437,8 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -7169,10 +6451,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "极低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -7195,9 +6477,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "辣",
-      "凉食",
-      "素",
       "凉",
+      "素",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -7225,8 +6506,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -7249,10 +6530,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "甜",
       "肉",
       "热",
-      "适合聚餐",
       "鲜"
     ],
     "cuisine": "中式料理",
@@ -7265,8 +6544,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -7305,7 +6582,7 @@ module.exports = [
     "category": "西式简餐",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "肉",
@@ -7324,8 +6601,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.45,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -7351,62 +6628,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "9c070ed9ea987165",
-    "name": "金枪鱼饭团",
-    "aliases": [],
-    "emoji": "🍙",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
-  },
-  {
     "_id": "f6b4221aa5a48ba5",
     "name": "烤鸡心",
     "aliases": [],
@@ -7416,24 +6637,23 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "肉"
+      "香",
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
       "晚餐",
       "夜宵"
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.15,
@@ -7444,10 +6664,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7466,8 +6686,9 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "香",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -7480,10 +6701,9 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.15,
@@ -7494,10 +6714,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -7516,7 +6736,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -7572,8 +6792,8 @@ module.exports = [
     "emoji": "🫓",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "脆"
@@ -7583,7 +6803,9 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "夜宵",
+      "加餐"
     ],
     "scenes": [
       "自己做",
@@ -7603,7 +6825,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -7677,10 +6899,11 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
-      "热"
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -7697,7 +6920,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
@@ -7734,11 +6957,11 @@ module.exports = [
     "category": "火锅冒菜",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "麻辣",
-      "热"
+      "热",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅冒菜",
@@ -7753,7 +6976,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
@@ -7800,17 +7023,14 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -7846,13 +7066,14 @@ module.exports = [
     "name": "烤香菇",
     "aliases": [],
     "emoji": "🍄",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "香",
-      "素"
+      "素",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -7860,15 +7081,15 @@ module.exports = [
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.15,
     "equivalentGroupId": null,
@@ -7879,10 +7100,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -7900,7 +7121,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "咸",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -7910,9 +7131,8 @@ module.exports = [
       "早餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -7925,10 +7145,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -7950,7 +7170,7 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "热",
@@ -8007,25 +7227,23 @@ module.exports = [
     "aliases": [],
     "emoji": "🍲",
     "category": "汤粥炖品",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": true,
     "mealPeriods": [
       "早餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -8038,10 +7256,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8065,12 +7283,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
       "肉",
-      "含蛋",
-      "蛋"
+      "蛋",
+      "鲜"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -8082,8 +7299,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8099,7 +7315,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -8120,7 +7336,7 @@ module.exports = [
     "emoji": "🐟",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -8137,7 +7353,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -8154,7 +7369,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8173,27 +7388,27 @@ module.exports = [
     "aliases": [],
     "emoji": "🥗",
     "category": "轻食",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "外卖",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
-      "家常",
       "素",
-      "清爽少负担",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐",
+      "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8235,7 +7450,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -8243,8 +7458,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -8279,13 +7492,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🥩",
     "category": "日韩料理",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
+      "肉",
       "脆",
-      "肉"
+      "香"
     ],
     "cuisine": "日韩料理",
     "foodType": "日韩主食",
@@ -8296,9 +7509,8 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8336,14 +7548,13 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
       "加餐"
     ],
     "scenes": [
@@ -8361,8 +7572,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -8376,27 +7587,26 @@ module.exports = [
     "name": "烤生蚝",
     "aliases": [],
     "emoji": "🦪",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "鲜",
-      "海鲜"
+      "海鲜",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8409,10 +7619,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -8432,7 +7642,7 @@ module.exports = [
     "emoji": "🐓",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
@@ -8463,7 +7673,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -8476,69 +7686,11 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "bfba0ec3bf625e0a",
-    "name": "裤带面",
-    "aliases": [],
-    "emoji": "🍜",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "热"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 2,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含辣",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
-  },
-  {
     "_id": "95fd79710ba635e4",
     "name": "糖火烧",
     "aliases": [],
     "emoji": "🥯",
-    "category": "甜品饮品",
+    "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰",
     "time": "快",
@@ -8547,7 +7699,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
-    "mealRole": "甜品",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
       "早餐",
@@ -8559,9 +7711,9 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0.2,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -8569,8 +7721,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -8587,7 +7739,7 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "脆",
@@ -8599,12 +7751,12 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -8645,7 +7797,9 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "甜辣"
+      "辣",
+      "甜",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -8662,8 +7816,8 @@ module.exports = [
       "自己做"
     ],
     "spicyLevel": 1,
-    "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8672,9 +7826,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -8697,9 +7851,11 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "甜辣",
+      "辣",
+      "甜",
+      "酸",
       "肉",
-      "辣"
+      "家常"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -8712,11 +7868,12 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 1,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.85,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -8725,10 +7882,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "高",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -8747,7 +7904,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酸",
       "热"
@@ -8858,10 +8015,10 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "绵软",
-      "热",
       "素",
-      "清淡"
+      "清淡",
+      "热",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
@@ -8873,8 +8030,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -8909,8 +8064,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🦐",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
@@ -8926,9 +8081,9 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -8941,10 +8096,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -8986,13 +8141,12 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9002,7 +8156,7 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -9024,8 +8178,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🐟",
     "category": "家常菜",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
@@ -9038,12 +8192,12 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "自己做"
+      "外卖"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -9056,10 +8210,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -9134,11 +8288,11 @@ module.exports = [
     "emoji": "🧇",
     "category": "甜品饮品",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "甜",
-      "适合早午餐"
+      "脆"
     ],
     "cuisine": "西式料理",
     "foodType": "甜品",
@@ -9150,7 +8304,6 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -9187,7 +8340,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -9208,7 +8361,7 @@ module.exports = [
     "spicyLevel": 0,
     "enabled": true,
     "equivalentGroupId": "盐焗鸡_套餐族",
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.6,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -9219,7 +8372,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -9238,7 +8391,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "热"
@@ -9271,8 +8424,8 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
-      "自己做": "高",
+      "堂食": "高",
+      "自己做": "中",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -9297,7 +8450,7 @@ module.exports = [
     "category": "配菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "香",
       "素"
@@ -9312,8 +8465,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -9343,12 +8494,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🍡",
     "category": "日韩料理",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "辣",
-      "软糯"
+      "甜",
+      "糯"
     ],
     "cuisine": "日韩料理",
     "foodType": "日韩主食",
@@ -9376,7 +8528,7 @@ module.exports = [
     "availability": {
       "外卖": "中",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -9388,53 +8540,6 @@ module.exports = [
     "dietWarnings": [
       "含辣"
     ],
-    "allergenTags": []
-  },
-  {
-    "_id": "9e5c28b944ca07c8",
-    "name": "芸豆卷",
-    "aliases": [],
-    "emoji": "🍰",
-    "category": "甜品饮品",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜",
-      "绵软",
-      "素"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "甜品",
-    "mealRole": "甜品",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "甜品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [],
     "allergenTags": []
   },
   {
@@ -9499,7 +8604,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -9514,8 +8619,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -9528,10 +8632,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "极低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -9541,61 +8645,6 @@ module.exports = [
       "高碳水"
     ],
     "allergenTags": []
-  },
-  {
-    "_id": "6c83a90a8d7cc29b",
-    "name": "炸蛋",
-    "aliases": [],
-    "emoji": "🥚",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "香",
-      "脆",
-      "蛋"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "小吃",
-    "mealRole": "小吃",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "早餐",
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高油"
-    ],
-    "allergenTags": [
-      "蛋"
-    ]
   },
   {
     "_id": "a34743b016b2ca34",
@@ -9615,7 +8664,6 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
@@ -9625,9 +8673,9 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
-    "defaultPoolWeight": 0,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -9636,8 +8684,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -9660,7 +8708,7 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -9700,61 +8748,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "964459d65b9ea07a",
-    "name": "章鱼丸子",
-    "aliases": [
-      "章鱼小丸子"
-    ],
-    "emoji": "🐙",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "酱香",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "小吃",
-    "mealRole": "小吃",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": "章鱼小丸子_合并组",
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
-  },
-  {
     "_id": "0d2bf46423474781",
     "name": "梅菜扣肉饭",
     "aliases": [
@@ -9764,7 +8757,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "咸",
       "肉"
@@ -9816,8 +8809,8 @@ module.exports = [
     "emoji": "🥚",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "脆",
@@ -9886,8 +8879,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -9921,7 +8912,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -9932,7 +8923,6 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
@@ -9978,28 +8968,28 @@ module.exports = [
     "name": "豚骨拉面",
     "aliases": [],
     "emoji": "🍜",
-    "category": "面食粉类",
+    "category": "日韩料理",
     "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰💰💰",
+    "time": "快",
     "tags": [
-      "家常",
-      "热"
+      "鲜",
+      "热",
+      "肉",
+      "饱腹"
     ],
     "cuisine": "日韩料理",
     "foodType": "面食粉类",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10015,7 +9005,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "中",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -10043,7 +9033,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "咸",
-      "嫩滑",
+      "嫩",
       "素",
       "清淡"
     ],
@@ -10084,61 +9074,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "926e74c6124962d2",
-    "name": "三文鱼饭",
-    "aliases": [],
-    "emoji": "🍱",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "极低",
-      "堂食": "高",
-      "自己做": "极低",
-      "公司食堂": "极低"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
-  },
-  {
     "_id": "9f8dbe4546274508",
     "name": "醋溜土豆丝",
     "aliases": [],
@@ -10176,10 +9111,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -10197,7 +9132,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "凉食",
       "素",
       "凉",
       "清淡"
@@ -10227,69 +9161,14 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [],
     "weatherTags": [],
     "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
-    "_id": "564a0f800aef9563",
-    "name": "印尼炒饭",
-    "aliases": [],
-    "emoji": "🍛",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "香",
-      "辣"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 2,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含辣",
-      "高碳水"
-    ],
     "allergenTags": []
   },
   {
@@ -10303,7 +9182,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "凉食",
       "素",
       "凉",
       "清淡"
@@ -10333,8 +9211,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -10353,7 +9231,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "清淡",
@@ -10375,7 +9253,7 @@ module.exports = [
     "spicyLevel": 0,
     "enabled": true,
     "equivalentGroupId": "白切鸡_套餐族",
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.7,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -10407,7 +9285,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "家常",
+      "香",
       "脆",
       "肉"
     ],
@@ -10420,12 +9298,11 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10434,7 +9311,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
+      "外卖": "低",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
@@ -10457,10 +9334,10 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
-      "辣"
+      "酱香"
     ],
     "cuisine": "东南亚料理",
     "foodType": "面食粉类",
@@ -10476,7 +9353,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 0,
     "enabled": false,
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -10507,55 +9384,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "92d7f88df17dcc78",
-    "name": "沙嗲",
-    "aliases": [],
-    "emoji": "🍢",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
-    "tags": [
-      "香",
-      "肉"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "单道菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
     "_id": "7bb09d5a45402ddf",
     "name": "糖醋鱼",
     "aliases": [],
@@ -10565,7 +9393,7 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "酸甜",
+      "酸",
       "甜",
       "海鲜"
     ],
@@ -10579,8 +9407,8 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10615,27 +9443,25 @@ module.exports = [
     "aliases": [],
     "emoji": "🥚",
     "category": "小吃点心",
-    "scene": "堂食",
+    "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
-      "肉",
       "蛋",
       "香",
       "热"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
-    "mealRole": "配菜",
+    "mealRole": "小吃",
     "canBeMeal": true,
     "mealPeriods": [
       "早餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10676,8 +9502,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "适合聚餐",
-      "热"
+      "肉",
+      "热",
+      "饱腹"
     ],
     "cuisine": "日韩料理",
     "foodType": "火锅",
@@ -10689,9 +9516,8 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -10704,9 +9530,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -10731,9 +9557,10 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "发酵风味",
       "辣",
-      "素"
+      "素",
+      "脆",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -10783,26 +9610,27 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "酸甜",
-      "肉"
+      "肉",
+      "酸",
+      "甜",
+      "脆"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -10815,10 +9643,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -10838,8 +9666,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -10851,7 +9679,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -10904,8 +9731,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.45,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -10937,13 +9764,15 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "脆"
+      "脆",
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
+      "早餐",
       "夜宵",
       "加餐"
     ],
@@ -10981,26 +9810,26 @@ module.exports = [
     "emoji": "🥗",
     "category": "轻食",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "甜",
       "酸",
-      "清爽少负担",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "西式料理",
     "foodType": "轻食",
     "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -11014,9 +9843,9 @@ module.exports = [
     "itemLevel": "早餐单品",
     "availability": {
       "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -11033,18 +9862,17 @@ module.exports = [
     "aliases": [],
     "emoji": "🍲",
     "category": "汤粥炖品",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "酸辣",
-      "辣",
       "酸",
+      "辣",
       "热"
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -11056,7 +9884,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
@@ -11067,9 +9895,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "汤羹",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -11090,8 +9918,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
@@ -11103,18 +9931,16 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11125,8 +9951,8 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -11145,7 +9971,7 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -11196,11 +10022,10 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "酸甜",
-      "凉食",
-      "热",
+      "酸",
+      "甜",
       "凉"
     ],
     "cuisine": "日韩料理",
@@ -11208,7 +10033,6 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐",
       "夜宵"
@@ -11256,11 +10080,10 @@ module.exports = [
     "emoji": "🫔",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "咸",
-      "软糯",
       "糯"
     ],
     "cuisine": "中式料理",
@@ -11309,10 +10132,11 @@ module.exports = [
     "category": "家常菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "素"
+      "家常",
+      "嫩"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -11325,7 +10149,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -11338,10 +10163,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
+      "外卖": "高",
+      "堂食": "高",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -11364,7 +10189,7 @@ module.exports = [
     "category": "汤粥炖品",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "素",
@@ -11373,7 +10198,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -11381,8 +10206,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -11429,7 +10252,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "正餐",
+    "mealRole": "汤品",
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
@@ -11481,9 +10304,9 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "发酵风味",
       "香",
-      "素"
+      "素",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -11497,9 +10320,9 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.25,
+    "spicyLevel": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11521,60 +10344,6 @@ module.exports = [
     "dietWarnings": [],
     "allergenTags": [
       "大豆"
-    ]
-  },
-  {
-    "_id": "e7cacf7b4d9e0f1b",
-    "name": "蒸蛋羹",
-    "aliases": [],
-    "emoji": "🥚",
-    "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "家常",
-      "嫩滑",
-      "素",
-      "蛋",
-      "清淡"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "配菜",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "配菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": [
-      "蛋"
     ]
   },
   {
@@ -11637,7 +10406,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "酱香",
-      "脆"
+      "脆",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -11652,7 +10422,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -11685,8 +10455,8 @@ module.exports = [
     "name": "烤秋刀鱼",
     "aliases": [],
     "emoji": "🐟",
-    "category": "家常菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
     "time": "慢",
     "tags": [
@@ -11695,20 +10465,19 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
+    "mealRole": "配菜",
+    "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11717,10 +10486,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -11743,7 +10512,8 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "家常",
+      "香",
+      "咸",
       "热"
     ],
     "cuisine": "中式料理",
@@ -11770,7 +10540,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
@@ -11827,10 +10597,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -11849,7 +10619,7 @@ module.exports = [
     "category": "配菜",
     "scene": "自己做",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "家常",
       "肉",
@@ -11865,7 +10635,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -11881,7 +10650,7 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -11919,8 +10688,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.45,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -11951,10 +10720,10 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "酸甜",
       "甜",
+      "酸",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12017,9 +10786,7 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -12033,9 +10800,9 @@ module.exports = [
     "itemLevel": "单道菜",
     "availability": {
       "外卖": "低",
-      "堂食": "中",
+      "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -12052,9 +10819,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "甜辣",
+      "辣",
+      "甜",
+      "酸",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12102,9 +10871,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🐟",
     "category": "日韩料理",
-    "scene": "自己做",
-    "budget": "💰💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰💰",
+    "time": "快",
     "tags": [
       "甜",
       "鲜",
@@ -12119,13 +10888,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.4,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12158,10 +10926,10 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -12209,13 +10977,13 @@ module.exports = [
     "category": "汤粥炖品",
     "scene": "自己做",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
       "甜",
       "素",
       "热",
-      "易消化",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
@@ -12264,7 +11032,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "肉"
@@ -12283,8 +11051,8 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12308,62 +11076,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "eb52c04842f54396",
-    "name": "三文鱼饭团",
-    "aliases": [],
-    "emoji": "🍙",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "极低",
-      "堂食": "高",
-      "自己做": "极低",
-      "公司食堂": "极低"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
-  },
-  {
     "_id": "f9d29bb655bb46f1",
     "name": "宫保鸡丁",
     "aliases": [
@@ -12376,6 +11088,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
+      "甜",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -12389,9 +11102,10 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "equivalentGroupId": "宫保鸡丁_套餐族",
     "defaultPoolWeight": 0.8,
@@ -12402,10 +11116,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
+      "外卖": "高",
+      "堂食": "高",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -12428,7 +11142,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "热"
@@ -12501,7 +11215,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -12563,8 +11276,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -12584,11 +11297,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
       "肉",
-      "脆"
+      "脆",
+      "香"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -12669,10 +11382,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -12699,7 +11412,8 @@ module.exports = [
     "mealRole": "小吃",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -12719,7 +11433,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -12732,61 +11446,12 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "4778d2f2f2f1cec6",
-    "name": "蒸玉米",
-    "aliases": [],
-    "emoji": "🌽",
-    "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜",
-      "素",
-      "清淡"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "配菜",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "配菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
     "_id": "0d15fe377ba897e3",
     "name": "葱姜炒蟹",
     "aliases": [],
     "emoji": "🦀",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
@@ -12803,13 +11468,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
       "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12819,8 +11483,8 @@ module.exports = [
     "itemLevel": "聚餐方式",
     "availability": {
       "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
+      "堂食": "高",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -12840,7 +11504,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🍗",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰",
     "time": "慢",
     "tags": [
@@ -12856,13 +11520,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12873,8 +11535,8 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -12953,12 +11615,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -12970,7 +11631,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13000,12 +11661,11 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -13032,120 +11692,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "b2dc8c34f6e4f596",
-    "name": "番茄蛋汤",
-    "aliases": [],
-    "emoji": "🍲",
-    "category": "汤粥炖品",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "酸",
-      "热",
-      "蛋"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "汤羹炖品",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "汤羹",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": [
-      "蛋"
-    ]
-  },
-  {
-    "_id": "6421ef019871c6f1",
-    "name": "椰浆饭",
-    "aliases": [
-      "椰浆饭",
-      "马来西亚椰浆饭"
-    ],
-    "emoji": "🍚",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "香",
-      "辣"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 2,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含辣",
-      "高碳水"
-    ],
-    "allergenTags": []
-  },
-  {
     "_id": "f510e9e2ee1521f8",
     "name": "小锅米线",
     "aliases": [],
@@ -13153,7 +11699,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "鲜",
@@ -13174,7 +11720,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
@@ -13187,7 +11733,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -13210,13 +11756,13 @@ module.exports = [
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "滋补",
-      "肉"
+      "香",
+      "肉",
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -13227,13 +11773,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13244,8 +11788,8 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -13264,8 +11808,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
+      "鲜",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -13278,7 +11822,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -13311,9 +11854,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🥓",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -13327,13 +11870,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13342,10 +11884,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13373,18 +11915,18 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
+      "早餐",
       "午餐",
-      "晚餐"
+      "晚餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13410,12 +11952,12 @@ module.exports = [
     "emoji": "🥘",
     "category": "火锅冒菜",
     "scene": "堂食",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
       "香",
-      "麻辣"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅冒菜",
@@ -13431,9 +11973,9 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
-    "defaultPoolWeight": 0.35,
+    "defaultPoolWeight": 0.55,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13444,7 +11986,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -13466,12 +12008,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🐓",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "辣",
-      "凉食",
+      "凉",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -13483,13 +12025,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13498,10 +12039,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13520,12 +12061,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🐓",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "香",
-      "凉食",
+      "凉",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -13543,7 +12084,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13552,10 +12093,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13571,7 +12112,7 @@ module.exports = [
     "emoji": "🦐",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
@@ -13588,12 +12129,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -13605,7 +12145,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13642,7 +12182,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -13659,7 +12198,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -13680,8 +12219,7 @@ module.exports = [
     "tags": [
       "鲜",
       "素",
-      "热",
-      "适合聚餐"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -13693,8 +12231,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -13733,7 +12269,7 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "酸甜",
+      "酸",
       "甜",
       "肉"
     ],
@@ -13748,7 +12284,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13761,7 +12298,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -13783,7 +12320,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "脆",
@@ -13803,9 +12340,9 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "猪排族",
-    "defaultPoolWeight": 0.5,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -13840,7 +12377,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "嫩滑",
+      "嫩",
       "蛋"
     ],
     "cuisine": "中式料理",
@@ -13853,10 +12390,7 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -13872,7 +12406,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -13889,11 +12423,12 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "肉",
-      "热"
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -13910,7 +12445,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
@@ -13947,7 +12482,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香"
     ],
@@ -13960,7 +12495,6 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
       "公司食堂"
@@ -13979,7 +12513,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -13999,8 +12533,8 @@ module.exports = [
     ],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "咸",
@@ -14015,14 +12549,14 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
     "equivalentGroupId": "梅菜扣肉_套餐族",
-    "defaultPoolWeight": 0.8,
+    "defaultPoolWeight": 0.6,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -14030,9 +12564,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -14053,7 +12587,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "凉食",
       "素",
       "蛋",
       "凉",
@@ -14070,7 +12603,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -14086,7 +12618,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -14109,7 +12641,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -14139,9 +12671,9 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
+      "堂食": "高",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -14165,7 +12697,6 @@ module.exports = [
       "鲜",
       "清淡",
       "热",
-      "适合聚餐",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14178,7 +12709,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -14215,7 +12745,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "肉"
@@ -14266,7 +12796,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "素"
@@ -14322,10 +12852,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
-      "肉"
+      "肉",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -14377,7 +12908,7 @@ module.exports = [
     "tags": [
       "家常",
       "素",
-      "滋补",
+      "健康",
       "清淡"
     ],
     "cuisine": "中式料理",
@@ -14390,8 +12921,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -14421,8 +12950,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
@@ -14438,9 +12967,8 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14455,7 +12983,7 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
+      "自己做": "中",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -14477,7 +13005,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "肉"
@@ -14495,7 +13023,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "equivalentGroupId": "宫保鸡丁_套餐族",
     "defaultPoolWeight": 1,
@@ -14537,9 +13065,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "辣",
-      "麻辣",
-      "适合聚餐",
-      "热"
+      "热",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -14551,11 +13078,9 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 3,
     "enabled": true,
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.4,
@@ -14594,7 +13119,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "肉"
@@ -14612,7 +13137,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "equivalentGroupId": "黄焖鸡_套餐族",
     "defaultPoolWeight": 1,
@@ -14624,7 +13149,7 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
+      "堂食": "高",
       "自己做": "低",
       "公司食堂": "高"
     },
@@ -14664,7 +13189,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -14700,29 +13224,30 @@ module.exports = [
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "香",
-      "肉"
+      "肉",
+      "咸",
+      "凉",
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
+    "mealRole": "配菜",
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14731,10 +13256,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -14750,7 +13275,7 @@ module.exports = [
     "emoji": "🦐",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
@@ -14781,7 +13306,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
       "自己做": "低",
       "公司食堂": "低"
@@ -14808,7 +13333,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "软糯",
+      "糯",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14851,12 +13376,14 @@ module.exports = [
     "name": "寿司",
     "aliases": [],
     "emoji": "🍣",
-    "category": "饭类套餐",
+    "category": "日韩料理",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "甜"
+      "鲜",
+      "海鲜",
+      "凉"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -14868,8 +13395,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -14883,9 +13409,9 @@ module.exports = [
     "itemLevel": "完整餐食",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
+      "堂食": "高",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -14903,7 +13429,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🦀",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
@@ -14920,13 +13446,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -14937,7 +13461,7 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
+      "自己做": "低",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -14959,11 +13483,10 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
-      "麻辣",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -14979,9 +13502,9 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 3,
+    "spicyLevel": 2,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15013,13 +13536,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🍢",
     "category": "烧烤",
-    "scene": "堂食",
+    "scene": "自己做",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
-      "适合聚餐"
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -15027,16 +13549,14 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.35,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15046,8 +13566,8 @@ module.exports = [
     "itemLevel": "聚餐方式",
     "availability": {
       "外卖": "极低",
-      "堂食": "高",
-      "自己做": "极低",
+      "堂食": "极低",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [],
@@ -15063,7 +13583,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🦀",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "自己做",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
@@ -15079,16 +13599,15 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
+      "自己做",
+      "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "seasonTags": [
       "秋季"
     ],
-    "defaultPoolWeight": 0.5,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15118,8 +13637,8 @@ module.exports = [
     "aliases": [],
     "emoji": "🍗",
     "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
+    "scene": "外卖",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "辣",
@@ -15150,7 +13669,7 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "高",
-      "堂食": "高",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -15173,7 +13692,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酸",
       "辣",
@@ -15231,12 +13750,12 @@ module.exports = [
     "emoji": "🥘",
     "category": "火锅冒菜",
     "scene": "堂食",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
-      "麻辣",
-      "适合聚餐"
+      "香",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅冒菜",
@@ -15289,11 +13808,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
-      "素",
-      "麻辣"
+      "香",
+      "嫩"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -15406,11 +13925,11 @@ module.exports = [
     "category": "西式简餐",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
       "肉",
-      "饱腹"
+      "饱腹",
+      "香"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -15425,8 +13944,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15467,10 +13986,7 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15486,7 +14002,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -15498,7 +14014,7 @@ module.exports = [
     "name": "烤红薯",
     "aliases": [],
     "emoji": "🍠",
-    "category": "配菜",
+    "category": "小吃点心",
     "scene": "自己做",
     "budget": "💰",
     "time": "快",
@@ -15509,17 +14025,14 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
-    "mealRole": "配菜",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -15533,69 +14046,15 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
       "降温适合"
     ],
     "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
-    "_id": "e0a1af5d6aed1c4b",
-    "name": "海南鸡饭（新加坡式）",
-    "aliases": [
-      "新加坡鸡饭",
-      "海南鸡饭"
-    ],
-    "emoji": "🐔",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "家常",
-      "肉"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高碳水"
-    ],
     "allergenTags": []
   },
   {
@@ -15609,7 +14068,6 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "绵软",
       "素"
     ],
     "cuisine": "中式料理",
@@ -15617,16 +14075,14 @@ module.exports = [
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
       "加餐"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15635,10 +14091,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "低",
+      "堂食": "中",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -15655,9 +14111,9 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "凉食",
-      "热"
+      "酸",
+      "辣",
+      "凉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -15674,7 +14130,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": false,
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -15726,12 +14182,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -15743,7 +14198,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -15777,9 +14232,9 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "烧饼族",
-    "defaultPoolWeight": 0.5,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -15817,7 +14272,7 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -15877,8 +14332,8 @@ module.exports = [
     "emoji": "🥟",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "鲜",
       "热"
@@ -15888,7 +14343,8 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐"
     ],
     "scenes": [
       "外卖",
@@ -15932,7 +14388,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "鲜",
-      "嫩滑",
+      "嫩",
       "海鲜",
       "脆"
     ],
@@ -15945,8 +14401,6 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -15980,29 +14434,30 @@ module.exports = [
     "name": "烤茄子",
     "aliases": [],
     "emoji": "🍆",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "快",
+    "time": "慢",
     "tags": [
-      "蒜香",
-      "素"
+      "香",
+      "素",
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖",
+      "自己做"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -16013,10 +14468,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -16031,7 +14486,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "肉"
@@ -16129,31 +14584,35 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "6ea2a4f6c74714f9",
-    "name": "烤香肠",
+    "_id": "d463d9aec04e7f9a",
+    "name": "卤味",
     "aliases": [],
-    "emoji": "🌭",
-    "category": "小吃点心",
+    "emoji": "🥓",
+    "category": "配菜",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
-      "家常",
+      "香",
+      "咸",
+      "酱香",
+      "辣",
       "肉"
     ],
     "cuisine": "中式料理",
-    "foodType": "小吃",
-    "mealRole": "小吃",
+    "foodType": "配菜",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
-      "加餐"
+      "午餐",
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -16169,59 +14628,6 @@ module.exports = [
       "自己做": "低",
       "公司食堂": "低"
     },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含内脏"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "d463d9aec04e7f9a",
-    "name": "卤味",
-    "aliases": [],
-    "emoji": "🥓",
-    "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "香",
-      "咸",
-      "酱香"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "配菜",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
     "regionTags": [],
     "weatherTags": [],
     "dietWarnings": [],
@@ -16235,10 +14641,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -16253,9 +14660,9 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16279,57 +14686,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "0bcf5e6f5b45201c",
-    "name": "酿豆腐",
-    "aliases": [],
-    "emoji": "🧈",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
-    "tags": [
-      "香",
-      "肉"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "单道菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": [
-      "大豆"
-    ]
-  },
-  {
     "_id": "b60512adf6744c96",
     "name": "烤全羊",
     "aliases": [],
@@ -16339,9 +14695,8 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "肉",
-      "适合聚餐"
+      "香",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -16353,7 +14708,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -16402,7 +14756,6 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -16435,7 +14788,7 @@ module.exports = [
     "emoji": "🐔",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "酸",
@@ -16489,21 +14842,20 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉",
-      "热"
+      "热",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
       "自己做",
@@ -16511,7 +14863,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
@@ -16566,11 +14918,9 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -16582,9 +14932,9 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "日韩"
@@ -16604,28 +14954,28 @@ module.exports = [
     "name": "酸菜炖粉条",
     "aliases": [],
     "emoji": "🥬",
-    "category": "面食粉类",
-    "scene": "外卖",
+    "category": "家常菜",
+    "scene": "自己做",
     "budget": "💰💰",
     "time": "慢",
     "tags": [
       "酸",
       "热",
-      "家常"
+      "家常",
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
-      "外卖",
+      "自己做",
       "堂食",
+      "外卖",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -16639,9 +14989,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -16667,9 +15017,9 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "家常",
-      "素",
-      "脆"
+      "脆",
+      "蛋",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -16685,8 +15035,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.4,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -16728,7 +15078,7 @@ module.exports = [
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -16736,8 +15086,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -16772,7 +15120,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🐔",
     "category": "小吃点心",
-    "scene": "堂食",
+    "scene": "外卖",
     "budget": "💰",
     "time": "快",
     "tags": [
@@ -16789,8 +15137,7 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食"
+      "外卖"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16803,10 +15150,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "低",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -16879,7 +15226,7 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "配菜",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
@@ -16896,10 +15243,9 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -16912,10 +15258,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -16930,12 +15276,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🐓",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "辣",
-      "凉食",
+      "凉",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -16947,9 +15293,9 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 2,
     "enabled": true,
@@ -16962,10 +15308,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -16979,123 +15325,17 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "d2a48becbc912ea7",
-    "name": "玉米片",
-    "aliases": [],
-    "emoji": "🌽",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜",
-      "脆",
-      "素"
-    ],
-    "cuisine": "西式料理",
-    "foodType": "小吃",
-    "mealRole": "小吃",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高油"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "61fffdbcbad5226f",
-    "name": "韩式生拌牛肉饭",
-    "aliases": [
-      "生牛肉拌饭"
-    ],
-    "emoji": "🍚",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "家常",
-      "肉"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "rawFood": true,
-    "safetyNotice": "含生食或生腌食材，请根据个人情况谨慎选择",
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含生食",
-      "高碳水"
-    ],
-    "allergenTags": []
-  },
-  {
     "_id": "151414b89811e751",
     "name": "蒜蓉开边虾",
     "aliases": [],
     "emoji": "🦐",
     "category": "配菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
-      "蒜香",
+      "香",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -17108,13 +15348,12 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -17123,10 +15362,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -17155,7 +15394,9 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "午餐",
+      "晚餐"
     ],
     "scenes": [
       "外卖",
@@ -17226,7 +15467,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -17247,12 +15488,12 @@ module.exports = [
     "emoji": "🍗",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "香",
       "酱香",
-      "软糯",
+      "糯",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -17291,61 +15532,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "ffe078f8dbce48c1",
-    "name": "肉骨茶套餐",
-    "aliases": [
-      "肉骨茶饭",
-      "肉骨茶"
-    ],
-    "emoji": "🧋",
-    "category": "汤粥炖品",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
-    "tags": [
-      "家常",
-      "滋补",
-      "肉"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "汤羹炖品",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "餐厅品类",
-    "availability": {
-      "外卖": "中",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "雨天适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
     "_id": "d19f9a041402e1b1",
     "name": "盐焗鸡",
     "aliases": [
@@ -17353,9 +15539,9 @@ module.exports = [
     ],
     "emoji": "🍗",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -17369,9 +15555,8 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17384,10 +15569,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17402,19 +15587,21 @@ module.exports = [
     "aliases": [],
     "emoji": "🫐",
     "category": "甜品饮品",
-    "scene": "堂食",
+    "scene": "自己做",
     "budget": "💰",
     "time": "快",
     "tags": [
       "甜",
-      "素"
+      "素",
+      "健康"
     ],
     "cuisine": "西式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐"
+      "早餐",
+      "加餐"
     ],
     "scenes": [
       "自己做",
@@ -17433,8 +15620,8 @@ module.exports = [
     "itemLevel": "早餐单品",
     "availability": {
       "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [],
@@ -17464,9 +15651,10 @@ module.exports = [
       "早餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "自己做",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17481,8 +15669,8 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
+      "自己做": "中",
+      "公司食堂": "高"
     },
     "regionTags": [],
     "weatherTags": [
@@ -17501,7 +15689,7 @@ module.exports = [
     "emoji": "🍖",
     "category": "烧烤",
     "scene": "堂食",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "香",
@@ -17554,7 +15742,7 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "滋补",
+      "鲜",
       "热",
       "肉",
       "清淡"
@@ -17569,7 +15757,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -17584,9 +15771,9 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17605,8 +15792,8 @@ module.exports = [
     "emoji": "🥯",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "肉"
@@ -17634,8 +15821,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -17647,69 +15834,6 @@ module.exports = [
       "高碳水"
     ],
     "allergenTags": []
-  },
-  {
-    "_id": "27dc5ba938bae993",
-    "name": "云吞",
-    "aliases": [
-      "馄饨",
-      "抄手"
-    ],
-    "emoji": "🥟",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "爽滑",
-      "热",
-      "清淡"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "中式面点",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "早餐单品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
   },
   {
     "_id": "0ce07e25f9a5e2f2",
@@ -17735,7 +15859,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -17750,9 +15873,9 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17777,21 +15900,18 @@ module.exports = [
       "家常",
       "素",
       "热",
-      "易消化",
+      "健康",
       "清淡"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
-    "mealRole": "小吃",
+    "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
       "早餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -17804,9 +15924,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
+      "外卖": "低",
+      "堂食": "低",
+      "自己做": "高",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -17827,7 +15947,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "素"
@@ -17847,7 +15967,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -17933,7 +16053,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "香",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -17945,10 +16066,9 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
@@ -17962,7 +16082,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -17983,12 +16103,14 @@ module.exports = [
     "tags": [
       "香",
       "热",
-      "凉食"
+      "酱香",
+      "蛋",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
     "mealRole": "小吃",
-    "canBeMeal": false,
+    "canBeMeal": true,
     "mealPeriods": [
       "夜宵",
       "加餐",
@@ -17998,7 +16120,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
@@ -18033,25 +16155,22 @@ module.exports = [
     "emoji": "🥞",
     "category": "甜品饮品",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "甜",
-      "法式风格"
+      "脆"
     ],
     "cuisine": "西式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
-      "夜宵",
       "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18064,8 +16183,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -18103,8 +16222,8 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18118,7 +16237,7 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -18157,8 +16276,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -18197,7 +16314,6 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "酸辣",
       "辣",
       "酸",
       "素"
@@ -18212,7 +16328,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -18228,7 +16343,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -18242,67 +16357,13 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "88723c115b2d5770",
-    "name": "海鲜葱饼",
-    "aliases": [],
-    "emoji": "🥞",
-    "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "配菜",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "配菜",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜"
-    ],
-    "allergenTags": [
-      "海鲜",
-      "麸质"
-    ]
-  },
-  {
     "_id": "83833b2a29d5e3b0",
     "name": "白灼虾",
     "aliases": [],
     "emoji": "🦐",
     "category": "配菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
@@ -18319,9 +16380,7 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18335,9 +16394,9 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -18355,10 +16414,11 @@ module.exports = [
     "emoji": "🍖",
     "category": "家常菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "甜",
+      "酸",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -18372,7 +16432,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -18385,7 +16446,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -18410,7 +16471,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酱香",
-      "肉"
+      "肉",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -18422,13 +16484,13 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "equivalentGroupId": "黄焖鸡_套餐族",
-    "defaultPoolWeight": 0.85,
+    "defaultPoolWeight": 0.5,
     "cooldownFamilyId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -18471,7 +16533,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -18487,7 +16548,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -18511,7 +16572,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "热"
@@ -18544,7 +16605,7 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
+      "自己做": "低",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -18571,7 +16632,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "热"
@@ -18650,8 +16711,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -18688,13 +16747,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🐟",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
       "鲜",
-      "麻辣",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -18706,13 +16764,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 3,
     "enabled": true,
-    "defaultPoolWeight": 0.85,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18721,10 +16778,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -18806,7 +16863,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣"
     ],
@@ -18837,7 +16894,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见",
@@ -18860,7 +16917,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -18917,11 +16974,11 @@ module.exports = [
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -18933,13 +16990,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -18950,8 +17005,8 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "极低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -18967,8 +17022,8 @@ module.exports = [
     "emoji": "🍜",
     "category": "面食粉类",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "热"
@@ -19045,8 +17100,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -19087,9 +17140,9 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
-      "脆"
+      "香",
+      "嫩"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -19101,7 +17154,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -19115,9 +17167,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "中",
       "公司食堂": "极低"
     },
     "regionTags": [],
@@ -19150,12 +17202,12 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19188,13 +17240,13 @@ module.exports = [
     "tags": [
       "甜",
       "热",
-      "易消化",
       "素",
-      "清淡"
+      "清淡",
+      "健康"
     ],
     "cuisine": "中式料理",
     "foodType": "粥品",
-    "mealRole": "小吃",
+    "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
       "早餐"
@@ -19216,10 +17268,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19237,9 +17289,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰💰",
+    "time": "快",
     "tags": [
       "酱香",
       "肉"
@@ -19253,13 +17305,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.7,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19268,10 +17319,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19338,9 +17389,9 @@ module.exports = [
     "name": "天妇罗",
     "aliases": [],
     "emoji": "🍤",
-    "category": "小吃点心",
+    "category": "日韩料理",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
@@ -19348,11 +17399,11 @@ module.exports = [
     ],
     "cuisine": "日韩料理",
     "foodType": "小吃",
-    "mealRole": "小吃",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
-      "加餐"
+      "午餐",
+      "晚餐"
     ],
     "scenes": [
       "外卖",
@@ -19369,8 +17420,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -19389,31 +17440,31 @@ module.exports = [
     "name": "烤猪蹄",
     "aliases": [],
     "emoji": "🐷",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
+    "category": "烧烤",
+    "scene": "堂食",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
-      "软糯"
+      "糯",
+      "香",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
+    "mealRole": "小吃",
+    "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19422,10 +17473,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19442,7 +17493,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "酱香"
@@ -19462,8 +17513,8 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19474,8 +17525,8 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
+      "自己做": "高",
+      "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
@@ -19541,66 +17592,6 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "28d34ed6cf8bebcb",
-    "name": "海鲜泡菜饼",
-    "aliases": [],
-    "emoji": "🥬",
-    "category": "配菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "鲜",
-      "辣",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "配菜",
-    "mealRole": "配菜",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 2,
-    "enabled": true,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "小吃",
-    "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "日韩"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "含海鲜",
-      "含辣"
-    ],
-    "allergenTags": [
-      "海鲜",
-      "麸质"
-    ]
-  },
-  {
     "_id": "3d8e289e6b373f30",
     "name": "紫菜蛋花汤",
     "aliases": [],
@@ -19617,7 +17608,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "早餐",
@@ -19641,8 +17632,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "汤羹",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -19675,7 +17666,7 @@ module.exports = [
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -19698,8 +17689,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "汤羹",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -19721,11 +17712,11 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
       "脆",
-      "肉"
+      "肉",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -19773,11 +17764,11 @@ module.exports = [
     "emoji": "🦐",
     "category": "配菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "鲜",
-      "蒜香",
+      "香",
       "海鲜",
       "热"
     ],
@@ -19786,19 +17777,17 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
       "午餐",
       "晚餐"
     ],
     "scenes": [
       "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19807,10 +17796,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -19824,70 +17813,13 @@ module.exports = [
     ]
   },
   {
-    "_id": "78b7df67045aed9d",
-    "name": "炸虾盖饭",
-    "aliases": [],
-    "emoji": "🍤",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "脆",
-      "海鲜"
-    ],
-    "cuisine": "日韩料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见",
-      "日韩"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "高油",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
-  },
-  {
     "_id": "e49535326d5a6fb9",
     "name": "香辣蟹",
     "aliases": [],
     "emoji": "🦀",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
@@ -19903,13 +17835,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19918,10 +17849,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19965,7 +17896,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -19974,10 +17905,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
+      "外卖": "高",
+      "堂食": "高",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -19985,69 +17916,6 @@ module.exports = [
     "weatherTags": [],
     "dietWarnings": [],
     "allergenTags": []
-  },
-  {
-    "_id": "60354b74c5a14257",
-    "name": "抄手",
-    "aliases": [
-      "馄饨",
-      "云吞"
-    ],
-    "emoji": "🥟",
-    "category": "小吃点心",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "辣",
-      "鲜",
-      "热"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "中式面点",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐",
-      "夜宵",
-      "早餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
-    ],
-    "spicyLevel": 2,
-    "enabled": true,
-    "defaultPoolWeight": 0.55,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "早餐单品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "低"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [
-      "含辣",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
   },
   {
     "_id": "84dd4e16d9721cdd",
@@ -20059,14 +17927,14 @@ module.exports = [
     "budget": "💰",
     "time": "慢",
     "tags": [
-      "酸甜",
       "酸",
+      "甜",
       "热",
       "肉"
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -20074,7 +17942,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -20090,7 +17957,7 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -20114,10 +17981,11 @@ module.exports = [
     "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "香",
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -20125,7 +17993,8 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "早餐",
-      "午餐"
+      "午餐",
+      "晚餐"
     ],
     "scenes": [
       "外卖",
@@ -20167,10 +18036,10 @@ module.exports = [
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "酸甜",
       "酸",
+      "甜",
       "热",
-      "适合聚餐"
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -20197,9 +18066,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "中",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "高",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -20217,8 +18086,8 @@ module.exports = [
     "name": "鳗鱼饭",
     "aliases": [],
     "emoji": "🍱",
-    "category": "饭类套餐",
-    "scene": "外卖",
+    "category": "日韩料理",
+    "scene": "堂食",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
@@ -20236,8 +18105,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20250,8 +18118,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "极低",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "极低",
       "公司食堂": "极低"
     },
@@ -20278,10 +18146,10 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "蒜香",
       "素",
-      "清爽少负担",
-      "清淡"
+      "清淡",
+      "健康",
+      "家常"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
@@ -20293,7 +18161,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -20309,7 +18176,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -20324,12 +18191,12 @@ module.exports = [
     "aliases": [],
     "emoji": "🐚",
     "category": "配菜",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
-      "蒜香",
+      "香",
       "海鲜",
       "热"
     ],
@@ -20338,15 +18205,12 @@ module.exports = [
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20359,10 +18223,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [
@@ -20398,12 +18262,12 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.7,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20432,7 +18296,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "香",
@@ -20451,8 +18315,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -20467,8 +18330,8 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -20497,14 +18360,14 @@ module.exports = [
     "time": "快",
     "tags": [
       "甜",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
+      "早餐",
       "加餐"
     ],
     "scenes": [
@@ -20522,8 +18385,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -20537,26 +18400,25 @@ module.exports = [
     "name": "烤年糕",
     "aliases": [],
     "emoji": "🍡",
-    "category": "日韩料理",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "甜",
-      "软糯"
+      "糯"
     ],
     "cuisine": "日韩料理",
     "foodType": "日韩主食",
-    "mealRole": "正餐",
+    "mealRole": "小吃",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "夜宵",
+      "加餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20570,7 +18432,7 @@ module.exports = [
     "itemLevel": "小吃",
     "availability": {
       "外卖": "中",
-      "堂食": "高",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -20587,9 +18449,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🍲",
     "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
+    "scene": "自己做",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "家常",
       "素",
@@ -20608,13 +18470,12 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -20623,9 +18484,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
+      "外卖": "低",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -20653,7 +18514,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "软糯",
+      "糯",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -20702,7 +18563,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "香",
-      "素"
+      "素",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "中式面点",
@@ -20714,7 +18576,8 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食"
+      "堂食",
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -20727,9 +18590,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "早餐单品",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "高",
-      "自己做": "低",
+      "自己做": "中",
       "公司食堂": "低"
     },
     "regionTags": [
@@ -20747,7 +18610,7 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "清淡",
@@ -20758,15 +18621,12 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -20779,70 +18639,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见",
-      "东南亚"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
-  },
-  {
-    "_id": "fa892eba3087cbe3",
-    "name": "香炒河粉",
-    "aliases": [
-      "炒河粉"
-    ],
-    "emoji": "🍜",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "香",
-      "热"
-    ],
-    "cuisine": "东南亚料理",
-    "foodType": "面食粉类",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐",
-      "夜宵"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": "炒河粉_合并组",
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -20865,11 +18665,11 @@ module.exports = [
     "emoji": "🥞",
     "category": "甜品饮品",
     "scene": "堂食",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "甜",
-      "适合早午餐"
+      "香"
     ],
     "cuisine": "西式料理",
     "foodType": "甜品",
@@ -20877,11 +18677,9 @@ module.exports = [
     "canBeMeal": false,
     "mealPeriods": [
       "早餐",
-      "夜宵",
       "加餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -20896,8 +18694,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -20945,10 +18743,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -20985,7 +18783,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食",
       "公司食堂"
     ],
@@ -21001,7 +18798,7 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -21019,10 +18816,10 @@ module.exports = [
     "emoji": "🍢",
     "category": "烧烤",
     "scene": "堂食",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "甜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -21039,8 +18836,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.35,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21069,7 +18866,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -21136,8 +18933,8 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -21174,7 +18971,7 @@ module.exports = [
     "tags": [
       "香",
       "肉",
-      "适合聚餐"
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "烧烤",
@@ -21189,7 +18986,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "烧烤族",
     "defaultPoolWeight": 0.4,
@@ -21200,7 +18997,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "中",
       "堂食": "高",
       "自己做": "极低",
       "公司食堂": "极低"
@@ -21224,7 +19021,7 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "蒜香",
+      "香",
       "素"
     ],
     "cuisine": "中式料理",
@@ -21237,8 +19034,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
@@ -21270,7 +19065,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "辣",
       "肉"
@@ -21290,7 +19085,7 @@ module.exports = [
     ],
     "spicyLevel": 1,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.65,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21322,25 +19117,24 @@ module.exports = [
     "aliases": [],
     "emoji": "🦀",
     "category": "家常菜",
-    "scene": "外卖",
+    "scene": "堂食",
     "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "鲜",
-      "海鲜"
+      "海鲜",
+      "凉"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
+    "mealRole": "配菜",
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "自己做"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21357,7 +19151,7 @@ module.exports = [
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
+      "自己做": "低",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -21380,7 +19174,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "鲜",
       "海鲜"
@@ -21394,14 +19188,13 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 1,
+    "defaultPoolWeight": 0.6,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21412,8 +19205,8 @@ module.exports = [
     "availability": {
       "外卖": "高",
       "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
+      "自己做": "中",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -21435,11 +19228,12 @@ module.exports = [
     "category": "面食粉类",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
-      "凉食",
-      "爽滑"
+      "凉",
+      "酸",
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -21455,7 +19249,7 @@ module.exports = [
       "堂食",
       "公司食堂"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": false,
     "defaultPoolWeight": 0,
     "equivalentGroupId": null,
@@ -21487,13 +19281,13 @@ module.exports = [
     "name": "天妇罗盖饭",
     "aliases": [],
     "emoji": "🍤",
-    "category": "饭类套餐",
+    "category": "日韩料理",
     "scene": "外卖",
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
-      "脆"
+      "脆",
+      "鲜"
     ],
     "cuisine": "日韩料理",
     "foodType": "米饭套餐",
@@ -21505,8 +19299,7 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -21519,10 +19312,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -21541,9 +19334,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🦆",
     "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰",
-    "time": "慢",
+    "scene": "堂食",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "香",
       "肉"
@@ -21557,7 +19350,6 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
       "堂食"
     ],
@@ -21572,108 +19364,14 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "极低",
       "公司食堂": "中"
     },
     "regionTags": [
       "全国常见"
     ],
-    "weatherTags": [],
-    "dietWarnings": [],
-    "allergenTags": []
-  },
-  {
-    "_id": "5ca918df47696548",
-    "name": "爆米花",
-    "aliases": [],
-    "emoji": "🌽",
-    "category": "甜品饮品",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜",
-      "脆"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "甜品",
-    "mealRole": "甜品",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "甜品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
-    "weatherTags": [],
-    "dietWarnings": [
-      "高油"
-    ],
-    "allergenTags": []
-  },
-  {
-    "_id": "a2758550f68aefc6",
-    "name": "棉花糖",
-    "aliases": [],
-    "emoji": "🍬",
-    "category": "甜品饮品",
-    "scene": "堂食",
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "甜"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "甜品",
-    "mealRole": "甜品",
-    "canBeMeal": false,
-    "mealPeriods": [
-      "夜宵",
-      "加餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.1,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "甜品",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "regionTags": [],
     "weatherTags": [],
     "dietWarnings": [],
     "allergenTags": []
@@ -21689,9 +19387,9 @@ module.exports = [
     "time": "慢",
     "tags": [
       "酸",
+      "辣",
       "鲜",
       "热",
-      "适合聚餐",
       "海鲜"
     ],
     "cuisine": "中式料理",
@@ -21704,11 +19402,9 @@ module.exports = [
       "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "cooldownFamilyId": "火锅族",
     "defaultPoolWeight": 0.38,
@@ -21719,9 +19415,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "极低",
+      "外卖": "低",
       "堂食": "高",
-      "自己做": "极低",
+      "自己做": "低",
       "公司食堂": "极低"
     },
     "regionTags": [
@@ -21756,19 +19452,17 @@ module.exports = [
     "cuisine": "中式料理",
     "foodType": "汤羹炖品",
     "mealRole": "汤品",
-    "canBeMeal": true,
+    "canBeMeal": false,
     "mealPeriods": [
       "午餐",
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
+      "自己做"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "defaultPoolWeight": 0.25,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21780,7 +19474,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -21856,7 +19550,7 @@ module.exports = [
     "category": "汤粥炖品",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "酱香",
       "素",
@@ -21872,14 +19566,11 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "自己做"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21891,7 +19582,7 @@ module.exports = [
       "外卖": "低",
       "堂食": "低",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -21911,29 +19602,27 @@ module.exports = [
     "name": "艾窝窝",
     "aliases": [],
     "emoji": "🍰",
-    "category": "甜品饮品",
+    "category": "小吃点心",
     "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
       "甜",
-      "软糯"
+      "糯"
     ],
     "cuisine": "中式料理",
     "foodType": "甜品",
     "mealRole": "甜品",
     "canBeMeal": false,
     "mealPeriods": [
-      "夜宵",
       "加餐"
     ],
     "scenes": [
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.15,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -21942,10 +19631,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "甜品",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "低",
+      "堂食": "中",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -21957,9 +19646,9 @@ module.exports = [
     "name": "纸上烤鱼",
     "aliases": [],
     "emoji": "🐟",
-    "category": "家常菜",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "category": "烧烤",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "辣",
@@ -21975,14 +19664,13 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "自己做"
+      "外卖"
     ],
     "spicyLevel": 2,
     "enabled": true,
     "cooldownFamilyId": "烤鱼族",
-    "defaultPoolWeight": 0.65,
+    "defaultPoolWeight": 0.35,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -21990,10 +19678,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
-      "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "极低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -22017,7 +19705,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "肉"
@@ -22061,34 +19749,30 @@ module.exports = [
     "allergenTags": []
   },
   {
-    "_id": "a481f449b203237e",
-    "name": "油泼扯面（biángbiáng 面）",
-    "aliases": [
-      "油泼扯面（biángbiáng面）"
-    ],
-    "emoji": "🍜",
-    "category": "面食粉类",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "_id": "2a7408e433a9f2d1",
+    "name": "蟹粉豆腐",
+    "aliases": [],
+    "emoji": "🦀",
+    "category": "家常菜",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "香",
+      "鲜",
+      "嫩",
+      "海鲜",
       "热"
     ],
     "cuisine": "中式料理",
-    "foodType": "面食粉类",
+    "foodType": "家常热菜",
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": false,
@@ -22099,71 +19783,12 @@ module.exports = [
     "safetyNotice": "",
     "seasonTags": [],
     "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
-    },
-    "regionTags": [
-      "全国常见"
-    ],
-    "weatherTags": [
-      "降温适合"
-    ],
-    "dietWarnings": [
-      "高油",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "麸质"
-    ]
-  },
-  {
-    "_id": "2a7408e433a9f2d1",
-    "name": "蟹粉豆腐",
-    "aliases": [],
-    "emoji": "🦀",
-    "category": "家常菜",
-    "scene": "自己做",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "嫩滑",
-      "海鲜",
-      "热"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "家常热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "早餐",
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "自己做",
-      "外卖",
-      "堂食"
-    ],
-    "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.5,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
       "外卖": "低",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见"
@@ -22186,7 +19811,7 @@ module.exports = [
     "emoji": "🦐",
     "category": "配菜",
     "scene": "自己做",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "香",
@@ -22203,9 +19828,7 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22219,9 +19842,9 @@ module.exports = [
     "itemLevel": "配菜",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22240,10 +19863,11 @@ module.exports = [
     "category": "面食粉类",
     "scene": "外卖",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "酸辣",
+      "酸",
       "辣",
+      "香",
       "热"
     ],
     "cuisine": "中式料理",
@@ -22299,10 +19923,11 @@ module.exports = [
     "category": "西式简餐",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "饱腹",
+      "香"
     ],
     "cuisine": "西式料理",
     "foodType": "西式主食",
@@ -22310,7 +19935,8 @@ module.exports = [
     "canBeMeal": true,
     "mealPeriods": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
       "外卖",
@@ -22318,7 +19944,7 @@ module.exports = [
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.5,
+    "defaultPoolWeight": 0.8,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22349,10 +19975,9 @@ module.exports = [
     "budget": "💰💰",
     "time": "慢",
     "tags": [
-      "酸辣",
-      "鲜",
-      "辣",
       "酸",
+      "辣",
+      "鲜",
       "热"
     ],
     "cuisine": "东南亚料理",
@@ -22360,16 +19985,12 @@ module.exports = [
     "mealRole": "正餐",
     "canBeMeal": true,
     "mealPeriods": [
-      "早餐",
       "午餐",
-      "晚餐",
-      "夜宵"
+      "晚餐"
     ],
     "scenes": [
-      "自己做",
       "外卖",
-      "堂食",
-      "公司食堂"
+      "堂食"
     ],
     "spicyLevel": 2,
     "enabled": false,
@@ -22382,10 +20003,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "极低"
     },
     "regionTags": [
       "全国常见",
@@ -22443,8 +20064,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "配菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -22454,61 +20075,6 @@ module.exports = [
       "高油"
     ],
     "allergenTags": []
-  },
-  {
-    "_id": "3234bc57adf84cf3",
-    "name": "西班牙海鲜饭",
-    "aliases": [],
-    "emoji": "🍚",
-    "category": "饭类套餐",
-    "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
-    "tags": [
-      "鲜",
-      "海鲜"
-    ],
-    "cuisine": "西式料理",
-    "foodType": "米饭套餐",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "scenes": [
-      "外卖",
-      "堂食",
-      "公司食堂"
-    ],
-    "spicyLevel": 0,
-    "enabled": false,
-    "defaultPoolWeight": 0,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "高"
-    },
-    "regionTags": [
-      "全国常见",
-      "西式"
-    ],
-    "weatherTags": [],
-    "dietWarnings": [
-      "含海鲜",
-      "高碳水"
-    ],
-    "allergenTags": [
-      "海鲜"
-    ]
   },
   {
     "_id": "18c5492ecc213b76",
@@ -22527,7 +20093,7 @@ module.exports = [
     ],
     "cuisine": "西式料理",
     "foodType": "汤羹炖品",
-    "mealRole": "配菜",
+    "mealRole": "汤品",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -22535,13 +20101,11 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
-      "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.2,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22571,13 +20135,14 @@ module.exports = [
     "aliases": [],
     "emoji": "🍖",
     "category": "家常菜",
-    "scene": "外卖",
-    "budget": "💰💰",
+    "scene": "堂食",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
-      "家常",
       "肉",
-      "软糯"
+      "糯",
+      "酱香",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -22588,13 +20153,12 @@ module.exports = [
       "晚餐"
     ],
     "scenes": [
-      "外卖",
       "堂食",
-      "自己做"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.75,
+    "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -22603,10 +20167,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "聚餐方式",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
-      "自己做": "高",
-      "公司食堂": "中"
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见"
@@ -22627,7 +20191,7 @@ module.exports = [
     "tags": [
       "家常",
       "肉",
-      "嫩滑"
+      "嫩"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
@@ -22640,7 +20204,8 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
-      "堂食"
+      "堂食",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -22653,10 +20218,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
-      "公司食堂": "中"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -22675,8 +20240,8 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "家常",
-      "肉"
+      "肉",
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "小吃",
@@ -22720,29 +20285,29 @@ module.exports = [
     "name": "烤金针菇",
     "aliases": [],
     "emoji": "🍄",
-    "category": "配菜",
-    "scene": "自己做",
+    "category": "烧烤",
+    "scene": "堂食",
     "budget": "💰",
     "time": "快",
     "tags": [
+      "素",
       "香",
-      "素"
+      "辣"
     ],
     "cuisine": "中式料理",
     "foodType": "配菜",
     "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
-      "午餐",
-      "晚餐"
+      "晚餐",
+      "夜宵"
     ],
     "scenes": [
-      "自己做",
-      "外卖",
       "堂食",
-      "公司食堂"
+      "外卖",
+      "自己做"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.2,
     "equivalentGroupId": null,
@@ -22753,10 +20318,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
-      "自己做": "高",
-      "公司食堂": "中"
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "极低"
     },
     "regionTags": [],
     "weatherTags": [],
@@ -22770,11 +20335,11 @@ module.exports = [
     "emoji": "🥟",
     "category": "小吃点心",
     "scene": "堂食",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "香",
-      "软糯",
+      "糯",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -22827,8 +20392,7 @@ module.exports = [
     "tags": [
       "鲜",
       "香",
-      "热",
-      "面食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -22846,9 +20410,9 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0.35,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -22887,8 +20451,7 @@ module.exports = [
     "tags": [
       "鲜",
       "香",
-      "热",
-      "面食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -22906,9 +20469,9 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -22942,12 +20505,11 @@ module.exports = [
     "emoji": "🍜",
     "category": "面食粉类",
     "scene": "外卖",
-    "budget": "💰💰",
-    "time": "慢",
+    "budget": "💰",
+    "time": "快",
     "tags": [
       "酱香",
-      "热",
-      "面食"
+      "香"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -22965,9 +20527,9 @@ module.exports = [
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
+    "enabled": false,
     "cooldownFamilyId": "面食族",
-    "defaultPoolWeight": 0.3,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "rawFood": false,
     "safetyNotice": "",
@@ -23005,11 +20567,10 @@ module.exports = [
     "category": "面食粉类",
     "scene": "自己做",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
-      "饱腹",
-      "面食"
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -23067,7 +20628,6 @@ module.exports = [
       "鲜",
       "香",
       "辣",
-      "面食",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -23084,7 +20644,7 @@ module.exports = [
       "自己做",
       "堂食"
     ],
-    "spicyLevel": 2,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 1,
     "equivalentGroupId": null,
@@ -23128,7 +20688,7 @@ module.exports = [
       "家常",
       "鲜",
       "素",
-      "面食"
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -23154,9 +20714,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -23184,8 +20744,7 @@ module.exports = [
       "辣",
       "香",
       "热",
-      "肉",
-      "适合聚餐"
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "火锅",
@@ -23198,7 +20757,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食"
     ],
     "spicyLevel": 2,
@@ -23251,7 +20809,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -23306,7 +20863,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -23361,7 +20917,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -23414,7 +20969,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -23483,8 +21037,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "高",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "高"
     },
@@ -23540,8 +21094,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "高",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "高"
     },
@@ -23568,8 +21122,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "饱腹",
-      "适合聚餐"
+      "饱腹"
     ],
     "cuisine": "中式料理",
     "foodType": "米饭套餐",
@@ -23581,7 +21134,6 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖",
       "公司食堂"
     ],
@@ -23597,8 +21149,8 @@ module.exports = [
     "itemLevel": "餐厅品类",
     "availability": {
       "外卖": "高",
-      "堂食": "中",
-      "自己做": "低",
+      "堂食": "高",
+      "自己做": "极低",
       "公司食堂": "高"
     },
     "regionTags": [
@@ -23633,13 +21185,12 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 1,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -23701,8 +21252,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -23756,8 +21307,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -23811,7 +21362,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -23861,7 +21412,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -23911,7 +21462,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -23961,7 +21512,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -23983,14 +21534,15 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "酸辣",
+      "酸",
+      "辣",
       "素",
-      "家常",
-      "清淡"
+      "脆",
+      "家常"
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -24001,7 +21553,7 @@ module.exports = [
       "外卖",
       "堂食"
     ],
-    "spicyLevel": 0,
+    "spicyLevel": 1,
     "enabled": true,
     "defaultPoolWeight": 0.3,
     "equivalentGroupId": null,
@@ -24012,7 +21564,7 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
@@ -24040,7 +21592,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -24062,8 +21614,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "高",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -24092,7 +21644,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -24114,8 +21666,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -24145,7 +21697,7 @@ module.exports = [
     ],
     "cuisine": "中式料理",
     "foodType": "家常热菜",
-    "mealRole": "正餐",
+    "mealRole": "配菜",
     "canBeMeal": false,
     "mealPeriods": [
       "午餐",
@@ -24157,8 +21709,8 @@ module.exports = [
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.18,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24167,8 +21719,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "单道菜",
     "availability": {
-      "外卖": "低",
-      "堂食": "低",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -24204,7 +21756,6 @@ module.exports = [
     ],
     "scenes": [
       "自己做",
-      "外卖",
       "堂食"
     ],
     "spicyLevel": 0,
@@ -24219,7 +21770,7 @@ module.exports = [
     "itemLevel": "汤羹",
     "availability": {
       "外卖": "低",
-      "堂食": "低",
+      "堂食": "中",
       "自己做": "高",
       "公司食堂": "中"
     },
@@ -24259,8 +21810,8 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
-      "外卖"
+      "外卖",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -24276,7 +21827,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -24312,8 +21863,8 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
-      "外卖"
+      "外卖",
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -24329,7 +21880,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -24346,9 +21897,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🫓",
     "category": "小吃点心",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "饱腹",
@@ -24363,9 +21914,9 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -24381,7 +21932,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -24398,9 +21949,9 @@ module.exports = [
     "aliases": [],
     "emoji": "🫓",
     "category": "小吃点心",
-    "scene": "自己做",
+    "scene": "堂食",
     "budget": "💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "家常",
       "香",
@@ -24415,9 +21966,9 @@ module.exports = [
       "加餐"
     ],
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
-      "堂食"
+      "公司食堂"
     ],
     "spicyLevel": 0,
     "enabled": true,
@@ -24433,7 +21984,7 @@ module.exports = [
       "外卖": "高",
       "堂食": "高",
       "自己做": "低",
-      "公司食堂": "低"
+      "公司食堂": "高"
     },
     "regionTags": [
       "全国常见"
@@ -24449,7 +22000,7 @@ module.exports = [
     "emoji": "🥣",
     "category": "汤粥炖品",
     "scene": "外卖",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "鲜",
@@ -24481,9 +22032,9 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "中",
+      "外卖": "高",
       "堂食": "中",
-      "自己做": "高",
+      "自己做": "中",
       "公司食堂": "中"
     },
     "regionTags": [
@@ -24509,7 +22060,7 @@ module.exports = [
     "time": "快",
     "tags": [
       "鲜",
-      "滑嫩",
+      "嫩",
       "热",
       "清淡"
     ],
@@ -24524,7 +22075,6 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖"
     ],
     "spicyLevel": 0,
@@ -24582,7 +22132,6 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖"
     ],
     "spicyLevel": 0,
@@ -24641,12 +22190,11 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食"
     ],
     "spicyLevel": 0,
-    "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "enabled": false,
+    "defaultPoolWeight": 0,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -24686,9 +22234,9 @@ module.exports = [
     "budget": "💰",
     "time": "快",
     "tags": [
-      "酸辣",
+      "辣",
       "香",
-      "面食"
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -24748,7 +22296,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "面食"
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -24809,7 +22357,7 @@ module.exports = [
     "tags": [
       "酱香",
       "香",
-      "面食"
+      "咸"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -24881,7 +22429,6 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖"
     ],
     "spicyLevel": 0,
@@ -24934,7 +22481,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -24988,12 +22534,11 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.55,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25002,8 +22547,8 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "小吃",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
+      "外卖": "中",
+      "堂食": "中",
       "自己做": "低",
       "公司食堂": "低"
     },
@@ -25036,7 +22581,7 @@ module.exports = [
     "tags": [
       "辣",
       "香",
-      "面食"
+      "鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -25107,7 +22652,6 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食",
       "公司食堂"
     ],
@@ -25145,7 +22689,7 @@ module.exports = [
     "category": "饭类套餐",
     "scene": "堂食",
     "budget": "💰💰",
-    "time": "慢",
+    "time": "快",
     "tags": [
       "香",
       "肉",
@@ -25161,13 +22705,11 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
-      "外卖",
-      "公司食堂"
+      "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.7,
+    "defaultPoolWeight": 0.5,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25176,10 +22718,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
+      "外卖": "中",
       "堂食": "中",
       "自己做": "低",
-      "公司食堂": "高"
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -25205,7 +22747,7 @@ module.exports = [
     "tags": [
       "鲜",
       "香",
-      "面食"
+      "热"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -25218,12 +22760,11 @@ module.exports = [
     ],
     "scenes": [
       "堂食",
-      "自己做",
       "外卖"
     ],
     "spicyLevel": 0,
     "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "defaultPoolWeight": 0.4,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25232,10 +22773,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -25260,13 +22801,12 @@ module.exports = [
     "emoji": "🍜",
     "category": "面食粉类",
     "scene": "外卖",
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "辣",
       "香",
-      "肉",
-      "面食"
+      "肉"
     ],
     "cuisine": "中式料理",
     "foodType": "面食粉类",
@@ -25280,12 +22820,11 @@ module.exports = [
     ],
     "scenes": [
       "外卖",
-      "自己做",
       "堂食"
     ],
     "spicyLevel": 2,
     "enabled": true,
-    "defaultPoolWeight": 0.6,
+    "defaultPoolWeight": 0.45,
     "equivalentGroupId": null,
     "cooldownFamilyId": null,
     "rawFood": false,
@@ -25294,10 +22833,10 @@ module.exports = [
     "festivalTags": [],
     "itemLevel": "完整餐食",
     "availability": {
-      "外卖": "高",
-      "堂食": "高",
-      "自己做": "中",
-      "公司食堂": "中"
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
     },
     "regionTags": [
       "全国常见",
@@ -25315,55 +22854,6 @@ module.exports = [
     ]
   },
   {
-    "_id": "dzv6ai054empuy2t98",
-    "name": "重庆鸡公煲",
-    "emoji": "🍲",
-    "category": "火锅冒菜",
-    "scene": "堂食",
-    "budget": "💰💰",
-    "time": "快",
-    "tags": [
-      "辣",
-      "鸡肉",
-      "火锅",
-      "适合聚餐"
-    ],
-    "calories": null,
-    "spicyLevel": 2,
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "mealRole": "正餐",
-    "defaultPoolWeight": 0.38,
-    "equivalentGroupId": null,
-    "cooldownFamilyId": null,
-    "rawFood": false,
-    "safetyNotice": "",
-    "seasonTags": [],
-    "festivalTags": [],
-    "enabled": true,
-    "itemLevel": "完整餐食",
-    "availability": {
-      "外卖": "中",
-      "堂食": "中",
-      "自己做": "低",
-      "公司食堂": "低"
-    },
-    "aliases": [],
-    "regionTags": [],
-    "weatherTags": [
-      "降温适合",
-      "雨天适合"
-    ],
-    "dietWarnings": [],
-    "allergenTags": [],
-    "scenes": [
-      "堂食"
-    ]
-  },
-  {
     "_id": "4aa7669bf93f3d35",
     "name": "韭菜炒鸡蛋",
     "emoji": "🥚",
@@ -25378,7 +22868,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "蛋",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25391,7 +22882,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "937fcc968f2d9e59",
@@ -25408,7 +22905,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "蛋",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25421,7 +22919,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "4ada40e1df8c6a3f",
@@ -25438,8 +22942,9 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
-      "肉"
+      "鲜",
+      "蛋",
+      "海鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "热菜",
@@ -25451,7 +22956,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.75,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "5597d452bc438b3b",
@@ -25469,6 +22980,7 @@ module.exports = [
     "tags": [
       "家常",
       "辣",
+      "蛋",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25481,7 +22993,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 1,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "a1c23b0d98d2f48d",
@@ -25499,6 +23017,7 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
+      "蛋",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25511,7 +23030,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.6,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "bb9f397c6086ba5a",
@@ -25529,6 +23054,7 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
+      "蛋",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25541,7 +23067,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "d7286c43ec411ec4",
@@ -25558,7 +23090,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25571,7 +23104,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "cff774aa86077fe2",
@@ -25588,7 +23127,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25601,7 +23141,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "7abd36e4cda4295f",
@@ -25618,7 +23164,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25631,7 +23178,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "8785791411300089",
@@ -25648,7 +23201,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25661,7 +23215,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "77a09a4c5cd9f26b",
@@ -25691,7 +23251,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "a5339b0469530732",
@@ -25708,7 +23274,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25721,7 +23288,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "5a6eea009c3de544",
@@ -25734,11 +23307,13 @@ module.exports = [
       "外卖",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "辣",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25751,7 +23326,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.75,
     "spicyLevel": 1,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "dcf0e7fbf0400975",
@@ -25764,11 +23345,12 @@ module.exports = [
       "外卖",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25781,7 +23363,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.75,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "300da34051f350b7",
@@ -25794,11 +23382,12 @@ module.exports = [
       "外卖",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25811,7 +23400,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.75,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "e8a84115aa5adf5f",
@@ -25824,11 +23419,12 @@ module.exports = [
       "外卖",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "香辣",
+      "辣",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25839,26 +23435,33 @@ module.exports = [
       "午餐",
       "晚餐"
     ],
-    "defaultPoolWeight": 0.8,
+    "defaultPoolWeight": 0.6,
     "spicyLevel": 2,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "01fbec6d70e3b90a",
     "name": "葱爆羊肉",
     "emoji": "🥩",
     "category": "家常菜",
-    "scene": "自己做",
+    "scene": "堂食",
     "scenes": [
+      "堂食",
       "自己做",
-      "外卖",
-      "公司食堂"
+      "外卖"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25869,9 +23472,15 @@ module.exports = [
       "午餐",
       "晚餐"
     ],
-    "defaultPoolWeight": 0.8,
+    "defaultPoolWeight": 0.6,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    }
   },
   {
     "_id": "7b60ceb071e93027",
@@ -25888,7 +23497,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -25901,7 +23511,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "1cc3eaea93a6c988",
@@ -25918,7 +23534,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "素"
     ],
     "cuisine": "中式料理",
@@ -25931,7 +23548,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.7,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "a4d275bc8d830b14",
@@ -25961,7 +23584,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.2,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "8e513cea45911ed3",
@@ -25978,8 +23607,8 @@ module.exports = [
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
-      "素"
+      "辣",
+      "酱香"
     ],
     "cuisine": "中式料理",
     "foodType": "热菜",
@@ -25990,21 +23619,26 @@ module.exports = [
       "晚餐"
     ],
     "defaultPoolWeight": 0.7,
-    "spicyLevel": 0,
-    "enabled": true
+    "spicyLevel": 1,
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "047e2baeb247bd3f",
     "name": "剁椒鱼头",
     "emoji": "🐟",
     "category": "家常菜",
-    "scene": "自己做",
+    "scene": "堂食",
     "scenes": [
-      "自己做",
-      "外卖",
-      "公司食堂"
+      "堂食",
+      "自己做"
     ],
-    "budget": "💰💰",
+    "budget": "💰💰💰",
     "time": "慢",
     "tags": [
       "家常",
@@ -26019,9 +23653,15 @@ module.exports = [
       "午餐",
       "晚餐"
     ],
-    "defaultPoolWeight": 0.85,
+    "defaultPoolWeight": 0.5,
     "spicyLevel": 2,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "低",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "极低"
+    }
   },
   {
     "_id": "9f1eb9afea21a253",
@@ -26038,7 +23678,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26051,7 +23692,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.75,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "3f4cac193711cb82",
@@ -26068,7 +23715,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26081,7 +23729,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.8,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "3da6beddca3600f1",
@@ -26098,7 +23752,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26111,7 +23766,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "b9767e322ee0a9f1",
@@ -26128,7 +23789,8 @@ module.exports = [
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
+      "香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26141,7 +23803,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "b1697e8e15fcaf53",
@@ -26152,13 +23820,14 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26171,7 +23840,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "4c54e7ad624e9cf1",
@@ -26182,13 +23857,14 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26201,7 +23877,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "d627f7d7f15975ea",
@@ -26212,13 +23894,14 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "酱香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26231,7 +23914,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "a66ab2dc12fa5511",
@@ -26242,13 +23931,14 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "酱香",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26261,7 +23951,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.85,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "a388de79b3e7a2a9",
@@ -26272,6 +23968,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26279,6 +23976,7 @@ module.exports = [
     "tags": [
       "家常",
       "辣",
+      "酸",
       "素",
       "清淡"
     ],
@@ -26292,7 +23990,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.25,
     "spicyLevel": 1,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "a3e3fd2679f7e2a1",
@@ -26303,6 +24007,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26310,7 +24015,8 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "素"
+      "素",
+      "酸"
     ],
     "cuisine": "中式料理",
     "foodType": "热菜",
@@ -26322,7 +24028,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.2,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "639f816fa6eef456",
@@ -26333,6 +24045,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26352,7 +24065,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.2,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "3ddcb57c3340443f",
@@ -26363,6 +24082,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26380,9 +24100,15 @@ module.exports = [
       "午餐",
       "晚餐"
     ],
-    "defaultPoolWeight": 0.2,
+    "defaultPoolWeight": 0,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": false,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "590942a2d12491b5",
@@ -26412,7 +24138,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.15,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "33e9968517d70d24",
@@ -26423,6 +24155,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26442,7 +24175,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.2,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "bb7e931cc621c244",
@@ -26453,6 +24192,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26470,9 +24210,15 @@ module.exports = [
       "午餐",
       "晚餐"
     ],
-    "defaultPoolWeight": 0.15,
+    "defaultPoolWeight": 0,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": false,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "4ba727006904b361",
@@ -26483,6 +24229,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26502,7 +24249,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.15,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "db3bdbe5ebb6a507",
@@ -26513,6 +24266,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26520,7 +24274,9 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "素"
+      "素",
+      "凉",
+      "酸"
     ],
     "cuisine": "中式料理",
     "foodType": "凉菜",
@@ -26532,7 +24288,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.15,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "70e998bf2ce608ba",
@@ -26543,6 +24305,7 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26550,7 +24313,8 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "素"
+      "素",
+      "凉"
     ],
     "cuisine": "中式料理",
     "foodType": "凉菜",
@@ -26562,7 +24326,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.15,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "afd49d5993ee663a",
@@ -26573,44 +24343,16 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
-    "budget": "💰",
+    "budget": "💰💰",
     "time": "快",
     "tags": [
       "家常",
-      "鲜香",
-      "肉"
-    ],
-    "cuisine": "中式料理",
-    "foodType": "热菜",
-    "mealRole": "正餐",
-    "canBeMeal": true,
-    "mealPeriods": [
-      "午餐",
-      "晚餐"
-    ],
-    "defaultPoolWeight": 0.75,
-    "spicyLevel": 0,
-    "enabled": true
-  },
-  {
-    "_id": "3c6e91b605b99cfe",
-    "name": "青椒炒香干",
-    "emoji": "🥬",
-    "category": "家常菜",
-    "scene": "自己做",
-    "scenes": [
-      "自己做",
-      "外卖",
-      "公司食堂"
-    ],
-    "budget": "💰",
-    "time": "快",
-    "tags": [
-      "家常",
-      "鲜香",
-      "素"
+      "鲜",
+      "清淡",
+      "海鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "热菜",
@@ -26622,7 +24364,51 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.65,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
+  },
+  {
+    "_id": "3c6e91b605b99cfe",
+    "name": "青椒炒香干",
+    "emoji": "🥬",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "外卖",
+      "堂食",
+      "公司食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "香",
+      "素",
+      "辣"
+    ],
+    "cuisine": "中式料理",
+    "foodType": "热菜",
+    "mealRole": "正餐",
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "defaultPoolWeight": 0.65,
+    "spicyLevel": 1,
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "高"
+    }
   },
   {
     "_id": "e332c0e44a518199",
@@ -26633,13 +24419,14 @@ module.exports = [
     "scenes": [
       "自己做",
       "外卖",
+      "堂食",
       "公司食堂"
     ],
     "budget": "💰💰",
     "time": "慢",
     "tags": [
       "家常",
-      "鲜香",
+      "鲜",
       "肉"
     ],
     "cuisine": "中式料理",
@@ -26652,7 +24439,13 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.5,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "b775bad75af989c4",
@@ -26662,7 +24455,6 @@ module.exports = [
     "scene": "自己做",
     "scenes": [
       "自己做",
-      "外卖",
       "公司食堂"
     ],
     "budget": "💰",
@@ -26670,7 +24462,8 @@ module.exports = [
     "tags": [
       "家常",
       "清淡",
-      "素"
+      "鲜",
+      "海鲜"
     ],
     "cuisine": "中式料理",
     "foodType": "汤",
@@ -26682,25 +24475,34 @@ module.exports = [
     ],
     "defaultPoolWeight": 0.2,
     "spicyLevel": 0,
-    "enabled": true
+    "enabled": true,
+    "availability": {
+      "外卖": "低",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "中"
+    }
   },
   {
     "_id": "d50d2164e1d74237",
     "name": "农家一碗香",
     "emoji": "🥘",
     "category": "家常菜",
-    "scene": "自己做",
+    "scene": "堂食",
     "scenes": [
-      "自己做",
+      "堂食",
       "外卖",
+      "自己做",
       "公司食堂"
     ],
-    "budget": "💰",
-    "time": "慢",
+    "budget": "💰💰",
+    "time": "快",
     "tags": [
       "家常",
-      "鲜香",
-      "肉"
+      "香",
+      "辣",
+      "肉",
+      "蛋"
     ],
     "cuisine": "中式料理",
     "foodType": "热菜",
@@ -26711,7 +24513,1378 @@ module.exports = [
       "晚餐"
     ],
     "defaultPoolWeight": 0.7,
+    "spicyLevel": 2,
+    "enabled": true,
+    "availability": {
+      "外卖": "高",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "中"
+    }
+  },
+  {
+    "_id": "gx39y1ads5mq85g5iw",
+    "name": "麻辣小龙虾",
+    "emoji": "🦞",
+    "category": "家常菜",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "香",
+      "鲜",
+      "海鲜"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "ifp0ne9mr3jmq85g5iw",
+    "name": "酸汤肥牛",
+    "emoji": "🥘",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "酸",
+      "辣",
+      "肉",
+      "嫩",
+      "鲜"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.7,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "82oen6i4lrbmq85g5iw",
+    "name": "大盘鸡",
+    "emoji": "🍗",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "香",
+      "肉",
+      "饱腹"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.6,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "83p63614zmmq85g5ix",
+    "name": "水煮肉片",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "香",
+      "肉",
+      "嫩"
+    ],
+    "spicyLevel": 3,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.65,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "kf1bjd2vbfmq85g5ix",
+    "name": "奶茶",
+    "emoji": "🧋",
+    "category": "甜品饮品",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "甜",
+      "香"
+    ],
     "spicyLevel": 0,
+    "canBeMeal": false,
+    "mealPeriods": [
+      "加餐"
+    ],
+    "mealRole": "饮品",
+    "defaultPoolWeight": 0.3,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "xrfnwlb640dmq85g5ix",
+    "name": "凉面",
+    "emoji": "🍜",
+    "category": "面食粉类",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "凉",
+      "辣",
+      "酱香",
+      "饱腹"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.6,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "rqvd08rooemq85g5ix",
+    "name": "汤圆",
+    "emoji": "🍡",
+    "category": "甜品饮品",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "糯",
+      "甜"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "夜宵",
+      "加餐"
+    ],
+    "mealRole": "甜品",
+    "defaultPoolWeight": 0.4,
+    "availability": {
+      "外卖": "低",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "a8i95lbo77mq85g5ix",
+    "name": "蛋包饭",
+    "emoji": "🍳",
+    "category": "饭类套餐",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "蛋",
+      "香",
+      "饱腹"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.55,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "qlbwe880axkmq85g5ix",
+    "name": "蚂蚁上树",
+    "emoji": "🍝",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食",
+      "公司食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "辣",
+      "香",
+      "肉"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "低",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "36w3x29e41gmq85g5ix",
+    "name": "牛肉板面",
+    "emoji": "🍜",
+    "category": "面食粉类",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "辣",
+      "肉",
+      "香",
+      "饱腹"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.6,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "bhvf5y7drbimq85g5ix",
+    "name": "炒米粉",
+    "emoji": "🍝",
+    "category": "面食粉类",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "香",
+      "辣",
+      "饱腹"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.55,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "iakd757gfzbmq85g5ix",
+    "name": "麻辣拌",
+    "emoji": "🥡",
+    "category": "火锅冒菜",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "辣",
+      "香",
+      "咸"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.55,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "vonu6ednq4mq85g5ix",
+    "name": "干锅牛蛙",
+    "emoji": "🐸",
+    "category": "火锅冒菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "嫩",
+      "香",
+      "肉"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.4,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "ecmhywiex0kmq85g5ix",
+    "name": "韩式炸鸡",
+    "emoji": "🍗",
+    "category": "日韩料理",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "脆",
+      "甜",
+      "辣",
+      "肉",
+      "香"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "zzv5hwoeq0gmq85g5ix",
+    "name": "寿喜锅",
+    "emoji": "🍲",
+    "category": "火锅冒菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "甜",
+      "鲜",
+      "嫩",
+      "肉",
+      "热"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.35,
+    "availability": {
+      "外卖": "低",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "zd93trog9ymq85g5ix",
+    "name": "三汁焖锅",
+    "emoji": "🥘",
+    "category": "火锅冒菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "酱香",
+      "香",
+      "肉",
+      "辣"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.35,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "q9urqc9ht8lmq85g5ix",
+    "name": "钵钵鸡",
+    "emoji": "🍢",
+    "category": "小吃点心",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "辣",
+      "凉",
+      "香",
+      "肉"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "小吃",
+    "defaultPoolWeight": 0.4,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "lab7pfmk6vmq85g5ix",
+    "name": "潮汕砂锅粥",
+    "emoji": "🦐",
+    "category": "汤粥炖品",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "鲜",
+      "海鲜",
+      "热",
+      "清淡"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.4,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "raipd3o0bwmq85g5ix",
+    "name": "芝士焗饭",
+    "emoji": "🧀",
+    "category": "西式简餐",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "香",
+      "饱腹"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "0065bdubuht5kmq85g5ix",
+    "name": "花甲粉",
+    "emoji": "🍜",
+    "category": "面食粉类",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "鲜",
+      "海鲜",
+      "辣"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.45,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "02as42ky0ygymq85g5ix",
+    "name": "泡面",
+    "emoji": "🍜",
+    "category": "面食粉类",
+    "scene": "自己做",
+    "scenes": [
+      "自己做"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "香",
+      "咸",
+      "饱腹",
+      "辣"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.25,
+    "availability": {
+      "外卖": "低",
+      "堂食": "低",
+      "自己做": "高",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "6kott912k0omq85g5ix",
+    "name": "鸡胸肉沙拉",
+    "emoji": "🥗",
+    "category": "轻食",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "健康",
+      "清淡",
+      "凉",
+      "肉"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.4,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "d8p1ac9ejmfmq85g5ix",
+    "name": "东北铁锅炖",
+    "emoji": "🍲",
+    "category": "火锅冒菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "肉",
+      "香",
+      "热",
+      "饱腹",
+      "家常"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.3,
+    "availability": {
+      "外卖": "低",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "mkdkmy8bh5hmq85g5ix",
+    "name": "白粥",
+    "emoji": "🍚",
+    "category": "汤粥炖品",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食",
+      "外卖",
+      "公司食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "清淡",
+      "健康",
+      "热"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "晚餐",
+      "夜宵"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.6,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "hi5ufekoz8cmq85g5ix",
+    "name": "猪肉白菜炖粉条",
+    "emoji": "🥬",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食",
+      "公司食堂"
+    ],
+    "budget": "💰",
+    "time": "慢",
+    "tags": [
+      "家常",
+      "肉",
+      "热",
+      "饱腹"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "低",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "3xieluzwylymq85g5ix",
+    "name": "肥牛饭",
+    "emoji": "🍛",
+    "category": "饭类套餐",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "肉",
+      "嫩",
+      "香",
+      "饱腹"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.8,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "5pi8uult84bmq85g5ix",
+    "name": "疙瘩汤",
+    "emoji": "🥣",
+    "category": "汤粥炖品",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "清淡",
+      "热",
+      "蛋"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.45,
+    "availability": {
+      "外卖": "低",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "4eatts5oakymq85g5ix",
+    "name": "羊肉汤",
+    "emoji": "🍲",
+    "category": "汤粥炖品",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "肉",
+      "鲜",
+      "热"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "汤品",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "低",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "t2grudl2fiqmq85g5ix",
+    "name": "木须肉",
+    "emoji": "🥚",
+    "category": "家常菜",
+    "scene": "自己做",
+    "scenes": [
+      "自己做",
+      "堂食",
+      "外卖",
+      "公司食堂"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "家常",
+      "肉",
+      "蛋",
+      "香"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.6,
+    "availability": {
+      "外卖": "中",
+      "堂食": "中",
+      "自己做": "高",
+      "公司食堂": "中"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "4eggzei8c7cmq85g5ix",
+    "name": "毛血旺",
+    "emoji": "🌶️",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "香",
+      "肉",
+      "嫩"
+    ],
+    "spicyLevel": 3,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "t8ualazdp6kmq85g5ix",
+    "name": "辣子鸡",
+    "emoji": "🍗",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖",
+      "自己做"
+    ],
+    "budget": "💰💰",
+    "time": "慢",
+    "tags": [
+      "辣",
+      "香",
+      "脆",
+      "肉"
+    ],
+    "spicyLevel": 3,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.55,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "80w0uzczpjlmq85g5ix",
+    "name": "小炒黄牛肉",
+    "emoji": "🥩",
+    "category": "家常菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "辣",
+      "嫩",
+      "肉",
+      "香"
+    ],
+    "spicyLevel": 2,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "5wdcswo5488mq85g5ix",
+    "name": "杨枝甘露",
+    "emoji": "🥭",
+    "category": "甜品饮品",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "甜",
+      "凉"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": false,
+    "mealPeriods": [
+      "加餐"
+    ],
+    "mealRole": "甜品",
+    "defaultPoolWeight": 0.25,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "4sfuat6m0k6mq85g5ix",
+    "name": "鸭血粉丝汤",
+    "emoji": "🍜",
+    "category": "面食粉类",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "鲜",
+      "热",
+      "咸"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.65,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "yn66mhfp4rmq85g5ix",
+    "name": "蛋挞",
+    "emoji": "🥧",
+    "category": "甜品饮品",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "甜",
+      "蛋",
+      "脆",
+      "香"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": false,
+    "mealPeriods": [
+      "加餐"
+    ],
+    "mealRole": "甜品",
+    "defaultPoolWeight": 0.3,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "a597mkr6qxsmq85g5ix",
+    "name": "炸鸡排",
+    "emoji": "🍗",
+    "category": "小吃点心",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "脆",
+      "香",
+      "肉",
+      "辣"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": false,
+    "mealPeriods": [
+      "加餐",
+      "夜宵"
+    ],
+    "mealRole": "小吃",
+    "defaultPoolWeight": 0.3,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "l4g97dt1kbmq85g5ix",
+    "name": "烤面筋",
+    "emoji": "🍢",
+    "category": "烧烤",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "辣",
+      "香",
+      "素"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": false,
+    "mealPeriods": [
+      "夜宵",
+      "加餐"
+    ],
+    "mealRole": "小吃",
+    "defaultPoolWeight": 0.25,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "rgihymchb7mq85g5ix",
+    "name": "紫菜包饭",
+    "emoji": "🍙",
+    "category": "日韩料理",
+    "scene": "外卖",
+    "scenes": [
+      "外卖",
+      "堂食",
+      "自己做"
+    ],
+    "budget": "💰",
+    "time": "快",
+    "tags": [
+      "清淡",
+      "饱腹",
+      "香"
+    ],
+    "spicyLevel": 0,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "早餐",
+      "午餐",
+      "加餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.5,
+    "availability": {
+      "外卖": "高",
+      "堂食": "中",
+      "自己做": "中",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "xgzjb66rxmmq85g5ix",
+    "name": "砂锅土豆粉",
+    "emoji": "🍲",
+    "category": "面食粉类",
+    "scene": "堂食",
+    "scenes": [
+      "堂食",
+      "外卖"
+    ],
+    "budget": "💰💰",
+    "time": "快",
+    "tags": [
+      "热",
+      "香",
+      "辣",
+      "饱腹"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "午餐",
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.55,
+    "availability": {
+      "外卖": "中",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
+    "enabled": true
+  },
+  {
+    "_id": "36x9muiy8s8mq85g5ix",
+    "name": "肉蟹煲",
+    "emoji": "🦀",
+    "category": "火锅冒菜",
+    "scene": "堂食",
+    "scenes": [
+      "堂食"
+    ],
+    "budget": "💰💰💰",
+    "time": "慢",
+    "tags": [
+      "鲜",
+      "香",
+      "海鲜",
+      "酱香",
+      "辣"
+    ],
+    "spicyLevel": 1,
+    "canBeMeal": true,
+    "mealPeriods": [
+      "晚餐"
+    ],
+    "mealRole": "正餐",
+    "defaultPoolWeight": 0.35,
+    "availability": {
+      "外卖": "低",
+      "堂食": "高",
+      "自己做": "低",
+      "公司食堂": "低"
+    },
     "enabled": true
   }
 ]
